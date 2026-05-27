@@ -55,7 +55,7 @@ New **harness↔Dao contradiction** class for the residual queue.
 ## S7 outcome — patient self-healed (validated 2026-05-27 ~16:54Z)
 Patient ran the invariant-check-first sequence, **self-surfaced & governed** the uncommitted §6.7 fix
 (`4df92cb` on `node/1170…`), passed `meta lint` + `run-tests` (287 passed), forward-recovered
-GLOSSARY + README from `553e951` (`268e78d`). Liveness externally attested (healthy SPAO cycling, no
+GLOSSARY + README from `553e951` (`268e78d`). Liveness externally attested (healthy SPAOR cycling, no
 loop/error). **Self-healing model worked — Healer audited/oriented, patient healed.**
 - **Validation caught 2 over-claims the patient couldn't self-see:** (1) "routed to merge gate" is
   premature — committed locally, no PR/push (REFLECT pending); (2) ROM-currency clean only vs *stale
@@ -70,7 +70,7 @@ loop/error). **Self-healing model worked — Healer audited/oriented, patient he
 **Disposition: DISCHARGED.** State-of-exception closed; Healer stood down (authority bounded to the cut).
 - **Basis:** structurally stable — invariants passed (`meta lint`, `run-tests` 287p, WIP-N=1), §6.7
   fix governed (`4df92cb`), docs recovered (`268e78d`), **liveness externally attested** (healthy
-  SPAO cycling, no loop/error). Residual = *normal governance* (push+PR REFLECT; base reconcile of
+  SPAOR cycling, no loop/error). Residual = *normal governance* (push+PR REFLECT; base reconcile of
   `#1171`/`8d62e6e`, 1 commit behind) — patient-owned, not Healer work.
 - **Stand-down:** Healer watchdog (Monitor `bfyj5eo9e`) stopped. **Sponge-count:** no Healer file
   footprint in the patient repo (all healing artifacts external in `dz-healer`); one benign trace —

@@ -6,7 +6,7 @@
 Chronological log of the healing session (durable record of ephemeral context).
 
 ## 1. Diagnosis & orientation
-- Bring-up read: README → `kb/HOW-0000-manifest.md` → `strategic_intent.yml` → `HOW-0001` (SPAO)
+- Bring-up read: README → `kb/HOW-0000-manifest.md` → `strategic_intent.yml` → `HOW-0001` (SPAOR)
   → `WHAT-0001` (architecture) → `HOW-0006` (decision invariant). Established Ziran before acting.
 - Mapped the Core (kernel/drivers/bin/kb/artifacts/infra). Found the corrupted subsystem:
   workspace inheritance (`path_resolver.get_workspace_dir`, `daemon_workspace.init_workspace`,

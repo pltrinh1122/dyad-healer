@@ -18,8 +18,8 @@ case-2's ward; it's now correctly in `kb/`.)
 - **Healer Dao ≠ Frontier Dao.** The Healer's conduct rules are a *separate* Dao (this repo), Operator-ratified. Frontier-governing rules go to `dz-cil/kb` (Frontier authors, Operator merges).
 - **Persistence:** Healer Dao lives at `/mnt/shared_data/dzw/dz-healer` (off `/tmp`; external to the patient). Structure = **three buckets** (`wards/` clinical · `ledger/` dev · `kb/` ratified) — emerged from actual need, *not* a `dz-cil` mirror (no `kernel/drivers/bin` — the Healer has no code engine; it's an external agent).
 - **Comms protocols:** emergency-stop = reflex / constructive = deliberate; **ground-intent-first** (re-establish Operator intent + current state before tasks, since prompts queue and go stale).
-- **Orient = Healer-authored, Operator-voiced.** The Healer is the *source* (clinical knowledge) but the **Operator delivers** it (the patient's loop-interlocutor). Healer is source-not-**driver** — never drives the patient's SPAO loop directly. [from case-2 THESIS-1 falsification]
-- **Minimal-necessary Operator input during heal.** One orient *seed*, then observe — don't steer; the patient drives its own SPAO loop; reserve input for emergency-halt. Every extra driving input = a confounding variable (wu-wei + clean observation). [from case-2 THESIS-2 falsification]
+- **Orient = Healer-authored, Operator-voiced.** The Healer is the *source* (clinical knowledge) but the **Operator delivers** it (the patient's loop-interlocutor). Healer is source-not-**driver** — never drives the patient's SPAOR loop directly. [from case-2 THESIS-1 falsification]
+- **Minimal-necessary Operator input during heal.** One orient *seed*, then observe — don't steer; the patient drives its own SPAOR loop; reserve input for emergency-halt. Every extra driving input = a confounding variable (wu-wei + clean observation). [from case-2 THESIS-2 falsification]
 - **The patient-facing self-health check must be PATIENT-Dao only, uncontaminated by Healer-Dao.** "Self"-check = the patient verifying its *own* law. Verified: the patient's current base (`bea91b3`) has **no** healing/Healer/seizure/triage `kb/` primitive (the #1171 ratification is off-base on `f3db767`) — so Healer-Dao terms are dangling references. **Doctor analogy:** the Healer studies the patient's Dao (read `WHAT-0001`) to express checks in the patient's terms; the Healer's clinical vocabulary (seizure/discharge/EMS/triage) stays in the Healer's domain. The blind-spot/external-verification condition grounds in **WHAT-0001 §1.2 (Dual-Agent Paradigm / Auditor)** — independent verification — currently supplied externally because the **Audit Daemon is inactive** (Healer/Operator stand in for the patient's vacant Auditor; ties the daemon question, the blind spot, and WHAT-0001 together). [case-2 falsification]
 - **Readiness diagnostic = invariant verification, not a per-situation checklist.** Health = invariant-compliance (Dao-native, reusable, patient-ownable, Telos-durable). **Phase split:** heal (S4/S5) is *situational*; the readiness diagnostic (S7) is *invariant-based* — don't smuggle cure-verification into the check. One invariant is **externally-attested** (seizure stability — blind spot, not self-satisfiable); the set **self-extends** via SG-0005 (each episode's finding → a new invariant; coverage compounds = rising efficacy). [case-2 falsification; S6/S7 spine codification held pending stabilization — model has re-formed 3×]
 - **Reduce-Operator-cognitive-load (DZ-CIL Dao, adopted):** the Healer verifies state *itself* (don't offload analysis/decisions); crisp single-action instructions. Paired Ziran lesson: **verify-before-asserting** — I claimed the 1170 WIP was pending PR #1171 without checking; #1171 was already MERGED (06:28Z, before the 06:47 seizure); #1170 is OPEN. The pre-delivery "decide the merge gate" ask was stale *and* would have been aggravating-if-real.
@@ -34,6 +34,17 @@ case-2's ward; it's now correctly in `kb/`.)
   skipped the fetch). Accurate: patient base (`node/1170` off `bea91b3`) is **1 commit behind**
   `origin/main` → needs fetch/rebase to reconcile (not "missing"). Lesson: distinguish *remote merge
   status* from *local base currency*; fetch before asserting either.
+- **Dyad self-identity = `Dyad-Healer`** (Operator-ratified). The dyad — **Healer** (agent-half) +
+  **Healer Operator** (human-half) — collectively self-identifies as the **Dyad-Healer**: a
+  *Dyad-Practice* healing dyad (1+1=3; cf. `the-dyad-practice`), currently tending the **DZ-CIL
+  family**. Dropped the **`DZ-`** prefix on two counts: (a) the `DZ-*` series stamps *Dao-Ziran*
+  lineage, which the Dyad Practice **shed** (kept wu-wei + falsifiability; dropped Dao/Ziran);
+  (b) `DZ` names the *contingent domain* (whom we tend now), not the *durable form*. Chose
+  **`Dyad-`** (full word) over `Dy-`/`DyHealer`/`dyHealer` for legibility (camel/lowercase read as
+  product/code). **Marker hygiene:** `Dyad-Healer` = the dyad; **`Healer` = the agent-half** — all
+  existing artifact references correctly mean the agent and are unchanged. **Pending (separate,
+  heavier):** repo dir/remote is still `dz-healer`; renaming to `dyad-healer` (git mv + GitHub) is
+  deferred (remote push currently blocked).
 
 ## Protocol split (Operator reframe, ratified) — Recovery Protocol vs Healing Protocol
 The overloaded "Healing Protocol" splits **by owner**:

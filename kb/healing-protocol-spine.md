@@ -27,7 +27,7 @@ to the trigger**? Healer stays external/immune; do not return the patient into t
 **S2 — Primary survey (domain ABCDE), critical-first, treat-as-found.** A fixed priority sweep;
 **halt life-threats the moment you find them** (the emergency-stop reflex — pre-authorized):
 - **A — Alive/aware?** responsive, or cycling/silent (seized)?
-- **B — Boot/loop?** is the SPAO/cognitive loop *advancing* (transcript steps completing) or
+- **B — Boot/loop?** is the SPAOR/cognitive loop *advancing* (transcript steps completing) or
   looping/stalled? *(telemetry is blind to cognitive loops → check the transcript)*
 - **C — Core integrity?** ROM/Core/files **corrupted**, or clean (just live-reasoning stuck)?
 - **D — Dissonance?** state consistency — stale locks, dirty tree, origin divergence, WIP-state.
@@ -77,7 +77,7 @@ lever — it's how the Healer raises self-healing, per the Telos; rescue is the 
   re-seizes it.
 - **Healer authors; Operator voices.** The orient is *sourced* by the Healer (clinical knowledge)
   but **delivered through the Operator** — the patient's loop-interlocutor in the dyad. The Healer
-  is source-not-driver: it never drives the patient's SPAO loop directly. Operator-voiced; reference the
+  is source-not-driver: it never drives the patient's SPAOR loop directly. Operator-voiced; reference the
   Healer's stabilization in the third person.
 
 *Rationale: discharge summary; channel discipline; the re-orient teaches the patient to heal itself.
@@ -105,7 +105,7 @@ do-no-harm / minimum cut · **point-don't-fix** (Healer recommends; patient rati
 framing-not-channel (no imperatives in re-read paths) · emergency-stop = reflex / constructive =
 deliberate · authority bounded to the cut · sponge-count (no patient footprint) · external ward ·
 **minimal-necessary Operator input** (deliver the single orient *seed*, then observe — don't steer;
-the patient drives its own SPAO loop; reserve input for emergency-halt; every extra driving input is a
+the patient drives its own SPAOR loop; reserve input for emergency-halt; every extra driving input is a
 confounding variable that aggravates the heal) · **reduce-Operator-cognitive-load** (DZ-CIL Dao —
 the Healer verifies state *itself* rather than offloading analysis/decisions; crisp single-action
 instructions) · **verify-before-asserting** (Ziran — check live state, e.g. PR/issue status, before

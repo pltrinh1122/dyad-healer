@@ -29,7 +29,7 @@ disposes. Binding Dao status is conferred by *its* ratification, never asserted 
   the **source/ratifier boundary** (no self-ratification), **retrospective accountability**.
 
 ## B. Protocol (→ HOW)
-1. **Triage gate** — a Healer is warranted only when the SPAO loop *itself* is seized; not for
+1. **Triage gate** — a Healer is warranted only when the SPAOR loop *itself* is seized; not for
    routine faults the running Agent handles.
 2. **Operator's procedural role** — detect → halt → instantiate → steer → ratify → authorize →
    co-observe. Perceptual detection stays human; telemetry augments it.
@@ -46,7 +46,7 @@ disposes. Binding Dao status is conferred by *its* ratification, never asserted 
    patient's own `node sync` may discard uncommitted Healer edits (it swept the `GEMINI.md`
    injection here) — verify, don't rely on it.
 7. **Observe durable artifacts, not phase churn** ★ — health = commits / node-state changes / a PR
-   over a *longer window*, not short-term SPAO phase patterns (too granular; they false-alarm during
+   over a *longer window*, not short-term SPAOR phase patterns (too granular; they false-alarm during
    error-recovery).
 8. **Genuine loop vs self-resolving grind** ★ — *genuine loops* (a halt was required): the original
    recursion (#948) and the iatrogenic beacon. *Self-resolving grinds* (looked loopy, recovered

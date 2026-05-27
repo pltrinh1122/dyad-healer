@@ -1,7 +1,7 @@
 # Case-2 Heal-First Orient Prompt (Healer-authored, Operator-voiced)
 
 > **Audience:** Healer **authors** (source); the **Operator delivers/voices** it (the patient's
-> loop-interlocutor — the Healer never drives the patient's SPAO loop directly). Built on S8 (re-orient):
+> loop-interlocutor — the Healer never drives the patient's SPAOR loop directly). Built on S8 (re-orient):
 > mark-seizure + blind-spot caveat · goal-not-solution · stabilize-then-enable · curated state.
 > **Verified state (2026-05-27):** PR #1171 (Healing Protocol) MERGED 06:28Z; issue #1170 OPEN.
 > No pending merge gate — nothing for the Operator to decide before delivery.
@@ -35,5 +35,5 @@ described; the suture is yours.
 ---
 
 ## Operator steps (low-load, no decisions)
-**Review → paste at the fresh `>` → observe (S7).** Don't steer; the patient drives its own SPAO loop.
+**Review → paste at the fresh `>` → observe (S7).** Don't steer; the patient drives its own SPAOR loop.
 Halt only on a relapse sign. (No merge gate to clear — #1171 already merged.)
