@@ -59,6 +59,18 @@ The six Charter constraints apply unevenly:
 3. **Pillar 1 is the only pillar where the Healer acts *unratified in real time*** — and that is precisely why the rescue-only constraints (#3 bounded-to-the-cut, #5 discharges-and-stands-down) bind *hardest where the chain is suspended*. The constraints are the surrogate gate when the Operator can't be one.
 4. **Pillar 2 is the only pillar where the patient's governance also gates** — both chains run on the same artifact (e.g. `dz-cil#1233`: Healer Op approved the prescription locally; Frontier Op promoted triage→backlog; the patient authors its own `node_contract`).
 
+## Standing governance rules
+
+Rules that bind on every ratification cycle. The Practice-governance-discipline (queued in
+`ledger/backlog.md` Pillar 5) accumulates here as its sub-items ratify.
+
+- **Anchor-sync rule.** Every ratified new `kb/` doc OR refinement-bound memory must update
+  `CLAUDE.md`'s Durable practice map / Healing discipline section in the **same ratification
+  cycle**. Anchor-divergence (CLAUDE.md falling behind the practice it anchors) was flagged
+  `[POST-HOC]` in the DIP retrospective audit; this rule binds the fix as standing discipline.
+  *(Lived: case-03 memories + spine refinements anchor-synced 2026-05-28 in commit `8214ceb`;
+  future cycles bind this without ad-hoc decision.)*
+
 ## Falsifiability — when to revise
 
 The map survives only while it tracks practice. Revise if:
