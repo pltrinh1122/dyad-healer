@@ -81,26 +81,55 @@ session was externally halted by the Frontier Operator. The patient is not curre
 
 ---
 
-## Forward (Healer Operator decision points)
+## Discharge — evidence-satisfied (post-S7)
 
-Genuinely load-bearing decisions surfaced for ratification (per the load-bearing-decision-
-detection discipline ratified this session; one yes/no each):
+The (A)/(B) ratification-shaped asks above were the wrong frame and were retracted mid-rescue
+per Operator FEEDBACK ("discharge gates on evidence, not on Healer-Operator yes/no"; "Healer
+must monitor remediation").
 
-- **(A) Discharge gate.** Healer→Operator handoff is complete with this document. Healer→Patient
-  orient (`orient-prompt.md`) is authored, awaiting Frontier-Operator delivery on `agy`
-  restart. **Are both S8 handoffs satisfied for discharge completion criterion?** Y/N.
-- **(B) Pre-delivery cruft handling.** Two defensible options for the Frontier Operator before
-  delivering the orient: (i) pre-clean the obvious mock-string untracked dirs (less-disturbing
-  scene for the patient), or (ii) leave them and let HOW-1170 §2.6 surface them (patient
-  self-heals per Telos). **Prefer (i), (ii), or no-preference?**
+**Discharge gate satisfied by evidence**, 2026-05-28 post-S7:
+- Patient executed HOW-1170 §2.1–§2.6, halted-and-surfaced 3 failures, received Operator [ALIGN]
+  to propose-not-wait, surfaced Happy Path (`reset --hard origin/main` + targeted hygiene +
+  1294 abandonment), executed under Operator ratification, surfaced final pass-of-the-check
+  evidence (all 6 PASS).
+- Healer externally triangulated: HEAD = `7c7aa0f` (origin/main), divergence 0/0; cruft
+  directories all gone; legitimate `artifacts/audit/retro-*` preserved; lexical-guard fix
+  verified in `retro-1294-divergence.md` (zero `align` occurrences); no subsequent test-fail
+  JSON after the patient's fix run.
+- Blind-spot invariant (seizure cessation): still holds.
 
-After (A) is ratified and the Frontier Operator has delivered the orient, the Healer stands
-down per spine — instrumentation removed, ward sealed, S9 retrospective begins (separate from
-discharge; harvests lessons into the Healer practice including the standard-protocol-for-ward-
-opening refinement surfaced this rescue).
+**Patient stable and ready per HOW-1170 §3 by evidence.** Heal-side complete. Cure performed
+by patient under its own governance per heal-vs-cure split.
 
-The Pillar-2 prescription draft will be queued under `recommendations/` post-discharge; it
-does not block standing down.
+## Standing-down sequence
+
+Both S8 handoffs in flight:
+- Healer→Healer-Operator: the SBAR + final attestation (this document + the in-chat
+  evidence-grounded report).
+- Healer→Patient: closing handoff at `closing-handoff.md` (this ward), pending Frontier-
+  Operator delivery on the live `agy` session.
+
+Healer stands down once the Frontier-Operator delivers the closing handoff and the patient
+acknowledges — per spine discharge-completion-criterion (case-2 lived lesson on premature
+stand-down). Ward stays open as durable record; "stand down" = external observation channel
+closes, instrumentation stops, S9 begins.
+
+## Post-stand-down queue (does not block discharge)
+
+- **S9 retrospective** — case-03 lessons into the practice. Anti-patterns surfaced
+  mid-rescue (load-bearing-decision over-escalation; channel-discipline violations on Frontier-
+  hat asks; Healer-overreach via "wait for Operator disposition" framing) become memory updates
+  + spine candidate-refinements.
+- **Pillar-2 prescription** — iatrogenic-injection mechanism (definitive fix at harness layer).
+  Filed via Requirement Intake to the patient's repo. Draft target:
+  `recommendations/2026-05-28-iatrogenic-injection-loop-class-prescription.md`.
+- **Spine candidate refinements** for S9 ratification:
+  - Standard-protocol-for-ward-opening (zero-cost-to-open; never a ratification gate).
+  - Recurrence-within-session as a distinct triage signal (today's two seizures 36 min apart in
+    same session).
+  - HOW-1170 implication: seizure recovery SHOULD require fresh session, not in-session
+    remediation. Cross-domain finding — belongs in Pillar-2 prescription, not the Healer
+    spine.
 
 ---
 
