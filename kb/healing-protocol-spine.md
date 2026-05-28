@@ -42,7 +42,21 @@ loop) · **Expectant** (unrecoverable → rare). *Healer only for Immediate/Dela
 
 **S5 — Secondary survey / cause (SAMPLE-analog).** *Now* find the cause: walk back **origin vs
 trigger**; for a cognitive seizure, go to the **cognitive-layer record (transcript) first**;
-distinguish genuine-loop vs self-resolving-grind. *Rationale: treat the cause, not the symptom.*
+distinguish genuine-loop vs self-resolving-grind.
+
+**Blast-radius enumeration (MANDATORY when a regressor commit is identified).** Audit the
+regressor's *full diff* against its immediate parent — **every file**, not the first symptom. The
+Auditor function (patient's WHAT-0001 §1.2) is **independent cross-history verification**; stopping
+at the first victim leaves co-bundled casualties undiscovered (lived: case-01's `f42b58b` clobbered
+both `GLOSSARY.md` and `README.md`; the initial audit caught only `GLOSSARY`, missing the bigger
+casualty — `README.md` was found only after the full-diff sweep). The audit is also a *de-escalator*:
+a definitive bounded count (e.g., 2 regressions across 60 files; the other 58 were clean renames)
+prevents over-scoping to surgery when forward recovery suffices. *Role split:* **Healer performs
+the audit** (external cross-history intent-vs-state diff); **patient performs the forward recovery**
+(within capability). Healer diagnoses, patient self-heals — surgery stays the rare Structural-Rupture
+tier.
+
+*Rationale: treat the cause, not the symptom — and find **all** of the symptom.*
 
 **S6 — Disposition (the heal-vs-continue gate).** Decide the patient's direction:
 - **No return-to-duty with an unaddressed critical condition.** A patient that recurred on an
