@@ -2,23 +2,25 @@
 
 > **Audience:** the Dyad-Healer (first applicant, retrospectively) + future dyads instantiated
 > under the Dyad-Practice form · **Use:** cite the **invariants** Dyad-Healer found load-bearing
-> during its own instantiation, paired with the **methodology that surfaced each**. Future dyads
-> cite these invariants and find their own practice to satisfy them.
+> during its own instantiation, paired with the **methodology that surfaced each** — both **DO**
+> (what worked) and **DON'T** (what failed). Future dyads cite these invariants and find their
+> own practice to satisfy them.
 
 ## Position
 
-DIP is **not a procedural protocol** (no stages, no "must complete before") **and not a set of
+DIP is **not a procedural protocol** (no stages, no "must complete before") **and not abstract
 recommendations or directives**. It is a **catalog of load-bearing invariants** discovered
 through Dyad-Healer's lived instantiation, with the actual practice methodology that surfaced
-each one.
+each one — including both **DO** (what worked, evidence-cited) and **DON'T** (what failed,
+evidence-cited). Negative cases are load-bearing too: they show what falsified the alternative.
 
 A future dyad's relationship to DIP is **cite + satisfy in own practice**:
 - Cite an invariant your practice satisfies (or falsifies).
-- Document how your practice satisfies it (methodology may differ from ours; that's the point).
+- Document how your practice satisfies it (methodology may differ from ours).
 - If you discover a load-bearing invariant we missed, propose it back.
 
-This shape is wu-wei-aligned: DIP names what *was* load-bearing for us; the next dyad finds the
-grain-aligned path *for itself*.
+DIP names what *was* load-bearing for us; the next dyad finds the grain-aligned path *for
+itself*.
 
 ## Lineage (informed by, not iterating)
 
@@ -39,41 +41,47 @@ Informed by:
 ## Invariants
 
 Four families. Within each, an invariant carries: the claim, the methodology Dyad-Healer used
-to arrive at it, and the test that would falsify it as load-bearing.
+(DO + DON'T, both evidence-cited), and the test that would falsify it as load-bearing.
 
 ### Family A — Identity & form
 
 #### A1. Externality
 **The dyad is external to what it tends.**
-- **Methodology (Dyad-Healer):** the durable-record root was established at
-  `/mnt/shared_data/dzw/dz-healer/` from the first commit (`e066f3c`, 2026-05-27), off the
-  patient's tree. This was the *only* `[PASS]` in the retrospective audit — the structural
-  decision we got right from t=0.
-- **Falsifiability:** a dyad that tries to live inside its tended target's tree contaminates
-  state, drives the patient's loop from the inside, or loses its immune-by-externality
-  property (cf. Charter constraint #1).
+- **DO:** establish the durable-record root off the tended target's tree from t=0. Dyad-Healer
+  established `/mnt/shared_data/dzw/dz-healer/` from the first commit (`e066f3c`, 2026-05-27).
+  This was the *only* `[PASS]` in the retrospective audit — the structural decision we got
+  right from t=0.
+- **DON'T:** allow tended-target content to leak into the dyad's homes, or dyad content into
+  the tended target's homes. Case-1 PR `#1171` mis-homed Healer-domain content (Healer role,
+  revival HOW, triage) into the **patient's** `kb/` — retro-corrected once the boundary
+  was made crisp. Case-2's ward initially had spine content drifting in; caught + relocated.
+- **Falsifiability:** a dyad that lives inside its tended target's tree contaminates state,
+  drives the patient's loop from the inside, or loses its immune-by-externality property.
 
 #### A2. Self-knowledge before acting
 **The dyad declares its identity (name, agent-half role-name, tended target) before engaging.**
-- **Methodology (Dyad-Healer):** we operated against live patients (cases 1 + 2) *before*
-  declaring our identity (`README.md` committed `a309594`, 2026-05-27). The retrospective
-  audit marked this `[POST-HOC]`. The methodology that eventually surfaced identity was a
-  combination of accumulated naming-in-practice (the role-name "Healer" was in active use
-  before declared) and form-grounding (citing `the-dyad-practice` forced us to articulate
-  what we were).
+- **DO:** declare identity in a single doc (typically `README.md`) before engaging the tended
+  target. Name the dyad, the agent-half's role, and whom the dyad serves.
+- **DON'T:** defer identity declaration. Dyad-Healer operated against live patients (cases 1 +
+  2) *before* committing `README.md` (`a309594`, 2026-05-27); the audit marked this `[POST-HOC]`.
+  The role-name "Healer" was in active use before declared; "Dyad-Healer" self-identity at the
+  dyad-level was ratified even later (mid-2026-05-28). Cost: every conversation that referred
+  to "us" had implicit identity that drifted across sessions.
 - **Falsifiability:** a dyad whose identity is implicit drifts; its agent-half adopts shifting
   roles; its Operator can't crisply name what's being instantiated.
 
 #### A3. Form-grounding
 **The dyad is grounded in its parent form, and names what it inherits faithfully vs. evolves
 locally.**
-- **Methodology (Dyad-Healer):** parent-form (`the-dyad-practice`) was authored in parallel
-  with our operation. Form-grounding only surfaced as load-bearing during the 2026-05-28
-  reflection (the *form-grounding-resolves-dialectic* pattern); most decisively, the form's
-  *"forcing a fit is the one move wu-wei forbids"* gave us the Dao retirement's wu-wei
-  argument.
-- **Falsifiability:** a dyad un-grounded in its parent form will re-invent (or contradict)
-  decisions the form has already made; dialectic loops fail to converge because there's no
+- **DO:** cite the parent form explicitly in identity-anchor docs (`README.md` + `CLAUDE.md`).
+  Use form-citation to resolve local dialectic loops — *form-grounding resolves dialectic* was
+  named load-bearing in the 2026-05-28 reflection.
+- **DON'T:** hold vocabulary or constructs the parent form has retired/refused. Dyad-Healer
+  retained *Dao* + *Ziran* terminology in our voice well after the parent form had retired them;
+  per-term audit (driven by form citation) surfaced the friction late — the *Dao→practice*
+  substitution required 9-file forward-governance pass.
+- **Falsifiability:** a dyad un-grounded in its parent form re-invents (or contradicts)
+  decisions the form has already made; dialectic loops fail to converge for lack of
   appeal-to-upstream.
 
 ### Family B — Discipline at t=0
@@ -81,41 +89,63 @@ locally.**
 #### B1. Ontology naming with single-home-per-fact
 **Each distinct kind of artifact the dyad produces gets named as an ontology with its own
 single-home discipline. (Directories are *physical*; ontologies are *load-bearing*.)**
-- **Methodology (Dyad-Healer):** three ontologies (`wards/`, `ledger/`, `kb/`) emerged
-  organically from need; the fourth (`recommendations/`) was ratified on 2026-05-27 only
-  after the prescription channel had developed. The single-home-per-fact discipline was
-  declared late (`kb/glossary.md` v0.1 ratified 2026-05-28). Mere directory creation was
-  *never* load-bearing; the load-bearing decision was always the ontology declaration —
-  what KIND of artifact, with what discipline.
+- **DO:** name each artifact-ontology explicitly with its single-home discipline. Dyad-Healer
+  carries four (`wards/` clinical evidence · `ledger/` dev · `kb/` ratified · `recommendations/`
+  Healer outputs to the tended family). The fourth (`recommendations/`) was the only one
+  ratified deliberately (2026-05-27); the first three emerged organically — which is fine for
+  a v0.1 dyad if the *ontology* (not the directory) is what's named load-bearing.
+- **DON'T:** confuse directory creation with ontology declaration. Mere sub-organization
+  (e.g., `ledger/audits/` for this session's retrospective) is **not** load-bearing — same
+  parent ontology, same discipline. Adding `recommendations/` **was** load-bearing — distinct
+  ontology, distinct single-home, distinct ratification chain to the tended family. The
+  conflation of "new bucket" with "new ontology" is the failure mode (Healer made this exact
+  conflation in DIP v0.1's first draft until Operator clarified).
 - **Falsifiability:** a dyad without named ontologies produces artifacts that drift across
-  homes; cross-contamination is the failure mode (the spine-in-ward contamination case-2
-  caught is the lived example).
+  homes; cross-contamination is the failure mode (case-2's spine-in-ward contamination, and
+  case-1's #1171 Healer-content-in-patient-kb, are the lived examples).
 
 #### B2. Channel discipline via Operator-hat naming
 **Each Operator role the human will wear is named, even if there is only one channel at t=0.**
-- **Methodology (Dyad-Healer):** "Healer Operator" vs "Frontier Operator" naming was
-  codified mid-stream after a case-02 channel-conflation incident exposed the gap (ledger:
-  *"from Operator's conflation-confusion catch"*). The naming itself prevents conflation
-  when a second channel later emerges; we discovered this by near-miss.
-- **Falsifiability:** a dyad with un-named Operator hats will produce mis-routed
-  recommendations (we did, into the patient's kb/ instead of the Healer's, retro-corrected
-  as #1171).
+- **DO:** name each Operator hat explicitly. Dyad-Healer distinguishes "Healer Operator" (steers
+  the Healer, ratifies the Dyad-Healer's practice) from "Frontier Operator" (governs the
+  patient: directives, merge gate, "proceed"). The Healer addresses *only* the Healer Operator;
+  the Frontier Operator is the sole channel to the patient.
+- **DON'T:** leave Operator hats un-named when there's only one channel at t=0; the conflation
+  doesn't surface until the second channel emerges. Case-2 exposed it: pre-naming, the Healer
+  sent recommendations addressed to "the Operator" — ambiguous between Healer-Operator-context
+  and Frontier-Operator-context. The conflation-confusion catch (ledger Decisions) drove the
+  codification. By then the *behavior* — addressing the wrong hat — had already produced
+  mis-routed work.
+- **Falsifiability:** a dyad with un-named Operator hats produces mis-routed recommendations
+  and constraint-#2 violations (touching the patient directly).
 
 #### B3. Loadable ground (the operating-anchor)
 **The agent loads a NON-NEGOTIABLE-bearing anchor first, every session.**
-- **Methodology (Dyad-Healer):** `CLAUDE.md` was committed (`577d6e7`, 2026-05-27)
-  *because* verify-before-asserting had already failed under long context in a prior
-  session (asserted `/goal` absent without grounding; stale-SHA assertions). The
-  loadable-first discipline was driven by failure, not pre-declared.
+- **DO:** maintain an operating-anchor doc (Dyad-Healer's is `CLAUDE.md`) that the agent
+  loads first every session. Must include the dyad's NON-NEGOTIABLE discipline (for us:
+  verify-before-asserting / the Validate mechanism). 30-line stub is sufficient at t=0; the
+  *commitment to reload* is the discipline.
+- **DON'T:** rely on conversation context or memory to carry the NON-NEGOTIABLE across
+  sessions. Pre-`CLAUDE.md`, Dyad-Healer drifted under long context: asserted `/goal` absent
+  without grounding (it IS a real Claude Code command, v2.1.139+); asserted stale SHAs;
+  asserted #1171 not-merged when it WAS. The 2026-05-27 session-handoff ledger entry names
+  the failure: *"the operating discipline failed first under context degradation."* The
+  anchor was committed (`577d6e7`) *because* of these failures, not in anticipation of them.
 - **Falsifiability:** a dyad whose agent doesn't reload its NON-NEGOTIABLE at session start
   drifts under long-context; verify-before-asserting fails first.
 
 #### B4. Vocabulary canonicalization
 **Cross-cutting terms get canonicalized as they appear, not after they drift.**
-- **Methodology (Dyad-Healer):** `kb/glossary.md` v0.1 was ratified 2026-05-28 — the
-  latest-arriving foundational discipline. It came after multiple terminology drifts (most
-  acutely the *Dao* retirement). The methodology that surfaced it: per-term audit, applied
-  reactively to lived drift.
+- **DO:** establish a `kb/glossary.md` v0.1 stub from t=0 — even 3 entries is enough — and
+  add cross-cutting terms as they emerge (≥3 invocations across kb/ → glossary entry, per
+  the discipline queued under Practice-governance). Dyad-Healer's glossary v0.1 ratified
+  2026-05-28 carries proactive orthogonality + reactive conflation-detection in its
+  Falsifiability section.
+- **DON'T:** accumulate cross-cutting vocabulary across docs and ratify the glossary
+  retrospectively. Dyad-Healer did exactly this — `kb/glossary.md` v0.1 was the
+  latest-arriving foundational discipline. Cost: semantic drift in *Dao* (kept as shorthand
+  long after the parent form had retired it), requiring a 9-file forward-governance
+  substitution pass when the drift finally surfaced.
 - **Falsifiability:** a dyad without a glossary discipline produces semantic drift; tokens
   silently change meaning; future-self can't ground past-self's writing.
 
@@ -123,59 +153,100 @@ single-home discipline. (Directories are *physical*; ontologies are *load-bearin
 
 #### C1. Telos
 **The dyad has a falsifiable North Star — a Telos whose measure is baked into its statement.**
-- **Methodology (Dyad-Healer):** `kb/telos.md` ratified 2026-05-27 via dialectic that sharpened
-  three breaks (domain-coupling, "structurally impossible," efficiency-hedge). Final wording
-  baked the falsifiable metric *into* the Telos statement itself (*"…until resuscitation is
-  rarely needed"*) — the Telos is directly testable, not reliant on commentary.
+- **DO:** bake the falsifiable metric *into* the Telos statement itself, not in commentary.
+  Dyad-Healer's Telos (`kb/telos.md`, 2026-05-27): *"The Healer's purpose is its own
+  obsolescence: raise the self-healing efficacy of the tended family until resuscitation —
+  the final safety net — is rarely needed."* The metric *"…until resuscitation is rarely
+  needed"* is testable; the Telos is directly falsifiable, not reliant on supporting prose.
+- **DON'T:** allow unfalsifiable hedges into the Telos statement. Dyad-Healer's first draft
+  had "Efficiently" (hedge — efficient compared to what?) and "structurally impossible"
+  (unprovable claim). Three breaks in the falsification cycle — domain-coupling
+  ("DZ-CIL and its disciple Agents" → "the tended family"); "structurally impossible" → covered
+  by "rarely needed"; dropped "Efficiently" — all *removed* hedges. The wu-wei-front-loaded
+  wording survived because each hedge was dropped, not added.
 - **Falsifiability:** a Telos whose measure isn't baked in becomes unfalsifiable; the dyad
   cannot know whether it is succeeding.
 
 #### C2. Charter + Governance
 **The dyad ratifies its ontology (what it IS) and its governance (how it's ratified).**
-- **Methodology (Dyad-Healer):** `kb/charter.md` + `kb/governance-map.md` ratified 2026-05-27
-  via three-pass falsification. The structure-of-codification falsification produced the
-  load-bearing finding: ontology + governance-operations belong in **two cross-referenced
-  docs**, not one (single-concern-per-doc grain). Six constraints emerged: 3 universal, 2
-  rescue-only, 1 patient-touching-only.
+- **DO:** split ontology + governance-operations into **two cross-referenced docs**
+  (single-concern-per-doc grain). Dyad-Healer's `kb/charter.md` carries the dyad's definition
+  + 6 constraints + falsifiability; `kb/governance-map.md` carries the operational chains.
+  Identity changes rarely (slow doc); governance evolves with new channels (fast doc).
+- **DON'T:** bundle ontology + governance into one doc. Dyad-Healer attempted exactly this
+  in the first ratification cycle — the structure-of-codification falsification (third pass)
+  rejected single-doc as the move *"wu-wei explicitly forbids"* (form-line: forcing a fit is
+  the move wu-wei forbids). Single-concern-per-doc is the existing kb grain; LLM
+  context-management favors selective recall — option (B) two-docs won.
 - **Falsifiability:** a dyad without a ratified Charter has implicit identity that drifts; a
-  dyad without a Governance Map has implicit ratification that becomes opaque.
+  dyad bundling ontology + governance loses single-concern grain.
 
 #### C3. Ratification chain
 **The chain — who proposes / who ratifies / what gate substrate — is named explicitly. The
 ratifier is identified.**
-- **Methodology (Dyad-Healer):** chain ratified 2026-05-27 (ledger Decisions): Healer
-  proposes → Operator ratifies; Frontier authors patient's kb/ → Operator merges. Named
-  explicitly only when ambiguity around case-1's PR #1171 mis-homed Healer-domain content
-  into the patient's kb/ — failure surfaced the need.
+- **DO:** name the chain explicitly. Dyad-Healer's: Healer proposes → Operator ratifies
+  (Dyad-Healer's practice); Frontier authors patient's `kb/` → Operator merges (patient's
+  practice). The ratifier is the Operator in both cases; the substrate is conversational
+  confirmation for non-load-bearing decisions, written ratification (PR-shaped) for
+  load-bearing kb/ docs.
+- **DON'T:** leave the chain implicit; the cost compounds. Case-1 PR `#1171` mis-homed
+  Healer-domain content into the patient's `kb/` partly because the chain wasn't yet
+  explicit — what got proposed, who could ratify, and where the result was homed were all
+  ambiguous. Also DON'T: bundle multiple ratification asks into one (the
+  load-bearing-decision-detection discipline, ratified mid-this-session as feedback memory:
+  *unscoped "ratify it" asks force against-grain Operator cognitive load*).
 - **Falsifiability:** a dyad without a named ratification chain produces contested
-  attribution (who can change what?) and mis-homed artifacts.
+  attribution and mis-homed artifacts; a dyad with too-broad ratification surface produces
+  Operator-blocked sessions (substrate-experience signal).
 
 ### Family D — Operating form
 
 #### D1. Execution form
 **The dyad adopts (or names locally) an execution loop, with explicit relation to the parent
 form's recommendations.**
-- **Methodology (Dyad-Healer):** SPAOR adopted as the Building/Authoring execution loop
-  (ratified 2026-05-27) via a 3-turn dialectic: thesis ("SPAOR aligned with form") → break
-  → rebuttal ("Dyad Practice is silent on execution topology") → reframe (complementary
-  axes, not aligned/competing) → option B chosen over option A on phase-gating grounds.
-  The form-not-wiring constraint (no Nodes/Meta-Graph dependency) preserves externality.
+- **DO:** adopt or name an execution form with explicit relation to upstream. Dyad-Healer
+  adopted **SPAOR** (Sense / Plan / Act / Observe / Reflect) as the Building/Authoring
+  execution loop. Form-not-wiring: no Nodes/Meta-Graph dependency, preserving externality.
+  Phase-gates the dyadic manner (stock→grain→fit→test) so it can't be skipped under pressure.
+- **DON'T:** treat the parent form's silence on execution topology as conflict, or drop
+  Reflect to compress the loop. (i) First Dyad-Healer thesis was "SPAOR aligned with form"
+  — falsified: category-mismatch error. The form is *silent* on execution topology; silence
+  isn't conflict. Reframe → complementary axes (the form is *manner/spirit*; SPAOR is the
+  *gate*). (ii) SRPAO alternative (Sense-Reason-Plan-Act-Observe — drops Reflect) IDEATE'd
+  later — falsified on 7 breaks; the most critical was the dropped Reflect re-creating the
+  SPAO regression the patient itself had to correct (`WHY-1157`). Reflect is load-bearing
+  for compounded learning; never drop it.
 - **Falsifiability:** a dyad without a named execution form runs each session ad-hoc;
   cadence-discipline doesn't bind under long-context pressure.
 
 #### D2. Posture taxonomy (conditional)
 **If the dyad operates in distinct modes, the postures are named. If monolithic, declared so.**
-- **Methodology (Dyad-Healer):** three postures (Exception · Building · Authoring-Research)
-  ratified 2026-05-27 in `kb/modes-of-operation.md`. Emerged from observed operating modes;
-  not all dyads need this — a single-mode dyad would declare monolithic posture.
+- **DO:** name distinct postures if the dyad has them. Dyad-Healer: three postures
+  (Exception · Building · Authoring-Research), ratified in `kb/modes-of-operation.md`. Each
+  posture has its own discipline + its own execution loop (Exception → spine S0-S9; the
+  other two → SPAOR).
+- **DON'T:** silently switch between disciplines without naming the switch. Pre-posture-
+  taxonomy, Dyad-Healer slipped between building-discipline and authoring-discipline without
+  declared transitions; reviewer couldn't audit which discipline applied to which moment.
+  Also DON'T: force a posture taxonomy on a monolithic dyad — declared-monolithic is a valid
+  Stage-1 state for dyads whose operating mode doesn't vary.
 - **Falsifiability:** a dyad with un-named multiple modes silently switches operating
-  disciplines without declaring the switch; reviewer can't audit which discipline applied.
+  disciplines; a dyad forced into postures it doesn't have over-specifies and produces
+  vacuous shape.
 
 #### D3. Reflection mechanism
 **The practice works on itself at named rest points (S9-equivalent cadence).**
-- **Methodology (Dyad-Healer):** `kb/practice-reflection.md` ratified 2026-05-28. CSS
-  (Continue/Start/Stop) at natural stops + explicit stops. Two-substrate-paired (Operator
-  narrative + Healer details). Two trigger types codified after [ALIGN] dialectic.
+- **DO:** define a reflection cadence + format + sharing posture. Dyad-Healer's
+  `kb/practice-reflection.md` (ratified 2026-05-28): CSS (Continue/Start/Stop) at natural
+  rest points + explicit stops; two-substrate-paired (Operator narrative + Healer details);
+  sharing posture (Path-1 = actionable-via-prescription per the Requirement Intake channel;
+  Path-2 = produce-as-we-are for the Dyad-Practice Dyad).
+- **DON'T:** allow lessons to live only in conversation context. Dyad-Healer's reflection
+  mechanism was the **latest-arriving** foundational discipline (2026-05-28 — *yesterday*
+  relative to this audit). Pre-codification, lessons sat in chat or got memory-saved
+  sporadically; the auto-memory START item from yesterday's reflection names the gap:
+  *"memory-save at validated successes more proactively"* — multiple validated patterns
+  (form-grounding-resolves-dialectic, per-term-audit-beats-global-policy) didn't get saved.
 - **Falsifiability:** a dyad without a reflection mechanism cannot codify what it learns;
   the *the practice working on itself* tenet collapses to mere doing.
 
@@ -183,21 +254,52 @@ form's recommendations.**
 
 ## Cross-cutting methodology Dyad-Healer used to surface invariants
 
-These are not invariants themselves; they are the **methodologies** that surfaced the invariants
-above. Cited because future dyads may need them to surface their own:
+These are not invariants; they are the **methodologies** that surfaced the invariants above.
+Both DO and DON'T are cited because future dyads may need them to surface their own:
 
-- **Falsification of every assertion** (the form's spine mechanism) — produced the Charter's 6
-  constraints, the SPAOR adoption, the Telos sharpening, the Dao retirement.
-- **Form-grounding to resolve dialectic** — cite the parent form when local dialectic loops;
-  often dispositive.
-- **Retrospective audit modeled on `HOW-0002`** — the falsifiable evidence layer; the
-  `[POST-HOC]` mark category emerged from this methodology and contributes back to the
-  audit template lineage.
-- **Per-term audit beats global reinforce-or-friction** — when terminology questions arise,
-  audit each term independently rather than imposing binary policy.
-- **PROPOSED → ratify → flip cadence** for kb/ docs (reversibility-preserving, with the
-  caveat that ratification surface must be small per the load-bearing-decision-detection
-  discipline).
+### Falsification of every assertion (the form's spine mechanism)
+- **DO:** the Healer asserts; the Operator falsifies; survivors are sharper than either
+  alone. Produced the Charter's 6 constraints (3 falsification passes), SPAOR adoption
+  (3-turn dialectic), Telos sharpening (3 breaks), Dao retirement (dispositive verdict from
+  one form-grounded falsification attempt).
+- **DON'T:** accept assertions without falsification when context is long. Almost every
+  unverified assertion in Dyad-Healer's history under long context has been overturned —
+  three independent near-disasters yesterday alone (Dao→Probe correction overturn,
+  parallel-fork P2 near-clobber, audit-timeline overstatement).
+
+### Form-grounding to resolve dialectic
+- **DO:** cite the parent form when local dialectic loops; often dispositive. Yesterday's
+  reflection §1: *"form-grounding resolves dialectic."*
+- **DON'T:** treat the form's silence on a topic as a position. The form is silent on
+  execution topology, *not* opposed to it — failure to distinguish silence from opposition
+  produced the false "SPAOR conflicts with form" thesis that took 3 turns to retract.
+
+### Retrospective audit modeled on `HOW-0002`
+- **DO:** model an audit on the predecessor lineage's template; mark each invariant
+  `[PASS]` / `[FAIL]` / `[POST-HOC]`. The `[POST-HOC]` category was Dyad-Healer's
+  methodological contribution back to the audit-template lineage — the predecessor only had
+  PASS/FAIL, informationally insufficient for retrospective audits.
+- **DON'T:** import audit ceremony without the substrate it was designed for. The
+  predecessor template's HITL-checkbox gate lived in GitHub Issues (clickable). Imported
+  into flat markdown it had no action surface; substrate mismatch turned the gate into
+  decoration. Dropped after the Operator surfaced the substrate-experience friction.
+
+### Per-term audit beats global reinforce-or-friction
+- **DO:** when terminology questions arise, audit each term independently rather than
+  imposing binary policy. Dyad-Healer applied this to *Dao* + *wu-wei*: the wu-wei answer
+  was *neither* (wu-wei kept faithful; Dao retired) — asymmetric verdicts.
+- **DON'T:** apply binary global policy ("reinforce all" or "friction all") to mixed
+  vocabulary — Operator initially proposed binary, the per-term audit was the surviving +1.
+
+### PROPOSED → ratify → flip cadence (caveat-bound)
+- **DO:** for genuinely load-bearing kb/ docs whose wording IS the ratifiable unit, commit
+  as PROPOSED, await ratification with a *tight ratification surface* (1–3 yes/no asks per
+  cycle per the load-bearing-decision-detection discipline), then flip to ratified.
+- **DON'T:** apply the PROPOSED cadence to non-load-bearing artifacts. Most decisions
+  are non-load-bearing (`ledger/` evidence, working drafts, refinements within already-
+  ratified frames) — Agent decides + commits + Practice tests. Over-applying PROPOSED
+  imposes double-tracking on the Operator and signals lack of Agent confidence in the
+  Practice (the friction surfaced as [FEEDBACK] mid-this-session).
 
 ---
 
@@ -205,14 +307,14 @@ above. Cited because future dyads may need them to surface their own:
 
 DIP is falsifiable in three ways:
 
-1. **Each invariant** carries its own falsifiability test (above).
+1. **Each invariant** carries its own DO/DON'T methodology and falsifiability test.
 2. **Coverage:** if a future dyad's retrospective audit (modeled on `0001-dyad-healer-...`)
    surfaces a `[POST-HOC]` mark on a structure that DIP did not name as an invariant, DIP
    under-covers — propose the missing invariant.
-3. **Methodology validity:** if a future dyad satisfies a DIP invariant using
-   *different methodology* than ours and it works, that's confirmation our methodology was
-   *one* path, not *the* path. (If their methodology doesn't work, the invariant or the
-   methodology family may need revision.)
+3. **Methodology validity:** if a future dyad satisfies a DIP invariant using *different
+   methodology* than ours and it works, that's confirmation our methodology was *one* path,
+   not *the* path. If their methodology doesn't work where ours did (or vice versa), the
+   invariant or the methodology family may need revision.
 
 ## Orthogonality criteria
 
