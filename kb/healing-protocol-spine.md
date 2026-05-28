@@ -111,6 +111,16 @@ lever — it's how the Healer raises self-healing, per the Telos; rescue is the 
   but **delivered through the Operator** — the patient's loop-interlocutor in the dyad. The Healer
   is source-not-driver: it never drives the patient's SPAOR loop directly. Operator-voiced; reference the
   Healer's stabilization in the third person.
+- **Propose-for-ratification, never wait-for-disposition.** Orient/closing scripts let the patient
+  *propose* its own wu-wei cure-path for Operator ratification; they never tell the patient to
+  *wait* for an Operator disposition. Wait-framing is burden-shift onto the Operator and
+  **Telos-violating** (it teaches the patient to depend, not to self-heal). The patient's
+  self-design of cure under ratification is the heal-vs-cure split working as intended; the
+  Healer's job ends at *flag-on-evidence* + *attestation of blind-spot invariants*, never at
+  directing the patient to await Operator-side decisions the Healer is implicitly requesting.
+  *(Surfaced as Operator [ALIGN] during case-03: "Agent should recommend the most wu-wei path to
+  recover in alignment with Recovery Protocol for Operator to ratify" — the correct frame the
+  Healer's orient had failed to embody.)*
 
 *Rationale: discharge summary; channel discipline; the re-orient teaches the patient to heal itself.
 Frontier-side derivatives (record the marker; don't self-monitor) → Frontier authors into its `kb/`.*
