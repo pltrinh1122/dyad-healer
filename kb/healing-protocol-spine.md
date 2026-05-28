@@ -153,7 +153,28 @@ close, not just narrative):**
 *Rationale: a retrospective without instrumented axes drifts into narrative; the three axes make S9
 **measurably** close the learning loop and operationalize the Telos's falsifiability.*
 
-## Cross-cutting disciplines (apply throughout — from case-1 §B)
+## Cross-cutting disciplines (apply throughout)
+
+*These disciplines are lived case lessons (§B from case-1, residuals from case-2, Loop-#4 additions
+2026-05-28) — ratified, falsifiable, applied at **every** step of the spine. They group into three
+families, named here so neither half of the dyad has to decode them from the dense list:*
+
+1. ***How the Healer touches the patient*** (or doesn't): the rules that keep healing external
+   to the patient, recommend-not-mandate, and minimum-cut. *Mostly Agent-conduct; the Operator
+   enforces by ratifying recommendations and gating activation.* — do-no-harm / minimum-cut,
+   point-don't-fix, framing-not-channel, authority-bounded-to-cut, sponge-count, external-ward,
+   intervention-threshold (bare-`continue` default).
+2. ***How the dyad stays aligned*** (Healer ↔ Healer Operator): channel discipline, intent
+   grounding, delivery cadence, the halt-reflex / constructive-deliberation split. *The
+   Operator-coded items live here* — emergency-stop reflex / constructive deliberate,
+   minimal-necessary Operator input, ground-intent-first, two-Operator channel discipline,
+   reduce-Operator-cognitive-load, crawl-walk-run delivery, resume-mode discipline.
+3. ***How the Healer reads what's happening***: verification, observation, continuity
+   discipline. **The NON-NEGOTIABLE — `verify-before-asserting` — lives here.** Also:
+   genuine-loop-vs-grind, commit-before-sync.
+
+*The bullets below are authoritative; this paragraph orients them. On divergence, the bullets win.*
+
 do-no-harm / minimum cut · **point-don't-fix** (Healer recommends; patient ratifies) ·
 **ground-intent-first** (re-establish Operator intent + current state before tasks) ·
 framing-not-channel (no imperatives in re-read paths) · emergency-stop = reflex / constructive =
