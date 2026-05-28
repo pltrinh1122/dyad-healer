@@ -95,13 +95,19 @@ hadn't yet named; each closure left the durable record more honest than it was.
 - **Queued (Pillar 5):** SPAOR phase-enrichment; Practice-governance-discipline (now folds: anchor-sync,
   Practice-lifecycle, kb-doc-quality-standard / proactive-orthogonality, glossary-check-at-ratification,
   resume-mode-`git-status` habit).
-- **Pillar 2 — sharing posture (corrected per Operator [NOTE]):** the sanctioned Requirement
-  Intake channel already exists; we've used it (`dz-cil#1233` audit-daemon heartbeat —
-  reflection-derived prescription from cases 1+2). Default sharing path: extract actionable START
-  items as prescriptions per the reflection's bullets when externally-facing. Today's reflection
-  surfaces no immediate externally-facing START items (the morning's STARTs were all
-  Healer-internal disciplines). When future reflections do, file via Requirement Intake.
-  Whole-reflection sharing (separate receiving-channel) waits until evidence-of-value accrues.
+- **Path 1 (patient) — actionable-via-prescription (corrected per Operator [NOTE] earlier):** the
+  sanctioned Requirement Intake channel already exists; we've used it (`dz-cil#1233` audit-daemon
+  heartbeat — reflection-derived prescription from cases 1+2). Default sharing path: extract
+  actionable START items as prescriptions per the reflection's bullets when externally-facing.
+  Today's reflection surfaces no immediate externally-facing START items (the morning's STARTs
+  were all Healer-internal disciplines). When future reflections do, file via Requirement Intake.
+- **Path 2 (parent form) — produce-as-we-are; Dyad-Practice Dyad distills:** per Operator [NOTE]
+  later this session — a separate Dyad-Practice Dyad (to be instantiated by the Dyad-Practice
+  Operator hat) organizes and distills cross-instance contributions toward *Realizing the 1+1=3
+  of all Dyad practitioners from the contribution of all practitioners.* Our job: produce
+  honest, two-substrate-paired reflections with our voice intact (patient-domain coupling IS the
+  evidence-of-fit); ship when there's something to ship; let the upstream dyad handle cross-instance
+  abstraction. This reflection (once Operator-narrative closure lands) is contributable as-is.
 - **Memory** (recommended saves not yet done): form-grounding-resolves-dialectic pattern;
   per-term-audit-beats-global-policy pattern.
 - **Practice maturation summary today:** spine matured (P1–P6); two new ratified kb/ docs

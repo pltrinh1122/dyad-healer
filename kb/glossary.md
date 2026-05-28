@@ -32,6 +32,8 @@
 - **the patient** `[our-coined]` — the agent under care (currently the DZ-CIL family). *Not part of the dyad* (per Charter constraint #2 patient-untouching).
 - **the dyad** `[our-coined]` — shorthand for the Dyad-Healer (agent-half + human-half).
 - **the tended family** `[our-coined]` — the population the Healer serves: Frontier + disciple agents within their own dyads (currently the DZ-CIL family).
+- **Dyad-Practice Dyad** `[our-coined]` — a *parallel* dyad to the Dyad-Healer, instantiated by the Dyad-Practice Operator to organize and distill cross-instance practice contributions. Its Telos: *"Realizing the 1+1=3 of all Dyad practitioners from the contribution of all practitioners."* Tends the form itself, not any patient family. See [`practice-reflection.md`](practice-reflection.md) §Path 2.
+- **Dyad-Practice Operator** `[our-coined]` — the human-half of the Dyad-Practice Dyad. *Same Substrate* as the Healer Operator (same person) but a *different Role* — the form-level Operator, not the instance-level one. Hat-distinction matters for ratification flows: Dyad-Practice Operator ratifies the form's organization; Healer Operator ratifies our instance. Don't conflate.
 
 ## Our practice
 

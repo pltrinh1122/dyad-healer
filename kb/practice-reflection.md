@@ -69,7 +69,11 @@ Nested under `ledger/` (dev-discipline-adjacent). Filename pattern: `YYYY-MM-DD-
 Preserves the **4-bucket structure**; reflections are dev-log adjacent (decisions/dialectic also
 live there).
 
-## Sharing with the tended family — actionable-via-prescription; whole-reflection later if warranted
+## Sharing — two distinct upstream paths
+
+A reflection can flow upstream in two directions, serving two distinct purposes.
+
+### Path 1 — to the tended family (the patient): actionable-via-prescription
 
 The Telos pulls toward shared learning (raises *family-wide* self-healing efficacy). The sanctioned
 channel **already exists** — the patient's **Requirement Intake** template (`dz-cil/.github/ISSUE_TEMPLATE/requirement_intake.md`),
@@ -98,6 +102,29 @@ So the discipline is:
 prescriptions raises patient self-healing-efficacy directly (the audit-daemon-heartbeat rec is
 exactly this). Whole-reflection sharing requires patient receiving-capability that doesn't yet
 exist; building it before evidence-of-value would be force.
+
+### Path 2 — to the parent form (the Dyad Practice): produce-as-we-are; the Dyad-Practice Dyad distills
+
+The parent form (`github.com/pltrinh1122/the-dyad-practice`) accumulates lived practice from its
+instances. A separate **Dyad-Practice Dyad** — instantiated by the Dyad-Practice Operator (the same
+human as our Healer Operator, wearing a third Role) — organizes and distills cross-instance
+contributions toward its own Telos:
+
+> *Realizing the 1+1=3 of all Dyad practitioners from the contribution of all practitioners.*
+
+**What this means for us:** *our reflections need no upstream-side curation.* The patient-domain
+coupling (DZ-CIL references, case IDs, specific issue numbers) IS the evidence-of-fit — it's *how*
+the form lands in a real instance. The Dyad-Practice Dyad does the abstraction across instances;
+that's its own form-level work, not ours.
+
+**Discipline for Path 2:** *focus purely on the form of our individual contribution* — produce
+honest, falsifiability-clean, two-substrate-paired reflections; preserve our voice; don't anticipate
+how cross-instance aggregation will use them. The contribution channel (subdirectory, format,
+cadence) is the Dyad-Practice Dyad's call; we ship as-we-are when there's a reflection worth shipping.
+
+The Dyad-Practice Operator is on the same human Substrate as the Healer Operator but a *different
+Role* — that hat-distinction matters for ratification flows: the Dyad-Practice Dyad ratifies the
+form; the Healer Operator ratifies us. Don't conflate.
 
 ## Cross-references
 
