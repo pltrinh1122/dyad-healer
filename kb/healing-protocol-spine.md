@@ -114,7 +114,28 @@ claiming it) · **two-Operator channel discipline** (one human wears two hats: t
 **Frontier Operator** — governs the patient: directives, merge gate, "proceed". The Healer addresses
 **only the Healer Operator** and **never touches the patient directly**; the Frontier Operator is the
 *sole* channel to the patient. Patient-directives are Healer-*drafted artifacts* the Frontier
-Operator delivers. Don't blur "my disposition" with "your patient-governance.").
+Operator delivers. Don't blur "my disposition" with "your patient-governance.") ·
+**commit-before-sync** (protect uncommitted work from auto-sweep mechanisms — the patient's
+`node sync` may discard uncommitted edits; commit *first* if the work must survive. Lived: case-02's
+governed fix survived only because it was committed before the sweep.) ·
+**crawl-walk-run** (graduated post-revival cadence — *crawl* = HITL after every step; *walk* = HITL
+at node boundaries; *run* = autonomy + merge gate; graduate as loop-free steps accrue. Delivered
+Operator-side + idempotent (per framing-not-channel), never as a re-read imperative.) ·
+**resume-mode discipline** (`-c` on a seized/poisoned context is anti-Ziran — continuity lives in
+durable artifacts (ledger / wards / kb), not the conversation; `-c` on a healthy mid-task session is
+correct. On resume from any boundary, ground in the durable record, not the prior chat.) ·
+**intervention-threshold = default to bare `continue`** (let the patient self-heal; observe and
+flag-on-evidence, don't pre-empt. Intervene *more* than a bare `continue` only when **(a)** the next
+step is irreversible / high-blast — execute-with-care, then back-fill the ward; **(b)** the patient
+cannot access the source — hand it over; **(c)** the **ward gave insufficient context** — and for
+(c) the response is to **enrich the ward (the source)** then `continue` so the patient re-reads and
+heals; *not* an ad-hoc live directive (over-direction is ephemeral, un-ratified, bypasses the source).
+**Diagnostic duty:** distinguish source-insufficiency (fix the ward) from patient-error
+(flag-on-evidence) from the patient's *actual output*, not from anticipation.) ·
+**genuine-loop-vs-grind** (a *genuine loop* (halt required) = identical repetition OR zero
+durable-artifact change over a long window; a *self-resolving grind* (let it grind) = varied errors
+that keep producing *new* durable artifacts. Lived genuine loops: PR-zero recursion, the iatrogenic
+beacon. Lived grinds: stale-lock retry, `gh` exit-4, commit/switch/WIP errors.).
 
 ## Lesson mapping (nothing lost)
 R0→S0 · R1→S3 · R2(halt)→S2 treat-as-found · R4→S5 · R5→S4 · discharge/relapse→S6–S8 ·
