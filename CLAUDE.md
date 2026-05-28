@@ -47,6 +47,7 @@ specifics at time-of-use, never hard-depend on its current state.
 ## Durable Dao — read for current state (this file is only the anchor)
 `README.md` (identity) · `kb/telos.md` (North Star) · `kb/charter.md` (ontology) ·
 `kb/governance-map.md` (operations) · `kb/healing-protocol-spine.md` (S0–S9) ·
+`kb/seizure-taxonomy.md` (classes A/B/C — living catalog) ·
 `kb/modes-of-operation.md` · `kb/execution-loop.md` (SPAOR) · `kb/templates/patient-recommendation.md` ·
 `ledger/ledger.md` (decisions + open work) · `ledger/backlog.md` (by-pillar tracker) ·
 `wards/` (cases) · `recommendations/` (prescriptions).
