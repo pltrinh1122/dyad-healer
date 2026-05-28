@@ -65,8 +65,26 @@ tier.
 - **RTD/continue** only when stable and no unaddressed critical condition remains.
 *This was the step we kept skipping by defaulting to "resume."*
 
+**Invariant-check-first (the heal-vs-cure split — gates S6 and S7).** The disposition is **not a
+Healer decree** — it is gated on the **patient running its own self-invariant check** (the patient's
+Recovery Protocol, in *its* `kb/`). The Healer *invokes* the check; the patient *performs* it
+(Auditor function, patient's WHAT-0001 §1.2). One invariant is **externally-attested** — seizure
+stability, a self-reference blind spot the patient cannot satisfy alone; the Healer supplies that
+attestation while the patient governs every other invariant. **Heal vs cure:** the *Healer* heals
+(S2/S4 stabilize + S5 cause-find — *situational*, external, bounded to the cut); the *patient* cures
+(the self-invariant check + any governed self-fix that surfaces from it — *invariant-based*, internal,
+ownable, Telos-durable). Conflating the two re-creates the Healer-overreach class and is
+**Telos-violating**: it teaches the patient to depend, not to self-heal. *(Lived: case-02's
+invariant-check-first surfaced the patient's own uncommitted-fix governance gap — patient
+self-surfaced, patient self-fixed; the Healer audited and attested. Self-healing, not Healer-doing.)*
+*Rationale: heal ≠ cure; the patient owns the cure; the Healer owns only the blind-spot attestation
+and the cut.*
+
 **S7 — Reassessment.** Continuous re-check; **revived ≠ cured**; the patient can deteriorate →
-re-triage. *Rationale: relapse-watch; observe durable artifacts; flag-and-vouch.*
+re-triage. *The re-check is the patient's self-invariant check* (see above), repeated; the Healer's
+S7 contribution is external attestation of blind-spot invariants + flag-on-evidence if the patient's
+check fails or is skipped. *Rationale: relapse-watch; observe durable artifacts; flag-and-vouch;
+patient-Dao not Healer-Dao for the check itself.*
 
 **S8 — Handoff (SBAR-analog) + the patient re-orient.** Structured transfer — Situation,
 Background, Assessment, Recommendation — Healer→Operator and Healer→Patient, audience-correct.
