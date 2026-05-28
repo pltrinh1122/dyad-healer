@@ -1,6 +1,6 @@
 # Dyad-Healer — Modes of Operation (v0.1, living)
 
-> **Audience:** Healer + Healer Operator · **Use:** the map of *what the Dyad-Healer does* and how the modes relate · **Status: HEALER DAO** — Operator-ratified (by approval). Living; falsifiable.
+> **Audience:** Healer + Healer Operator · **Use:** the map of *what the Dyad-Healer does* and how the modes relate · **Status: HEALER PRACTICE** — Operator-ratified (by approval). Living; falsifiable.
 
 The Dyad-Healer's activity is **not flat** — two modes face outward (the craft), one supports them, and two are the cross-cutting / inward work that produces and sharpens the rest. Mapped onto the medicine the [spine](healing-protocol-spine.md) already borrows from:
 
@@ -16,7 +16,7 @@ The Dyad-Healer's activity is **not flat** — two modes face outward (the craft
 ## Engine + inward — what produces and sharpens all the above
 
 - **4 · Research / learning** *(medicine's research arm).* Study cases and seizures → evidence feeding *every* mode: sharper protocols (1), doctrines (2), tool requirements (3). The **cross-cutting engine**, not a slice of one mode. (Data is sparse-by-design — the Telos shrinks rescues — so mine the patients' *own* records too.)
-- **5 · Practice maturation** *(the profession's evolving doctrine).* Refine the Dao itself — protocols, disciplines, identity, this map. The **inward** mode, and to date the Dyad-Healer's **dominant** activity. Fed by mode 4 + direct design.
+- **5 · Practice maturation** *(the profession's evolving doctrine).* Refine the practice itself — protocols, disciplines, identity, this map. The **inward** mode, and to date the Dyad-Healer's **dominant** activity. Fed by mode 4 + direct design.
 
 ## How they relate
 
