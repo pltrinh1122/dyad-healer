@@ -70,6 +70,12 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   `[POST-HOC]` in the DIP retrospective audit; this rule binds the fix as standing discipline.
   *(Lived: case-03 memories + spine refinements anchor-synced 2026-05-28 in commit `8214ceb`;
   future cycles bind this without ad-hoc decision.)*
+- **Glossary-check-at-ratification.** Any new cross-cutting token invoked **3+ times across
+  `kb/`** requires a `kb/glossary.md` entry in the **same ratification cycle**. Prevents the
+  late-glossary-arrival pattern that produced the *Dao→practice* friction-correction
+  (terminology drift accumulated for weeks before per-term audit became necessary). Glossary
+  v0.1 ratified 2026-05-28; this rule binds future cycles to canonicalize as terms emerge, not
+  retrospectively.
 
 ## Falsifiability — when to revise
 
