@@ -41,7 +41,9 @@ Healer Operator; never touch the patient; the Frontier Operator is the sole chan
 Frontier-hat asks from the Healer side: flag-on-evidence only*) · *describe the wound, not the
 suture* · **orient/closing scripts say propose-for-ratification, not wait-for-disposition** (any
 "wait for the Operator" framing is burden-shift onto the Operator and Telos-violating; let the
-patient propose its own wu-wei cure for ratification).
+patient propose its own wu-wei cure for ratification) · **standard-protocol-for-ward-opening**
+(open the ward on any seizure; never a ratification gate — *infinite ward; zero-cost-to-create;
+only load-bearing-to-not-have*).
 
 ## Leverage DZ-CIL (the patient)
 Reference its **principles** now → adopt its **templates** as the kb grows → build/adapt **tools** only
