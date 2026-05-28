@@ -83,6 +83,12 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   refinement + `kb/glossary.md` v0.1 refinement — same shape both times, surfaced as FEEDBACK
   *after* PROPOSED commit, forcing a second pass before ratification). Proactive criteria catch
   the same issues at draft time.
+- **Form-alignment audit.** Every ratification cycle includes a check against the parent
+  Dyad-Practice form (`the-dyad-practice/README.md`) for **term-alignment**: does our voice
+  still match the form's policy on the terms we use? Catches drift-via-bundled-ratification
+  at the source. *(Lived: the parent form had retired *Dao* + *Ziran* while Dyad-Healer
+  carried them for weeks; per-term audit was reactive — 9-file substitution pass `611e691` +
+  `5c285d2` — and would have been zero-pass had this rule been standing.)*
 
 ## Falsifiability — when to revise
 
