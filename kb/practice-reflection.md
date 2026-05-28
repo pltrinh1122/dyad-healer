@@ -76,9 +76,37 @@ patterns worth keeping.>
 <short closing — what's queued, what's next, any items promoted to backlog or memory>
 ```
 
-The Healer drafts details + stubs the Operator-narrative placeholders. The Operator either fills
-in their narrative or ratifies-as-is. *Both halves are required for completion* — the same
-discharge-completion criterion from spine S8 (incomplete handoff = un-closed loop).
+See **Integration sequence — the four-step form** below for how Healer and Operator collaborate
+on the content. *Both halves are required for completion* — the same discharge-completion
+criterion from spine S8 (incomplete handoff = un-closed loop).
+
+## Integration sequence — the four-step form
+
+Discovered via two FEEDBACK cycles in case-03 retrospective (2026-05-28). Collaboration between
+Healer and Operator on a reflection's content follows four ordered steps:
+
+1. **Healer-led narrative summary + bullets.** The Healer drafts both narrative summary AND
+   details bullets for each CSS section — grounding the Operator with substance before they
+   engage their POV. *(Replaces the prior "stub-placeholder" approach: the placeholder form
+   forced the Operator to write from blank page, raising cognitive load for what should be a
+   substrate-felt engagement.)*
+2. **Operator POV — *if any*.** The Operator provides their narrative for each section as it
+   fits, including skipping sections where they have no POV ("no POV for X" is valid; sections
+   where Healer-side is sufficient need no Operator narrative).
+3. **Healer falsification of Operator POV — grounded on chat history.** Falsifiability runs both
+   directions. The Operator can explicitly invoke this (*"falsify my observations"*) or the
+   Healer applies by default. Each POV claim gets tested against chat-history evidence + verdict
+   (survives / partially survives / falsified). Surviving claims feed integration; refined
+   claims get re-surfaced.
+4. **Healer integration → Operator final ratification.** Surviving Operator POV integrated into
+   the reflection's *Narrative (Operator)* sections, with the falsification trail noted in
+   italic asides. Operator ratifies the integrated final; status closure marker added.
+
+*Provenance:* discovered iteratively via FEEDBACK during case-03 retrospective — first FEEDBACK
+named the basic two-step (POV → ratification); second added the Agent-led grounding step
+(Healer narrative + bullets first); the Healer's instinct to falsify the Operator POV before
+integration completed the four steps. Each step earned its place via lived friction the prior
+form created.
 
 ## Where — `ledger/reflections/<date>-<scope>.md`
 
