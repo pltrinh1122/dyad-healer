@@ -2,8 +2,10 @@
 
 > **Audience:** Healer + Healer Operator · **Use:** the Healer's S9 learning harvest · **Codification
 > source:** **NO** — a reflection; its START items are *candidate* refinements. The Healer Operator
-> ratifies promotions. Two-substrate-paired per `kb/practice-reflection.md`; Operator narrative is
-> a placeholder pending engagement.
+> ratifies promotions. Two-substrate-paired per `kb/practice-reflection.md`.
+> **Status: RATIFIED 2026-05-28** — two-substrate-paired completion criterion met via the
+> discovered four-step retrospective form (Agent-led narrative+bullets → Operator POV → Healer
+> falsification grounded on chat history → Healer integration → Operator final ratification).
 
 **Case:** second seizure of the same `agy` session (2026-05-28), ~36 min after a morning Class-B
 WIP-N=1 seizure was quick-fixed. Surface = Class A reload-loop (schedule/kill/re-schedule);
