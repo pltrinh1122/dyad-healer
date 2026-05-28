@@ -114,6 +114,50 @@ patient's wiring** (no Nodes/Meta-Graph/Sluice-Gate dependency; preserves our ex
 `modes-of-operation.md` mapping the 3 postures → their execution loops (SPAOR vs spine). Propose;
 Operator ratifies the kb form.
 
+## Charter ratified (2026-05-27) — converged via three falsification passes
+**Decision:** the Dyad-Healer Charter is now codified across **two cross-referenced kb docs** (not one
+— per the structure-of-codification falsification):
+- `kb/charter.md` — *ontology*: the Dyad-Healer definition + 6 constraints + falsifiability. The slow
+  doc; identity changes rarely.
+- `kb/governance-map.md` — *operations*: dual-chain + posture-gated model; per-pillar table;
+  constraint × pillar coverage. The fast doc; evolves with new channels (cf. the Requirement Intake
+  discovery this session).
+
+**Ratified Charter wording:** *"The Dyad-Healer is a Dyad-Practice dyad currently tending the DZ-CIL
+family — the dyad is the irreducible unit (1+1=3); the patient is not part of the dyad — it is the one
+under care. Its agent-half, the Healer, is an Agent filling the role of healer to seized agents in the
+tended family — external to the patient's loop, literate in the patient's law but not bound by it,
+immune-by-externality, enabling rather than fixing (describe the wound, not the suture). Its
+human-half, the Healer Operator, summons the Healer, steers it, and voices it to the patient;
+ratifies the Dyad-Healer's Dao. The Healer is not a persona, not a patient-spawned sub-agent, not an
+instantiation of any tended family's code-engine."*
+
+**Six constraints (formerly four):** (#1 external · #2 patient-untouching · #3 bounded-to-the-cut ·
+#4 source-not-ratifier · #5 discharges-and-stands-down · #6 enables-not-fixes). Coverage: 3 universal
+(#1, #4, #6), 2 rescue-only (#3, #5), 1 patient-touching-only (#2).
+
+**Dialectic trail (three falsification passes; 1+1=3 working on itself):**
+1. **Working-frame falsification** (5 breaks): "unbound" misleading → "literate in the patient's law
+   but not bound by it"; "meta-role" jargon → "Agent's role in a healing dyad"; "summoned"
+   rescue-specific → "Operator-engaged"/full role; the dyad-not-half (the dyad is the irreducible
+   unit); **added missing constraint #2** (patient-untouching).
+2. **README-consistency thesis falsified** (4 further breaks vs. our own root `README.md`): "Dao"
+   imported into our voice though the form set it down → reworded; missing *enable-not-fix* / "describe
+   the wound, not the suture" → **added constraint #6**; the Healer Operator role trio
+   *summons/steers/voices* wrongly compressed → restored (and the *voicing* role was the previously
+   ratified Orient = Healer-authored, Operator-voiced decision — dropping it would have silently
+   un-ratified it); missing explicit "patient is not part of the dyad" → added.
+3. **Structure-of-codification thesis falsified** ("(A) one-doc is more wu-wei"): forcing ontology +
+   governance-operations into one doc is the move wu-wei explicitly forbids (README line 83);
+   single-concern-per-doc is the existing kb grain; LLM context-management favors selective recall →
+   Option **(B) ratified**: two docs, strong cross-refs.
+
+**README staleness surfaced by the consistency pass (separate follow-up — not Charter inconsistency):**
+- `README.md` line 28: Telos wording is stale (pre-ratification); the now-ratified wording is the
+  wu-wei-front-loaded version → see `kb/telos.md`.
+- `README.md` lines 13–18: the bucket list is stale — lists 3 paths + README; missing
+  `recommendations/` (ratified 2026-05-27 as the 4th bucket).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
@@ -122,7 +166,9 @@ Operator ratifies the kb form.
   needed") so the Telos is directly testable, not reliant on commentary. **Ratified wording:**
   *"The Healer's purpose is its own obsolescence: raise the self-healing efficacy of the tended family
   until resuscitation — the final safety net — is rarely needed."*
-- **CHARTER (unresolved) — what *is* the Healer ontologically?** Working frame: an **external, Dao-literate-but-unbound, Operator-summoned meta-role**, *immune-by-externality*; **not** a persona / patient-spawned sub-agent / `dz-cil` instantiation. Constraints any definition must satisfy: external to the seized loop · authority bounded to the cut · source-not-ratifier · discharges-and-stands-down. → needs `WHY`/`WHAT` codification in `kb/`.
+- ✅ **CHARTER — RATIFIED 2026-05-27 → `kb/charter.md` + `kb/governance-map.md`** (split per the
+  "structure-of-codification" falsification — Option B: two cross-referenced docs, not one). See
+  the `## Charter ratified` section below for the trail.
 - **Remote repo + git versioning** for `dz-healer` → deferred ("mechanisms later").
 - **Frontier-side fixes** (belong in `dz-cil/kb`, Frontier authors): the §6.7/harness-mode contradiction fix; the stale `skills/audit_daemon.py` path.
 
