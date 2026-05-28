@@ -179,6 +179,10 @@ do-no-harm / minimum cut · **point-don't-fix** (Healer recommends; patient rati
 **ground-intent-first** (re-establish Operator intent + current state before tasks) ·
 framing-not-channel (no imperatives in re-read paths) · emergency-stop = reflex / constructive =
 deliberate · authority bounded to the cut · sponge-count (no patient footprint) · external ward ·
+**standard-protocol-for-ward-opening** (open the ward as standard protocol on S2/S3; never a
+ratification gate. *"Infinite ward"; zero-cost-to-create; only load-bearing-to-not-have* — ER
+analogy: a station exists; the patient gets it; paperwork happens around the patient, not before.
+Surfaced as Operator IDEATE during case-03.) ·
 **minimal-necessary Operator input** (deliver the single orient *seed*, then observe — don't steer;
 the patient drives its own SPAOR loop; reserve input for emergency-halt; every extra driving input is a
 confounding variable that aggravates the heal) · **reduce-Operator-cognitive-load** (DZ-CIL Dao —
