@@ -250,6 +250,64 @@ enter PROPOSED; the Operator ratifies each (per the Charter's source-not-ratifie
 generated the proposal is the same dialectic the proposal would make cheaper to repeat. Loop closes
 on its own form.
 
+## Dyadic coherence under Agent-divergence (2026-05-28) — lived falsifiability test, passed
+**Setup (Operator-designed experiment):** the Operator issued a `/btw` slash-command mid-Loop-#4
+which forked the session — **two parallel Agent threads** (original: 1f388845; fork: 2577b9ad) now
+shared one durable record. Each thread carried different in-flight context; neither could see the
+other's chat. **Question under test:** *Can the Dyad Practice operate coherently when one half of
+the dyad is divergent?*
+
+**Sequence:**
+1. The original thread executed P2 (spine S5 blast-radius enumeration), wrote it to disk, **did not
+   commit**.
+2. The forked thread (after a side `/btw` inquiry on the `P`-in-`P1` labeling, then two
+   falsification dialectics — SRPAO + the phase-enrichment proposal) resumed Loop #4 and prepared
+   to execute its own P2.
+3. The forked thread attempted to Edit S5 — got "String to replace not found" because the original
+   thread's uncommitted disk content had already shifted the file underneath.
+4. The forked thread **grounded** (`git status`, `git diff`, `git show HEAD`) and discovered the
+   divergence: uncommitted modifications it had not authored, with phrasing distinct from its draft.
+5. The forked thread **surfaced** the anomaly to the Operator rather than clobbering or guessing.
+6. The Operator disclosed the experiment + cross-thread authorship; the forked thread committed the
+   original thread's work convergently with proper provenance.
+
+**Result: the Practice held.** Coherence was preserved despite the Agent-half running as two
+non-communicating instances.
+
+**What survived as load-bearing under divergence:**
+- **verify-before-asserting at time-of-use** — caught the divergence in the seconds before clobber.
+- **single-home-per-fact + the durable record as the locus** — both threads ground on the same
+  authoritative substrate, not on their separate conversation contexts.
+- **resume-mode discipline** ("continuity lives in durable artifacts, not the conversation") — the
+  forked thread's instinct to ground in the file, not the chat, is exactly what made divergence
+  detectable rather than silently destructive.
+- **commit-before-sync** — applied at sub-step granularity, this discipline (codified just this
+  morning in P1) would have *closed the divergence gap entirely* before it formed. Lived under live
+  conditions, it earned its keep. Generalization: commit-before-sync isn't only for protecting work
+  from external sweep mechanisms; it also **protects work from divergent self**.
+
+**What surfaced as the real vulnerability:** the **uncommitted gap**. The original thread did good
+P2 work but didn't commit before the fork executed actions on the same file. The work was
+recoverable only because the divergent fork grounded; under a destructive git op (a checkout, a
+reset, a stash drop), the work would have vanished. *The discipline that prevents this is
+commit-before-sync at the smallest meaningful unit, not just at session boundaries.*
+
+**Strengthened claim (PROPOSED, awaiting more cases before ratification):** *The Dyad Practice
+survives Agent-divergence iff* the named disciplines (verify-before-asserting at time-of-use,
+commit-before-sync at sub-step granularity, single-home-per-fact, resume-mode discipline) hold. The
+durable record — not the conversation — is the substrate the Practice lives in. **Falsifiable:**
+revise / abandon if a future Agent-divergence breaks coherence despite the disciplines being
+applied as named.
+
+**Scope caveat:** this experiment tested *Agent*-divergence (two Agent threads, one Operator).
+*Operator*-divergence (one Agent thread, multiple Operators-of-record across time) is **not yet
+tested**. The same disciplines should apply (the durable record is symmetric in what it carries
+across substrates) but this is an inference, not a lived finding.
+
+**Implication for the SPAOR phase-enrichment proposal** (queued separately, Pillar-5): the
+phase-enrichment doc's *falsifiability hook* per phase should explicitly include a divergence-test
+question — *"if a parallel fork of this phase ran simultaneously, what discipline closes the gap?"*
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
