@@ -222,7 +222,11 @@ at node boundaries; *run* = autonomy + merge gate; graduate as loop-free steps a
 Operator-side + idempotent (per framing-not-channel), never as a re-read imperative.) ·
 **resume-mode discipline** (`-c` on a seized/poisoned context is anti-Ziran — continuity lives in
 durable artifacts (ledger / wards / kb), not the conversation; `-c` on a healthy mid-task session is
-correct. On resume from any boundary, ground in the durable record, not the prior chat.) ·
+correct. On resume from any boundary, ground in the durable record, not the prior chat.
+**Concretely: always `git status` + `git diff HEAD` before any mid-edit operation across a session
+boundary** — the durable record's *file-state* is part of the substrate to ground in, not just its
+committed content. *Lived: parallel-fork P2 near-clobber 2026-05-28 morning caught by `git status`;
+case-03 external §2.x triangulation grounded in `git rev-parse` + `git status`.*) ·
 **intervention-threshold = default to bare `continue`** (let the patient self-heal; observe and
 flag-on-evidence, don't pre-empt. Intervene *more* than a bare `continue` only when **(a)** the next
 step is irreversible / high-blast — execute-with-care, then back-fill the ward; **(b)** the patient
