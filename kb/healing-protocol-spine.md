@@ -62,6 +62,14 @@ tier.
 - **No return-to-duty with an unaddressed critical condition.** A patient that recurred on an
   unaddressed cause is **not** cleared to "continue operating" → **heal-first.**
 - **Recurrence → escalate** to a definitive fix; don't repeat the quick fix.
+  - *Recurrence-within-session* (same `agy` conversation produces a second seizure of the same
+    failure-class without session-termination between) escalates **even harder** than
+    recurrence-across-sessions: the latent mechanism is being carried by the live session itself.
+    **In-session remediation is structurally insufficient when the failure-class is harness-level**;
+    recovery should require a fresh session, not a quick-fix-and-resume. *(Lived: case-03's morning
+    Class-B seizure was quick-fixed by worktree deletion + queued PR #1301; the session continued
+    and produced the afternoon's Class-B iatrogenic-injection seizure 36 min later, same
+    failure-class.)*
 - **RTD/continue** only when stable and no unaddressed critical condition remains.
 *This was the step we kept skipping by defaulting to "resume."*
 
