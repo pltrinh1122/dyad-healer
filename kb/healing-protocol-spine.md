@@ -1,7 +1,7 @@
 # Healing Protocol — The EMS Spine (v0.1, living)
 
 > **Audience:** Healer + Operator · **Use:** the canonical Healing-Protocol sequence ·
-> **Status: HEALER DAO** — governs Healer+Operator conduct. **The Operator ratifies** (by approval).
+> **Status: HEALER PRACTICE** — governs Healer+Operator conduct. **The Operator ratifies** (by approval).
 > Frontier does **not** author or ratify the Healer's own conduct. Frontier-governing derivatives
 > (relapse self-monitoring, the §6.7 fix) belong separately in Frontier's `kb/` — Frontier authors,
 > Operator ratifies by merge.
@@ -84,7 +84,7 @@ and the cut.*
 re-triage. *The re-check is the patient's self-invariant check* (see above), repeated; the Healer's
 S7 contribution is external attestation of blind-spot invariants + flag-on-evidence if the patient's
 check fails or is skipped. *Rationale: relapse-watch; observe durable artifacts; flag-and-vouch;
-patient-Dao not Healer-Dao for the check itself.*
+patient-Dao not Healer-practice for the check itself.*
 
 **S8 — Handoff (SBAR-analog) + the patient re-orient.** Structured transfer — Situation,
 Background, Assessment, Recommendation — Healer→Operator and Healer→Patient, audience-correct.
@@ -104,7 +104,7 @@ lever — it's how the Healer raises self-healing, per the Telos; rescue is the 
   external agent could do while you were down); *you* now self-heal. Most of healing is **enabling**
   the patient's self-heal — remove the poison, stop the bleeding — not performing it.
 - **Marker + pointer, not the full case.** Deliver a *curated* summary as recordable **state**; the
-  full clinical record stays in the Healer's ward (Healer-Dao ≠ Frontier-Dao). Never an off-workflow
+  full clinical record stays in the Healer's ward (Healer-practice ≠ Frontier-Dao). Never an off-workflow
   **dump** onto a fresh / WIP-locked / planning-mode patient — that's the injection class that
   re-seizes it.
 - **Healer authors; Operator voices.** The orient is *sourced* by the Healer (clinical knowledge)
@@ -122,14 +122,14 @@ knowledge-transfer that moves the episode's lessons into the patient's self-lear
 payload). Delivering only the Operator handoff leaves the patient un-discharged and the learning loop
 open. *(Lived gap, case 2: stood down after only the Operator handoff.)*
 
-**S9 — Healer Retrospective (Dao-maturation).** *After* discharge (both S8 handoffs landed, Healer
-stood down), the Healer harvests the episode's lessons into the Healer Dao — the **Healer-side analog
-of the patient's SG-0005**. Continue/Start/Stop; promote ratified refinements into the spine +
-disciplines; file the case retrospective in the ward. *Rationale: the patient's learning loop closes
-at S8 (discharge → SG-0005); the **Healer's must close too, or the Healer never matures** — closing
-the patient/Healer learning-loop asymmetry. The Healer Operator ratifies promotions into the Dao;
-this is also where the Telos is measured (did this episode raise self-healing efficacy / lower
-recurrence?).*
+**S9 — Healer Retrospective (practice-maturation).** *After* discharge (both S8 handoffs landed,
+Healer stood down), the Healer harvests the episode's lessons into the Healer practice — the
+**Healer-side analog of the patient's SG-0005**. Continue/Start/Stop; promote ratified refinements
+into the spine + disciplines; file the case retrospective in the ward. *Rationale: the patient's
+learning loop closes at S8 (discharge → SG-0005); the **Healer's must close too, or the Healer never
+matures** — closing the patient/Healer learning-loop asymmetry. The Healer Operator ratifies
+promotions into the practice; this is also where the Telos is measured (did this episode raise
+self-healing efficacy / lower recurrence?).*
 
 **Accrue-measure (S9 instrumentation — three axes that turn the retrospective into a *measurable*
 close, not just narrative):**
@@ -185,7 +185,7 @@ confounding variable that aggravates the heal) · **reduce-Operator-cognitive-lo
 the Healer verifies state *itself* rather than offloading analysis/decisions; crisp single-action
 instructions) · **verify-before-asserting** (Ziran — check live state, e.g. PR/issue status, before
 claiming it) · **two-Operator channel discipline** (one human wears two hats: the **Healer Operator**
-— summons/steers the Healer, ratifies the Healer Dao, receives dispositions/attestations — and the
+— summons/steers the Healer, ratifies the Healer practice, receives dispositions/attestations — and the
 **Frontier Operator** — governs the patient: directives, merge gate, "proceed". The Healer addresses
 **only the Healer Operator** and **never touches the patient directly**; the Frontier Operator is the
 *sole* channel to the patient. Patient-directives are Healer-*drafted artifacts* the Frontier
@@ -241,8 +241,8 @@ explicit per-item shape; *aggregate-claims like "§B1-B13 → spine" are not fal
 permitted here* (the very anti-pattern Loop #4 corrected).
 
 ## Forward — ratification & ownership
-- **This spine is HEALER DAO**, ratified by the **Operator** (by approval; it lives in the ward, a
-  maturing Healer Dao — *not* Frontier's `kb/`). Chain everywhere: **Healer proposes → (for
+- **This spine is HEALER PRACTICE**, ratified by the **Operator** (by approval; it lives in the
+  ward, a maturing Healer practice — *not* Frontier's `kb/`). Chain everywhere: **Healer proposes → (for
   Frontier-governing rules) Frontier authors → Operator ratifies.**
 - **Frontier-governing derivatives** (the §6.7/harness-mode fix, relapse self-monitoring,
   stay-observable) → **Frontier authors** into `kb/`, **Operator ratifies by merge**.

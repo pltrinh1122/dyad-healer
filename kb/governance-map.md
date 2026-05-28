@@ -4,12 +4,12 @@
 > bind across the 5 [modes](modes-of-operation.md) — the operational layer of the Charter. The fast
 > doc: governance evolves as we discover new channels (e.g. the patient's Requirement Intake channel
 > changed Pillar-2 mid-2026-05-27); the [Charter](charter.md) stays slow.
-> **Status: HEALER DAO** — Operator-ratified (by approval) 2026-05-27. Living; falsifiable.
+> **Status: HEALER PRACTICE** — Operator-ratified (by approval) 2026-05-27. Living; falsifiable.
 
 ## The model — dual-chain, posture-gated
 
 Two ratification chains run:
-- **Internal (Healer Dao):** Healer authors → **Healer Operator** ratifies *(by approval)*. Governs `kb/`,
+- **Internal (Healer practice):** Healer authors → **Healer Operator** ratifies *(by approval)*. Governs `kb/`,
   `recommendations/` artifacts, the Charter itself.
 - **External (patient-governing):** Healer files a prescription → patient triages → patient's own
   SPAOR authors a `node_contract` → **Frontier Operator** merges. The Healer never ratifies on the
@@ -17,13 +17,13 @@ Two ratification chains run:
 
 Authority is **posture-gated**:
 - **Exception** → Healer acts *without per-step ratification* (urgency, bounded by Charter #3); constraints replace the gate.
-- **Authoring / Building** → the Operator gates at every Dao-changing edge.
+- **Authoring / Building** → the Operator gates at every practice-changing edge.
 
 ## The two hats — one human, two seats
 
 | Seat | When active | What it does |
 |---|---|---|
-| **Healer Operator** | Pillars 2, 3, 4 *(only at promotion)*, 5 | Summons, steers, ratifies the Healer Dao; gates internal-chain artifacts. |
+| **Healer Operator** | Pillars 2, 3, 4 *(only at promotion)*, 5 | Summons, steers, ratifies the Healer practice; gates internal-chain artifacts. |
 | **Frontier Operator** | Pillars 1, 2 | Voices the Healer's content to the patient; promotes `status:triage`→`backlog`; merges patient PRs. |
 
 The hat-switch is what allows one human to govern both sides without violating two-channel discipline.
@@ -35,7 +35,7 @@ The hat-switch is what allows one human to govern both sides without violating t
 | **1 Rescue** | Exception | **None during the cut** (urgency, Charter #3 binds); post-rescue lessons promote via 4 / 5. | Healer Op *(summons, steers)* + Frontier Op *(voices to patient)*. |
 | **2 Prevention** | Authoring | **Both chains converge on one artifact** — internal: Healer Op approves the prescription · external: filing → triage → patient `node_contract` → Frontier Op merges. | Both hats. |
 | **3 Tooling** | Building | Internal only — Healer Op gates the *decision to build* + ratifies inclusion. | Healer Op. |
-| **4 Research** | Authoring | **No ratification for findings themselves** (authored → `wards/` / `ledger/`); only promotion to a Dao change crosses into Pillar 5's chain. | Healer Op *(only at promotion)*. |
+| **4 Research** | Authoring | **No ratification for findings themselves** (authored → `wards/` / `ledger/`); only promotion to a practice change crosses into Pillar 5's chain. | Healer Op *(only at promotion)*. |
 | **5 Maturation** | Authoring | Classic source-not-ratifier — PROPOSED → ratified (`kb/`). | Healer Op. |
 | **Operational** *(out-of-pillar)* | — | Not craft — bypasses the chains. | Healer Op *(explicit go for commit/push)*. |
 
@@ -54,7 +54,7 @@ The six Charter constraints apply unevenly:
 
 ## The shape that emerges
 
-1. **The Charter governs the *ratification edges*, not the work itself.** The Healer Operator is the gate at every Dao-changing boundary; in between, the Healer authors freely. That's why the constraint set is small and discrete.
+1. **The Charter governs the *ratification edges*, not the work itself.** The Healer Operator is the gate at every practice-changing boundary; in between, the Healer authors freely. That's why the constraint set is small and discrete.
 2. **The Healer Operator is the *hinge*** between the two chains — internal ratifier *and* (wearing the Frontier hat) the external channel. The hat-switch lets one human govern both sides cleanly.
 3. **Pillar 1 is the only pillar where the Healer acts *unratified in real time*** — and that is precisely why the rescue-only constraints (#3 bounded-to-the-cut, #5 discharges-and-stands-down) bind *hardest where the chain is suspended*. The constraints are the surrogate gate when the Operator can't be one.
 4. **Pillar 2 is the only pillar where the patient's governance also gates** — both chains run on the same artifact (e.g. `dz-cil#1233`: Healer Op approved the prescription locally; Frontier Op promoted triage→backlog; the patient authors its own `node_contract`).

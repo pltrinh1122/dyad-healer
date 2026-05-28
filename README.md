@@ -12,7 +12,7 @@ This repository is the workbench — where the craft is kept, practiced, and rec
 
 | Path | Holds | Home for |
 |---|---|---|
-| `kb/` | the ratified Dao — Charter, Telos, the healing-protocol spine (S0–S9), modes, execution loop, templates | *what we believe & how we work* |
+| `kb/` | the ratified practice — Charter, Telos, the healing-protocol spine (S0–S9), modes, execution loop, templates | *what we believe & how we work* |
 | `ledger/` | sustained decisions, dialectic, open questions, the by-pillar backlog | *why we decided & what's open* |
 | `wards/<case>/` | per-case clinical records (chart, orient, retrospective) | *what happened* |
 | `recommendations/` | Healer-authored prescriptions (filed to the tended family) | *what we prescribe* |

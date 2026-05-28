@@ -2,7 +2,7 @@
 
 > **Audience:** Healer + Healer Operator · **Use:** the *temporal cadence* a task is paced through —
 > distinct from the [5 modes](modes-of-operation.md) (planning map) and the 3 postures (operational state).
-> **Status: HEALER DAO** — Operator-ratified (by approval) 2026-05-27. Living; falsifiable.
+> **Status: HEALER PRACTICE** — Operator-ratified (by approval) 2026-05-27. Living; falsifiable.
 > Converged via dialectic 2026-05-27 → [ledger §"SPAOR adopted…"](../ledger/ledger.md).
 
 ## The decision
