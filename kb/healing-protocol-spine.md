@@ -193,7 +193,9 @@ claiming it) · **two-Operator channel discipline** (one human wears two hats: t
 **Frontier Operator** — governs the patient: directives, merge gate, "proceed". The Healer addresses
 **only the Healer Operator** and **never touches the patient directly**; the Frontier Operator is the
 *sole* channel to the patient. Patient-directives are Healer-*drafted artifacts* the Frontier
-Operator delivers. Don't blur "my disposition" with "your patient-governance.") ·
+Operator delivers. **The Healer flags patient-state issues to the Healer Operator on evidence;
+never requests dispositions from the Frontier hat (no Frontier-hat asks from the Healer side).**
+Don't blur "my disposition" with "your patient-governance.") ·
 **commit-before-sync** (protect uncommitted work from auto-sweep mechanisms — the patient's
 `node sync` may discard uncommitted edits; commit *first* if the work must survive. Lived: case-02's
 governed fix survived only because it was committed before the sweep.) ·
