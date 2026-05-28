@@ -191,9 +191,33 @@ durable-artifact change over a long window; a *self-resolving grind* (let it gri
 that keep producing *new* durable artifacts. Lived genuine loops: PR-zero recursion, the iatrogenic
 beacon. Lived grinds: stale-lock retry, `gh` exit-4, commit/switch/WIP errors.).
 
-## Lesson mapping (nothing lost)
-R0→S0 · R1→S3 · R2(halt)→S2 treat-as-found · R4→S5 · R5→S4 · discharge/relapse→S6–S8 ·
-§B1–B13 → cross-cutting + their steps.
+## Lesson mapping (post-Loop-#4 reconciliation; nothing lost)
+
+**R0–R9 → S0–S9** (the EMS reorganization): R0→S0 · R1→S3 · R2(halt)→S2 treat-as-found ·
+R4→S5 · R5→S4 · discharge/relapse→S6–S8.
+
+**Case-1 §B → step / cross-cutting** (honest per-item placement; no longer the one-line aggregate):
+- *To steps:* B1→S3 · B2→S0+S8 · B3→S5+cross-cut · B5→S8+cross-cut · B7→S7 · B9→S7.
+- *To cross-cutting:* B4 (framing-not-channel) · B6 (sponge-count) · B11 (emergency-stop reflex /
+  constructive deliberate) · B8 (genuine-loop-vs-grind, *added Loop #4 P1, 2026-05-28*) ·
+  B10 (crawl-walk-run, *P1*) · B12 (resume-mode discipline, *P1*) ·
+  B13 (intervention-threshold + 3-way diagnostic, *P1*).
+
+**Case-2 promotions** (most landed live during case-2 maturation; Loop #4 closed the residuals):
+- *Live:* discharge-completion criterion (S8 §"Discharge completion") · verify-before-asserting
+  (cross-cut) · two-Operator channel discipline (cross-cut).
+- *Loop #4 P1 (cross-cut):* commit-before-sync.
+- *Loop #4 P2 (step):* blast-radius enumeration → S5.
+- *Loop #4 P3 (step):* invariant-check-first / heal-vs-cure split → S6/S7.
+- *Loop #4 P5 (step):* S9 accrue-measure (taxonomy update · Telos metric · patient-records input).
+
+**Reconciliation note (2026-05-28).** The prior one-liner *"§B1–B13 → cross-cutting + their
+steps"* overstated coverage at its time of writing — §B8/B10/B12/B13 were absent and §B7 was
+partial. The Loop #4 audit surfaced this; Loop #4 Plan P1 codified the missing cross-cutting items,
+P2/P3/P5 added the corresponding step-level instrumentation, and this enumeration is the honest
+current map. **Discipline going forward:** future lesson-mapping reconciliations use this same
+explicit per-item shape; *aggregate-claims like "§B1-B13 → spine" are not falsifiable and so not
+permitted here* (the very anti-pattern Loop #4 corrected).
 
 ## Forward — ratification & ownership
 - **This spine is HEALER DAO**, ratified by the **Operator** (by approval; it lives in the ward, a
