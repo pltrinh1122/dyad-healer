@@ -327,6 +327,12 @@ read the backlog for current state.
    reconcile claimed-vs-actual promotions (blast-radius marked "Promoted: S5/S7" but absent from spine);
    build the seizure-class taxonomy; enhance S9 → accrue-measure (taxonomy + Telos metric + patient-records source).
 
-**Deferred (no action until warranted):** origin URL → `dyad-healer.git` (Operator runs `git remote
-set-url`) · dir-rename `dz-healer`→`dyad-healer` · repo-wide "Healer Dao"→craft-term · async
-rec-generation via `/goal` (verifiable completion) or background Agent.
+**Deferred (no action until warranted):** dir-rename `dz-healer`→`dyad-healer` · repo-wide
+"Healer Dao"→craft-term · async rec-generation via `/goal` (verifiable completion) or background Agent.
+
+**Update 2026-05-27 (evening) — push unblocked, partial rename landed:** the prior "push 🚫 blocked"
+claim is STALE. `git push origin main` succeeded; all session commits (through `c0e5cad`) are on
+`origin`. Server response surfaced a **completed server-side rename** to `pltrinh1122/dyad-healer`
+(push went through via redirect). **Remaining actionable:** local origin URL alignment —
+`git remote set-url origin git@github.com:pltrinh1122/dyad-healer.git` (Operator runs, per the
+original deferred plan). Dir-rename still pending separately.
