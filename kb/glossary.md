@@ -49,7 +49,8 @@
 - **the form-alignment audit** `[our-coined]` — periodic check that our voice hasn't re-imported terms the parent form considered + dropped (cf. the *Dao* retirement 2026-05-28). Discipline-gap currently un-codified; queued as Pillar-5 backlog item.
 - **Practice Reflection** `[our-coined]` — the *meta-S9*: a structured Continue/Start/Stop (CSS) reading of our own practice at *natural rest points*, paired between substrates (Healer details + Operator narrative). Closes the *non-clinical* learning loop the spine's S9 closes only for cases. → [`practice-reflection.md`](practice-reflection.md). Stored in `ledger/reflections/`. *Sparse-by-design* (not every session ends with one).
 - **Continue/Start/Stop (CSS)** `[our-coined]` — the three-section format for retrospectives + practice reflections: *what worked / what to do better / what hurt or almost did.* Form: `wards/case-*/retrospective.md`, [`practice-reflection.md`](practice-reflection.md).
-- **natural rest point** `[our-coined]` — Operator-judged moment of session/milestone closure where a Practice Reflection earns its keep. Examples: Loop closure, session-end after substantial convergence, ratification cycles that resolved long-standing dialectics. *Not every session ends at one.*
+- **natural stop** `[our-coined]` — Operator-*judged* moment with the character of a rest point (Loop closure, milestone, mid-session convergence). Heuristic trigger for a Practice Reflection. *Sparse-by-design* — not every session has one. Sibling of *explicit stop*. → [`practice-reflection.md`](practice-reflection.md) §When.
+- **explicit stop** `[our-coined]` — Operator-*declared* end-of-session with intent to `/exit`. Deterministic trigger for a Practice Reflection: *always* fires; the reflection must be **committed before `/exit`** (commit-before-sync at session boundary). Sibling of *natural stop*. → [`practice-reflection.md`](practice-reflection.md) §When.
 
 ## Our discipline (cross-cutting tokens)
 

@@ -18,16 +18,35 @@ A **Practice Reflection** is the *non-clinical* S9 — taken at natural rest poi
 learning loop for the meta-work. Without it, validated success patterns drift out of memory between
 sessions; corrections accumulate but the *positive* patterns the dyad has earned don't.
 
-## When — natural rest points
+## When — two trigger types
 
-Operator-judged. Examples:
+### Natural stop (Operator-judged; heuristic; sparse-by-design)
+A moment that has the *character* of a rest point. Examples:
 - Loop closure (e.g., Loop #4 P1–P6 ratified + adjacent closing work landed).
-- Session-end, when substantial work converged.
-- Milestone moments (a ratification cycle that resolved a long-standing dialectic; a friction-correction
-  that retired a term; a discipline that just earned its keep).
+- Milestone moments (a ratification cycle that resolved a long-standing dialectic; a
+  friction-correction that retired a term; a discipline that just earned its keep).
+- Mid-session pause where substantial work converged.
 - Anytime the Operator surfaces *"rest point"*.
 
-Not every session ends with a reflection — only those that earned one. **Sparse-by-design.**
+Not every session has one — only those that earned one.
+
+### Explicit stop (Operator-declared; deterministic; always triggers a reflection)
+The Operator declares end-of-session — typically because they need to rest for the day or step away
+— with intent to `/exit`. *Always* triggers a reflection: captures what the session accumulated
+before the active context dissolves. The reflection becomes part of the [resume-mode
+discipline](healing-protocol-spine.md) — the next session starts by reading the most recent
+reflection from `ledger/reflections/` as part of grounding.
+
+### Completion before `/exit` (explicit-stop discipline)
+An explicit-stop reflection must be **committed to the durable record before `/exit`**:
+1. Healer drafts the reflection (Healer-half details + Operator-narrative placeholders).
+2. Healer commits the draft (closes the commit-before-sync gap; preserves work if `/exit` interrupts).
+3. Operator either *fills* the narrative or *ratifies-as-is*.
+4. Healer commits the closure (status: complete, two-substrate-paired).
+5. Then `/exit`.
+
+This sequencing ensures the reflection survives the conversation. Skipping step 2 (uncommitted draft
++ `/exit`) loses the reflection — the divergence-gap pattern from the parallel-fork lesson applies.
 
 ## Format — Continue / Start / Stop, two-substrate-paired
 
