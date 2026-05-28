@@ -84,10 +84,32 @@ Terms once in our voice, deliberately removed. Recorded here so the retirement i
 
 ## Falsifiability — when to revise the glossary
 
-- An entry **drifts from usage** in the practice → revise the entry OR amend the usage; the canonical home (per Authority convention) wins.
-- A new term is invoked **3+ times across kb/** without an entry → add an entry (PROPOSED → ratified).
-- A term once entered turns out to be drift from the parent form → retire it (move to §Friction-corrected), document the rationale, run the substitution.
-- The glossary itself accumulates **>50 entries** → consider splitting by domain (the lifecycle discipline applies).
+- **Orthogonality (proactive, at proposal time).** Before adding a new entry, the Healer audits
+  it against existing entries on three axes:
+  - **Definition (primary):** what the term means semantically.
+  - **Scope (secondary):** what the term covers in the practice (its application domain).
+  - **Provenance (sanity):** form / our-coined / patient / retired tag.
+
+  **Criterion:** the new entry must differ *distinctly* on at least one of {definition, scope}
+  from every existing entry. **Aliases are OK if explicitly labeled** in the entry body
+  (e.g., *"shorthand for X"*, *"adjective form of Y"*, *"sub-case of Z"*) — *unlabeled overlap is
+  conflation.* **Disqualifying patterns:** **(i)** two entries with overlapping definitions and no
+  scope/alias distinction → propose a *merge* (one entry with the others as labeled aliases);
+  **(ii)** entry is a strict sub-case of another with no distinguishing axis → propose a *split*
+  in the parent entry OR annotate the new entry as *nested under [parent term]*. The Operator
+  ratifies the audit result alongside the entry.
+- **Conflation detected in lived use** (a future Healer can't determine which entry to look up;
+  two entries get cited together for the same concept; one entry's definition is found to be a
+  refinement of another's) → re-run the orthogonality audit; merge, split, or annotate. Same
+  Operator-ratifies discipline as proactive.
+- An entry **drifts from usage** in the practice → revise the entry OR amend the usage; the
+  canonical home (per Authority convention) wins.
+- A new term is invoked **3+ times across kb/** without an entry → add an entry (PROPOSED →
+  ratified, including the orthogonality audit above).
+- A term once entered turns out to be drift from the parent form → retire it (move to
+  §Friction-corrected), document the rationale, run the substitution.
+- The glossary itself accumulates **>50 entries** → consider splitting by domain (the lifecycle
+  discipline applies).
 
 ## Cross-references
 
