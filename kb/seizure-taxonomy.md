@@ -72,14 +72,33 @@ episode updates this catalog before its lessons are promoted.
 ## Self-extension protocol
 1. A **new class** is *proposed* by the Healer when a future case exhibits a seizure pattern
    that cannot be reduced to an existing class.
-2. Each class entry must carry **all four fields** (symptom · cause · detector · ward-evidence)
+2. **Orthogonality test (proactive, at proposal time).** Before submitting a new class, the Healer
+   runs an *overlap audit* against every existing class on three axes:
+   - **Cause (primary axis):** the proposed cause must not be a *refinement* or *sub-case* of an
+     existing class's cause. If it is → propose a *class-split* (along the refined axis), not a new class.
+   - **Symptom (secondary axis):** the proposed symptom signature must be observably distinguishable
+     from every existing class's symptom in the cognitive-layer record (transcript).
+   - **Ward-evidence (sanity axis):** at least one ward must exemplify the proposed class such that
+     re-classifying it under any existing class would *lose* distinctive cause-or-symptom information.
+
+   **Criterion for orthogonality:** the proposed class differs *distinctly on at least two of
+   {cause, symptom, ward-evidence}*. **Detector overlap is *not* disqualifying** — Classes A and B
+   share `cadence/liveness` legitimately (the detector catches both blindness modes; they differ on
+   cause + symptom). What disqualifies a proposal is: **(i)** overlap on **cause** with no
+   distinguishing **symptom** → propose a *merge*; **(ii)** overlap on **symptom** with no
+   distinguishing **cause** → propose a *merge*; **(iii)** cause is a *strict refinement* of an
+   existing class → propose a *split*, not a new class.
+
+   The audit result + classification (new class / split / merge / reject) is included in the
+   proposal; the Operator ratifies the *classification* alongside the *content*.
+3. Each class entry must carry **all four fields** (symptom · cause · detector · ward-evidence)
    before submission for ratification.
-3. Per the [Charter](charter.md) source-not-ratifier: the **Healer proposes**; the **Operator
-   ratifies** (the addition, the class-merge, or the rejection).
-4. Per the [Telos](telos.md): as the taxonomy grows and detectors mature, **recurrence frequency
+4. Per the [Charter](charter.md) source-not-ratifier: the **Healer proposes**; the **Operator
+   ratifies** (the addition, the class-merge, the split, or the rejection).
+5. Per the [Telos](telos.md): as the taxonomy grows and detectors mature, **recurrence frequency
    declines** toward the asymptote (*resuscitation rarely needed*). This catalog operationalizes
    the metric.
-5. The Healer **must not delete** a class on Healer authority alone; obsolete classes are
+6. The Healer **must not delete** a class on Healer authority alone; obsolete classes are
    *retired* (marked retired with the case that obsoleted them), preserving the audit trail.
 
 ## Falsifiability — when to revise or merge
