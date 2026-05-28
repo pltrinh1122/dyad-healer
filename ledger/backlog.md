@@ -74,8 +74,7 @@
 
 ## Operational (out-of-pillar) — VCS / infra chores; not craft
 ### Open
-- [ ] **Commit** the uncommitted dz-healer files (local; push still 🚫 blocked by exfiltration classifier) → ledger OPEN LOOP #3
 - [ ] ⏸ Repo dir/remote rename `dz-healer`→`dyad-healer` (deferred; push blocked) → ledger Decisions
 - [ ] ⏸ Set origin URL → `dyad-healer.git` (Operator runs `git remote set-url`) (deferred)
 ### Done
-- [x] *(none yet)*
+- [x] **Loop #3 commit** 2026-05-27 — 2 commits on `main` (`577d6e7` ratified Dao layer + `6257152` dialectic & outputs); working tree clean. Push remains 🚫 blocked.
