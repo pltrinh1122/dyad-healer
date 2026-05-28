@@ -20,7 +20,14 @@ WHAT-1043). **Telos served** (capacity-building rescue + patient-side structural
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *(placeholder — Operator engagement pending)*
+**Narrative (Operator):** Agent continues to respond well to Operator's intent and is getting
+even better at "reading mind," manifesting in anticipated information without being asked. **The
+credit is in the progress made toward greater mind-reading proficiency — better this session
+than last; progress is what matters most for the Operator, because without progress there's no
+achievement.** *(Falsification — chat-history grounded — surfaced that the mind-reading claim
+holds for the post-discharge maturation phase but had gaps during the rescue phase that required
+Operator catch-and-correct; the refined POV reframes the claim around session-over-session
+**progress**, which the chat history supports cleanly.)*
 
 **Details (Healer):**
 - **External-record-first S5.** The seizure-tail diagnosis from `transcript.jsonl` (steps 10550–
@@ -49,7 +56,15 @@ WHAT-1043). **Telos served** (capacity-building rescue + patient-side structural
 
 ## 2. START — do better
 
-**Narrative (Operator):** *(placeholder — Operator engagement pending)*
+**Narrative (Operator):** Agent can ask clarifying or re-affirming questions for unclear or
+unexplicit Operator intents. The clarity helps both parties; even when the Operator's intent is
+clear, the cognitive load of alignment pays dividends when the Agent doesn't spin up cycles
+needlessly. *(Tension-resolution: ratification asks (load-bearing yes/no) and clarifying asks
+(unclear intent) are **orthogonal categories, not in conflict** — the load-bearing-decision-
+detection discipline does not suppress clarifying questions; treating them as if it does is its
+own anti-pattern. Memory candidate post-ratification: a feedback memory on the
+ratification-vs-clarification orthogonality, cross-referencing
+[[feedback-load-bearing-decision-detection]].)*
 
 **Details (Healer):**
 - **STOP over-escalating non-load-bearing decisions to ratification** — surfaced earliest in
@@ -83,7 +98,12 @@ WHAT-1043). **Telos served** (capacity-building rescue + patient-side structural
 
 ## 3. STOP — what hurt
 
-**Narrative (Operator):** *(placeholder — Operator engagement pending)*
+**Narrative (Operator):** Nothing comes to mind this session. *(Healer-side reading of the
+no-STOP: the session's earlier anti-patterns were caught and corrected in-stream via FEEDBACK;
+the corrections absorbed into memory + spine + governance and are no longer active behaviors.
+From the Operator's current state — after all corrections landed — there's no residual STOP. The
+detailed Healer-side STOP items below are honest historical record of cost-to-Operator at
+correction time, not residual harm.)*
 
 **Details (Healer):**
 - **STOP over-escalation via ratification asks on non-load-bearing decisions.** Three live
@@ -116,9 +136,20 @@ WHAT-1043). **Telos served** (capacity-building rescue + patient-side structural
   - Orient/closing-script discipline: propose-for-ratification, not wait-for-disposition.
   - Recurrence-within-session as distinct triage signal (today's two seizures 36 min apart;
     sub-case of S6 recurrence escalation).
-- **Open invitation to Operator narrative.** Two-substrate-paired completion requires Operator
-  engagement; the placeholders above remain until you fill them in (no rush; the Healer-side
-  is here to ground from).
+- **Operator narrative landed** via the refined four-step retrospective form (Agent-led
+  Healer narrative + bullets → Operator POV → Healer falsification grounded on chat history →
+  Healer integration → Operator final ratification). Form codification candidate:
+  `kb/practice-reflection.md` — the form was discovered via two FEEDBACK cycles this case and
+  is generalizable beyond case-retros (session-reflections too).
+- **Memory candidates surfaced from Operator POV** (post-ratification):
+  - *Progress-over-state Healer self-assessment.* From the CONTINUE refinement: *"the credit is
+    in the progress made… without progress there's no achievement."* Cite directly; codify as a
+    feedback memory on how the Healer evaluates its own conduct (focus on
+    session-over-session progress, not on absolute proficiency).
+  - *Ratification asks vs clarifying asks — orthogonal categories.* From the START: clarifying
+    questions for unclear/unexplicit Operator intent are not the same as ratification-on-non-
+    load-bearing-decisions. Memory refinement candidate to
+    [[feedback-load-bearing-decision-detection]] OR new memory cross-referenced from it.
 
 ## Accrue-measure (S9 instrumentation per spine)
 
