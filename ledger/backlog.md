@@ -48,13 +48,13 @@
 
 ## Pillar 4 · Research / learning — a finding / evidence artifact (cross-cutting engine; feeds 2 & 5)
 ### Open
-- [ ] **Extraction audit (findings half):** mine case CONTINUE-patterns (commit-before-sync, blast-radius, invariant-check-first, crawl-walk-run); reconcile claimed-vs-actual promotions (e.g. blast-radius marked "Promoted S5/S7" but absent from spine = a gap-finding); build the seizure-class taxonomy. `→⟶` feeds the pillar-5 codify item.
 ### Done
 - [x] **Collateral-regression finding** — first seizure's true blast radius (GLOSSARY + README clobber via `f42b58b`); new harm class identified → ledger "Major finding"
+- [x] **Loop #4 audit findings** — reconciliation table (≥9 gaps not 4; spine line 120 lesson-mapping itself overstates) + seizure-class taxonomy (Class A reload-loop / B harness↔Dao freeze / C collateral regression) → ledger "Loop #4"
 
 ## Pillar 5 · Maturation — a change to our own Dao (inward; dominant to date)
 ### Open
-- [ ] **Codify extraction findings into the Dao** (the other half of the learning-loop): promote validated CONTINUE-patterns into `kb/`; close the claimed-vs-actual gaps in the spine; enhance S9 → accrue-measure (Telos metric + patient-records source). `⟵→` depends on the pillar-4 findings.
+- [ ] **Execute Loop #4 Plan (P1–P6)** — RATIFIED 2026-05-27, deferred to next session for SPAOR phase-gating to bind the Act phase. Spine cross-cutting additions (P1) · S5 blast-radius enumeration (P2) · S6/S7 invariant-check-first (P3) · new `kb/seizure-taxonomy.md` (P4) · S9 accrue-measure enhancement (P5) · spine line-120 lesson-mapping reconciliation (P6). Sense input lives in ledger §"Loop #4". `⟵→` depends on the ratified pillar-4 findings.
 ### Done
 - [x] **CLAUDE.md** operating discipline codified (loadable anchor; verify-before-asserting)
 - [x] **`modes-of-operation.md`** ratified (5 modes + 3 postures)

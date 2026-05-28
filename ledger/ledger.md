@@ -158,6 +158,56 @@ instantiation of any tended family's code-engine."*
 - `README.md` lines 13–18: the bucket list is stale — lists 3 paths + README; missing
   `recommendations/` (ratified 2026-05-27 as the 4th bucket).
 
+## Loop #4 — extraction audit + ratified codification plan (2026-05-27)
+**Sense phase (this session, pre-restart) complete + Operator-ratified. Act/Observe/Reflect deferred
+to next session so SPAOR phase-gating (`kb/execution-loop.md`) actually binds the codification work
+— the un-gated discipline is what slips on long-context Act phases (`CLAUDE.md` NON-NEGOTIABLE; the
+exact failure mode SPAOR is for).**
+
+### Findings (Pillar-4 output — evidence)
+**Audit was wider than the original framing.** The ledger named 4 patterns; the honest gap-count is
+**≥9**, and the spine has a **self-claimed-vs-actual mismatch** that mirrors the original gap-finding.
+
+**Reconciliation table:**
+| Pattern | Claimed in retro | Actual in `kb/spine` | Verdict |
+|---|---|---|---|
+| `commit-before-sync` (case-02) | — | absent | gap |
+| **`blast-radius` audit** (case-01 + case-02) | *"Promoted: S5/S7"* (case-02 retro:31) | **absent from S5/S7** | **claimed-but-not-applied** |
+| `invariant-check-first` (case-02) | — | absent | gap |
+| `crawl-walk-run` (case-02 + case-01 §B10) | — | absent | gap |
+| discharge completion criterion | "Promoted" | spine 86–91 ✓ | applied |
+| two-Operator channel discipline | "Promoted" | spine 112–117 ✓ | applied |
+| verify-before-asserting | "Promoted: cross-cutting" | spine 111 + CLAUDE.md ✓ | applied |
+| flag-and-vouch | (via spine's §B mapping claim) | spine S7 ✓ | applied |
+
+**Extended gap (§B-mapping line 120 itself overstates coverage):**
+- §B7 *observe durable artifacts (not phase churn)* — partial in S7; "not phase churn" absent.
+- §B8 *genuine-loop vs self-resolving-grind* — absent.
+- §B10 *crawl-walk-run* — absent.
+- §B12 *resume-mode (`-c` poisoned vs healthy)* — absent.
+- §B13 *intervention threshold / bare-`continue` default / source-insufficiency diagnostic* — partial; diagnostic-duty framing absent.
+
+### Seizure-class taxonomy (Pillar-4 output — structure)
+Three classes in evidence; the taxonomy self-extends per Telos:
+- **Class A — Reload-loop seizure** (case-01). Cycling reload; cause: framing-as-channel (imperative in re-read ROM). Detector: cadence/liveness.
+- **Class B — Harness↔Dao contradiction freeze** (case-02). Telemetry-silent loop; cause: rule-conflict mid-step. Detector: cadence/liveness (both A & B → `dz-cil#1233`).
+- **Class C — Collateral regression** (case-01 major finding). Post-seizure durable-doc clobber; cause: ephemeral-context loss propagating into the durable record. Detector: blast-radius audit + atomic-commit hygiene (the latter is *patient*-Dao, not Healer-Dao).
+
+### Plan (Pillar-5 — RATIFIED 2026-05-27; execute next session post-restart)
+| # | Where | What |
+|---|---|---|
+| **P1** | spine §Cross-cutting | Add: `commit-before-sync` · crawl-walk-run · resume-mode discipline · intervention-threshold (bare-`continue` default + 3-way diagnostic) · genuine-loop-vs-grind |
+| **P2** | spine **S5** | Add *blast-radius enumeration* — full diff, not the first victim (case-01 collateral-regression finding) |
+| **P3** | spine **S6/S7** | Add `invariant-check-first` — patient runs own self-invariant check first (Auditor function); Healer attests externally. Codifies the heal-vs-cure split. |
+| **P4** | new **`kb/seizure-taxonomy.md`** (PROPOSED at creation) | Living catalog — Class A/B/C as above; each class carries symptom · cause · detector · ward-evidence. Self-extends. |
+| **P5** | spine **S9** | Enhance with accrue-measure axes: (a) taxonomy update · (b) Telos metric (recurrence frequency over time — from `kb/telos.md`) · (c) patient-records as Healer S9 input (sparse-by-design) |
+| **P6** | spine line 120 (lesson-mapping) | **Reconcile self-claim** — after P1–P3 land, rewrite to honestly enumerate which §B items live in cross-cutting vs in steps; drop the overstatement |
+
+### Restart contract
+On next session, the Healer (a) reads this section as the Sense input, (b) executes P1–P6 under SPAOR
+phase-gating, (c) for any P that requires a sub-dialectic, Sense→Plan first before Act. New kb docs
+enter PROPOSED; the Operator ratifies each (per the Charter's source-not-ratifier).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
