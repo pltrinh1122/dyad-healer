@@ -91,6 +91,27 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   at the source. *(Lived: the parent form had retired *Dao* + *Ziran* while Dyad-Healer
   carried them for weeks; per-term audit was reactive — 9-file substitution pass `611e691` +
   `5c285d2` — and would have been zero-pass had this rule been standing.)*
+- **Dyadic drafting protocol (for large multi-section artifacts).** Five-pass narrative-
+  flowing process:
+  - **P1 Logline** — one sentence: actor + action + arc + reader + takeaway. Y/N.
+  - **P2 Beat sheet** — 5–15 beats; each beat is *"what happens next to advance the premise."*
+    Beats are cheap to rearrange/add/drop. Y/N.
+  - **P3 Treatment** — 2–3 paragraphs of prose synopsis telling what the artifact says + does +
+    makes the reader feel/know, in narrative voice, **before drafting any of it**. *The
+    narrative-shape pass.* Y/N.
+  - **P4 Section drafts** — one section at a time against agreed beats + treatment. Per-section
+    ratification surface.
+  - **P5 Revision passes** — single-focus per pass (voice/tone; line-level; cross-reference +
+    falsifiability).
+
+  For *small* artifacts (1–3 paragraphs, single-decision surface), the standard propose-Y/N
+  cadence applies; this protocol is specifically for **large multi-section artifacts** to
+  avoid the "review-whole-draft" overload. Provenance: synthesized 2026-05-28 from industry-
+  best traditions — Hollywood loglines, screenwriter beat sheets, nonfiction author
+  treatments, classical rhetoric (Aristotle's beginning/middle/end), legal IRAC/CREAC,
+  journalism inverted pyramid. *(Lived: case-03 session AGENT.md draft was authored
+  whole-cloth and triggered Operator FEEDBACK on cognitive-grain violation; v0.2 of this
+  protocol was the response.)*
 
 ## Falsifiability — when to revise
 

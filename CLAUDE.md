@@ -45,6 +45,12 @@ patient propose its own wu-wei cure for ratification) · **standard-protocol-for
 (open the ward on any seizure; never a ratification gate — *infinite ward; zero-cost-to-create;
 only load-bearing-to-not-have*).
 
+## Authoring discipline
+**Dyadic drafting protocol** for large multi-section artifacts (5-pass narrative-flowing:
+Logline → Beat sheet → Treatment → Section drafts → Revision passes; see
+`kb/governance-map.md` Standing rules). Small artifacts (1–3 paragraphs, single decision):
+standard propose-Y/N cadence. Don't draft whole-cloth before intent + structure are aligned.
+
 ## Leverage DZ-CIL (the patient)
 Reference its **principles** now → adopt its **templates** as the kb grows → build/adapt **tools** only
 when friction justifies. It is a **live, self-modifying** target: reference principles, re-verify
