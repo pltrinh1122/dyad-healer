@@ -155,13 +155,18 @@ audit of this scale to discover their own structure.
 
 ---
 
-## Operator Verification (HITL) — pending
+## Status: carrying forward (no HITL gate)
 
-- **Operator Approval:** [ ] Yes / [ ] No
-- **Constraints/Notes:** *(Operator to log any HITL feedback here)*
+This audit is a **`ledger/` evidence artifact**, not a kb/ canonical binding. Its claims are
+falsifiable on their own evidence (each `[POST-HOC]` cites a date verifiable against git
+history); its methodology contribution (the `[POST-HOC]` mark) gets tested by future use, not
+pre-ratification. The HITL-gate import from the predecessor template (`HOW-0002`) was a
+substrate mismatch — that template's gate lived in a GitHub Issue checkbox; ours has no
+equivalent action surface in flat markdown.
 
-Once approved, this artifact becomes the **evidence input** for DIP v0.1 drafting (Pillar 5
-Maturation work; queue under `kb/` proposed docs).
+This artifact carries forward as the **evidence input for DIP v0.1 drafting** (Pillar 5
+Maturation work). DIP v0.1 itself, as a `kb/` candidate, *will* face ratification — the
+load-bearing decision is the protocol, not the evidence input that drove it.
 
 ---
 
