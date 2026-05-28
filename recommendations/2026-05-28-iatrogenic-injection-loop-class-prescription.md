@@ -4,14 +4,11 @@ Source:   Dyad-Healer (external observer / the Healer). Filed by the Healer per 
           contribution process: README.md §"Contributing & Requirement Intake" mandates the
           **Requirement Intake** issue template (.github/ISSUE_TEMPLATE/requirement_intake.md) for
           external entities "e.g., the Healer".
-Title:    Intake: Suppress iatrogenic-injection loops (re-injected meta-imperatives forcing per-step
-          tool re-evaluation)
-Label:    status:triage   ← per the prior #1233 finding the real label is `status:triage`, NOT bare
-          `triage` (patient-side docs defect, still open).
-File with (header stripped):
-  sed '/^<!--/,/^-->/d' <this-file> | gh issue create --repo pltrinh1122/dz-cil \
-    --title "Intake: Suppress iatrogenic-injection loops (re-injected meta-imperatives forcing per-step tool re-evaluation)" \
-    --body-file - --label "status:triage"
+Title:    Intake: Suppress iatrogenic-injection loops in agy harness
+Label:    NONE explicitly assigned. Per Operator NOTE 2026-05-28: rely on the patient's automatic
+          templating system; we don't presume how the patient manages labels.
+Status:   FILED 2026-05-28 → https://github.com/pltrinh1122/dz-cil/issues/1307 (OPEN, unlabeled
+          at filing; patient's triage workflow will label per its own process).
 =======================================================================================================
 -->
 

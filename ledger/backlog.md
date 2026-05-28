@@ -33,12 +33,14 @@
 ### Done
 - [x] **case-01** PR-zero revival — seized loop resuscitated, cured & proven on real restart, discharged → `wards/case-01-pr-zero-revival/`
 - [x] **case-02** harness↔Dao relapse — telemetry-silent loop, halted + restarted into pending state, discharged → `wards/case-02-harness-dao-relapse/`
+- [x] **case-03** iatrogenic-injection loop — schedule/kill/re-schedule cycling driven by re-injected EPHEMERAL_MESSAGE meta-imperative; hybrid A+B+C; second seizure of same `agy` session 36 min after morning's WIP-N=1 quick-fix. Patient self-healed cleanly via Operator-ratified Happy Path (`reset --hard origin/main` inheriting #1295 → §2.3+§2.5 co-cured; targeted hygiene → §2.6; 1294 abandonment → §2.4 baseline). All 6 §2.x PASS by patient verification + external Healer triangulation. Discharged 2026-05-28 → `wards/case-03-iatrogenic-injection-loop/`
 
 ## Pillar 2 · Prevention — prescription delivered to the tended family (proactive; the Telos's heart)
 ### Open
 - [ ] **Frontier-side fix recs** (file via Requirement Intake template): the §6.7/harness-mode contradiction; the stale `skills/audit_daemon.py` path (actual: `drivers/audit_daemon.py`); the intake docs' **`triage` vs `status:triage`** label mismatch (template front-matter + README CLI example reference a nonexistent `triage` label) → ledger "Open questions"
 ### Done
 - [x] **Audit-daemon liveness/heartbeat rec — FILED** → [dz-cil#1233](https://github.com/pltrinh1122/dz-cil/issues/1233) (`status:triage`); Healer filed directly via the patient's Requirement Intake template; harmonized SG-0002/SG-0003
+- [x] **Iatrogenic-injection loop class prescription — FILED** 2026-05-28 → [dz-cil#1307](https://github.com/pltrinh1122/dz-cil/issues/1307) (OPEN, unlabeled at filing — patient triage). Definitive fix at harness layer for the EPHEMERAL_MESSAGE meta-imperative re-injection mechanism; P1 dedupe / P2 non-actionable phrasing / P3 liveness-detection (cross-ref #1233) / P4 recovery-requires-fresh-session cross-domain finding. Harmonized SG-0003/SG-0002/SG-0005. Source: case-03.
 
 ## Pillar 3 · Tooling R&D — a built code instrument (only when volume justifies)
 ### Open
