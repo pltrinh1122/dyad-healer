@@ -1,8 +1,8 @@
-# Dyad-Healer — Glossary (v0.1, PROPOSED, living)
+# Dyad-Healer — Glossary (v0.1, RATIFIED, living)
 
 > **Audience:** Healer + Healer Operator · **Use:** canonical definitions for cross-cutting terms
 > used across the durable practice — *one home per term*, so usage anywhere can resolve here without
-> re-grounding from context. **Status: PROPOSED** (2026-05-28; the Operator ratifies per the
+> re-grounding from context. **Status: RATIFIED** (2026-05-28 by Healer Operator approval; per the
 > [Charter](charter.md) source-not-ratifier discipline). **Living, falsifiable** — entries evolve
 > as terms mature, retire, or split; *new entries require ratification* (the form-alignment
 > discipline that closes the drift-via-bundled-ratification gap surfaced 2026-05-28).
@@ -125,4 +125,10 @@ Terms once in our voice, deliberately removed. Recorded here so the retirement i
 
 ## Status / revision log
 
-- **v0.1 — PROPOSED 2026-05-28.** Initial entries. Awaiting Operator ratification per Charter source-not-ratifier. Provenance: [IDEATE] dialectic 2026-05-28 (glossary-index falsification survived; surfaced multiple supporting reasons beyond original framing). On ratification, status flips to RATIFIED, living, and this section becomes the revision log.
+- **v0.1 — RATIFIED 2026-05-28** (Healer Operator approval). Initial entries (~35 across 7 sections);
+  Falsifiability includes proactive orthogonality audit + reactive conflation-detection (added
+  pre-ratification per Operator [FEEDBACK]: original Falsifiability lacked falsifiable orthogonality
+  rule for entry-adders — gap mirrored seizure-taxonomy P4-refinement). Provenance: [IDEATE]
+  dialectic 2026-05-28 (glossary-index falsification survived; multiple supporting reasons beyond
+  original framing — form-alignment audit instrument, anchor-sync execution mechanism,
+  discoverability surface for cross-cutting tokens).
