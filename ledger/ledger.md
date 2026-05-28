@@ -208,6 +208,48 @@ On next session, the Healer (a) reads this section as the Sense input, (b) execu
 phase-gating, (c) for any P that requires a sub-dialectic, Sense→Plan first before Act. New kb docs
 enter PROPOSED; the Operator ratifies each (per the Charter's source-not-ratifier).
 
+## SPAOR phase-enrichment proposal (2026-05-28) — queued, post-Loop-#4
+**Generated:** morning of 2026-05-28, from an [IDEATE] dialectic on the SPAOR loop.
+
+**Falsification sequence (the Validate mechanism running on itself):**
+1. Operator falsified the Healer's pre-Act expansion of SPAOR ("Plan" vs "Probe"). Healer grounded
+   against the canonical `dz-cil/kb/GLOSSARY.md:99-100`: SPAOR is **Sense-Plan-Act-Observe-Reflect**,
+   not Probe — verified across 5 cross-references in the same file + our own ratified
+   `kb/execution-loop.md`. Probe exists in DZ-CIL but as an *alias for Discovery* (a Node type), **not**
+   a phase of the meta-loop. Holds.
+2. Operator [IDEATE]'d an alternative loop **SRPAO** (Sense-Reason-Plan-Act-Observe — drops Reflect,
+   adds Reason between Sense and Plan) and asked the Healer to falsify. Falsified on **7 breaks** —
+   most critical: drops Reflect = re-creates the SPAO regression DZ-CIL just corrected (`WHY-1157`),
+   breaking the Telos's learning-compound mechanism; "Reason" is non-falsifiable/unbounded; asymmetric
+   ratchet (adds front-loaded ceremony, removes the only durable-record gate); Dyad-manner phase-mapping
+   loses *falsify+codify* home; case-02's lived "premature stand-down" failure is exactly what Reflect's
+   completion-criterion prevents. **SRPAO did not survive.**
+3. [FEEDBACK] Operator proposed: enrich `kb/execution-loop.md` so each S/P/A/O/R phase carries
+   (a) the Agent-Operator **dyadic cycle** + (b) the Agent's **intra-phase reasoning sub-loop**.
+   Healer attempted to falsify on **7 breaks** (over-specification / wu-wei trap; premature
+   codification; duplication risk; importing patient wiring; burden-of-proof; channel-discipline
+   blur; vacuous-shape risk) — **none landed** under proper scoping. **Surviving claim:** per-phase
+   decomposition of Substrate-contributions + Agent's epistemic sub-loop + falsifiability hook,
+   scoped to Building/Authoring (SPAOR only), substrate-agnostic phrasing.
+
+**Operator deferred to grain; Healer's choice:**
+- **(Q1) Single-doc enhancement** of `kb/execution-loop.md` (not a companion) — phases *are* the loop;
+  single-home-per-fact is the established kb grain.
+- **(Q2) SPAOR scope only** — leave `healing-protocol-spine.md` alone; rescue's single-mode context
+  doesn't need the dyadic-decomposition layer.
+- **(Q3) NOT P7 of Loop #4** — queue as a separate Pillar-5 backlog item. Loop #4 = the
+  extraction-audit codification; the phase-enrichment is *generative refinement* from this
+  dialectic. Mixing ontologies mid-flight would muddy the Loop's coherence and break SPAOR
+  phase-gating discipline (don't interrupt a ratified Act).
+
+**Concrete shape (when entered):** each phase gets three short blocks — Dyadic contribution
+(Healer sources / Operator voices+ratifies / 1+1=3 emergence) · Agent's epistemic sub-loop
+(2–4 beats) · Falsifiability hook (what would falsify this phase being correctly executed).
+
+**Provenance trail kept here** because it shows the practice working on itself: the dialectic that
+generated the proposal is the same dialectic the proposal would make cheaper to repeat. Loop closes
+on its own form.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple

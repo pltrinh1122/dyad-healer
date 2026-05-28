@@ -54,7 +54,8 @@
 
 ## Pillar 5 · Maturation — a change to our own Dao (inward; dominant to date)
 ### Open
-- [ ] **Execute Loop #4 Plan (P1–P6)** — RATIFIED 2026-05-27, deferred to next session for SPAOR phase-gating to bind the Act phase. Spine cross-cutting additions (P1) · S5 blast-radius enumeration (P2) · S6/S7 invariant-check-first (P3) · new `kb/seizure-taxonomy.md` (P4) · S9 accrue-measure enhancement (P5) · spine line-120 lesson-mapping reconciliation (P6). Sense input lives in ledger §"Loop #4". `⟵→` depends on the ratified pillar-4 findings.
+- [ ] **Execute Loop #4 Plan (P1–P6)** — RATIFIED 2026-05-27, IN-FLIGHT 2026-05-28. **P1 done** (`063d84b` — 5 cross-cutting disciplines into spine). Remaining: S5 blast-radius enumeration (P2) · S6/S7 invariant-check-first (P3) · new `kb/seizure-taxonomy.md` (P4) · S9 accrue-measure enhancement (P5) · spine line-120 lesson-mapping reconciliation (P6). Sense input lives in ledger §"Loop #4". `⟵→` depends on the ratified pillar-4 findings.
+- [ ] ⏸ **SPAOR phase-enrichment** — `kb/execution-loop.md` enhancement: per-phase decomposition of (a) Substrate-contributions in the dyad (Healer / Healer-Operator / 1+1=3 emergence) + (b) Agent's intra-phase epistemic sub-loop (2–4 beats per phase) + (c) falsifiability hook. Scope: SPAOR only (leave spine). Single doc, not companion. **Queued post-Loop-#4** so the in-flight Plan stays coherent. Provenance: 2026-05-28 [IDEATE] SRPAO/FALSIFY dialectic — SRPAO (Sense-Reason-Plan-Act-Observe) falsified on 7 breaks; surviving +1 = richer per-phase ontology to lower future alternative-loop falsification cost. See ledger §"SPAOR phase-enrichment proposal".
 ### Done
 - [x] **CLAUDE.md** operating discipline codified (loadable anchor; verify-before-asserting)
 - [x] **`modes-of-operation.md`** ratified (5 modes + 3 postures)
