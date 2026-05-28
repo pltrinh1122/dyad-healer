@@ -55,7 +55,6 @@
 ## Pillar 5 · Maturation — a change to our own Dao (inward; dominant to date)
 ### Open
 - [ ] **Codify extraction findings into the Dao** (the other half of the learning-loop): promote validated CONTINUE-patterns into `kb/`; close the claimed-vs-actual gaps in the spine; enhance S9 → accrue-measure (Telos metric + patient-records source). `⟵→` depends on the pillar-4 findings.
-- [ ] **Update `README.md` to align with subsequent ratifications** — Telos wording (line 28) and bucket list (lines 13–18, missing `recommendations/`) are stale. Surfaced 2026-05-27 by the Charter-vs-README consistency pass.
 ### Done
 - [x] **CLAUDE.md** operating discipline codified (loadable anchor; verify-before-asserting)
 - [x] **`modes-of-operation.md`** ratified (5 modes + 3 postures)
@@ -72,6 +71,7 @@
 - [x] **CLAUDE.md cross-refs added** — posture→execution-loop line + Durable Dao map includes `kb/execution-loop.md`, `ledger/backlog.md`, `recommendations/`
 - [x] **TELOS ratified** 2026-05-27 → `kb/telos.md` (wu-wei front-loaded wording; falsifiable metric baked in)
 - [x] **CHARTER ratified** 2026-05-27 → `kb/charter.md` + `kb/governance-map.md` (split per the structure-of-codification falsification — ontology + governance-operations as two cross-referenced docs; 6 constraints, 3 universal / 2 rescue-only / 1 patient-touching-only)
+- [x] **README aligned with subsequent ratifications** 2026-05-27 — Telos paragraph swapped to the ratified wu-wei-front-loaded wording; bucket table generalized + `recommendations/` row added; "charter only partly settled" → "charter is settled (`kb/charter.md`)"
 
 ## Operational (out-of-pillar) — VCS / infra chores; not craft
 ### Open

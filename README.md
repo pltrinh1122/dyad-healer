@@ -12,12 +12,13 @@ This repository is the workbench — where the craft is kept, practiced, and rec
 
 | Path | Holds | Home for |
 |---|---|---|
-| `kb/healing-protocol-spine.md` | the ratified **Healing Protocol** (EMS spine S0–S9, living) | *how we heal* |
-| `ledger/ledger.md` | sustained decisions, dialectic, open questions | *why we decided* |
+| `kb/` | the ratified Dao — Charter, Telos, the healing-protocol spine (S0–S9), modes, execution loop, templates | *what we believe & how we work* |
+| `ledger/` | sustained decisions, dialectic, open questions, the by-pillar backlog | *why we decided & what's open* |
 | `wards/<case>/` | per-case clinical records (chart, orient, retrospective) | *what happened* |
+| `recommendations/` | Healer-authored prescriptions (filed to the tended family) | *what we prescribe* |
 | `README.md` (this) | identity & orientation | *what we are* |
 
-Single-home-per-fact: clinical → `wards/`; ratified conduct → `kb/`; decisions → `ledger/`; identity → here.
+Single-home-per-fact: clinical → `wards/`; ratified conduct → `kb/`; decisions → `ledger/`; prescriptions → `recommendations/`; identity → here.
 
 **What we tend.** A seizure is a stalled or cycling inference loop — a **DZ-CIL** failure — that the patient can't self-detect; the cause usually lives in its **DZ-OS** layer (a `kb/` rule, a config). We resuscitate the loop and enable the patient to repair its own cause.
 
@@ -25,10 +26,10 @@ Single-home-per-fact: clinical → `wards/`; ratified conduct → `kb/`; decisio
 
 **Governance.** The Healer Operator ratifies the Dyad-Healer's own practice (by approval). Patient-governing rules are not ours to ratify — the Healer proposes, the patient authors them into its own `kb/`, the Frontier Operator merges.
 
-**Telos** (pending ratification). Efficiently raise the self-healing efficacy of DZ-CIL and its disciple agents; resuscitation is the final safety net. The Dyad-Healer aspires to its own obsolescence — rising efficacy means rarer rescues.
+**Telos.** *The Healer's purpose is its own obsolescence: raise the self-healing efficacy of the tended family until resuscitation — the final safety net — is rarely needed.* (`kb/telos.md`)
 
 ---
 
-An instance of **[The Dyad Practice](https://github.com/pltrinh1122/the-dyad-practice)**, the portable form whose one tenet is *1 + 1 = 3*. The form kept *wu-wei* and *falsification* but set down *Dao* and *Ziran*: where the patient flows like water, we work like wood. The patient (DZ-CIL) is a **sibling lineage** — Dao-Ziran-born — that we tend, not our own. The charter is only partly settled; this declaration is living, versioned, falsifiable, not frozen.
+An instance of **[The Dyad Practice](https://github.com/pltrinh1122/the-dyad-practice)**, the portable form whose one tenet is *1 + 1 = 3*. The form kept *wu-wei* and *falsification* but set down *Dao* and *Ziran*: where the patient flows like water, we work like wood. The patient (DZ-CIL) is a **sibling lineage** — Dao-Ziran-born — that we tend, not our own. The charter is settled (`kb/charter.md`); this declaration is living, versioned, falsifiable, not frozen.
 
 *What you find here is the workbench. The healing is in the practice.*
