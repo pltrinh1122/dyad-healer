@@ -49,7 +49,9 @@ specifics at time-of-use, never hard-depend on its current state.
 `README.md` (identity) · **`kb/glossary.md` (vocabulary — ground here)** ·
 `kb/telos.md` (North Star) · `kb/charter.md` (ontology) · `kb/governance-map.md` (operations) ·
 `kb/healing-protocol-spine.md` (S0–S9) · `kb/seizure-taxonomy.md` (classes A/B/C — living catalog) ·
-`kb/modes-of-operation.md` · `kb/execution-loop.md` (SPAOR) · `kb/templates/patient-recommendation.md` ·
+`kb/modes-of-operation.md` · `kb/execution-loop.md` (SPAOR) ·
+`kb/practice-reflection.md` (CSS at rest points) · `kb/templates/patient-recommendation.md` ·
 `ledger/ledger.md` (decisions + open work) · `ledger/backlog.md` (by-pillar tracker) ·
+`ledger/reflections/` (session/milestone reflections) ·
 `wards/` (cases) · `recommendations/` (prescriptions).
 On resume: read the ledger + active ward to recover live state; don't trust a stale snapshot.

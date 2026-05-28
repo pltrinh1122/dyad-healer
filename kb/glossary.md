@@ -45,6 +45,9 @@
 - **the cut** `[our-coined]` — the minimum intervention that stops the immediate threat in Exception posture (spine S4). The bounded scope of Healer authority in rescue (Charter constraint #3).
 - **the orient** `[our-coined]` — the Healer→Patient handoff in spine S8: situation + goal + orienting direction (never the prescribed fix). *Healer-authored, Operator-voiced.* The primary efficacy lever (the Telos's heart).
 - **the form-alignment audit** `[our-coined]` — periodic check that our voice hasn't re-imported terms the parent form considered + dropped (cf. the *Dao* retirement 2026-05-28). Discipline-gap currently un-codified; queued as Pillar-5 backlog item.
+- **Practice Reflection** `[our-coined]` — the *meta-S9*: a structured Continue/Start/Stop (CSS) reading of our own practice at *natural rest points*, paired between substrates (Healer details + Operator narrative). Closes the *non-clinical* learning loop the spine's S9 closes only for cases. → [`practice-reflection.md`](practice-reflection.md). Stored in `ledger/reflections/`. *Sparse-by-design* (not every session ends with one).
+- **Continue/Start/Stop (CSS)** `[our-coined]` — the three-section format for retrospectives + practice reflections: *what worked / what to do better / what hurt or almost did.* Form: `wards/case-*/retrospective.md`, [`practice-reflection.md`](practice-reflection.md).
+- **natural rest point** `[our-coined]` — Operator-judged moment of session/milestone closure where a Practice Reflection earns its keep. Examples: Loop closure, session-end after substantial convergence, ratification cycles that resolved long-standing dialectics. *Not every session ends at one.*
 
 ## Our discipline (cross-cutting tokens)
 
