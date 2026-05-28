@@ -76,6 +76,13 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   (terminology drift accumulated for weeks before per-term audit became necessary). Glossary
   v0.1 ratified 2026-05-28; this rule binds future cycles to canonicalize as terms emerge, not
   retrospectively.
+- **Kb-doc quality standard.** Every `kb/` doc with a self-extension or Falsifiability section
+  must carry **proactive orthogonality criteria** — a falsifiable test for *whether a candidate
+  extension is orthogonal to existing items* in the same doc. Prevents the reactive-
+  orthogonality-refinement pattern observed twice on 2026-05-28 (`kb/seizure-taxonomy.md` P4
+  refinement + `kb/glossary.md` v0.1 refinement — same shape both times, surfaced as FEEDBACK
+  *after* PROPOSED commit, forcing a second pass before ratification). Proactive criteria catch
+  the same issues at draft time.
 
 ## Falsifiability — when to revise
 
