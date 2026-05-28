@@ -1,8 +1,8 @@
-# Dyad-Healer — Seizure Taxonomy (v0.1, PROPOSED, living)
+# Dyad-Healer — Seizure Taxonomy (v0.1, RATIFIED, living)
 
 > **Audience:** Healer + Healer Operator · **Use:** the living catalog of *seizure classes* the
 > Dyad-Healer has encountered or anticipates — each class carries **symptom · cause · detector ·
-> ward-evidence**. **Status: PROPOSED** (2026-05-28; the Operator ratifies per the
+> ward-evidence**. **Status: RATIFIED** (2026-05-28 by Healer Operator approval; per the
 > [Charter](charter.md) source-not-ratifier discipline). **Self-extends per [Telos](telos.md):**
 > each new episode that surfaces a new class extends this doc; coverage compounds; as detectors
 > mature, recurrence declines toward *resuscitation rarely needed*.
@@ -120,7 +120,8 @@ episode updates this catalog before its lessons are promoted.
 - [`kb/healing-protocol-spine.md`](healing-protocol-spine.md) → the protocol whose efficacy this
   taxonomy measures.
 
-## Status
-**PROPOSED** (2026-05-28). Awaiting Operator ratification per Charter source-not-ratifier.
-On ratification, status flips to **RATIFIED, living** and this section becomes the
-revision log.
+## Status / revision log
+- **v0.1 — RATIFIED 2026-05-28** (Healer Operator approval). Three classes ratified (A reload-loop,
+  B harness↔Dao freeze, C collateral regression). Self-extension protocol includes a proactive
+  orthogonality test (added pre-ratification per Operator [FEEDBACK]: original protocol had only
+  an implicit, vague, reactive "cannot be reduced" criterion).
