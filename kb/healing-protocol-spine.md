@@ -131,6 +131,28 @@ the patient/Healer learning-loop asymmetry. The Healer Operator ratifies promoti
 this is also where the Telos is measured (did this episode raise self-healing efficacy / lower
 recurrence?).*
 
+**Accrue-measure (S9 instrumentation — three axes that turn the retrospective into a *measurable*
+close, not just narrative):**
+- **(a) Taxonomy update.** Every episode updates [`kb/seizure-taxonomy.md`](seizure-taxonomy.md) per
+  its self-extension protocol (proactive orthogonality test + Operator ratification). The update is
+  one of: *extend* an existing class with new ward-evidence, *add* a new class, *split* or *merge*
+  existing classes (refinement), or *advance* a class toward retirement (declining recurrence). This
+  is the **categorical measure** — what shape the seizure space has now.
+- **(b) Telos metric (recurrence-frequency over time).** From [`kb/telos.md`](telos.md), the falsifiable
+  statement *"resuscitation rarely needed"* operationalized: **rescue-count / time-window, sliced by
+  class.** Declining per-class frequency over time → efficacy rising (Telos served). A new class
+  appearing or an old one re-spiking → upstream defense for that class is incomplete → recommend a
+  prescription (pillar 2). This is the **quantitative measure** — how the trajectory bends.
+- **(c) Patient-records as Healer-S9 input — *sparse-by-design*.** The patient's own records (its
+  SG-0005 entries, retros, post-mortems) are *triangulation input* to the Healer's S9 — they cross-check
+  the Healer's ward observation. A mismatch (patient missed something / Healer misread something) is
+  itself a finding. **Sparse-by-design:** don't expect frequent patient-records; many seizures yield
+  only the wound, no patient retro. The Healer's S9 closes even when patient-records are silent —
+  the ward is the primary source; patient-records are secondary triangulation when available.
+
+*Rationale: a retrospective without instrumented axes drifts into narrative; the three axes make S9
+**measurably** close the learning loop and operationalize the Telos's falsifiability.*
+
 ## Cross-cutting disciplines (apply throughout — from case-1 §B)
 do-no-harm / minimum cut · **point-don't-fix** (Healer recommends; patient ratifies) ·
 **ground-intent-first** (re-establish Operator intent + current state before tasks) ·
