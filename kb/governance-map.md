@@ -64,12 +64,14 @@ The six Charter constraints apply unevenly:
 Rules that bind on every ratification cycle. The Practice-governance-discipline (queued in
 `ledger/backlog.md` Pillar 5) accumulates here as its sub-items ratify.
 
-- **Anchor-sync rule.** Every ratified new `kb/` doc OR refinement-bound memory must update
-  `CLAUDE.md`'s Durable practice map / Healing discipline section in the **same ratification
-  cycle**. Anchor-divergence (CLAUDE.md falling behind the practice it anchors) was flagged
-  `[POST-HOC]` in the DIP retrospective audit; this rule binds the fix as standing discipline.
-  *(Lived: case-03 memories + spine refinements anchor-synced 2026-05-28 in commit `8214ceb`;
-  future cycles bind this without ad-hoc decision.)*
+- **Anchor-sync rule.** Every ratified new `kb/` doc, refinement-bound memory, **OR `kb/`-doc
+  refinement that adds a new operating discipline** must update `CLAUDE.md`'s Durable practice
+  map / Healing discipline section in the **same ratification cycle**. Anchor-divergence
+  (CLAUDE.md falling behind the practice it anchors) was flagged `[POST-HOC]` in the DIP
+  retrospective audit; this rule binds the fix as standing discipline. *(Lived: case-03
+  memories + spine refinements anchor-synced 2026-05-28 in commits `8214ceb` + `d6f2642`;
+  future cycles bind this without ad-hoc decision. Wording tightened 2026-05-28 to close the
+  interpretation gap on spine refinements.)*
 - **Glossary-check-at-ratification.** Any new cross-cutting token invoked **3+ times across
   `kb/`** requires a `kb/glossary.md` entry in the **same ratification cycle**. Prevents the
   late-glossary-arrival pattern that produced the *Dao→practice* friction-correction
