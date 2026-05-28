@@ -16,7 +16,7 @@ case-2's ward; it's now correctly in `kb/`.)
 - **EMS spine** adopted as the Healing-Protocol backbone (v0.1, living) → `kb/healing-protocol-spine.md`. Derived from case-2.
 - **Ratification authority = the Operator.** Chain: Healer **proposes** → (for Frontier-governing rules) Frontier **authors** its own `kb/` → Operator **ratifies** (by *approval* for Healer Dao; by *merge* — Invariant 3 — for Frontier's `kb/`). Frontier never ratifies; the Healer never ratifies.
 - **Healer Dao ≠ Frontier Dao.** The Healer's conduct rules are a *separate* Dao (this repo), Operator-ratified. Frontier-governing rules go to `dz-cil/kb` (Frontier authors, Operator merges).
-- **Persistence:** Healer Dao lives at `/mnt/shared_data/dzw/dz-healer` (off `/tmp`; external to the patient). Structure = **three buckets** (`wards/` clinical · `ledger/` dev · `kb/` ratified) — emerged from actual need, *not* a `dz-cil` mirror (no `kernel/drivers/bin` — the Healer has no code engine; it's an external agent).
+- **Persistence:** Healer Dao lives at `/mnt/shared_data/dzw/dz-healer` (off `/tmp`; external to the patient). Structure = **four buckets** (`wards/` clinical evidence · `ledger/` dev · `kb/` ratified Dao · `recommendations/` Healer outputs/prescriptions [ratified 2026-05-27]) — each emerged from actual need, *not* a `dz-cil` mirror (no `kernel/drivers/bin` — the Healer has no code engine; it's an external agent). Single-home-per-fact across the four.
 - **Comms protocols:** emergency-stop = reflex / constructive = deliberate; **ground-intent-first** (re-establish Operator intent + current state before tasks, since prompts queue and go stale).
 - **Orient = Healer-authored, Operator-voiced.** The Healer is the *source* (clinical knowledge) but the **Operator delivers** it (the patient's loop-interlocutor). Healer is source-not-**driver** — never drives the patient's SPAOR loop directly. [from case-2 THESIS-1 falsification]
 - **Minimal-necessary Operator input during heal.** One orient *seed*, then observe — don't steer; the patient drives its own SPAOR loop; reserve input for emergency-halt. Every extra driving input = a confounding variable (wu-wei + clean observation). [from case-2 THESIS-2 falsification]
@@ -60,6 +60,59 @@ The overloaded "Healing Protocol" splits **by owner**:
   authoritative Healing Protocol; 1170 narrows the patient's `kb/` to recovery only.
 - **Charter input:** "Healing Protocol is *defined by the Healer*" = a charter statement (Healer owns
   healing; patient owns recovery). Feeds [[healer-dao-roleplay]] charter.
+
+## Orthogonality of the 5 pillars (Operator directive 2026-05-27) — falsified, then reconciled
+The directive "ensure orthogonality" first **failed falsification**: the modes are non-orthogonal *as
+written* — mode 4 is defined "**cross-cutting**… feeds *every* mode," mode 3 "**beneath** 1–2." Root
+cause: the modes conflate *what work produces* with *how work flows*. **Reconciliation (applied to
+`backlog.md`):** classify each item by its **terminal artifact**; treat "cross-cutting/beneath" as
+**dependency arrows, not shared membership** → the bins are orthogonal for assignment while the doc's
+flow-language stays true. Surfaced 3 real violations (a compound item split 4↔5; non-craft VCS chores
+quarantined to a new **Operational** out-of-pillar section; pillar 3 = code-only, so templates/trackers
+are pillar-5 artifacts). **RATIFIED 2026-05-27 (Operator approval):** the classification line is now applied to
+`kb/modes-of-operation.md` §"How they relate" — *"an item belongs to the mode of its terminal artifact;
+'cross-cutting'(4) / 'beneath'(3) are dependency arrows between items, not shared membership — so the
+modes are orthogonal for assignment."*
+
+## SPAOR adopted as our execution loop (2026-05-27) — converged via 3-turn dialectic
+**Token (verified live, `dz-cil/kb/GLOSSARY.md:99`):** the loop is **SPAOR** = *Sense · Plan · Act ·
+Observe · Reflect* (not "SPOAR"; the ledger's standing trap — guard the order).
+
+**Decision:** Adopt **SPAOR as the Dyad-Healer's general execution loop** — taking the **form, not the
+patient's wiring** (no Nodes/Meta-Graph/Sluice-Gate dependency; preserves our externality).
+- **Relation to the Dyad Practice = complementary, orthogonal axes** (NOT "aligned"/competing): the
+  Dyad Practice is an *epistemic/manner* form (Generate/Validate, 1+1=3) and is **silent on execution
+  topology** (verified: 0 serial/parallel/sequence/schedule terms across all 83 lines of its README;
+  even generate→validate is a logical dependency, not a schedule). SPAOR populates the *execution*
+  dimension the form intentionally leaves open.
+- **One grounding loop, phase-gated (the "how", tested):** SPAOR's Sense/Observe/Reflect are NOT a
+  second grounding loop — they are *where* our existing Dyad manner (stock→grain→fit→test) runs.
+  Mapping: **Sense** = read-the-stock / ground (the NON-NEGOTIABLE, now gated at entry) · **Plan** =
+  minimum-force move (work-with-grain) · **Act** = execute · **Observe** = test against reality (the
+  fit gets tested) · **Reflect** = falsify + codify (write the fix down). The manner is the *how*; the
+  phases are the *gate*.
+- **Why adopt (the surviving +1):** SPAOR gives our manner the **phase-gating it lacks** — our
+  discipline is a "manner/spirit," un-gated, and "fails first under long context"; explicit phases
+  gate the epistemic beats so they can't be skipped under pressure (cf. DZ-CIL's own SPAO→SPAOR
+  correction restoring Reflect).
+- **Posture integration:** SPAOR = the **Building / Authoring** execution loop; the **EMS spine
+  (S0–S9) remains the Exception/rescue loop** (urgency-shaped, its own cadence). They don't collide.
+
+**Dialectic trail (the practice working on itself; 1+1=3):**
+1. THESIS (Operator): "SPAOR most aligned w/ Dyad Practice + our practice; adopt."
+2. Healer falsified w/ 5 breaks (category mismatch; no Generate/dialectic; we have a closer loop;
+   topology; externality).
+3. REBUTTAL (Operator): "Dyad Practice intent ≠ codify serial/parallel execution." → **survived**
+   falsification (grounded). Exposed Healer's **category error**: imported an execution-topology axis
+   and treated the form's *silence* on it as *conflict*. Breaks 4 + execution-parts of 1–2 **withdrawn**.
+4. Reframe: relation = complementary/orthogonal, not aligned → adoption *strengthened*. Healer could
+   no longer falsify *whether*, only *how*.
+5. "How" tested: option B (keep 5 phases, map epistemic beats onto the manner) beat option A (collapse
+   to Plan/Act) — A re-creates the un-gated-discipline failure. → the fit above.
+
+**Follow-up (pillar 5):** codify into `kb/` — either a new doc or an addition to the ratified
+`modes-of-operation.md` mapping the 3 postures → their execution loops (SPAOR vs spine). Propose;
+Operator ratifies the kb form.
 
 ## Open questions
 - **PROPOSED TELOS (Healer's North Star) — Operator-proposed, not yet ratified → `kb/` WHY:**
@@ -127,3 +180,61 @@ record.**
 ## Cross-links (provenance — evidence lives in `wards/`, not duplicated here)
 - EMS spine + the **harness↔Dao contradiction** failure class → `wards/case-02-harness-dao-relapse/`.
 - framing-not-channel · sponge-count · durable-artifact observability · flag-and-vouch · the iatrogenic-loop lesson → `wards/case-01-pr-zero-revival/` (`retrospective.md`, `lessons-for-codification.md`).
+
+## Session handoff — 2026-05-27 (maturation session; open loops for restart)
+**Why this entry:** a long session drifted from verify-before-asserting under context degradation
+(asserted `/goal` absent without grounding — it IS a real Claude Code command, v2.1.139+). Fix: the
+operating discipline is codified → `CLAUDE.md` (loads first); memory points to it. Restart on the
+durable record. *(This handoff is a stopgap; loop #2 builds the real tracker.)*
+
+**Artifacts produced:** `README.md` (committed `a309594`) · `kb/modes-of-operation.md` (5 modes + 3
+postures) · `kb/templates/patient-recommendation.md` · `CLAUDE.md` — last three **uncommitted**. Form
+published: github.com/pltrinh1122/the-dyad-practice.
+
+**Decisions established (catch-up — previously unlogged):**
+- **5 modes** (rescue/prevention/tooling/research/maturation) = planning map; **3 postures**
+  (exception / building / authoring-research) = the moment-to-moment discriminant.
+- **DZ-CIL leverage gradient:** principles now → templates as the kb grows → tools when friction
+  justifies; DZ-CIL is a *live* target (re-verify specifics at time-of-use, never hard-depend on its state).
+- **Prescription channel:** detailed recommendations → Healer-authored `backlog_issue` → Frontier
+  Operator files it (labeled external) → patient triages → patient authors its `node_contract`.
+  `bin/prompt` queue = short nudges only.
+
+**OPEN LOOPS** — ⚠️ status now tracked in [`backlog.md`](backlog.md) (the by-pillar tracker, built
+2026-05-27; single-home for *what/status*). The entries below are retained for their *detail/why*;
+read the backlog for current state.
+1. **File the heartbeat recommendation** — ✅ AUTHORED as a durable artifact →
+   `recommendations/2026-05-27-audit-daemon-liveness-heartbeat.md`, recast into the **patient's own
+   template** (`dz-cil/kb/templates/backlog_issue.md`, 5 fields — per Operator: leverage DZ-CIL's own
+   template, not the Healer's generic one). Re-grounded at time-of-use: `seizure_detector` rule IS
+   wired but failure-count only (blind to freezes); daemon `timer_interval: 5m` yet **still inactive**
+   (no cron/process); no liveness rule type among the 8. Labels mapped onto the patient's EXISTING
+   taxonomy (`backlog` · `status:triage` · `area:metasystem`) — no labels invented; no
+   external/from-dyad-healer label exists. [Mode 2 / prevention]
+   - **✅ FILED 2026-05-27 → [dz-cil#1233](https://github.com/pltrinh1122/dz-cil/issues/1233)**
+     (OPEN, `status:triage`). Filed by the **Healer directly** per DZ-CIL's published contribution
+     process (README §"Contributing & Requirement Intake" mandates the **Requirement Intake** template
+     for external entities "e.g., the Healer"). Recast from the `backlog_issue` 5-field into the
+     intake template's 3 sections (Context&Goal · Proposed Mechanisms · Strategic Harmonization);
+     harmonized to **SG-0002** primary (gateless autonomy — silent seizure forces a manual gatekeeper)
+     / **SG-0003** secondary (velocity). The earlier "intake tag" request resolved as this published
+     template + the `triage` quarantine convention.
+   - **Channel-discipline UPDATE:** the patient now publishes a sanctioned **Healer→patient intake
+     channel** (README names the Healer). This **supersedes** the old "Frontier Operator files / Healer
+     never opens issues" stopgap — for *requirement intake* the Healer files directly via the template.
+     (The Healer still never drives the patient's loop / touches the running agent.)
+   - **Patient-side defect found (→ Frontier-side fix rec):** the intake template front-matter +
+     README CLI example reference label **`triage`**, but no such label exists — the real one is
+     **`status:triage`**. Filed with the real label; flagged for a fix rec.
+   - **`recommendations/` bucket — RATIFIED** (Operator, 2026-05-27). See Decisions.
+2. ✅ **DONE — `ledger/backlog.md` built** (by-pillar = 5 modes; open + done; reconstructed from
+   durable sources since the original design was ephemeral). Now the status home; supersedes this list.
+3. **Commit** the 3 uncommitted dz-healer files (local; push still blocked by the exfiltration classifier).
+4. **Extraction audit / learning-loop** [Mode 4/5]: promote case CONTINUE-patterns (commit-before-sync,
+   blast-radius, invariant-check-first, crawl-walk-run — present in `wards/`, absent from `kb/`);
+   reconcile claimed-vs-actual promotions (blast-radius marked "Promoted: S5/S7" but absent from spine);
+   build the seizure-class taxonomy; enhance S9 → accrue-measure (taxonomy + Telos metric + patient-records source).
+
+**Deferred (no action until warranted):** origin URL → `dyad-healer.git` (Operator runs `git remote
+set-url`) · dir-rename `dz-healer`→`dyad-healer` · repo-wide "Healer Dao"→craft-term · async
+rec-generation via `/goal` (verifiable completion) or background Agent.
