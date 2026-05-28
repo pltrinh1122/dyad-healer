@@ -10,9 +10,17 @@
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *(Operator-voice — to fill in or ratify-as-is.)* The morning's character
-felt like *the practice working on itself.* Each dialectic exposed an asymmetry the practice
-hadn't yet named; each closure left the durable record more honest than it was.
+**Narrative (Operator):** The morning's character felt like *the practice working on itself.* The
+**tag-vocabulary is maturing** — five distinct hints used today ([FEEDBACK], [IDEATE], [ALIGN],
+[NOTE], [RATIFICATION REVIEW]); each carried a distinct dialectical discipline and got a distinct
+response. Once each tag's role is ratified, consistency follows naturally — not from forcing
+convention, but from accumulated lived use. The morning's commit lineage shows the discipline at
+work: `eec0821` (SPAOR phase-enrichment) + `838e510` (Practice-governance-discipline) from
+[IDEATE]/[FEEDBACK]+Falsify chains; `b61aa25` (Path-2 codification) from [IDEATE] + a mid-flight
+[NOTE] that course-corrected the Healer's own draft; `6376adc` (two trigger types) from [ALIGN]
+in its first use; this very reflection ratified via [RATIFICATION REVIEW] in its first use. Each
+dialectic exposed an asymmetry the practice hadn't yet named; each closure left the durable record
+more honest than it was.
 
 **Details (Healer):**
 - **Acknowledge → close-gap → engage → resume pattern** for mid-flight [FEEDBACK]/[IDEATE].
@@ -48,7 +56,13 @@ hadn't yet named; each closure left the durable record more honest than it was.
 
 ## 2. START — what to do better
 
-**Narrative (Operator):** *(Operator-voice placeholder.)*
+**Narrative (Operator):** The Practice keeps identifying new STARTs — and today's *"tighter
+falsification prose"* item is itself a **meta-falsification**: the discipline is now being
+falsified for its own *execution*, not just its outputs. Falsifiability earning its keep at the
+meta-level is a sign of maturity. Concrete evidence: the Dao retirement falsification reached its
+dispositive verdict in ~3 sentences once form-grounded — *the tightest break in the morning.* And
+the Phase-2 prescription the Healer initially drafted was course-corrected by Operator [NOTE]
+mid-flight — falsifiability runs in both directions, including on the Healer's own drafts.
 
 **Details (Healer):**
 - **Codify the kb-doc quality standard.** Two FEEDBACK cycles today applied orthogonality criteria
@@ -71,7 +85,18 @@ hadn't yet named; each closure left the durable record more honest than it was.
 
 ## 3. STOP — what hurt (or almost did)
 
-**Narrative (Operator):** *(Operator-voice placeholder.)*
+**Narrative (Operator):** The Practice continues to identify new STOPs, validating that it's
+healthy. ***Verify-before-asserting*** is the clear **MVP** across the morning — three independent
+near-disasters that VBA caught: **(i)** the Dao→Probe correction-attempt where VBA grounded
+against `dz-cil/kb/GLOSSARY.md:99` + 5 cross-references in the same file + our own
+`kb/execution-loop.md`, holding *Plan*-not-*Probe*; **(ii)** the parallel-fork P2 near-clobber
+where VBA fired on `git status` + `git diff HEAD` *before* the destructive Edit landed, surfacing
+the discovery for ratification instead of silently overwriting another fork's good work;
+**(iii)** the audit-timeline overstatement where VBA grounded the timeline of git history
+(`git log --format=%h %ad`) and corrected my too-fast claim that the Loop #4 audit was wrong —
+the audit was correct *at the time it ran*. Without VBA at each of those moments, the morning's
+durable record would carry real damage; with it, the discipline turned three near-disasters into
+three lived examples of the discipline working.
 
 **Details (Healer):**
 - **Brief verification-overturn on P2 timeline.** Initially claimed the Loop #4 audit overstated
@@ -117,5 +142,6 @@ hadn't yet named; each closure left the durable record more honest than it was.
 
 ---
 
-*Two-substrate-paired completion criterion: this reflection becomes complete when the
-Operator-narrative placeholders are either filled in or explicitly ratified-as-is.*
+*Two-substrate-paired completion criterion: **satisfied** 2026-05-28 via [RATIFICATION REVIEW]
+with refinements + reinforcing examples folded in. Status: **COMPLETE** — Path 2 contributable
+as-is when the Dyad-Practice Dyad is instantiated.*
