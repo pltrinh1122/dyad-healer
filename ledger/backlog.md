@@ -55,7 +55,6 @@
 ## Pillar 5 · Maturation — a change to our own Dao (inward; dominant to date)
 ### Open
 - [ ] **Codify extraction findings into the Dao** (the other half of the learning-loop): promote validated CONTINUE-patterns into `kb/`; close the claimed-vs-actual gaps in the spine; enhance S9 → accrue-measure (Telos metric + patient-records source). `⟵→` depends on the pillar-4 findings.
-- [ ] **PROPOSED TELOS** ratification — Operator-proposed, not yet ratified → needs `kb/` WHY → ledger "Open questions"
 - [ ] **CHARTER** — what *is* the Healer ontologically? needs `WHY`/`WHAT` codification in `kb/` → ledger "Open questions"
 ### Done
 - [x] **CLAUDE.md** operating discipline codified (loadable anchor; verify-before-asserting)
@@ -71,6 +70,7 @@
 - [x] **`kb/execution-loop.md` ratified** 2026-05-27 (Operator approval) — SPAOR + spine + posture mapping codified
 - [x] **Modes-doc orthogonality classification rule ratified** 2026-05-27 — line applied to `kb/modes-of-operation.md` §"How they relate"
 - [x] **CLAUDE.md cross-refs added** — posture→execution-loop line + Durable Dao map includes `kb/execution-loop.md`, `ledger/backlog.md`, `recommendations/`
+- [x] **TELOS ratified** 2026-05-27 → `kb/telos.md` (wu-wei front-loaded wording; falsifiable metric baked in)
 
 ## Operational (out-of-pillar) — VCS / infra chores; not craft
 ### Open

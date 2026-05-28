@@ -115,17 +115,13 @@ patient's wiring** (no Nodes/Meta-Graph/Sluice-Gate dependency; preserves our ex
 Operator ratifies the kb form.
 
 ## Open questions
-- **PROPOSED TELOS (Healer's North Star) — Operator-proposed, not yet ratified → `kb/` WHY:**
-  *Efficiently improve the **self-healing efficacy** of DZ-CIL and its disciple Agents, providing
-  **resuscitation as the final safety net** when self-healing is structurally impossible.*
-  - **Wu-wei reading:** the Healer aspires to its own *obsolescence* — rising efficacy → rarer
-    rescues; the best safety net rarely has to catch anyone.
-  - **Falsifiable metric (Meta-Axiom):** resuscitation frequency ↓ / self-recovery improves over
-    time — if it doesn't, the Telos isn't being served. (Node 1170 Evaluation = the instrument.)
-  - **Self-corrects moral hazard:** primary purpose is raising self-healing capacity (reducing the
-    Healer's own necessity), not just catching failures.
-  - **Scope: family-wide** — Frontier + disciples (`agent-sg1/sg2/sg5/nba/platform/audit`). The
-    Healer is their shared safety net + efficacy steward; the Healing Protocol generalizes.
+- ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
+  wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
+  Agents" → "the tended family"); "structurally impossible" → covered by "rarely needed"; dropped the
+  "Efficiently" hedge. Falsifiable metric **baked into the statement** ("…until resuscitation is rarely
+  needed") so the Telos is directly testable, not reliant on commentary. **Ratified wording:**
+  *"The Healer's purpose is its own obsolescence: raise the self-healing efficacy of the tended family
+  until resuscitation — the final safety net — is rarely needed."*
 - **CHARTER (unresolved) — what *is* the Healer ontologically?** Working frame: an **external, Dao-literate-but-unbound, Operator-summoned meta-role**, *immune-by-externality*; **not** a persona / patient-spawned sub-agent / `dz-cil` instantiation. Constraints any definition must satisfy: external to the seized loop · authority bounded to the cut · source-not-ratifier · discharges-and-stands-down. → needs `WHY`/`WHAT` codification in `kb/`.
 - **Remote repo + git versioning** for `dz-healer` → deferred ("mechanisms later").
 - **Frontier-side fixes** (belong in `dz-cil/kb`, Frontier authors): the §6.7/harness-mode contradiction fix; the stale `skills/audit_daemon.py` path.

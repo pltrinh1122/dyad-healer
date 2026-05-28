@@ -45,7 +45,8 @@ when friction justifies. It is a **live, self-modifying** target: reference prin
 specifics at time-of-use, never hard-depend on its current state.
 
 ## Durable Dao — read for current state (this file is only the anchor)
-`README.md` (identity) · `kb/healing-protocol-spine.md` (S0–S9) · `kb/modes-of-operation.md` ·
-`kb/execution-loop.md` (SPAOR) · `kb/templates/patient-recommendation.md` · `ledger/ledger.md`
-(decisions + open work) · `ledger/backlog.md` (by-pillar tracker) · `wards/` (cases) · `recommendations/` (prescriptions).
+`README.md` (identity) · `kb/telos.md` (North Star) · `kb/healing-protocol-spine.md` (S0–S9) ·
+`kb/modes-of-operation.md` · `kb/execution-loop.md` (SPAOR) · `kb/templates/patient-recommendation.md` ·
+`ledger/ledger.md` (decisions + open work) · `ledger/backlog.md` (by-pillar tracker) ·
+`wards/` (cases) · `recommendations/` (prescriptions).
 On resume: read the ledger + active ward to recover live state; don't trust a stale snapshot.
