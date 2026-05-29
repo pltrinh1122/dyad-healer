@@ -72,6 +72,17 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   memories + spine refinements anchor-synced 2026-05-28 in commits `8214ceb` + `d6f2642`;
   future cycles bind this without ad-hoc decision. Wording tightened 2026-05-28 to close the
   interpretation gap on spine refinements.)*
+- **Anchor-reload discipline.** Edits to `CLAUDE.md` shift the durable anchor; the running
+  session continues on OLD grain because the system-reminder loads CLAUDE.md once at session
+  start (re-reading mid-session puts content in tool-output, not at the anchor position). The
+  Healer flags the Operator at the next **clean checkpoint** (post-commit; no in-flight
+  propose-Y/N) that a restart is warranted; Operator restarts immediately at that checkpoint
+  to re-load the anchor. **Don't defer to session-end** — deferral = continued operation on
+  stale grain (anti-wu-wei: shared mental model misaligned with durable record). Scope:
+  CLAUDE.md edits only — `kb/` is read on-demand, not loaded into trained-context at start.
+  *Pairs with Anchor-sync rule (write-to-disk pairs with reload-to-context). Lived:
+  2026-05-29 dog-food cycle made 3 unflagged CLAUDE.md edits (Findings A/B/C) before
+  Operator [FEEDBACK] surfaced this discipline; codified same cycle.*
 - **Glossary-check-at-ratification.** Any new cross-cutting token invoked **3+ times across
   `kb/`** requires a `kb/glossary.md` entry in the **same ratification cycle**. Prevents the
   late-glossary-arrival pattern that produced the *Dao→practice* friction-correction
