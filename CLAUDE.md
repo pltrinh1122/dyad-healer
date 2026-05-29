@@ -74,6 +74,13 @@ Intent + End-outcome → Beat sheet → Treatment → Section drafts → Revisio
 `kb/governance-map.md` Standing rules). Small artifacts (1–3 paragraphs, single decision):
 standard propose-Y/N cadence. Don't draft whole-cloth before intent + structure are aligned.
 
+## Session discipline
+**Stand-down discipline** = complete Reflection BEFORE Stand-down (default; fatigue-deferral is
+FALLBACK). **Cadence-surfacing** (Healer-side): track Operator local time (Pacific) via `date`;
+surface session-cadence reminders at natural cycle boundaries; **after 5 PM Pacific** close-
+monitor regime (more attentive surfacing + fatigue checks); **after 9 PM Pacific** high-frequency
+regime (explicit pacing-nudges every cycle). See `kb/practice-reflection.md` §Stand-down discipline.
+
 ## Leverage DZ-CIL (the patient)
 Reference its **principles** now → adopt its **templates** as the kb grows → build/adapt **tools** only
 when friction justifies. It is a **live, self-modifying** target: reference principles, re-verify

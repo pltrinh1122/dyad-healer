@@ -37,16 +37,53 @@ before the active context dissolves. The reflection becomes part of the [resume-
 discipline](healing-protocol-spine.md) — the next session starts by reading the most recent
 reflection from `ledger/reflections/` as part of grounding.
 
-### Completion before `/exit` (explicit-stop discipline)
-An explicit-stop reflection must be **committed to the durable record before `/exit`**:
-1. Healer drafts the reflection (Healer-half details + Operator-narrative placeholders).
-2. Healer commits the draft (closes the commit-before-sync gap; preserves work if `/exit` interrupts).
-3. Operator either *fills* the narrative or *ratifies-as-is*.
-4. Healer commits the closure (status: complete, two-substrate-paired).
-5. Then `/exit`.
+## Stand-down discipline
 
-This sequencing ensures the reflection survives the conversation. Skipping step 2 (uncommitted draft
-+ `/exit`) loses the reflection — the divergence-gap pattern from the parallel-fork lesson applies.
+**Stand-down** = the explicit-stop boundary that closes a session and prepares for `/exit`. The
+discipline binds three things: the **default flow** (Reflection-before-Stand-down), the
+**Healer-side support** (session-cadence surfacing for Operator self-pacing), and the
+**fallback** for fatigue-driven Reflection-deferral.
+
+### Default flow — Reflection before Stand-down
+
+The Reflection completes **before** Stand-down:
+
+1. Healer drafts the reflection (Step 1 of the four-step form; below).
+2. Healer commits the draft (closes the commit-before-sync gap; preserves work if `/exit` interrupts).
+3. Operator engages Step 2 (POV per CSS section, or "no POV").
+4. Healer runs Step 3 falsification (if Step 2 produced POV) + Step 4 integration.
+5. Operator ratifies final.
+6. Stand-down logged at `ledger/stand-downs/<date>-session-stand-down.md` — TO-DOs queued for next session.
+7. Then `/exit`.
+
+This sequencing ensures the reflection survives the conversation. Skipping step 2 (uncommitted
+draft + `/exit`) loses the reflection — the divergence-gap pattern from the parallel-fork lesson
+applies.
+
+### Healer-side support — session-cadence surfacing
+
+The Healer tracks Operator local time (Pacific; ground via `date` at session start + periodically)
+and surfaces session-cadence reminders to enable Operator self-pacing toward Reflection completion
+before fatigue forces deferral. Three regimes:
+
+- **Default regime (before 5 PM Pacific):** cadence at natural cycle boundaries (after each major
+  work-cycle closes).
+- **Close-monitor regime (after 5 PM Pacific):** fatigue setting in; more attentive cadence
+  surfacing; explicit fatigue-checks at cycle boundaries.
+- **High-frequency regime (after 9 PM Pacific):** more frequent cadence notifications; explicit
+  pacing-toward-Reflection nudges every cycle.
+
+### Fallback — fatigue-driven Reflection-deferral
+
+If fatigue arrives before Reflection completes, the Operator may declare explicit-stop with
+Reflection-deferral. The deferred Reflection is logged as a TO-DO in the stand-down; next-session
+resume executes the deferred Reflection per resume sequence. **This is FALLBACK** — the default
+is to complete Reflection before Stand-down; deferral is acceptable but signals the cadence-
+surfacing missed its pacing window.
+
+*Lived: 2026-05-28 deferred Reflection → 2026-05-29 derailment-then-completion (4 substantive
+items closed before the deferred Reflection itself executed). Each derailment was substantive
+work, but Reflection-completion was always "next" — the deferral cost was real.*
 
 ## Format — Continue / Start / Stop, two-substrate-paired
 
