@@ -308,6 +308,17 @@ across substrates) but this is an inference, not a lived finding.
 phase-enrichment doc's *falsifiability hook* per phase should explicitly include a divergence-test
 question — *"if a parallel fork of this phase ran simultaneously, what discipline closes the gap?"*
 
+## [NOTE] 2026-05-29 — Frontier Dyad aligning to the Dyad-Practice lineage (watch-item)
+Operator flagged: the patient (Frontier Dyad / DZ-CIL) is embarking on a path to align with the
+**Dyad-Practice lineage** — *expect substantial changes to its substrate*. Consequence for us:
+intensify verify-before-asserting when grounding against `dz-cil` (anchors — paths, rule numbers,
+§-sections, SG-IDs — will move or be superseded beyond ordinary drift). Just-filed dz-cil#1393's
+anchors may be resolved-by-restructure or closed-as-superseded — by design (filed ailment-only,
+naming invariants not sutures); flag-on-evidence, don't chase. Lineage-alignment is the **Frontier
+Operator's domain** (patient transformation) and touches the **Dyad-Practice Operator hat / form
+repo** — not Healer-driven. Watch (don't act): if alignment completes, patient + Healer become
+siblings under one form → may reshape shared vocabulary, externality framing, the relationship.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
