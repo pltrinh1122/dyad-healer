@@ -2,12 +2,15 @@
 ============================  FILING METADATA — NOT part of the file body  ============================
 Source:   Dyad-Healer (one dyad of the Dyad Practice).
 Authored: 2026-05-28 via the 5-pass Dyadic Drafting Protocol (kb/governance-map.md
-          Standing rules). Pass 5a (voice/tone) + Pass 5b (line-level) + Pass 5c
-          (cross-reference + falsifiability + pedestrianization) revisions applied.
+          Standing rules). All 5 passes complete (Pass 1 intent + end-outcome; Pass 2 beat
+          sheet; Pass 3 treatment; Pass 4 section drafts; Pass 5 revision — voice/tone,
+          line-level, cross-reference + falsifiability + pedestrianization).
 For:     the parent form (`https://github.com/pltrinh1122/the-dyad-practice`) — to be filed
           as `AGENT.md` at the form repo root.
-Filing channel: Dyad-Practice Operator hat (PR + ratify); distinct from Healer Operator hat
-          which has ratified Pass 4 + Pass 5 stages.
+Status:   FINAL-RATIFIED by Healer Operator hat 2026-05-28. Awaiting Dyad-Practice Operator
+          hat to file as PR to form repo per channel discipline (same human, different hat;
+          the founding-Operator PR-gate per form README §Governance).
+When PR filed: link the URL here for traceability.
 =======================================================================================================
 -->
 
