@@ -7,10 +7,13 @@ Authored: 2026-05-28 via the 5-pass Dyadic Drafting Protocol (kb/governance-map.
           line-level, cross-reference + falsifiability + pedestrianization).
 For:     the parent form (`https://github.com/pltrinh1122/the-dyad-practice`) — to be filed
           as `AGENT.md` at the form repo root.
-Status:   FINAL-RATIFIED by Healer Operator hat 2026-05-28. Awaiting Dyad-Practice Operator
-          hat to file as PR to form repo per channel discipline (same human, different hat;
-          the founding-Operator PR-gate per form README §Governance).
-When PR filed: link the URL here for traceability.
+Status:   FINAL-RATIFIED by Healer Operator hat 2026-05-28. FILED to form repo by
+          Dyad-Practice Operator hat 2026-05-29 — direct commit to main (form repo
+          precedent; PR overhead unnecessary for solo-maintainer form repo).
+Filed at: github.com/pltrinh1122/the-dyad-practice/commit/b3203ac
+          (form repo AGENT.md at root; filing-metadata block stripped on copy).
+Requisition: Dyad-Practice Operator hat 2026-05-29 ~08:40 AM PDT — Healer dispatched
+          per channel discipline (hat-explicit requisition = authorized dispatch).
 =======================================================================================================
 -->
 
