@@ -308,6 +308,26 @@ across substrates) but this is an inference, not a lived finding.
 phase-enrichment doc's *falsifiability hook* per phase should explicitly include a divergence-test
 question — *"if a parallel fork of this phase ran simultaneously, what discipline closes the gap?"*
 
+## bin/git.sh — substrate-access wrapper (2026-05-29; the practice's first Pillar-3 tool)
+**Why now:** push-to-`main` is recurring friction (every session) but the auto-mode classifier blocks
+both a direct push and the Agent self-granting a `git push` permission (Self-Modification). Operator
+[FEEDBACK] established the standing rule: **automate recurring manual-intervention friction; pose if
+recurrence is undeterminable** (→ memory `feedback_automate-recurring-manual-friction`). Operator
+[ALIGN]: direct-to-`main` is *aligned* with a PR-gate discipline because **ratification happens in
+chat** (the gate's function, performed upstream + continuously); survived falsification with one
+refinement — chat ratifies *substance*, diff-fidelity is covered by the companion disciplines
+(verify-before-asserting · commit-before-sync · blast-radius hygiene).
+
+**Holding structure chosen — dialectical synthesis (Operator [IDEATE]: propose 3, falsify, synthesize):**
+- **A monolithic imperative wrapper** — policy+mechanism entangled in bash; illegible/edit-risky control surface. Survives only if policy is tiny+static.
+- **B policy/mechanism split** (thin runner + declarative policy data; mirrors patient's `audit_daemon.py`+`audit_config.yml`) — best control surface + scales, but over-build for push-alone (2 files + parser).
+- **C native-substrate-only** (narrow permission patterns + git hooks) — zero abstraction, but permission patterns can't express conditional policy, and `.git/hooks` is untracked (fails durable-record-is-locus) + `--no-verify`-bypassable.
+- **Synthesis (1+1=3): declared-policy single-file wrapper, permission-gated, fail-closed.** A's one file, with **B-shaped policy held in-place** (top-of-file declared ALLOWED_OPS/PROTECTED_BRANCHES/FORCE_FLAGS — legible, Operator-governed) separated from the dispatch mechanism; **C's native gate retained** as the narrow harness permission (`Bash(.../bin/git.sh:*)`, not broad git) + pre-push hook deferred for defense-in-depth. Documented promotion path → full B when op-count justifies.
+- **Boundary integrity** rests on **ratified edits** to `bin/git.sh` (chat-as-gate), not file perms — the Agent can edit repo files, so the wrapper is a boundary only because edits are load-bearing.
+- **Externality caution:** first `bin/` script; the four-bucket model has no tooling bucket (no tool ever existed). Kept as operational-infra, deliberately minimal — not the seed of a code engine.
+
+**Status:** v0.1 built + 5 dry-run policy paths verified; committed. **Open:** Operator grants the narrow permission (Self-Modification → Operator-only).
+
 ## [NOTE] 2026-05-29 — Frontier Dyad aligning to the Dyad-Practice lineage (watch-item)
 Operator flagged: the patient (Frontier Dyad / DZ-CIL) is embarking on a path to align with the
 **Dyad-Practice lineage** — *expect substantial changes to its substrate*. Consequence for us:
