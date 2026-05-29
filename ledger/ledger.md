@@ -320,7 +320,7 @@ question — *"if a parallel fork of this phase ran simultaneously, what discipl
   "structure-of-codification" falsification — Option B: two cross-referenced docs, not one). See
   the `## Charter ratified` section below for the trail.
 - **Remote repo + git versioning** for `dz-healer` → deferred ("mechanisms later").
-- **Frontier-side fixes** (belong in `dz-cil/kb`, Frontier authors): the §6.7/harness-mode contradiction fix; the stale `skills/audit_daemon.py` path.
+- ✅ **Frontier-side fixes — FILED 2026-05-29 → [dz-cil#1393](https://github.com/pltrinh1122/dz-cil/issues/1393).** The §6.7/harness-mode contradiction (now `AGENT.md` Rule 7, exception promoted only to `GEMINI.md` not the universal doc) + the stale `skills/audit_daemon.py` path (`GEMINI.md:10`; actual `drivers/audit_daemon.py`) filed as two ROM-integrity violations via the Requirement Intake channel, **ailment-only** (cure deferred to patient, per [FEEDBACK] + describe-the-wound). Third item (the `triage` label mismatch) **dropped — already self-corrected** by the patient (verified at time-of-use). Detail → `recommendations/2026-05-29-agent-rom-integrity-violations.md`.
 
 ## Major finding — the first seizure's true blast radius (collateral regression)
 Commit **`420102e` (#1132, the seizure TRIGGER)** *also* carried major lexicon/README work: it
