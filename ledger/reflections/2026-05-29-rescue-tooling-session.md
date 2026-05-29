@@ -1,6 +1,9 @@
 # Dyad-Healer — Practice Reflection — 2026-05-29 — Rescue + tooling working session
 
-> **Status:** STEP-1 DRAFT (Healer narrative + bullets; Operator POV pending Step 2).
+> **Status:** STEP-4 INTEGRATED — Operator POV was provided **real-time** (the session's
+> [FEEDBACK]/[ALIGN]/[RETROSPECTIVE NOTE]); **Step-3 falsification = faithful-attribution to chat history**
+> (the POV *was* the corrective position the Healer conceded to in-stream, so it survives by construction).
+> **Pending Operator final ratification (Step 5).**
 > **Trigger:** explicit-stop (Operator-declared pre-stand-down; §When always-triggers).
 > **Scope:** the 2026-05-29 working session *after* the morning stand-up — Pillar-2 filing (#1393) ·
 > first Pillar-3 tool (`bin/git.sh`) + permission · the case-04 rescue through discharge.
@@ -30,6 +33,13 @@ out better for it.
   permission-gated) emerged only when recurring push-friction justified it; tooling-when-friction-justifies
   held, and it dogfooded cleanly the rest of the session.
 
+**Narrative (Operator):** *(Integrated from the real-time [RETROSPECTIVE NOTE] + the session's [ALIGN]/
+[IDEATE] "Falsify" cadence.)* The standout recognition: delight that the Healer Telos — *enabling*
+self-healing — not only met but **beat** expectation, because the dyad supplied **causes/invariants, not
+directives**, so Frontier's curative "+1" came from *its own context* rather than the Healer's expertise.
+The Operator also drove refinement through **falsification dialectics**, not directives — the dyad earning
+the grain *through* friction, not around it.
+
 ## 2. START — what to do better
 
 **Narrative (Healer):** One improvement dominates: a **pre-delivery check on the *form* of any
@@ -43,6 +53,11 @@ recipient-facing artifact** — because the same drift recurred in two different
 - **Posture-discipline at boundaries** — don't let maturation/retrospection pull focus *during* treatment
   (the +1 essay surfaced at S7, mid-rescue; S9 is post-discharge). Hold Exception posture until the patient
   is clear.
+
+**Narrative (Operator):** *(From the real-time [FEEDBACK] on the #1393 intake and the case-04 orient.)*
+The consistent push: **focus on the ailment / violated invariant, not the solution** — *"a list of concerns
+Frontier needs to address, not a list of to-dos"*; Frontier figures out or falsifies the cure in its own
+context. And: **keep the Healing Protocol clear; don't allow distraction** while the patient is under care.
 
 ## 3. STOP — what hurt (or almost did)
 
@@ -59,7 +74,12 @@ capability/state claim, both caught by the Operator.
   Healer's protocol framing and re-issued patient-facing instructions; needed Operator correction. The
   Healer has its own protocol + vocabulary; don't narrate the patient's mechanism.
 
-**Narrative (Operator):** *[pending Step 2]*
+**Narrative (Operator):** *(From real-time [FEEDBACK].)* The Operator named the anti-pattern directly: the
+"cannot self-detect" assertion was *"patently incorrect"* — the Healer was **anchoring on a template or an
+unintended grain (belief)** instead of the evidence (Frontier self-identified the seizure; its guards work),
+and proposed the self-detectability *grading* as the fix. And: **"Frontier's substrate and discipline is
+leaking into the Healer"** — importing the patient's primitives + re-issuing instructions instead of
+addressing the Healer Operator in Healer terms.
 
 ## Forward
 
