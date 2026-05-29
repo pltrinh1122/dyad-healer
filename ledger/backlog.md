@@ -29,7 +29,7 @@
 
 ## Pillar 1 · Rescue — clinical intervention on a seized patient (reactive safety net)
 ### Open
-- [ ] *(none — no patient currently seized)*
+- [ ] **case-04** self-stabilized seizure (IN-FLIGHT, 2026-05-29) — lexical-guard cascade from #1400's premature deprecation (dao/ziran/align deprecated *before* corpus harmonized) → 67-failure count → seizure-detector trip → benign hold-loop. Patient **self-detected + self-stabilized + ran Recovery Protocol** (Telos-positive; falsified the spine's "cannot self-detect" absolute — Auditor daemon now active). Cure iterated v1 suppress → v2 over-translation (harmonization-as-recovery, falsified) → v3 minimal recovery (guard-fix + deprecated→proposed debt-defer). **NOT discharged:** cure not yet landed on root (ROM-drift halt interrupted sync → healthy restart pending); post-restart verify clearance → S8. → `wards/case-04-self-stabilized-seizure/`
 ### Done
 - [x] **case-01** PR-zero revival — seized loop resuscitated, cured & proven on real restart, discharged → `wards/case-01-pr-zero-revival/`
 - [x] **case-02** harness↔Dao relapse — telemetry-silent loop, halted + restarted into pending state, discharged → `wards/case-02-harness-dao-relapse/`

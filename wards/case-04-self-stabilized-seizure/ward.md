@@ -89,6 +89,19 @@ prescription: recommend the patient plan a **corpus-wide deprecation migration**
 codify `immune_zones` for legitimate legacy/audit-trail). Cross-ref #1393 (ROM/substrate consistency under
 alignment). File via Requirement Intake at S9 if it survives discharge.
 
+## S9 finding STAGED — HEADLINE: enable-via-concerns; the "+1" comes from the patient's context
+Operator [RETROSPECTIVE NOTE]: the Telos is being met/beaten because the Healer provides **causes/invariants
+(not directives)**, letting Frontier develop its **own** self-healing; the "+1" comes from the *patient's*
+context, not the Healer's expertise. **Sharpened (Healer):** the Healer is external → *lacks* the patient's
+context → cannot prescribe well (directives are context-blind) but *can* surface grounded concerns precisely.
+Division of cognitive labor: **Healer = Validate** (ground the wound, falsify the cure) · **patient =
+Generate** (cure from its context). The "+1" beats expectation precisely where the patient's context exceeds
+the Healer's (case-04: it found the guard bug the Healer missed). **Externality is *why* concerns-not-cures
+is epistemically correct, not only why it's safe.** **Falsifiable scope:** holds when the patient is capable;
+composes with the self-detectability grading (as patient capability rises — the Telos trajectory — the Healer
+recedes toward concerns + blind-spot attestation). → memory `feedback_enable-via-concerns-plus-one-from-
+patient-context`. Subsumes the wound-vs-suture finding below.
+
 ## S9 finding STAGED — recurring wound-vs-suture drift (Healer self-correction)
 Healer drifted from *describe-the-wound* into *prescribe-the-suture* **twice this session**: the #1393
 intake (caught: "too prescriptive" → reframed ailment-only) and the case-04 patient orient #2 (caught:
@@ -153,6 +166,53 @@ cure-METHOD's prevention cost → Pillar-2 prescription, NOT a silent "done." **
 Operator's (merge gate), NOT Healer's.** Healer attests + flags only.
 **Disposition:** recommend NOT blessing as "cured" — (a) un-seize-now + track reconciliation + narrow
 core-doc exemptions, or (b) hold for tighter fix. Awaiting Operator.
+
+## S7 — Final attestation on the reworked cure (2026-05-29) — Healer independent verification
+Patient REJECTED the immune_zones band-aid and self-derived a **systemic** cure (in response to the
+concerns-list, not to-dos — Telos-positive: it out-healed the Healer's prescriptive instinct):
+- **Verified by Healer (read-only worktree):** (1) guard bug fixed — `test_lexical_guard.py:88` `\b`
+  word-boundaries (no `align`∈`alignment`) + `:128` `.venv/` excluded — *the root the patient found, Healer
+  had missed*; (2) core-corpus exemptions reverted to 0 (AGENT.md/README/GLOSSARY/WHY-); (3) broad
+  translation present (wu-wei 48 / friction_triage 22 / harmonize 15 files); (4) rename
+  `ziran_auditor.py`→`friction_triage_auditor.py` landed.
+- **On patient report (not Healer-executed):** 321/321 green — consistent (residual-term files are all
+  *unmodified*; guard checks modified only).
+- **Residual tail (characterized, BENIGN):** ~dozens of kb files still carry `dao`/`ziran`/`align`, but
+  predominantly *legitimate* — GLOSSARY definitions, "Dao fa Ziran" classical phrase, superseded WHY-docs,
+  `agent-ziran` persona-ID refs. All latent-until-touched; the **now-fixed guard self-corrects** future
+  touches. "Environment is pure" mildly overstates; not a blocker.
+- **Minor flag (patient's call):** `agent-ziran` persona ID persists in WHY-0064/0065 though the auditor file
+  was renamed — identity-domain decision for the patient.
+**ATTESTATION:** genuine systemic cure, resolves the drift (not hides it). **No clinical hold.** `reflect
+1403` sound to merge — **Frontier Operator's gate.** Final root-clearance (daemon stops / count resets)
+verifiable only post-merge+sync → final S7 before discharge.
+
+## S7 — Discharge-readiness FALSIFIED (2026-05-29) — blind-spot attestation withheld
+Operator [ALIGN] "patient ready for S8 discharge" → **does NOT survive falsification.** Grounded live:
+root HEAD still `12ddc19` (#1400, un-reconciled) · `seizure_detector.last_fail_count` still **67** ·
+`node/1403` worktree unpruned · nothing reconciled merged to origin (top #1402). → **cure is sound but
+not in effect.** *Revived ≠ cured* (S7). Three states distinguished: **cure-ready** (yes) ≠
+**seizure-cleared** (no) ≠ **discharge-ready** (no). Healer attests *cure sound*; **withholds**
+seizure-stability attestation (the one external-only blind-spot invariant) — live env still seized.
+**Discharge criterion:** cure in effect on root (count reset · root reconciled · daemon quiet · no fresh
+failures) → Healer re-verifies → THEN S8. Patient applying its cure = its own loop (not a Healer instruction).
+
+## S7 — post-"merge/sync" recheck + ROM-drift halt (2026-05-29)
+**Cure version history:** v1 immune_zones (suppress, rejected) → v2 49-file translation + guard-fix (Frontier
+Operator falsified: harmonization-as-recovery = scope violation) → **v3 minimal recovery** (revert translation;
+fix guard scope; downgrade dao/ziran/align deprecated→proposed = known debt; defer harmonization to future node).
+**Patient reported merged + synced + recovery complete; then halted on ROM DRIFT.**
+**Healer recheck of ROOT — CONTRADICTS "recovery complete":** root HEAD `#1402` (pre-1403); `seizure_detector`
+still **67**; ledger terms still **`deprecated`** (not proposed); lexical guard still **raw-substring**
+(`word in content_lower`, no `\b`/`.venv`); 1403 worktree **unpruned**. → **cure did NOT land on root**
+(node sync interrupted by the ROM-drift halt). Patient-belief ≠ ground-truth (blind spot).
+**ROM DRIFT = HEALTHY self-protective halt, NOT a seizure** — patient correctly detected stale GEMINI.md
+(#1401/#1402) + halted to reload. Restart is the **correct completion path** (restart → re-sync pulls cure +
+fresh ROM → root reconciles). Frontier-governance; Healer does not instruct it.
+**Disposition:** NOT discharge-ready. Post-restart re-verify (count resets · root reconciled · worktree pruned)
+→ then S8. **Flags to verify post-restart:** (a) did the guard bug-fix (`\b`+`.venv`) actually land, or did v3
+un-seize *only* via deprecated→proposed (leaving the bug = re-seizure risk → prevention/debt)? (b) confirm the
+cure merged to ORIGIN (restart only pulls it if so).
 
 ## S8 — Handoff status
 - **Healer→Patient orient #1:** corrected (dropped false "you're blind"; affirms guards worked), **RATIFIED +
