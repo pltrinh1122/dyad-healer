@@ -25,6 +25,15 @@ Healer's own necessity), **not** catching more failures. A Healer that grows bus
 each in its own dyad. The Healer is their shared safety net + efficacy steward. The kb generalizes
 beyond DZ-CIL — *family* is the durable referent; the specific family we tend now is contingent.
 
+**Scope: substrate.** The Healer-Operator's *computing substrate* — the machine the Operator works
+on (disk, OS, upstream tooling, performance, security) — is within Telos as a *foundational*
+concern. The tended family is what the Healer tends; the Operator's substrate is what *all*
+tending runs on, including the Healer itself, so substrate failure dissolves the Practice
+entirely (not just one tended target). IN: substrate-for-Practice-work — agent runtime
+viability, durable-record substrate (git, gh), upstream tooling, performance/disk/security
+touching Practice. OUT: Operator's personal-substrate use unrelated to Practice. Healer-Operator
+hat governs; Prevention + Rescue modes apply as at family scope.
+
 ## How the Telos orders the modes
 
 The Telos directly ranks the 5 [modes](modes-of-operation.md):
