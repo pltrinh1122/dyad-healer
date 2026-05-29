@@ -76,10 +76,10 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   session continues on OLD grain because the system-reminder loads CLAUDE.md once at session
   start (re-reading mid-session puts content in tool-output, not at the anchor position). The
   Healer flags the Operator at the next **clean checkpoint** (post-commit; no in-flight
-  propose-Y/N) that a restart is warranted; Operator restarts immediately at that checkpoint
-  to re-load the anchor. **Don't defer to session-end** — deferral = continued operation on
-  stale grain (anti-wu-wei: shared mental model misaligned with durable record). Scope:
-  CLAUDE.md edits only — `kb/` is read on-demand, not loaded into trained-context at start.
+  propose-Y/N) with **materiality assessment + R2-fallback-health + restart recommendation**;
+  Operator dispatches via `/exit` per the recommendation. Channel discipline: discernment is
+  Healer's; mechanical dispatch is Operator's. Scope: CLAUDE.md edits only — `kb/` is read
+  on-demand, not loaded into trained-context at start.
   - **Restart type matters (fresh-session vs. thread-resume).** "Restart" here means
     **fresh session start** (`/exit` + new launch, which triggers a new system-reminder
     inject of CLAUDE.md). **Thread-resume** (`/exit` + continue same thread) preserves
@@ -91,12 +91,25 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
     output provides operational NEW. This is a **conscious-operation pattern**, not true
     anchor refresh — the Healer must be alert to which anchor it's citing for the
     remainder of the session.
+  - **Materiality + R2-health gate the restart recommendation.** Healer assesses materiality
+    (**HIGH** = new discipline / G0-level / structural; **MEDIUM** = hat-naming / clause
+    addition; **LOW** = wording refinement of already-codified content) + R2 fallback health
+    (**SUSTAINING** = Healer operating consciously from disk-Read; **DEGRADING** = drift
+    accumulating without coherent compensation). Recommends: **RESTART NOW** when material
+    drift + R2 degrading; **SKIP** when refinement-only OR R2 sustaining cleanly. Don't
+    ignore accumulated material drift indefinitely; do skip when discernment shows R2 is
+    holding. Original (pre-2026-05-29) framing of "restart-immediately on every edit" was
+    over-firing — the Operator's "naggy" desensitization risk applies to restart-flags too.
 
   *Pairs with Anchor-sync rule (write-to-disk pairs with reload-to-context). Lived:
   2026-05-29 dog-food cycle made 3 unflagged CLAUDE.md edits (Findings A/B/C) before
   Operator [FEEDBACK] surfaced this discipline; codified same cycle. Fresh-session vs.
   thread-resume refinement added same cycle when Operator chose thread-resume after the
-  first restart-flag, meta-falsifying the discipline at its first application.*
+  first restart-flag, meta-falsifying the discipline at its first application.
+  Materiality + R2-health gate added same cycle when Operator [ALIGN] ("didn't change
+  CLAUDE.md materially") + [FEEDBACK] ("Operator-gated means Operator initiates /exit;
+  discernment is on Agent") established the assessment-on-Agent / dispatch-on-Operator
+  channel discipline.*
 - **Glossary-check-at-ratification.** Any new cross-cutting token invoked **3+ times across
   `kb/`** requires a `kb/glossary.md` entry in the **same ratification cycle**. Prevents the
   late-glossary-arrival pattern that produced the *Dao→practice* friction-correction
