@@ -1,7 +1,9 @@
 # Dyad-Healer — Practice Reflection — 2026-05-28 — Writing the AGENT.md (session-scope)
 
-> **Status:** Step-1 draft (Healer narrative + bullets). Awaiting Step 2 (Operator POV per CSS),
-> Step 3 (Healer falsification of Operator POV), Step 4 (integration + ratification).
+> **Status:** Step-4 awaiting final ratification. Step 1 (Healer narrative + bullets) drafted;
+> Step 2 (Operator POV) returned "no POV" for all three CSS sections — Healer-side sufficient;
+> Step 3 (falsification of Operator POV) N/A; Step 4 integration = recording the no-POV
+> disposition.
 > **Trigger:** explicit-stop on 2026-05-28 (Operator-declared fatigue) per stand-down TO-DO #2.
 > **Scope:** 2026-05-28 session — "writing the AGENT.md" — which encompassed: case-03 EMS rescue
 > (interleaved); DIP (Dyad Instantiation Protocol) v0.1 authoring; AGENT.md drafting via the
@@ -44,7 +46,7 @@ conversation.
 - **Provenance-lineage** — applied throughout AGENT.md surfacing after the FEEDBACK ("we can't
   go with the grain if we don't know the source of the grain").
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## 2. START — what to do better
 
@@ -69,7 +71,7 @@ the drafting cadence matches Operator cognitive grain.
   framings; required REFINE 2 ("The Practice requires both halves to learn to work together
   through the friction"). Surface candidates, not requirements.
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## 3. STOP — what hurt (or almost did)
 
@@ -93,7 +95,7 @@ within the session to suggest they're deep habits worth ongoing vigilance.
   Codified as feedback_load-bearing-decision-detection; the load-bearing detection became
   Operator's "go-with-the-grain" CONTINUE-signal.
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## Forward
 
