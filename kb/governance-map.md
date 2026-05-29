@@ -80,9 +80,23 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   to re-load the anchor. **Don't defer to session-end** — deferral = continued operation on
   stale grain (anti-wu-wei: shared mental model misaligned with durable record). Scope:
   CLAUDE.md edits only — `kb/` is read on-demand, not loaded into trained-context at start.
+  - **Restart type matters (fresh-session vs. thread-resume).** "Restart" here means
+    **fresh session start** (`/exit` + new launch, which triggers a new system-reminder
+    inject of CLAUDE.md). **Thread-resume** (`/exit` + continue same thread) preserves
+    trained-context — the original CLAUDE.md inject stays anchored; the disk's NEW
+    anchor is NOT loaded. For true anchor reload, fresh-session is required.
+  - **Thread-resume fallback.** When thread-resume must be used (e.g., to preserve
+    in-flight cycle context), the Healer immediately Re-reads `CLAUDE.md` upon resume and
+    surfaces a brief diff to the Operator. Trained-context anchor stays OLD; Read-tool
+    output provides operational NEW. This is a **conscious-operation pattern**, not true
+    anchor refresh — the Healer must be alert to which anchor it's citing for the
+    remainder of the session.
+
   *Pairs with Anchor-sync rule (write-to-disk pairs with reload-to-context). Lived:
   2026-05-29 dog-food cycle made 3 unflagged CLAUDE.md edits (Findings A/B/C) before
-  Operator [FEEDBACK] surfaced this discipline; codified same cycle.*
+  Operator [FEEDBACK] surfaced this discipline; codified same cycle. Fresh-session vs.
+  thread-resume refinement added same cycle when Operator chose thread-resume after the
+  first restart-flag, meta-falsifying the discipline at its first application.*
 - **Glossary-check-at-ratification.** Any new cross-cutting token invoked **3+ times across
   `kb/`** requires a `kb/glossary.md` entry in the **same ratification cycle**. Prevents the
   late-glossary-arrival pattern that produced the *Dao→practice* friction-correction
