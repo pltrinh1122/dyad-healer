@@ -1,9 +1,9 @@
 # Dyad-Healer — Practice Reflection — 2026-05-29 — Stand-up session (natural-stop)
 
-> **Status:** Step-4 awaiting final ratification. Step 1 (Healer narrative + bullets) drafted;
-> Step 2 (Operator POV) returned "no POV" for all three CSS sections — Healer-side sufficient;
-> Step 3 (falsification of Operator POV) N/A; Step 4 integration = recording the no-POV
-> disposition.
+> **Status:** **RATIFIED** 2026-05-29 by Healer Operator approval (per Charter source-not-
+> ratifier discipline). Step 1 Healer narrative + bullets drafted; Step 2 Operator POV
+> returned "no POV" for all three CSS sections — Healer-side sufficient; Step 3 N/A;
+> Step 4 integration complete.
 > **Trigger:** natural-stop per `kb/practice-reflection.md` §Natural stop — milestone moment
 > (5+ discipline codifications + 1 form-PR shipped + 2 Telos scope extensions + multiple
 > meta-falsification cycles all converged in one session arc).
