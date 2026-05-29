@@ -47,7 +47,7 @@ only load-bearing-to-not-have*).
 
 ## Authoring discipline
 **Dyadic drafting protocol** for large multi-section artifacts (5-pass narrative-flowing:
-Logline → Beat sheet → Treatment → Section drafts → Revision passes; see
+Intent + End-outcome → Beat sheet → Treatment → Section drafts → Revision passes; see
 `kb/governance-map.md` Standing rules). Small artifacts (1–3 paragraphs, single decision):
 standard propose-Y/N cadence. Don't draft whole-cloth before intent + structure are aligned.
 

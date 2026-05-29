@@ -91,9 +91,12 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   at the source. *(Lived: the parent form had retired *Dao* + *Ziran* while Dyad-Healer
   carried them for weeks; per-term audit was reactive — 9-file substitution pass `611e691` +
   `5c285d2` — and would have been zero-pass had this rule been standing.)*
-- **Dyadic drafting protocol (for large multi-section artifacts).** Five-pass narrative-
+- **Dyadic drafting protocol v0.3 (for large multi-section artifacts).** Five-pass narrative-
   flowing process:
-  - **P1 Logline** — one sentence: actor + action + arc + reader + takeaway. Y/N.
+  - **P1 Intent + End-outcome** — what the artifact accomplishes (intent) and what the
+    success state looks like (end-outcome — the state of the world produced when the artifact
+    does its job). Logline-shape is one way to surface intent; explicit success state is what
+    makes it ratifiable. Y/N.
   - **P2 Beat sheet** — 5–15 beats; each beat is *"what happens next to advance the premise."*
     Beats are cheap to rearrange/add/drop. Y/N.
   - **P3 Treatment** — 2–3 paragraphs of prose synopsis telling what the artifact says + does +
@@ -101,8 +104,20 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
     narrative-shape pass.* Y/N.
   - **P4 Section drafts** — one section at a time against agreed beats + treatment. Per-section
     ratification surface.
-  - **P5 Revision passes** — single-focus per pass (voice/tone; line-level; cross-reference +
-    falsifiability).
+  - **P5 Revision passes** — single-focus per pass: **5a voice/tone** (whole-document
+    consistency); **5b line-level** (sentence-by-sentence tightening); **5c cross-reference +
+    falsifiability + vocabulary** (every claim citable, every section falsifiable, technical
+    jargon replaced with sufficiently-precise pedestrian alternatives where wu-wei favors).
+
+  **Pass-N call-to-action template** (every Pass-N ask follows this shape):
+  - *"Pass-N ratify? = [THING being locked at this pass]."*
+  - *"Y → [substrate for next pass + the immediate next move]."*
+  - *"N → [which prior pass to revisit, or restart]."*
+  - *"refine X → [name specific item; revise before re-surfacing]."*
+
+  **Per-pass ratification ≠ final ratification.** Pass 4 Y locks substance + structure of each
+  section; Pass 5 holds final tone + flow gate against the assembled document in totality.
+  Each Pass 4 Y is conditional on Pass 5 acceptance.
 
   For *small* artifacts (1–3 paragraphs, single-decision surface), the standard propose-Y/N
   cadence applies; this protocol is specifically for **large multi-section artifacts** to
@@ -111,7 +126,9 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   treatments, classical rhetoric (Aristotle's beginning/middle/end), legal IRAC/CREAC,
   journalism inverted pyramid. *(Lived: case-03 session AGENT.md draft was authored
   whole-cloth and triggered Operator FEEDBACK on cognitive-grain violation; v0.2 of this
-  protocol was the response.)*
+  protocol was the response. v0.3 refinements 2026-05-28 from AGENT.md drafting session:
+  Pass 1 restructure (intent + end-outcome explicit); Pass-N CTA template codified; per-pass
+  vs final ratification clarity; Pass 5 sub-passes expanded with pedestrianization.)*
 
 ## Falsifiability — when to revise
 
