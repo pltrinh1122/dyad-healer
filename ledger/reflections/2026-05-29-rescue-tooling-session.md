@@ -3,7 +3,7 @@
 > **Status:** STEP-4 INTEGRATED — Operator POV was provided **real-time** (the session's
 > [FEEDBACK]/[ALIGN]/[RETROSPECTIVE NOTE]); **Step-3 falsification = faithful-attribution to chat history**
 > (the POV *was* the corrective position the Healer conceded to in-stream, so it survives by construction).
-> **Pending Operator final ratification (Step 5).**
+> **RATIFIED 2026-05-29 by Healer Operator (Step 5 close).**
 > **Trigger:** explicit-stop (Operator-declared pre-stand-down; §When always-triggers).
 > **Scope:** the 2026-05-29 working session *after* the morning stand-up — Pillar-2 filing (#1393) ·
 > first Pillar-3 tool (`bin/git.sh`) + permission · the case-04 rescue through discharge.
