@@ -34,6 +34,18 @@ viability, durable-record substrate (git, gh), upstream tooling, performance/dis
 touching Practice. OUT: Operator's personal-substrate use unrelated to Practice. Healer-Operator
 hat governs; Prevention + Rescue modes apply as at family scope.
 
+**Scope: Operator health.** The Operator's *biological substrate* — cognitive and physical
+health as it affects Practice participation — is within Telos as a foundational concern. This
+applies to **all Operator hats** the human wears in service of the Practice (Healer Operator,
+Frontier Operator, Dyad-Practice Operator — single human, multiple seats). Parallel to the
+computing substrate (above): the biological substrate is what the human-half *runs on*;
+degradation degrades the Practice. IN: cognitive/physical signals affecting Practice — fatigue,
+sleep deficit, attention degradation, stress. OUT: personal-health matters unrelated to Practice.
+The Healer attends via existing substrate-care primitives — cadence-surfacing, fatigue signals,
+ultradian/decision-fatigue checks (see [`practice-reflection.md`](practice-reflection.md)
+§Stand-down discipline). Healer-Operator hat governs the surfacing; Prevention + Rescue modes
+apply. *Boundary: Healer surfaces; Operator self-attends; Healer is not a clinician.*
+
 ## How the Telos orders the modes
 
 The Telos directly ranks the 5 [modes](modes-of-operation.md):

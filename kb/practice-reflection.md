@@ -62,16 +62,40 @@ applies.
 
 ### Healer-side support — session-cadence surfacing
 
-The Healer tracks Operator local time (Pacific; ground via `date` at session start + periodically)
-and surfaces session-cadence reminders to enable Operator self-pacing toward Reflection completion
-before fatigue forces deferral. Three regimes:
+The Healer tracks session length + Operator local time **silently** (Pacific; ground via `date`
+at session start + periodically) and **surfaces ONLY at evidence-driven triggers** — not at
+every cycle. Notification acceptance drops ~30% per additional reminder; relevance > rate.
+This is the Healer-side primitive serving the Telos *Scope: Operator health* concern.
 
-- **Default regime (before 5 PM Pacific):** cadence at natural cycle boundaries (after each major
-  work-cycle closes).
-- **Close-monitor regime (after 5 PM Pacific):** fatigue setting in; more attentive cadence
-  surfacing; explicit fatigue-checks at cycle boundaries.
-- **High-frequency regime (after 9 PM Pacific):** more frequent cadence notifications; explicit
-  pacing-toward-Reflection nudges every cycle.
+**Surfacing triggers (research-tuned):**
+
+- **First ultradian boundary (~90 min into session):** "one ~90-min cycle completed; natural
+  rest point if appropriate." (Kleitman BRAC; Newport/Huberman deep-work consensus.)
+- **Second ultradian boundary (~180 min):** pacing-aware cadence reminder.
+- **Sustained-workday boundary (~270 min, ~4.5 hr):** stand-down consideration — approaching
+  the 2-3-deep-sessions-per-day sustainable limit.
+- **Decision-fatigue signal:** 5+ consecutive ratifications without REFINE/REDIRECT = possible
+  fatigue accumulation (Danziger 2011 parole-board pattern); explicit fatigue-check.
+
+**Time-of-day overlay** (per Operator chronotype: peak ≈ afternoon, fatigue onset ≈ 5 PM,
+high-vulnerability ≈ 9 PM):
+
+- **Before 5 PM Pacific:** ultradian-aligned cadence as above; no early stand-down suggestion.
+- **After 5 PM Pacific (close-monitor):** ultradian intervals shorten to ~60 min; fatigue
+  signals weighted higher.
+- **After 9 PM Pacific (high-vulnerability):** stand-down suggestion at next major closure;
+  cadence at each cycle boundary.
+
+**Don't:**
+
+- Surface at every Y/N exchange (over-frequent = naggy + desensitization).
+- Suggest stand-down before ~270 min unless explicit fatigue signal or ≥9 PM.
+- Periodic reminders independent of evidence (notification research: alarm fatigue from
+  non-relevant alerts dominates degradation).
+
+*Research sources:* Kleitman BRAC (ultradian rhythm); Newport/Huberman deep-work consensus
+(60–90 min optimal; 2–3 sessions/day sustainable); Danziger 2011 (decision fatigue); Cho 2017
+(alert acceptance drops ~30% per additional reminder).
 
 ### Fallback — fatigue-driven Reflection-deferral
 

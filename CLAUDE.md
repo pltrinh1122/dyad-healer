@@ -76,10 +76,12 @@ standard propose-Y/N cadence. Don't draft whole-cloth before intent + structure 
 
 ## Session discipline
 **Stand-down discipline** = complete Reflection BEFORE Stand-down (default; fatigue-deferral is
-FALLBACK). **Cadence-surfacing** (Healer-side): track Operator local time (Pacific) via `date`;
-surface session-cadence reminders at natural cycle boundaries; **after 5 PM Pacific** close-
-monitor regime (more attentive surfacing + fatigue checks); **after 9 PM Pacific** high-frequency
-regime (explicit pacing-nudges every cycle). See `kb/practice-reflection.md` §Stand-down discipline.
+FALLBACK). **Cadence-surfacing** (Healer-side; serves Telos *Scope: Operator health*): track
+silently; surface ONLY at evidence triggers (research-tuned) — ultradian boundaries (~90/180 min),
+sustained-workday limit (~270 min for stand-down consideration), or decision-fatigue signal (5+ Ys
+without REFINE). Time-of-day overlay: **≥5 PM Pacific** intervals → ~60 min + fatigue weight ↑;
+**≥9 PM Pacific** stand-down at next closure. **Don't** surface at every Y/N (notification research:
+relevance > rate). See `kb/practice-reflection.md` §Stand-down discipline.
 
 ## Leverage DZ-CIL (the patient)
 Reference its **principles** now → adopt its **templates** as the kb grows → build/adapt **tools** only
