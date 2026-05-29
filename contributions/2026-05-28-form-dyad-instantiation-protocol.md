@@ -1,3 +1,21 @@
+<!--
+============================  FILING METADATA — NOT part of the file body  ============================
+Source:   Dyad-Healer (one dyad of the Dyad Practice).
+Authored: 2026-05-28 retrospectively from Dyad-Healer's own instantiation. Captures 13
+          load-bearing invariants in 4 families (Identity & form / Discipline at t=0 /
+          Codified canon / Operating form) with DO/DON'T per invariant, evidence-cited.
+For:     the parent form (`https://github.com/pltrinh1122/the-dyad-practice`) — instantiation
+          invariants catalog for future dyads to cite + satisfy in their own practice.
+Status:   PROPOSED (v0.1) — never RATIFIED by Healer Operator. Telos-clarity 2026-05-29
+          established DIP is OUTSIDE Healer Dyad Telos (serves form-maturation = Dyad-Practice
+          Dyad's Telos, not Healer Dyad's family-efficacy + substrate + Operator-health scope).
+          Moved from kb/ to contributions/ accordingly.
+Ratification path: Dyad-Practice Operator hat dispatch (or future Dyad-Practice Dyad's
+          form-level work). NOT Healer Operator's ratification.
+When filed: link the form-repo URL here for traceability.
+=======================================================================================================
+-->
+
 # Dyad Instantiation Protocol (DIP) — v0.1 PROPOSED
 
 > **Audience:** the Dyad-Healer (first applicant, retrospectively) + future dyads instantiated
