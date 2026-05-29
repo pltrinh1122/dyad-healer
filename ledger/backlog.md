@@ -45,8 +45,8 @@
 ## Pillar 3 · Tooling R&D — a built code instrument (only when volume justifies)
 ### Open
 - [ ] ⏸ Async rec-generation mechanism (via `/goal` verifiable-completion or background Agent) — *if built* (deferred)
-- [ ] **`bin/git.sh` — pose narrow permission** `Bash(.../bin/git.sh:*)` for the Operator to add to `.claude/settings.json` (self-modification = Operator-only); until granted, pushes still need a manual `!` hand.
 ### Done
+- [x] **`bin/git.sh` — permission GRANTED + validated end-to-end 2026-05-29.** Operator added `Bash(bin/git.sh:*)` to `.claude/settings.json`; `bin/git.sh push` ran with **no prompt** (rule hot-reloaded mid-session — no restart) and pushed `b1a276c`. Recurring push-friction now automated through the choke-point; raw `git` stays ungranted.
 - [x] **`bin/git.sh` v0.1 — BUILT 2026-05-29** (the practice's *first* Pillar-3 tool; friction = recurring push-to-main blocked by the self-modification gate). Holding structure: **declared-policy single-file wrapper, permission-gated, fail-closed** — synthesized via dialectical falsification of 3 alternatives (A monolithic / B config-split / C native-substrate-only). v0.1 op: `push` (origin/current-branch; refuses history-rewriting flags on protected `main`; fail-closed on unknown ops; `GIT_SH_DRY_RUN=1` test affordance). 5 dry-run policy paths verified. Operational-infra, deliberately minimal (externality caution noted). Promotion path → standalone policy file (B) documented in-header. Dialectic + decision → ledger "bin/git.sh".
 
 ## Pillar 4 · Research / learning — a finding / evidence artifact (cross-cutting engine; feeds 2 & 5)

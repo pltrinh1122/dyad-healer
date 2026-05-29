@@ -326,7 +326,10 @@ refinement — chat ratifies *substance*, diff-fidelity is covered by the compan
 - **Boundary integrity** rests on **ratified edits** to `bin/git.sh` (chat-as-gate), not file perms — the Agent can edit repo files, so the wrapper is a boundary only because edits are load-bearing.
 - **Externality caution:** first `bin/` script; the four-bucket model has no tooling bucket (no tool ever existed). Kept as operational-infra, deliberately minimal — not the seed of a code engine.
 
-**Status:** v0.1 built + 5 dry-run policy paths verified; committed. **Open:** Operator grants the narrow permission (Self-Modification → Operator-only).
+**Status:** v0.1 built + 5 dry-run policy paths verified; committed + pushed. **Permission GRANTED**
+2026-05-29 (Operator added `Bash(bin/git.sh:*)` to `.claude/settings.json`); validated end-to-end —
+`bin/git.sh push` ran with no prompt and pushed `b1a276c`. **Grounded fact:** the permission
+**hot-reloaded mid-session** (no restart needed — corrects an earlier Agent hedge). Friction closed.
 
 ## [NOTE] 2026-05-29 — Frontier Dyad aligning to the Dyad-Practice lineage (watch-item)
 Operator flagged: the patient (Frontier Dyad / DZ-CIL) is embarking on a path to align with the
