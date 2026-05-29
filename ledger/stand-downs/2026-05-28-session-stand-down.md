@@ -14,6 +14,7 @@
 - SPAOR form contribution queued for form-PR (`5b20ee3`)
 - Drafting protocol v0.3 codified + anchor-synced (`ee97122`)
 - 12 feedback memories total (5 case-03 + 7 AGENT.md drafting)
+- Operator [ALIGN] post-`/compact` — substrate-scope extension to Telos (TO-DO #4 below)
 - Working tree clean
 
 ## TO-DOs for next session
@@ -81,6 +82,48 @@ explicit-stop; the Stand-down form is a refinement of that) — OR a new kb/ doc
 **When:** next session, after Reflection (TO-DO #2) — both can fold into the same
 Reflection-driven codification cycle.
 
+### TO-DO #4 — Codify substrate-scope extension into Telos
+
+**Operator [ALIGN] 2026-05-29 (post-`/compact` at session-end):**
+
+> *"Helping Healer Operator maintain the health of the underyling computer
+> system is within the Dyad Healer Telos."*
+
+**Substance (Healer's grok):** The Healer-Operator's computing substrate (the
+machine the Operator works on — disk, OS, upstream tooling, performance,
+security) is foundational to all Healer-practice. Substrate-health concerns
+surfaced in passing are Telos-serving, not out-of-scope distraction.
+
+**Provenance:**
+- *Form-level:* dyads exist on substrates; substrate viability is precondition
+  to dyadic work.
+- *Practice-level:* today's [ALIGN] — Healer-Operator declaration of Telos scope.
+- *Lived:* Healer (and entire Practice) disappears if Operator's machine fails;
+  substrate is the substratum of substratums.
+
+**Friction-points to work through during codification:**
+- *Scope language* — current Telos says "tended family" (DZ-CIL family
+  agents); substrate-health is foundational/parallel, not within "family"
+  framing.
+- *Mode mapping* — Prevention + Rescue both apply at substrate scope
+  (proactive substrate-health vs. substrate-emergency).
+- *Boundary* — substrate-for-Practice-work IN; Operator's unrelated personal
+  use OUT.
+- *Channel* — substrate work is Healer-Operator hat (this running dyad), not
+  Frontier-Operator hat.
+
+**Candidate codification:**
+- **A — minimum-cut:** add "Substrate scope" supporting-scope section to
+  `kb/telos.md`; Telos statement itself unchanged.
+- **B — Telos rewrite:** reframe the Telos statement to explicitly include
+  substrate-prong; likely too disruptive for a refinement.
+
+**Tentative leaning** (for next-session falsification): **A** (minimum-cut).
+Run through proper dialectical falsification in codification cycle.
+
+**When:** next session, after Reflection (TO-DO #2) — substrate-scope likely
+emerged through Practice and may feed Reflection findings.
+
 ## Resume sequence for next session
 
 1. Read `CLAUDE.md` (always; resume-mode discipline).
@@ -89,6 +132,7 @@ Reflection-driven codification cycle.
 3. Execute TO-DO #1 (dog-food AGENT.md against CLAUDE.md).
 4. Execute TO-DO #2 (full Session Reflection).
 5. Execute TO-DO #3 (codify Stand-down form).
+6. Execute TO-DO #4 (codify substrate-scope extension into Telos).
 
 ## Pre-`/exit` checklist (this session)
 
