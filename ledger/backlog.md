@@ -29,10 +29,11 @@
 
 ## Pillar 1 · Rescue — clinical intervention on a seized patient (reactive safety net)
 ### Open
-- [ ] **case-04** self-stabilized seizure (IN-FLIGHT, 2026-05-29) — lexical-guard cascade from #1400's premature deprecation (dao/ziran/align deprecated *before* corpus harmonized) → 67-failure count → seizure-detector trip → benign hold-loop. Patient **self-detected + self-stabilized + ran Recovery Protocol** (Telos-positive; falsified the spine's "cannot self-detect" absolute — Auditor daemon now active). Cure iterated v1 suppress → v2 over-translation (harmonization-as-recovery, falsified) → v3 minimal recovery (guard-fix + deprecated→proposed debt-defer). **NOT discharged:** cure not yet landed on root (ROM-drift halt interrupted sync → healthy restart pending); post-restart verify clearance → S8. → `wards/case-04-self-stabilized-seizure/`
+- [ ] *(none — no patient currently seized)*
 ### Done
 - [x] **case-01** PR-zero revival — seized loop resuscitated, cured & proven on real restart, discharged → `wards/case-01-pr-zero-revival/`
 - [x] **case-02** harness↔Dao relapse — telemetry-silent loop, halted + restarted into pending state, discharged → `wards/case-02-harness-dao-relapse/`
+- [x] **case-04** self-stabilized seizure — DISCHARGED 2026-05-29. Mild, **self-caught** lexical-guard cascade (#1400 deprecated dao/ziran/align before corpus harmonized; guard substring/.venv bug amplified → 67-count → detector trip → benign hold-loop). Patient self-detected + self-stabilized + ran Recovery Protocol; cure iterated v1 suppress → v2 over-translation (falsified) → v3 minimal recovery (terms→`known_debt` + defer harmonization). CLEARED (0 lexical failures, worktree pruned). **Telos-positive** (first self-caught case). Carried: auditor cron disabled via #1393-V2 (priority↑); guard bug + harmonization deferred → S9 prescription. → `wards/case-04-self-stabilized-seizure/`
 - [x] **case-03** iatrogenic-injection loop — schedule/kill/re-schedule cycling driven by re-injected EPHEMERAL_MESSAGE meta-imperative; hybrid A+B+C; second seizure of same `agy` session 36 min after morning's WIP-N=1 quick-fix. Patient self-healed cleanly via Operator-ratified Happy Path (`reset --hard origin/main` inheriting #1295 → §2.3+§2.5 co-cured; targeted hygiene → §2.6; 1294 abandonment → §2.4 baseline). All 6 §2.x PASS by patient verification + external Healer triangulation. Discharged 2026-05-28 → `wards/case-03-iatrogenic-injection-loop/`
 
 ## Pillar 2 · Prevention — prescription delivered to the tended family (proactive; the Telos's heart)

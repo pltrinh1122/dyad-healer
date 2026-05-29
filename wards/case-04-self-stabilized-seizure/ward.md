@@ -214,7 +214,57 @@ fresh ROM → root reconciles). Frontier-governance; Healer does not instruct it
 un-seize *only* via deprecated→proposed (leaving the bug = re-seizure risk → prevention/debt)? (b) confirm the
 cure merged to ORIGIN (restart only pulls it if so).
 
+## S7 — CLEARED (post-restart, 2026-05-29) — blind-spot attestation GIVEN
+Root verified: `dao`/`ziran`/`align` → `status: known_debt`; latest test run 0 lexical failures (2 unrelated:
+reflection_hook, lightweight_audit_workflow — patient's routine); 1403 worktree pruned; root advanced (#1410).
+**Lexical-cascade seizure CLEARED** — seizure-stability attestation given (withheld until now). Cure = honest
+deferral (recovery≠harmonization): terms→known_debt + harmonization deferred to a future node.
+**Carried (flags, not blockers):** (1) auditor scheduled-run DISABLED — patient hit #1393-V2 (GEMINI.md:21
+still `skills/audit_daemon.py` dead path) + cancelled the cron → self-detection degraded; #1393 priority↑.
+(2) guard bug carried (raw-substring + `.venv` unfixed); harmonization deferred.
+
 ## S8 — Handoff status
+**DISCHARGE in progress 2026-05-29 (Operator authorized):**
+- **① Healer→Healer Operator** disposition/attestation — DELIVERED in chat (SBAR: cleared-via-known-debt;
+  Telos-positive self-heal; 2 carried flags). 
+- **② Healer→Patient** SG-0005 learning — DRAFTED (copy-paste in chat): marker · affirm self-detect/
+  stabilize/Recovery-Protocol (self-caught grade; "cannot self-detect" nuanced) · recovery≠harmonization ·
+  2 concerns (auditor cron off; known-debt) framed as concerns-not-directives. **Pending Operator delivery.**
+- **② DELIVERED by Operator (Frontier hat) 2026-05-29 → DISCHARGE COMPLETE** (both-handoffs criterion met). backlog→Done. Healer stands down on case-04.
+
+## S9 — Healer Retrospective (post-discharge; promotions PROPOSED, Operator ratifies)
+**CONTINUE (worked):** concerns-not-directives enabled the patient to **out-heal the Healer's own prescriptive
+instinct** (the +1 from the patient's context — it found the guard bug the Healer missed); the **Auditor
+function repeatedly caught patient-belief ≠ ground-truth** (v1 suppression band-aid; "merged/synced" while
+root still seized; "pure" overstatement); blind-spot attestation **withheld until independently verified**.
+**START (do better):** recurring **wound-vs-suture drift** (caught twice — the #1393 intake + the case-04
+orient); **Frontier-substrate leak** (importing `reflect`/`merge`/`node sync` into the Healer's framing +
+re-issuing patient instructions). Both needed Operator correction → pre-delivery checks.
+**STOP (hurt/almost):** **anchoring on stale templates over live evidence** — asserted "you cannot
+self-detect" (spine S0/S8) contradicted by the daemon firing in the same paste (a verify-before-asserting
+miss on a *capability* claim); **over-engaging retrospective mid-treatment** (the +1 essay during S7 — S9
+is post-discharge).
+
+**Accrue-measure:**
+- **(a) Taxonomy:** propose adding a **self-detectability axis** (self-caught / self-caught-but-stuck /
+  silent-external-only) — orthogonal to S3 severity; and a class flavor **"iatrogenic deprecation-cascade"**
+  (premature deprecation + guard-bug amplification). → `kb/seizure-taxonomy.md` (ratify).
+- **(b) Telos metric:** **Telos-POSITIVE — the clearest case yet.** First seizure the patient **self-caught**
+  (Auditor active); self-stabilized + Recovery Protocol ran; resuscitation NOT needed — Healer only
+  *enabled*. Efficacy rising. Caveat: auditor cron now disabled (#1393-V2) → self-detection regressed until
+  the path is fixed; net trajectory still positive.
+- **(c) Patient-records (triangulation):** patient's Recovery-Protocol assertions + retro-1035/1409 largely
+  matched the Healer's ward — *except* the "mathematically sound / pure" self-attest, which the Healer's
+  independent audit corrected (the suppression + staged-not-applied gaps). Mismatch = the finding.
+
+**Ratifiable promotions (PROPOSED — queued; Operator ratifies in a focused effort, not at session tail):**
+1. Spine S0/S7/S8: nuance the "cannot self-detect" absolute → self-detectability grading.
+2. `kb/seizure-taxonomy.md`: self-detectability axis + iatrogenic-deprecation-cascade class.
+3. enable-via-concerns principle → consider kb codification (memory already written).
+4. **Pillar-2 prevention prescription** (Requirement Intake): corpus harmonization debt · guard substring/.venv
+   bug · **#1393-V2 GEMINI.md path (priority↑ — caused live auditor disablement)**.
+
+**STATUS: case-04 DISCHARGED + S9 filed. Ward closed.**
 - **Healer→Patient orient #1:** corrected (dropped false "you're blind"; affirms guards worked), **RATIFIED +
   DELIVERED** by Operator (Frontier hat) 2026-05-29. Patient self-healed → S7.
 - **Healer→Patient orient #2 (disposition / course-correction):** Operator deferred to Healer recommendation.
