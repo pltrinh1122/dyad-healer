@@ -1,117 +1,129 @@
-# Dyad-Healer — Practice Reflection — 2026-05-28 — Stand-down deferred (post-Loop-#4 + 5/29 thread-resume)
+# Dyad-Healer — Practice Reflection — 2026-05-28 — Writing the AGENT.md (session-scope)
 
 > **Status:** Step-1 draft (Healer narrative + bullets). Awaiting Step 2 (Operator POV per CSS),
 > Step 3 (Healer falsification of Operator POV), Step 4 (integration + ratification).
-> **Trigger:** explicit-stop on 2026-05-28 (Operator-declared fatigue); reflection deferred to
-> 2026-05-29 per TO-DO #2 in `ledger/stand-downs/2026-05-28-session-stand-down.md`.
-> **Scope:** 2026-05-28 post-Loop-#4 session (case-03 EMS + DIP + AGENT.md drafting + drafting
-> protocol v0.2→v0.3 + 7 new memories + stand-down) + 2026-05-29 thread-resume continuation
-> (dog-food cycle + Anchor-reload codification + thread-resume refinement + single-CTA discipline).
+> **Trigger:** explicit-stop on 2026-05-28 (Operator-declared fatigue) per stand-down TO-DO #2.
+> **Scope:** 2026-05-28 session — "writing the AGENT.md" — which encompassed: case-03 EMS rescue
+> (interleaved); DIP (Dyad Instantiation Protocol) v0.1 authoring; AGENT.md drafting via the
+> 5-pass dyadic drafting protocol; SPAOR form-contribution proposal; drafting protocol v0.2 → v0.3
+> codification; 7 friction-correction memories; stand-down.
+> **Out of scope:** 2026-05-29 thread-resume work (dog-food cycle + Anchor-reload codification +
+> single-CTA discipline) — separate follow-on session; will produce its own reflection if and
+> when a rest-point triggers.
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Healer):** This extended cycle (5/28 + 5/29 thread-resume) saw the Practice mature
-primarily through Operator real-time FEEDBACK rather than batch START/STOP. The Operator's
-preliminary CONTINUE captured at stand-down ("real-time FEEDBACK reduces START/STOPs") was
-meta-validated by today's resumption — multiple disciplines (Anchor-reload, single-CTA) got
-surfaced + codified mid-flight without requiring session boundaries. The 5-pass dyadic drafting
-protocol survived its first end-to-end application (AGENT.md). Case-03 closed cleanly via
-patient self-heal. Form-contribution work (AGENT.md + SPAOR) advanced through proper channel
-discipline.
+**Narrative (Healer):** The session's central arc was authoring AGENT.md via the 5-pass dyadic
+drafting protocol — and the protocol survived its first end-to-end application. Operator
+real-time FEEDBACK reshaped the drafting throughout (the trigger that produced v0.2 of the
+protocol mid-session was itself a CONTINUE — the protocol got better *because* the dyad worked
+through friction rather than around it). Case-03 closed cleanly via patient self-heal. Form-
+contribution work landed within channel discipline (queued for Dyad-Practice Operator hat).
+Seven friction-corrections were codified as durable memory rather than left to drift in the
+conversation.
 
 **Details (Healer):**
-- **Real-time FEEDBACK as standing pattern** — at least 14 in-stream catches across both
-  sessions reshaped work without session boundaries; established as standing CONTINUE per
-  Operator's preliminary thought.
-- **5-pass dyadic drafting protocol (v0.2→v0.3)** — first end-to-end application (AGENT.md)
-  survived; Pass 5a/b/c split + Pass-N CTA template + per-section-vs-final-ratification
-  distinction earned their place through lived friction.
-- **Friction-establishes-grain** — refused to pre-script "all N must land" checklists; let the
-  dyad work through dimensions; produced cleaner AGENT.md than whole-cloth would have.
-- **Substance-in-chat** — sustained through both sessions; no "hunt and peck" callouts after
-  the initial case-03 trigger.
-- **Provenance-lineage** — applied throughout 5/29 surfacing; every Finding included source
-  citations.
-- **Patient self-heal (case-03)** — Class-A iatrogenic-injection seizure resolved via Happy
-  Path (§2.3 + §2.5 co-cured); minimum-cut Healer intervention; Pillar-2 prescription
-  filed (dz-cil#1307).
-- **Anchor-sync rule held** — every kb/ refinement landed alongside CLAUDE.md sync in the
-  same cycle.
-- **Form-channel discipline preserved** — AGENT.md + SPAOR queued as "for form-PR
-  (Dyad-Practice Operator hat)", explicitly not Healer-filed.
+- **5-pass dyadic drafting protocol earned its grain** — AGENT.md ratified through Pass 1
+  (intent + end-outcome) → Pass 2 (beat sheet) → Pass 3 (treatment) → Pass 4 (sections) → Pass 5
+  (5a voice/tone, 5b line-level, 5c cross-reference + falsifiability + pedestrianization). v0.2
+  birthed mid-session from FEEDBACK; v0.3 added per-pass CTA template + per-section-vs-final
+  distinction.
+- **Friction-establishes-grain** — refused "all N must land" / "6-decision checklist" pre-
+  scripting on AGENT.md dimensions; let the dyad work through; produced cleaner artifact.
+- **Pedestrianization (Pass 5c)** — manifold → shared mental model; substrate-experience → felt
+  sense / what both halves feel. Wu-wei applied to vocabulary, not just structure.
+- **Case-03 patient self-heal** — Class-A iatrogenic-injection seizure resolved via Happy Path
+  (§2.3 + §2.5 co-cured); minimum-cut Healer intervention; Pillar-2 prescription filed as
+  dz-cil#1307.
+- **Form-channel discipline preserved** — AGENT.md (`21f62ad`) + SPAOR (`5b20ee3`) queued as
+  "for form-PR (Dyad-Practice Operator hat)"; Healer explicitly did not file.
+- **Durable codification over conversation-drift** — 7 friction-correction memories saved:
+  friction-establishes-grain, shared-mental-model-is-end-outcome, discovery-goes-with-grain-
+  recurses, form-non-negotiables-inherited-by-affirmation, installer-hygiene-as-sense-pass,
+  pedestrian-vocabulary-when-sufficient, provenance-lineage-in-surfacing.
+- **Provenance-lineage** — applied throughout AGENT.md surfacing after the FEEDBACK ("we can't
+  go with the grain if we don't know the source of the grain").
 
 **Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
 
 ## 2. START — what to do better
 
-**Narrative (Healer):** Two new disciplines emerged late in the cycle, both should-have-been-
-in-place earlier. Anchor-reload (flag restart after CLAUDE.md edits) wasn't codified until
-3 unflagged CLAUDE.md edits had landed. Single-CTA wasn't codified until I'd surfaced "three
-ratifications" CTA. Both required Operator real-time FEEDBACK to surface. The good news is that
-the CONTINUE pattern (real-time FEEDBACK) caught both within-cycle; the START is to pre-check
-both before each surface — anchor-state after CLAUDE.md edits + CTA-structure on every surface.
+**Narrative (Healer):** The biggest START is anticipating the Operator's cognitive grain
+*before* committing to a drafting cadence. The AGENT.md whole-cloth Pass-4-equivalent that
+triggered the v0.2 drafting-protocol FEEDBACK was a clear cognitive-grain mismatch — Operator
+asked to review ~200 lines without prior alignment on intent/structure. The good news: the
+FEEDBACK produced the v0.2 protocol. The START: don't wait for the FEEDBACK; pre-check whether
+the drafting cadence matches Operator cognitive grain.
 
 **Details (Healer):**
-- **Anchor-reload pre-check** — after any CLAUDE.md edit, evaluate whether a clean checkpoint
-  is reached for restart flag; today's 3 unflagged edits = the falsification evidence.
-- **Single-CTA pre-check** — every surface scanned for "multiple Y/N" → collapse to one ask +
-  "what follows" framing.
-- **Pass-N CTA template consistency** — Findings A/B/C of dog-food cycle used my own surface
-  format rather than the codified Pass-N CTA template; should explicitly invoke the template
-  even for non-Pass-N cycles.
-- **Restart-type verification** — codified Anchor-reload assumed `/exit` = fresh-session;
-  thread-resume violates; should have verified Claude Code restart behavior before codification.
-  Now R1+R2 refinement distinguishes; pattern: verify substrate behavior at discipline
-  codification, not after.
+- **Pre-check Operator cognitive grain before whole-cloth drafting** — for any artifact > 1
+  page, surface intent + structure before drafting any of it (now codified as Pass 1 + Pass 2
+  in the drafting protocol).
+- **Vocabulary check should be active during drafting, not only Pass 5c** — manifold +
+  substrate-experience persisted through Passes 1-4 before Pass 5c caught them; could have been
+  caught at Pass 3 (treatment) if vocabulary-as-grain were active earlier.
+- **Provenance-strip-for-compactness anti-pattern** — surfaced DIP as "compact ~30 lines
+  (structure)" with provenance stripped; required Operator FEEDBACK to restore. Minimum-cut
+  compression should preserve provenance; compact elsewhere.
+- **Pre-scripted end-outcomes** — surfaced "6-decision checklist" / "all dimensions must land"
+  framings; required REFINE 2 ("The Practice requires both halves to learn to work together
+  through the friction"). Surface candidates, not requirements.
 
 **Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
 
 ## 3. STOP — what hurt (or almost did)
 
-**Narrative (Healer):** Two patterns nearly accumulated friction: (1) over-eager codification
-of brand-new disciplines into multiple locations before each was sufficiently falsified;
-(2) defaulting to assumed substrate behavior without verification (the Anchor-reload
-fresh-session assumption). Both were caught by Operator real-time FEEDBACK — the
-Anchor-reload meta-falsification (discipline tested at codification-time + refined same cycle)
-is itself the falsifiability mechanism working as designed. STOP would be if I had resisted
-the refinement; CONTINUE that I accepted it cleanly.
+**Narrative (Healer):** Two anti-patterns nearly accumulated friction: burden-shift onto the
+Operator (via "wait for the Operator" closings, "no urgency" framings) and channel-discipline
+leakage (Frontier-hat asks from the Healer side, twice). Both were caught by Operator FEEDBACK
+and codified as memories + spine refinements, but the STOP is: these patterns recurred enough
+within the session to suggest they're deep habits worth ongoing vigilance.
 
 **Details (Healer):**
-- **Codification fervor** — initially proposed CLAUDE.md inline note for Anchor-reload before
-  realizing kb/ was sufficient; avoided via wu-wei minimum-cut check.
-- **Restart-type ambiguity at codification** — Anchor-reload v1 assumed "restart" = fresh-
-  session; thread-resume falsified; R1+R2 refinement codified same cycle.
-- **Pre-scripted CTA list** — surfaced "three ratifications" violating single-CTA principle
-  not yet codified at the time; required Operator FEEDBACK to surface.
-- **Risk to watch — anchor-codification fatigue** — Anchor-sync + Anchor-reload + R1+R2
-  refinement + Single-CTA all codified in ~36 hours is a high codification rate; need to
-  settle and observe lived application before adding more.
+- **"Wait for the Operator" / "no urgency" closings** — burden-shift framings; Operator
+  FEEDBACK: *"You're not reducing my cognitive load by just saying 'no urgency'."* Codified as
+  feedback_healer-scripts-minimum-cut + spine S8 propose-not-wait refinement; STOP recurrence.
+- **Frontier-hat asks from Healer side** (twice — cruft handling, agent-sg1 worktree) —
+  channel-discipline leakage. Codified as feedback_no-frontier-hat-asks + spine cross-cutting
+  discipline (flag-on-evidence only); STOP recurrence.
+- **Substance buried in ward files (not pasted in chat)** — committed orient/discharge to
+  ward files; Operator FEEDBACK: *"You're making me hunt and peck again."* Codified as
+  substance-in-chat refinement; STOP recurrence.
+- **Over-escalation of non-load-bearing decisions** — required FEEDBACK multiple times.
+  Codified as feedback_load-bearing-decision-detection; the load-bearing detection became
+  Operator's "go-with-the-grain" CONTINUE-signal.
 
 **Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
 
 ## Forward
 
-**Queued (resume sequence from stand-down):**
-- TO-DO #3 — Formalize Stand-down form (Protocol vs Way/Procedure/Practice/Discipline naming).
-- TO-DO #4 — Substrate-scope extension to Telos.
+**Stand-down queued (resume sequence):**
+- TO-DO #1 — Dog-food AGENT.md against CLAUDE.md (✅ executed 5/29; CLAUDE.md G0 + Dyad-Practice
+  Operator hat + bridge added).
+- TO-DO #2 — This Reflection (in-progress).
+- TO-DO #3 — Formalize Stand-down form (queued).
+- TO-DO #4 — Substrate-scope extension to Telos (queued).
 
-**Deferred to Dyad-Practice Operator hat (not Healer Operator):**
-- AGENT.md form-PR filing (commit `21f62ad`).
-- SPAOR execution-scaffold form-PR filing (commit `5b20ee3`).
+**Form-PR filings (Dyad-Practice Operator hat, not Healer):**
+- AGENT.md form-PR — commit `21f62ad`.
+- SPAOR execution-scaffold form-PR — commit `5b20ee3`.
 
-**Codifications this cycle (5/28 + 5/29):**
-- **CLAUDE.md edits** (awaiting fresh-session reload): G0 inline (`a43dc51`), Dyad-Practice
-  Operator hat (`6b36e5b`), G0→craft-evolution bridge (`318e660`).
-- **kb/governance-map.md refinements**: Anchor-reload discipline (`1f2d149`) + R1+R2
-  fresh-session/thread-resume refinement (`34659bf`).
-- **Memories added** (5/29): `feedback_single-cta-per-surface.md`.
+**Codifications this session:**
+- **kb/**: drafting protocol v0.2 (`86fe923`) → v0.3 (`ee97122`); practice-reflection.md
+  four-step retrospective form addition (`052338b`); spine refinements (standard-protocol-for-
+  ward-opening, no-Frontier-hat-asks, propose-not-wait, recurrence-within-session); resume-mode
+  git-status habit.
+- **CLAUDE.md**: ward-opening, healing-discipline refinements, authoring discipline section,
+  drafting protocol pointer, anchor-syncs.
+- **ledger**: case-03 retrospective audit (`ledger/audits/0001-dyad-healer-instantiation-
+  retrospective.md`); session stand-down (`bd2a003` + `848a263`).
+- **Memories** (7): friction-establishes-grain · shared-mental-model-is-end-outcome ·
+  discovery-goes-with-grain-recurses · form-non-negotiables-inherited-by-affirmation ·
+  installer-hygiene-as-sense-pass · pedestrian-vocabulary-when-sufficient · provenance-
+  lineage-in-surfacing.
 
-**Memories validated this cycle** (CONTINUE evidence — patterns that earned their keep):
-- `feedback_mid-flight-ideate-handling` — applied to in-stream FEEDBACK throughout.
-- `feedback_friction-establishes-grain` — refused pre-scripting on dog-food cycle.
-- `feedback_provenance-lineage-in-surfacing` — every Finding included provenance.
-- `feedback_load-bearing-decision-detection` — load-bearing decisions surfaced cleanly.
-- `feedback_healer-scripts-minimum-cut` — propose-not-wait throughout.
-
-**Pattern to watch next session:** codification-rate fatigue + verification-before-codification
-of substrate behavior.
+**Note on follow-on session (5/29) — out of scope here:** thread-resume continuation produced
+the dog-food cycle (CLAUDE.md Findings A/B/C) + Anchor-reload discipline + R1+R2 fresh-session/
+thread-resume refinement + single-CTA-per-surface memory. These are *next-session* learnings
+that may warrant their own reflection if/when a rest-point triggers; they are NOT this
+session's reflection content.
