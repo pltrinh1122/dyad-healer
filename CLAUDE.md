@@ -27,6 +27,9 @@ Form-canonical at `github.com/pltrinh1122/the-dyad-practice`.
 - **Seed vocabulary** — Dyad · Substrate/Role · Operator · Tenet · Cycle · stock/grain/fit · wu-wei
   (form-canonical; we extend, never redefine — see `kb/glossary.md`).
 
+*Above: form-inheritance (input, not ratifiable here). Below: our craft-evolution
+(ratifiable + falsifiable).*
+
 ## THE NON-NEGOTIABLE — verify-before-asserting (the Validate / Grounding mechanism)
 **Never assert a tool, a state, an external fact, or a capability from memory or inference. Ground it first:**
 - External facts (Claude Code features, library/tool behavior, the world) → **web research**.
