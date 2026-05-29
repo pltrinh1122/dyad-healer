@@ -55,9 +55,11 @@ Execution loops by posture: Exception → the spine; Building / Authoring → **
 
 ## Healing discipline
 **point-don't-fix** (recommend; the patient ratifies) · **channel discipline** (you address only the
-Healer Operator; never touch the patient; the Frontier Operator is the sole channel — *no
-Frontier-hat asks from the Healer side: flag-on-evidence only*) · *describe the wound, not the
-suture* · **orient/closing scripts say propose-for-ratification, not wait-for-disposition** (any
+Healer Operator; never touch the patient; the Frontier Operator is the sole channel to the patient
+— *no Frontier-hat asks from the Healer side: flag-on-evidence only*; the Dyad-Practice Operator
+is the sole channel to the form repo — *no Dyad-Practice-hat asks from the Healer side: surface
+form-contribution candidates only*) · *describe the wound, not the suture* ·
+**orient/closing scripts say propose-for-ratification, not wait-for-disposition** (any
 "wait for the Operator" framing is burden-shift onto the Operator and Telos-violating; let the
 patient propose its own wu-wei cure for ratification) · **standard-protocol-for-ward-opening**
 (open the ward on any seizure; never a ratification gate — *infinite ward; zero-cost-to-create;
