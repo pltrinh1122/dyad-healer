@@ -1,7 +1,9 @@
 # Dyad-Healer — Practice Reflection — 2026-05-29 — Stand-up session (natural-stop)
 
-> **Status:** Step-1 draft (Healer narrative + bullets). Awaiting Step 2 (Operator POV per CSS),
-> Step 3 (Healer falsification of Operator POV), Step 4 (integration + ratification).
+> **Status:** Step-4 awaiting final ratification. Step 1 (Healer narrative + bullets) drafted;
+> Step 2 (Operator POV) returned "no POV" for all three CSS sections — Healer-side sufficient;
+> Step 3 (falsification of Operator POV) N/A; Step 4 integration = recording the no-POV
+> disposition.
 > **Trigger:** natural-stop per `kb/practice-reflection.md` §Natural stop — milestone moment
 > (5+ discipline codifications + 1 form-PR shipped + 2 Telos scope extensions + multiple
 > meta-falsification cycles all converged in one session arc).
@@ -43,7 +45,7 @@ dispatched (AGENT.md to form repo).
 - **CTA-at-top discipline applied post-codification** — surfaces after `feedback_cta-at-top-
   trust-maturity.md` codification consistently led with the CTA.
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## 2. START — what to do better
 
@@ -72,7 +74,7 @@ is to **assess first, then act/recommend** — the assessment IS Healer's wu-wei
   the directive aligns with the NON-NEGOTIABLE; don't lean on training-context for evidence
   claims.
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## 3. STOP — what hurt (or almost did)
 
@@ -100,7 +102,7 @@ recurring in different shapes; ongoing vigilance is required, not just a one-tim
   H1 header (off-by-one); caught immediately + redone with `-n +17`. STOP: verify exact line
   boundaries before stripping.
 
-**Narrative (Operator):** *<to be filled in Step 2, or "no POV" if Healer-side is sufficient>*
+**Narrative (Operator):** *No POV — Healer-side sufficient.*
 
 ## Forward
 
