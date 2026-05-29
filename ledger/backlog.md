@@ -84,8 +84,9 @@
 
 ## Operational (out-of-pillar) — VCS / infra chores; not craft
 ### Open
-- [ ] **Set local origin URL → `dyad-healer.git`** (Operator runs: `git remote set-url origin git@github.com:pltrinh1122/dyad-healer.git`) — server-side rename is done; push currently relies on the redirect.
-- [ ] ⏸ Repo *dir* rename `dz-healer/`→`dyad-healer/` (still deferred — separate from origin URL)
+_(none)_
 ### Done
+- [x] **Set local origin URL → `dyad-healer.git`** 2026-05-29 — done; `git remote -v` shows `dyad-healer.git` with no redirect. Drift closed.
+- [x] **Repo *dir* rename `dz-healer/`→`dyad-healer/`** 2026-05-29 — done at session boundary (mv + restart); memory project-key carried (`-mnt-shared-data-dzw-dyad-healer/`), MEMORY.md + memories verified loaded post-restart.
 - [x] **Loop #3 commit + push** 2026-05-27 — all 7 session commits pushed to `origin/main` (push unblocked; prior ledger "blocked" claim was stale). Working tree clean.
 - [x] **GitHub-side repo rename** 2026-05-27 — `pltrinh1122/dz-healer` → `pltrinh1122/dyad-healer` (Operator action; discovered via push-response redirect).
