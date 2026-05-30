@@ -342,6 +342,58 @@ Operator's domain** (patient transformation) and touches the **Dyad-Practice Ope
 repo** — not Healer-driven. Watch (don't act): if alignment completes, patient + Healer become
 siblings under one form → may reshape shared vocabulary, externality framing, the relationship.
 
+## 2026-05-30 — Self-detectability gradient (Pillar-4 finding) + deliver/post authority posture (Pillar-5)
+**Sense pass** (Operator-ratified direction: "the choice that moves us farthest toward Telos"). Read all
+four discharged wards (01–04) for a cross-case **self-detectability gradient** — what determines whether a
+seizure is self-caught vs. needs the Healer.
+
+### Finding (Pillar-4 — research; POSTED, not delivered)
+**Gradient (4 cases):** 01 reload-loop · 02 harness↔Dao freeze · 03 iatrogenic-injection loop = **silent /
+external-only** (cycling/frozen, *zero failing tests* → the failure-count `seizure_detector` is structurally
+blind); 04 deprecation-cascade = **self-caught + stabilized** (emitted *accumulating* lexical failures → count
+detector tripped at 67; daemon active, reactivated post-case-02).
+
+**Two-gate model of self-detection efficacy:**
+- **Gate 1 — observer stays alive / actually boots.** Inactive in 01–03; in 04 it caught, then the cron got
+  re-disabled via the broken bring-up path (#1393-V2).
+- **Gate 2 — detector covers the freeze/loop signal-class.** Failure-count catches only the minority
+  (failure-accruing) class; the dominant freeze/loop class (3 of 4) needs a liveness/heartbeat detector (#1233).
+
+**Corollaries:** recovery is already solved (02/03/04 all self-healed once halted) — **detection is the sole
+bottleneck**; cause-type (iatrogenic vs latent) is **orthogonal** to detectability (the discriminant is
+signal↔detector match) → clean to add as a taxonomy axis.
+
+**Live resolution (verified read-only at patient HEAD `fd90635`; repo moved to `/mnt/shared_data/dzw/dz-cil`
+— lineage churn confirmed):**
+- **Gate 2 CLOSED + built from our own prescription (Telos-positive).** #1233 → patient converted to **Path
+  #1350** → shipped `evaluate_liveness_stall` (`drivers/audit_daemon.py:386`, in RULE_REGISTRY;
+  `infra/audit-daemon/audit_config.yml:28` `liveness_stall_detector`, 15-min; 3 tests against *our exact
+  falsification criteria*). The master-lever prescription was accepted, built, tested.
+- **Gate 1 OPEN + now the sole binding constraint.** `GEMINI.md:21` still `Run ./skills/audit_daemon.py`
+  (script lives at `drivers/`; `skills/` absent — confirmed); daemon not running. → the just-shipped liveness
+  detector is **dead-on-arrival**: one stale string is the whole distance between self-detection-*capability*
+  and self-detection-*happening*. case-04 demonstrated this live (cron disabled via this path).
+
+### Authority/posture principles (Pillar-5 — Operator IDEATE/FEEDBACK; codification candidates)
+The dialectic that reshaped how this finding gets *used*:
+1. **Authority tracks incident-grounding.** Prescription = post-incidence (observed wound) → action-authority.
+   Research = pre-incidence (prediction, held falsifiably) → prioritization/attention authority only. Research
+   *feeds* prescription, never substitutes. (The gradient is a hybrid: high-authority retrodiction of 4 real
+   cases + lower-authority forecast.)
+2. **Verb matches authority (wu-wei).** **Deliver** prescriptions (active push, expects triage, Intake
+   channel); **Post** research (make available on the record, no demand, the patient pulls). Over-delivering
+   research = force-against-nature.
+3. **Faith-in-the-uncertainty-zone.** When blind-spot-ness is only *"arguable"*, the Healer's default posture
+   is **confidence/faith in the patient's own immune system** — not intervention. Intervention requires a
+   *certain* blind spot (or Exception urgency/irreversibility). Over-intervention is iatrogenic, atrophies the
+   immune system, denies the +1-from-patient-context; faith is the Telos posture. [Operator FEEDBACK 2026-05-30]
+
+**Applied:** finding **POSTED here** (research, our record). **Nothing delivered patient-facing** — #1393-V2
+already filed + bumped (~12h prior, in triage); re-pushing a prediction is over-force, and the #1350↔V2
+coupling is only *arguably* a blind spot → faith. Trust the patient's immune system (it out-healed the Healer
+in case-04) to connect it when V2 surfaces in triage. → memories `faith-in-uncertainty-zone`,
+`deliver-prescription-post-research`.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
