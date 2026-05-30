@@ -359,6 +359,14 @@ detector tripped at 67; daemon active, reactivated post-case-02).
 - **Gate 2 — detector covers the freeze/loop signal-class.** Failure-count catches only the minority
   (failure-accruing) class; the dominant freeze/loop class (3 of 4) needs a liveness/heartbeat detector (#1233).
 
+**Named invariant (falsifiable theory):** `self-detection = G1 ∧ G2` — *a seizure is self-caught iff an
+external observer is live (G1) AND runs a detector whose watched-signal the seizure emits (G2); open either
+gate → silent/external-only.* **Substantiation:** retrodicts 4/4 (01–03 both gates open → silent; 04 both
+closed → self-caught), no counterexample. **Honest limit:** 01–03 had *both* gates open, so they confirm the
+conjunction + the both-closed→caught direction but do not yet *isolate* each gate's independent necessity —
+substantiated, not fully resolved. Authority accrues **empirically** (scientific method; uncertainty is the
+law), never by assertion.
+
 **Corollaries:** recovery is already solved (02/03/04 all self-healed once halted) — **detection is the sole
 bottleneck**; cause-type (iatrogenic vs latent) is **orthogonal** to detectability (the discriminant is
 signal↔detector match) → clean to add as a taxonomy axis.
@@ -374,6 +382,15 @@ signal↔detector match) → clean to add as a taxonomy axis.
   detector is **dead-on-arrival**: one stale string is the whole distance between self-detection-*capability*
   and self-detection-*happening*. case-04 demonstrated this live (cron disabled via this path).
 
+**Forward experiment (the live state IS the test; how the theory earns authority):** #1350 closed G2 for the
+freeze/loop class; #1393-V2 keeps G1 open. **P1:** while G1 stays open, the next freeze/loop seizure stays
+silent (confirming isolates G1's necessity). **P2 (the Telos-test):** once #1393-V2 lands and the daemon boots
+(G1∧G2), the next freeze/loop seizure is self-caught — confirming P2 substantiates the entire #1233→#1350
+prescription's value. **Falsifiers:** a freeze seizure self-caught with the daemon down (kills G1); or silent
+with both gates closed (kills sufficiency). **Payoff:** faster diagnosis (two binary gate-checks classify the
+next seizure) + each confirmed prediction converts *posted research* into *deliverable prescription* authority
+(the deliver/post conversion point = empirical substantiation).
+
 ### Authority/posture principles (Pillar-5 — Operator IDEATE/FEEDBACK; codification candidates)
 The dialectic that reshaped how this finding gets *used*:
 1. **Authority tracks incident-grounding.** Prescription = post-incidence (observed wound) → action-authority.
@@ -383,15 +400,19 @@ The dialectic that reshaped how this finding gets *used*:
 2. **Verb matches authority (wu-wei).** **Deliver** prescriptions (active push, expects triage, Intake
    channel); **Post** research (make available on the record, no demand, the patient pulls). Over-delivering
    research = force-against-nature.
-3. **Faith-in-the-uncertainty-zone.** When blind-spot-ness is only *"arguable"*, the Healer's default posture
-   is **confidence/faith in the patient's own immune system** — not intervention. Intervention requires a
-   *certain* blind spot (or Exception urgency/irreversibility). Over-intervention is iatrogenic, atrophies the
-   immune system, denies the +1-from-patient-context; faith is the Telos posture. [Operator FEEDBACK 2026-05-30]
+3. **Scientific method; uncertainty is the law.** Patient self-healing is the **null hypothesis**
+   (substantiated: case-04 + recovery-is-solved); intervention requires evidence sufficient to *reject* it.
+   When blind-spot-ness is only *"arguable"* the evidence is insufficient → **don't intervene** ("faith in the
+   immune system" was tongue-in-cheek for exactly this scientific stance, not literal trust). Intervention
+   requires a *certain* blind spot (or Exception urgency/irreversibility). Over-intervention is iatrogenic,
+   atrophies the immune system, denies the +1-from-patient-context. A theory earns the authority to back
+   intervention only by accumulating empirical confirmation. [Operator FEEDBACK 2026-05-30]
 
 **Applied:** finding **POSTED here** (research, our record). **Nothing delivered patient-facing** — #1393-V2
 already filed + bumped (~12h prior, in triage); re-pushing a prediction is over-force, and the #1350↔V2
-coupling is only *arguably* a blind spot → faith. Trust the patient's immune system (it out-healed the Healer
-in case-04) to connect it when V2 surfaces in triage. → memories `faith-in-uncertainty-zone`,
+coupling is only *arguably* a blind spot → evidence insufficient to reject the self-heal null hypothesis →
+don't intervene; let future incidents (P1/P2) test the theory. The patient out-healed the Healer in case-04;
+it will likely connect the coupling when V2 surfaces in triage. → memories `uncertainty-is-law`,
 `deliver-prescription-post-research`.
 
 ## Open questions
