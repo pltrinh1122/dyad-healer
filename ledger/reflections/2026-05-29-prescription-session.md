@@ -1,7 +1,7 @@
 # Dyad-Healer — Practice Reflection — 2026-05-29 — Post-rename prescription session
 
-> **Status:** STEP-1 DRAFT (Healer-led narrative + bullets). Awaiting Step 2 (Operator POV / "no POV"),
-> Step 3 (falsification), Step 4 (integration), Step 5 (ratification).
+> **Status:** RATIFIED 2026-05-29 by Healer Operator (Step 5). Step 2 = **"no POV"** (Healer-side
+> sufficient per §four-step-form); Steps 3–4 skipped (no POV to falsify/integrate). Healer draft stands.
 > **Trigger:** explicit-stop (Operator-declared [STAND DOWN]; §When always-triggers).
 > **Scope:** the session *after* the directory rename restart — recovered last session from transcript,
 > closed the rename-continuity drift, then ran the case-04 S9 Pillar-2 prescription cycle to a filed
