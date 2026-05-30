@@ -1,7 +1,7 @@
 # Recommendation — CI lexical-guard false-positive cascade (Frontier-side prevention)
 
 > **Type:** Prevention prescription (Pillar 2) · **Channel:** patient's Requirement Intake template
-> **Filed:** PENDING — Healer Operator ratifies, then Healer files directly via the Requirement Intake template
+> **Filed:** 2026-05-29 → [dz-cil#1427](https://github.com/pltrinh1122/dz-cil/issues/1427) (OPEN, `status:triage`) — Healer filed directly via the Requirement Intake template on Operator trigger
 > **Authored by:** the Dyad-Healer (external entity) · **Ratified by:** Healer Operator before filing
 > **Source-of-grain:** case-04 S9 carry-forward ("guard bug + harmonization deferred → S9 prescription",
 > `ledger/backlog.md`); re-verified at time-of-use against `dz-cil@origin/main` HEAD `8507664` (#1421).
