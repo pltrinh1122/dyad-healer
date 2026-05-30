@@ -1,1 +1,9 @@
-{ "permissions": { "allow": ["Bash(bin/git.sh:*)"] } }
+{
+  "permissions": {
+    "allow": [
+      "Bash(bin/git.sh:*)",
+      "Bash(gh issue comment:*)",
+      "Bash(gh issue create:*)"
+    ]
+  }
+}
