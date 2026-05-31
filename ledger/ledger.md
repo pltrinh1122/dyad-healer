@@ -415,6 +415,41 @@ don't intervene; let future incidents (P1/P2) test the theory. The patient out-h
 it will likely connect the coupling when V2 surfaces in triage. → memories `uncertainty-is-law`,
 `deliver-prescription-post-research`.
 
+## 2026-05-31 — Codification Plan for the authority/posture dialectic (PROPOSED; awaiting ratification)
+**Session shape:** stand-up → took on the Pillar-5 *Authority/posture codification* item → SPAOR
+**Sense** (read candidate kb homes: `governance-map.md`, `charter.md`, `seizure-taxonomy.md`) →
+**Plan** proposed → forced stand-down (Claude token limit) before ratification. Operator switching to
+`agy` (Gemini) by copying `CLAUDE.md`→`GEMINI.md`; **next session resumes a cross-model hand-off at the
+fork below** — this entry is the durable carrier since the Plan otherwise lived only in chat (`agy`
+cannot see this thread; resume-mode discipline = continuity lives in the record).
+
+**Proposed Plan — two homes (the material splits by *kind*):**
+- **Home A → `governance-map.md`, new §"Intervention authority & posture"** — principles (1) authority-
+  tracks-incident-grounding, (2) deliver-prescriptions / post-research (verb-matching), (3) uncertainty-
+  is-law (self-heal = null hypothesis). *Why here:* these are the **operational expression of Charter
+  #6 (enable-not-fix) + #5 (stand-down)** — *how* "enable don't fix" binds at the decide-to-act moment;
+  governance-map already hosts the **posture-gated authority** model (§The model) and is the designated
+  *fast/operational* doc. They add a second authority axis (intervention-threshold + force-verb) to the
+  existing ratification-gating axis. Charter stays slow.
+- **Home B → `seizure-taxonomy.md`, new cross-cutting principle `self-detection = G1∧G2`** — *why here:*
+  it is a law about **observers + detectors** (the taxonomy's per-class `detector` field lifted to a
+  cross-cutting invariant) and seeds the **detectability axis** queued in the 2026-05-29 reflection.
+  Clinical/research finding, not governance → wrong fit for governance-map.
+
+**The one open fork (Operator's read wanted):** Home A as a **new §in governance-map** (Healer
+recommendation — wu-wei, don't proliferate; it's the operational layer that already hosts posture-gated
+authority) **vs** a **standalone `kb/intervention-doctrine.md`** (the three principles are a coherent
+doctrine that could stand alone).
+
+**Cycle-bound checks (standing governance rules — fold into the ratification cycle):** glossary-check
+(candidate tokens *deliver*/*post*, *incident-grounding*, *null-hypothesis*, *G1/G2* if 3+ across `kb/`)
+· anchor-sync (`CLAUDE.md` gets the new disciplines) · form-alignment audit.
+
+**Restart contract for `agy`:** read this entry + backlog Pillar-5 *Authority/posture codification* as the
+Sense input; the Sense pass is **done** (homes identified); resume at **Plan ratification** — get the
+Operator's read on the fork, then Act (draft each home, propose-Y/N per home). New material enters
+PROPOSED; the Healer Operator ratifies (Charter source-not-ratifier).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
