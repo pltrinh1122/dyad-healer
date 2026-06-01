@@ -81,7 +81,9 @@ standard propose-Y/N cadence. Don't draft whole-cloth before intent + structure 
 
 ## Session discipline
 **Stand-down discipline** = complete Reflection BEFORE Stand-down (default; fatigue-deferral is
-FALLBACK). **Cadence-surfacing** (Healer-side; serves Telos *Scope: Operator health*): track
+FALLBACK). **Retrospective scope** = a Retrospective (CSS) spans *all activity since the last
+Retrospective*; every explicit stop logs a stand-down, but a **forced/interrupt stop** (token-limit,
+environment) does *not* spawn its own Retrospective — its activity rolls into the next span. **Cadence-surfacing** (Healer-side; serves Telos *Scope: Operator health*): track
 silently; surface ONLY at evidence triggers (research-tuned) — ultradian boundaries (~90/180 min),
 sustained-workday limit (~270 min for stand-down consideration), or decision-fatigue signal (5+ Ys
 without REFINE). Time-of-day overlay: **≥5 PM Pacific** intervals → ~60 min + fatigue weight ↑;

@@ -37,6 +37,25 @@ before the active context dissolves. The reflection becomes part of the [resume-
 discipline](healing-protocol-spine.md) — the next session starts by reading the most recent
 reflection from `ledger/reflections/` as part of grounding.
 
+### Retrospective scope — the inter-Retrospective span
+
+A **Retrospective** (the CSS unit; *= Practice Reflection*) spans **all activity since the last
+Retrospective** — not a single session or stand-down. Two boundary events are distinct:
+
+- **Stand-down log** — *every* explicit stop produces one (stand-down record + TO-DOs +
+  commit-before-sync). Forced/interrupt stops (token-limit, environment) qualify — work-survival
+  binds on every stop regardless.
+- **Retrospective (CSS)** — taken at a *true rest point* (a natural stop, or an explicit stop that is
+  a genuine session-end), scoped back to the previous Retrospective. A forced/interrupt stop **logs a
+  stand-down but does not itself spawn a Retrospective**; its activity rolls into the next
+  Retrospective's span.
+
+This corrects the prior reading of "explicit stop *always* triggers a reflection" (above), which
+mis-fired on the forced token-limit stop of 2026-05-31 (two thin fragments where one span-Retrospective
+belonged; consolidated → `ledger/reflections/2026-05-31-self-detection-to-codification-retro.md`). The
+§Default-flow work-survival guarantee is unchanged — it now rests on the stand-down log +
+commit-before-sync, not on spawning a full CSS each stop. *Provenance: Operator [ALIGN] 2026-05-31.*
+
 ## Stand-down discipline
 
 **Stand-down** = the explicit-stop boundary that closes a session and prepares for `/exit`. The
@@ -261,6 +280,10 @@ form; the Healer Operator ratifies us. Don't conflate.
 
 ## Status / revision log
 
+- **v0.2 — RATIFIED 2026-05-31** (Healer Operator approval). Added §"Retrospective scope — the
+  inter-Retrospective span": a Retrospective (CSS unit) spans all activity since the last Retrospective;
+  a forced/interrupt stop logs a stand-down but does not spawn its own Retrospective. Corrects the
+  per-stop reading that fragmented the 2026-05-31 thread. Provenance: Operator [ALIGN].
 - **v0.1 — RATIFIED 2026-05-28** (Healer Operator approval). Initial codification of the
   Practice-Reflection discipline. Provenance: [IDEATE] 2026-05-28 — "at natural rest points, we
   can benefit from a session reflection… then we can share with DZ-CIL for its own personal
