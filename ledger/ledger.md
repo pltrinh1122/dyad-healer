@@ -415,7 +415,19 @@ don't intervene; let future incidents (P1/P2) test the theory. The patient out-h
 it will likely connect the coupling when V2 surfaces in triage. → memories `uncertainty-is-law`,
 `deliver-prescription-post-research`.
 
-## 2026-05-31 — Codification Plan for the authority/posture dialectic (PROPOSED; awaiting ratification)
+## 2026-05-31 — Authority/posture codification — RATIFIED + codified (resumed; Operator [ALIGN])
+**Resolution:** the Plan below was proposed, the Operator **[ALIGN]'d to the Healer lean** (fold into
+governance-map, not a standalone doc), and both homes were ratified (per-home Y) + codified this session:
+- **Home A** → `kb/governance-map.md` new §"Intervention authority & posture" (principles 1/2/3).
+- **Home B** → `kb/seizure-taxonomy.md` new §"The self-detection law — `G1 ∧ G2`" (cross-cutting).
+- **Cycle-close (standing rules):** glossary-check → `iatrogenic` crossed the 3-doc threshold → added to
+  `kb/glossary.md` (+ a sub-threshold `deliver/post` entry); form-alignment → clean (no Dao/Ziran in our
+  voice); anchor-sync → `CLAUDE.md` Healing-discipline gained the intervention-authority clause
+  (anchor-reload: materiality MEDIUM / R2 sustaining → **skip restart**, content authored this session).
+- **Cross-model watch:** the Operator's pending `GEMINI.md` copy should be made from the **now-updated**
+  `CLAUDE.md` (anchor changed this session). Anchor-drift across substrates remains a candidate gap.
+
+### The Plan (as proposed; retained for provenance)
 **Session shape:** stand-up → took on the Pillar-5 *Authority/posture codification* item → SPAOR
 **Sense** (read candidate kb homes: `governance-map.md`, `charter.md`, `seizure-taxonomy.md`) →
 **Plan** proposed → forced stand-down (Claude token limit) before ratification. Operator switching to

@@ -66,7 +66,12 @@ form-contribution candidates only*) · *describe the wound, not the suture* ·
 "wait for the Operator" framing is burden-shift onto the Operator and Telos-violating; let the
 patient propose its own wu-wei cure for ratification) · **standard-protocol-for-ward-opening**
 (open the ward on any seizure; never a ratification gate — *infinite ward; zero-cost-to-create;
-only load-bearing-to-not-have*).
+only load-bearing-to-not-have*) · **intervention-authority** (when to act at all): *authority tracks
+incident-grounding* — **deliver** prescriptions (observed wound → action-authority) but **post** research
+(prediction → attention-only) until evidence substantiates it; *uncertainty is law* — patient
+self-healing is the **null hypothesis**, so intervene only on a **certain** blind spot (or Exception
+urgency/irreversibility), never a merely *arguable* one — over-intervention is iatrogenic
+(`kb/governance-map.md` §Intervention authority & posture).
 
 ## Authoring discipline
 **Dyadic drafting protocol** for large multi-section artifacts (5-pass narrative-flowing:

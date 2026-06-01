@@ -69,6 +69,49 @@ episode updates this catalog before its lessons are promoted.
   `GLOSSARY.md` (−27 lines) **and** `README.md` (−24 lines) across the case-01 seizure window;
   initial audit caught only GLOSSARY; the full-diff sweep surfaced README — the bigger casualty.
 
+## The self-detection law (cross-cutting) — `self-detection = G1 ∧ G2`
+
+Each class above carries a **detector**; this law states when any detector actually catches its class
+**from the patient's own side** (self-detection), rather than the seizure staying silent until the
+Healer (external) finds it.
+
+**Invariant (falsifiable):** a seizure is **self-caught iff** —
+- **G1 — the observer is live:** an external-to-the-loop observer (the patient's Audit Daemon) is
+  actually running / boots successfully; **and**
+- **G2 — the detector covers the signal:** that observer runs a detector whose *watched signal* the
+  seizure actually emits.
+
+Open **either** gate → the seizure is **silent / external-only** (only the Healer catches it).
+
+**Substantiation (retrodicts 4/4, no counterexample):** cases 01–03 (reload-loop, harness↔Dao freeze,
+iatrogenic-injection) emit no failing-test signal and the daemon was inactive → **both gates open →
+silent**, caught only externally. Case-04 (deprecation-cascade) emitted *accumulating* lexical failures
+with the daemon active → **both gates closed → self-caught** (count detector tripped at 67). **Honest
+limit:** 01–03 had *both* gates open, so the evidence confirms the conjunction and the both-closed→caught
+direction but does **not yet isolate each gate's independent necessity** — substantiated, not fully resolved.
+
+**Corollaries:**
+- **Detection is the sole bottleneck.** Recovery is already solved (02/03/04 self-healed once halted) →
+  raising self-healing efficacy (the [Telos](telos.md)) is overwhelmingly a *detection* problem.
+- **Cause-type is orthogonal to detectability.** Iatrogenic-vs-latent does not predict self-catching;
+  the discriminant is purely **signal↔detector match** (G2). Carried as a separate taxonomy axis.
+
+**Live state + forward experiment (the live patient *is* the test):** Gate 2 for the freeze/loop class
+was closed by the patient building [`#1233`](https://github.com/pltrinh1122/dz-cil/issues/1233) as Path
+#1350 (`evaluate_liveness_stall`); Gate 1 stays **open** (broken daemon bring-up —
+[`#1393`](https://github.com/pltrinh1122/dz-cil/issues/1393)-V2).
+- **P1:** while G1 stays open, the next freeze/loop seizure stays **silent** (isolates G1's necessity).
+- **P2 (the Telos-test):** once #1393-V2 lands and the daemon boots (G1 ∧ G2), the next freeze/loop
+  seizure is **self-caught**.
+- **Falsifiers:** a freeze seizure self-caught with the daemon down (kills G1); or silent with *both*
+  gates closed (kills sufficiency).
+
+Each confirmed prediction converts this **posted** theory toward **deliverable** authority (the
+deliver/post conversion point — see [`governance-map.md`](governance-map.md) §Intervention authority & posture).
+
+**Status:** named invariant RATIFIED 2026-05-30 (ledger §"2026-05-30 Self-detectability gradient");
+codified here 2026-05-31.
+
 ## Self-extension protocol
 1. A **new class** is *proposed* by the Healer when a future case exhibits a seizure pattern
    that cannot be reduced to an existing class.

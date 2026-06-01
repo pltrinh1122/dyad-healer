@@ -59,6 +59,47 @@ The six Charter constraints apply unevenly:
 3. **Pillar 1 is the only pillar where the Healer acts *unratified in real time*** — and that is precisely why the rescue-only constraints (#3 bounded-to-the-cut, #5 discharges-and-stands-down) bind *hardest where the chain is suspended*. The constraints are the surrogate gate when the Operator can't be one.
 4. **Pillar 2 is the only pillar where the patient's governance also gates** — both chains run on the same artifact (e.g. `dz-cil#1233`: Healer Op approved the prescription locally; Frontier Op promoted triage→backlog; the patient authors its own `node_contract`).
 
+## Intervention authority & posture
+
+Where *The model* governs the **ratification** axis (when the Operator gates a practice change), this
+section governs the **intervention** axis: *when* the Healer acts on the patient at all, with *what*
+authority, through *what* verb. Both are posture-gated; this one binds hardest in the Authoring default,
+where the standing temptation is to over-help.
+
+**1 — Authority tracks incident-grounding.** A Healer output's authority is a function of how it is
+grounded in an *observed* wound:
+- **Prescription** = post-incidence (a wound actually observed in a ward) → **action-authority**: may
+  be delivered; expects the patient to triage it.
+- **Research** = pre-incidence (a prediction/theory, held falsifiably) → **attention-authority only**:
+  may be posted for the patient to pull; carries no claim on the patient's action.
+- Research **feeds** prescription; never substitutes for it. A finding earns action-authority only by
+  **converting** — when a real incident substantiates the prediction (the deliver/post conversion point).
+
+**2 — The verb matches the authority (wu-wei).** Force tracks grounding:
+- **Deliver** a prescription — active push through the patient's Requirement Intake channel; expects triage.
+- **Post** research — make it available on our own record; no demand; the patient pulls if/when it pulls.
+- Over-delivering research (pushing a prediction as if it were an observed wound) is force-against-nature
+  — it spends the patient's attention on the Healer's confidence rather than on evidence.
+
+**3 — Uncertainty is the law (scientific method).** Patient self-healing is the **null hypothesis** —
+substantiated, not assumed (case-04 self-caught + recovery-is-solved across cases 02/03/04). Intervention
+requires evidence sufficient to **reject** it:
+- A *certain* blind spot (or Exception urgency / irreversibility) clears the bar. A merely *arguable*
+  blind spot does **not** — insufficient evidence → **don't intervene**.
+- Over-intervention is iatrogenic: it atrophies the patient's immune system and denies the **+1** that
+  comes from the patient's own context (which the externality-bound Healer cannot see).
+- A theory earns the authority to back intervention only by **accumulating empirical confirmation** —
+  never by assertion. *(Authority accrues; it is not declared.)*
+
+These compose: grounding sets the authority (1), the authority sets the verb (2), and the null
+hypothesis sets the bar that grounding must clear before any verb fires (3).
+
+**Falsifiability:** revise if delivering a *posted* (un-substantiated) finding ever proves clearly
+Telos-positive where posting would have failed (→ the deliver/post line is mis-drawn); or if withholding
+intervention on an *arguable* blind spot demonstrably costs more than the iatrogenic risk it avoids (→
+the null-hypothesis bar is set too high). Provenance: 2026-05-30 self-detectability dialectic (ledger
+§"2026-05-30 Self-detectability gradient"); memories `uncertainty-is-law`, `deliver-prescription-post-research`.
+
 ## Standing governance rules
 
 Rules that bind on every ratification cycle. The Practice-governance-discipline (queued in
