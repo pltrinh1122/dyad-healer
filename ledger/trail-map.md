@@ -58,6 +58,7 @@ graph TD
   T_ar["async rec-generation · deferred (if-built)"] --> CAP
   T_ad["cross-model anchor-drift / GEMINI.md · open"] --> CAP
   T_tm["trail-map (this artifact) · active"] --> CAP
+  T_cdv["cross-dyad Validate channel · Operator+{SO} · building (N=1)"] --> CAP
   CAP ==> S1
   CAP ==> S2
 
@@ -80,6 +81,7 @@ graph TD
 | Async rec-generation | CAP | deferred (if-built) | volume not yet justifying | [backlog](backlog.md) P3 |
 | Cross-model anchor-drift / GEMINI.md | CAP | open | ← CLAUDE.md edits settling | [ledger](ledger.md) §2026-05-31 |
 | Trail-map (this) | CAP | active | — | this file |
+| Cross-dyad Validate channel | CAP | **building** (N=1 proven) | Operator + {SO} (external coord; Healer consumes, doesn't drive) | [reflection](reflections/2026-06-02-codification-and-cross-dyad-validate-retro.md) |
 
 ## Maintenance
 - Update when a trail's **status** or **edges** change (add/retire a trail; flip blocked↔unblocked).
