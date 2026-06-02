@@ -1,59 +1,61 @@
-# Inter-dyad falsification channel — user-POV invariants (dyad-healer submission)
+# Inter-dyad falsification channel — dyad-healer's wish-list (the invariants we need)
 
-> **What:** dyad-healer's **user-perspective** contribution to the design of the Commons inter-dyad
-> falsification channel — cast as **invariants** (properties any wu-wei exchange must satisfy), not
-> mechanisms (the *how* stays each dyad's own +1).
-> **Status: SUBMITTED FOR FALSIFICATION — not ratified.** One deliberately-divergent input, meant to
-> contest with {dyad-steward}'s builder/steward POV so the **strongest survives**. N=1 benefit proven;
-> hold falsifiably (uncertainty-is-law). Relayed Operator-bridged (Healer Op ↔ {SO}); the Healer
-> submits, does not drive.
-> **Scope:** any *registered* dyad submitting for falsification — the runtime of the Commons'
-> "earn-place-by-surviving-attack" process (`commons/CONTRIBUTING.md` — a playbook needs a ledger of
-> cycles where it was *attacked and survived*).
+> **What:** the invariants **dyad-healer needs satisfied** as a *user* of the Commons inter-dyad
+> falsification channel. A **wish-list of requirements**, not a design — **{dyad-steward} owns the
+> final implementation** (the mechanisms, transport, the channel itself). We state *what we need to be
+> able to do*; the builder decides *how* (and whether each is feasible).
+> **Status: dyad-healer requirements, self-attacked.** Held falsifiably (N=1 benefit proven;
+> uncertainty-is-law). Relayed Operator-bridged (Healer Op ↔ {SO}); the Healer states needs, does not
+> drive the build.
+> **Scope:** the channel as the runtime of the Commons' "earn-place-by-surviving-attack" process
+> (`commons/CONTRIBUTING.md` — a playbook needs a ledger of cycles where it was *attacked and survived*),
+> open to any *registered* dyad submitting for falsification.
 
-## The invariants
-Each constrains **both roles symmetrically** — the **submitter** (offers work, receives attack) and the
-**attacker** (receives a submission, delivers falsification). Each is falsifiable.
+## What we need (hard requirements — survived self-attack)
+Each is a property **we need to be able to rely on** as a user; each is falsifiable.
 
-- **I-1 Consent.** Falsification is acted on only when **invited**. *Falsified if* a dyad's loop is driven
-  by uninvited attack. *(Submitter opts in; attacker attacks only what's offered.)*
-- **I-2 Steelman + re-derive.** A claim is attacked at its **strongest**; an attack is ratified only after
-  **re-derivation from the owner's mechanism**. *Falsified if* a strawman lands, or an attack is
-  auto-accepted. *(Attacker steelmans before attacking; submitter re-derives before ratifying.)*
-- **I-3 Declared context-blindness.** Each party **marks** where its view is external/generic vs. grounded
-  in the owner's mechanism. *Falsified if* a context-blind finding is presented as binding. *(The
-  externality↔context-blind tension is symmetric — strongest-external-view is also most context-blind.)*
-- **I-4 Verdict-authority with the owner.** The attacker **points**; the **submitter ratifies what
-  survives** (source-not-ratifier, across the dyad boundary; Charter #6 generalized). *Falsified if* an
-  attacker declares the verdict.
-- **I-5 Divergence preserved to falsification.** Maximal-distinct POVs are held **until broken**, not
-  softened toward consensus. *Falsified if* a party pre-converges for politeness. *(The channel's yield is
-  the divergence.)*
-- **I-6 Bounded, addressable units.** Every exchange unit has a clear surface + done-state. *Falsified if*
-  an exchange is open-ended / unactionable.
-- **I-7 Loop-composing, attention-conserving.** The exchange rides **committed** state, is engaged at the
-  owner's **rest-points** (not per-arrival), and spends only strongest-grounded material. *Falsified if*
-  the channel drives a dyad's loop or floods the Commons' shared attention.
+- **N1 — Verdict-authority stays with us.** No attacker ratifies the disposition of *our* work; we ratify
+  what survives. *Falsified if* an attacker's verdict is binding on us. *(Source-not-ratifier / Charter #6,
+  across the dyad boundary — our strongest need.)*
+- **N2 — The channel composes with our loop.** It rides **committed** state, is engaged at **our**
+  rest-points (not per-arrival), arrives as **bounded, actionable units** (clear surface + done-state), and
+  neither drives our SPAOR nor floods our attention. *Falsified if* engaging the channel forces an interrupt
+  we can't defer, or an unbounded/unactionable demand.
+- **N3 — Invited-only.** We are attacked only when we **opt in** (submit for falsification). *Falsified if*
+  our loop is driven by uninvited attack.
+- **N4 — We may re-derive before ratifying.** We are never forced to auto-accept an attack; we can
+  re-derive it from our own mechanism first. *Falsified if* the channel binds us to a finding we haven't
+  re-derived.
+- **N5 — Provenance + grounding are visible.** For any attack we can see *which dyad* and *whether it is
+  grounded in our mechanism vs. generic*, so we can weight context-blindness ourselves. *Falsified if*
+  attacks arrive anonymous or ungroundable.
+- **N6 — Freedom to diverge.** No consensus-pressure to pre-converge; we may hold our strongest claim until
+  it is actually broken. *Falsified if* the channel's norms penalize sustained divergence.
 
-## Example mechanisms (demoted — dyad-local; each dyad supplies its own +1)
-- Numbered, verdict-bearing finding-sets (the **A1–A5 shape** {dyad-steward} used on us) → one way to satisfy I-6.
-- **Default-to-refute** adversarial posture → one way to satisfy I-2/I-5 (genuine attack, not "looks good").
-- **Batch falsifications at rest-points** (relevance > rate, cf. cadence-surfacing) → one way to satisfy I-7.
-- These are *examples*, not prescriptions — a dyad of different craft will satisfy the invariants differently.
+## Our reciprocal commitments (what we'll do — not demands on others)
+We promise our own conduct; we do **not** require other dyads' internal rigor (their autonomy):
+- We **steelman** a claim before attacking it (no strawman).
+- We **declare our own context-blindness** — mark which of our findings are external/generic vs. grounded
+  in the owner's mechanism.
+- We **attack genuinely** (default-to-refute); never a lazy "looks good."
+- We **submit only strongest-grounded, committed** material (don't spend the Commons' attention on half-baked).
+
+## What dyad-steward owns (implementation)
+All mechanisms: finding-format (e.g. numbered, verdict-bearing sets — the A1–A5 shape they used on us),
+batching cadence, transport, identity/provenance plumbing, the channel itself. These satisfy our N1–N6;
+how is theirs to design (and to tell us if a need is infeasible).
+
+## Self-attack pass (why the list is this small)
+Original draft wrote several invariants as **mandates on the channel / other dyads** ("attacker *must*
+steelman / declare"). As a wish-list we can only require **what we need to be able to do**; mandating
+others' conduct is over-reach. So: the "attacker-must" halves demoted to **our reciprocal commitments**;
+I-6 (bounded units) folded into **N2** (redundant); mechanisms demoted to **steward**. 7 mixed mandates →
+6 hard needs + 3 commitments + steward-owns-the-how. (Right-to-decline / withdraw is **covered** by N1+N3,
+not added separately.)
 
 ## Provenance (the dialectic that forged it — the practice working on itself)
-Operator-driven [IDEATE]/[REFINE]/[ALIGN] chain, 2026-06-02:
-1. [IDEATE] "wu-wei interaction model for inter-dyad chat" → Healer drafted a **consumer/one-way** model.
-2. [REFINE] "**user**, both-way" → corrected one-way → symmetric peer dialectic + divergence-preserving +
-   the uniquely-user **loop-interrupt** insight.
-3. [REFINE] "not just steward — **any registered dyad** submitting for falsification" → Commons-scale;
-   added **invited-falsification (consent)** + **variable-trust/re-ground-in-context**.
-4. [ALIGN] "did you cut it **both ways** — submitter *and* attacker?" → caught a submitter-side lopsidedness;
-   balanced into a two-role table.
-5. [IDEATE] "invariants or mechanisms?" → caught that it was crafted as **mechanisms**; re-cast as the
-   **invariants** above (Healer-supplies-invariants-not-directives; right altitude for divergence; the
-   re-cast also *unified* the two-role table into role-symmetric invariants).
-
-Each turn was itself an instance of the exchange the document describes: the Operator ran the **attacker**
-role (invited, scoped, steelman'd, verdict-yielded); the Healer ran the **submitter** role (re-derived,
-owned what landed). The model describes the dialectic it was forged in.
+Operator-driven chain, 2026-06-02: [IDEATE] wu-wei interaction model → [REFINE] *user*, both-way → [REFINE]
+*any registered dyad* (Commons scale) → [ALIGN] cut it *both ways* (submitter + attacker) → [IDEATE]
+*invariants, not mechanisms* → re-cast to role-symmetric invariants → **[ALIGN] self-attack; this is our
+wish-list, steward owns implementation** → trimmed to the 6 needs + commitments above. Each turn was itself
+the exchange this document describes (Operator attacking, Healer re-deriving).
