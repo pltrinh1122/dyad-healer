@@ -513,6 +513,31 @@ in isolation — validate candidates against the existing registry *and* within-
    the silent-corruption class above. Robustness candidate (quote on scaffold; type-check in validator).
 4. Naming drift "disciplines"→"playbooks" (mid-migration; `library/decision-framing/discipline.md` et al.).
 
+## 2026-06-02 — Trail Map (dependency DAG) + cross-dyad Validate (first sibling-dyad input)
+**What:** built `ledger/trail-map.md` — the **dependency view** of concurrent work, orthogonal to the
+by-pillar backlog. Roots at the **2 registered Commons summits**; **trails** (lines of work) are nodes;
+**dependencies** are edges; a **practice-capacity** node carries the infrastructure trails (one hop from a
+summit). Mermaid `graph TD` + legend; status **cross-linked** to backlog/ledger (single-home-per-fact —
+the map owns only edges + roots). Provenance: Operator [ALIGN] — *most wu-wei to start tracking dependencies
+now, while the graph is small (~9 trails), than retrofit a tangled one later* (same shape as our proactive
+glossary-check / anchor-sync codifications); Healer's "wait for friction" lean (counting backlog
+open-checkboxes, not workstreams) was under-scoped and **conceded**.
+
+**Vocabulary — converged via an [IDEATE] chain, then hardened cross-dyad:**
+- *workstream → track → trail* for the unit; **summit** (form-canonical) for goals; **path** reserved for the
+  graph sense (a chain through trails); **dependency** = edge. "track" rejected — triply-collided (verb;
+  rail/track-record; and **lineage-pathway-type** already in our voice — the "form track" usage).
+- **First cross-dyad Validate:** {dyad-steward} ran a hardened adversarial pass (A1–A5) on the vocabulary +
+  rooting. Outcome: *trail* survives, but **two Healer overclaims downgraded to honest form** — (A2)
+  Telos-traceability does **not** "fall out automatically" (summit-routed trails trace directly; infra trails
+  one-hop via practice-capacity); (A3) the wu-wei "worn-in-by-walking" resonance is **aspirational**, not a
+  current-fit argument (our trails are pre-declared top-down). A1 corrected a Healer mis-pro (the
+  "already-in-our-voice" point was a *liability*). Externality worked exactly as the practice predicts: the
+  sibling caught what neither half had. *(Carry to Retrospective CONTINUE.)*
+- **Maintenance:** living tracker — update when a trail's status/edges change; completed trails drop off
+  (terminal record stays in backlog Done). Discoverable at stand-up via this ledger cross-link (no CLAUDE.md
+  anchor edit — minimum-force; the ledger read reaches it one hop in).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
