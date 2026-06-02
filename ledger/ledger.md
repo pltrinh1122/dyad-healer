@@ -462,6 +462,56 @@ Sense input; the Sense pass is **done** (homes identified); resume at **Plan rat
 Operator's read on the fork, then Act (draft each home, propose-Y/N per home). New material enters
 PROPOSED; the Healer Operator ratifies (Charter source-not-ratifier).
 
+## 2026-06-01 — Joined the Dyad Practice Commons (Init + Join protocol) — EXECUTED (Operator [ALIGN])
+**What:** registered the Dyad-Healer in the Commons directory. Entry `directory/dyad-healer.yaml` live on
+`The-Dyad-Practice-Commons/the-dyad-practice@31122b6`; birth-hash `sha256:aafc…4805b` (anchored to
+`CLAUDE.md@577d6e7`, our birth commit); locator `github.com/pltrinh1122/dyad-healer`. Registered as the
+**existing**-dyad path (identity read from git history, never re-scaffolded). Sibling to `dyad-steward` (the
+steward dyad, same Operator namespace) — the only other registry entry.
+
+**Lineage (watch-item context):** this is the **form** track, *distinct* from the patient/dz-cil
+lineage-alignment watch-item. The Dyad-Practice **form relocated + evolved** to a new org
+`github.com/The-Dyad-Practice-Commons` (v0.2 draft; "disciplines"→"playbooks"; adds a library + registry +
+self-authorizing Init+Join onboarding). Our `CLAUDE.md` G0 still cites the old `pltrinh1122/the-dyad-practice`
+canonical URL — **anchor-update candidate** (defer to Dyad-Practice Operator; form is mid-migration/draft).
+
+**`commons/` git submodule** = the practice's **first submodule** (pinned @`31122b6`). Re-vet rule honored:
+`scripts/` (the only executable) is byte-identical to the vetted `0f1dce7` across the whole range, so the pin
+carries no unreviewed code; **re-vet-on-bump** before any future `onboard.py` re-run at a newer commit. Boundary
+note: a submodule deepens form-coupling beyond a URL ref, but it's a pinned pointer (shallow, reversible) and
+doesn't dissolve our externality.
+
+**Summits (registered, after a collinearity correction — Operator caught the miss):** (1) *raising the tended
+family's self-healing efficacy* [outcome axis] · (2) *healing by externality* [stance axis] — orthogonal
+WHAT×HOW, both realized, both distinct from `dyad-steward`'s. **Folded:** `#1233→#1350` (collinear — a special
+case of summit-1; kept as its *evidence*); `G1∧G2` (posted-not-realized + near summit-1's line); "falsifiability"
+(collinear with the form's own tenet). **Lesson:** we apply orthogonality to our pillars but I declared summits
+in isolation — validate candidates against the existing registry *and* within-pair before submitting.
+
+**Disciplines exercised / things verify-before-asserting caught (this session is a clean case study):**
+- **Commit-signature + content-hash grounding** corrected an Operator premise ("no hash signature"): Commons
+  commits are GPG-verified (signed by the Operator's key) *and* git pins by content hash — trust root = the
+  Operator's own identity. Residual risk = TOFU-on-key + the standing-update channel (managed by pin + no-blind-`--remote`).
+- **Permission-rule intent dialectic** → the *intent-test* (Pillar-5 candidate, `backlog.md`): a permission rule
+  declares a standing trust boundary for a *recurring, ratified, controllable* class; unblocking a one-time
+  external-code run is a category error → use one-time authorization (`!`-run), not a rule.
+- **Line-wrap mishap + orphaned cruft:** a wrapped paste mis-added the submodule at path `the-dyad-practice` and
+  surfaced a pre-existing orphaned `.git/modules/commons` (May-31 `agy`-session leftover, old `pltrinh1122` remote);
+  blast-radius cleanup + re-add at correct `commons` path.
+- **YAML `#`/`:` silent corruption (the sharpest catch):** unquoted summit text with ` #1233` truncated as a
+  comment and `case-04:` parsed as a *dict* — `validate_registry.py` would have PASSED both (it never checks each
+  summit is a string), publishing garbage. Caught by *testing* the parse, not asserting it; fixed with quoted scalars.
+- **Active-repo push race:** `origin/main` advanced 4× during the session (declaration slices #16–#18 landing in
+  parallel); rebased our single-file commit each time (no collision — no one else touches our file).
+
+**Form-contribution candidates (surface-only → Dyad-Practice Operator channel; not Healer-driven):**
+1. ~~`CONTRIBUTING.md` 404~~ — **self-resolved mid-session** (steward's #16 added it; was a dead README+template link).
+2. **"self-authorizing / no-PR" conflates** merge-contest-absence with write-access-presence — an external dyad
+   *without* org write cannot deposit directly (true for us only because the Operator owns the org).
+3. **`onboard.py` scaffolds summits unquoted** + `validate_registry.py` doesn't assert each summit is a string →
+   the silent-corruption class above. Robustness candidate (quote on scaffold; type-check in validator).
+4. Naming drift "disciplines"→"playbooks" (mid-migration; `library/decision-framing/discipline.md` et al.).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
