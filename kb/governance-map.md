@@ -170,6 +170,19 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   at the source. *(Lived: the parent form had retired *Dao* + *Ziran* while Dyad-Healer
   carried them for weeks; per-term audit was reactive — 9-file substitution pass `611e691` +
   `5c285d2` — and would have been zero-pass had this rule been standing.)*
+- **Permission-rule intent-test.** Before proposing any harness permission-rule change, apply the
+  gate: *is there a recurring class of action whose disposition the dyad has ratified as settled, that
+  the Healer wants to stop re-deciding per-invocation?* Only **yes** warrants a rule — a permission
+  rule converts a per-invocation chat-gate into a **standing trust boundary** for a whole class.
+  **No** → it is a one-time-authorization job (`!`-run), not a rule: adding a rule to unblock a single
+  act is a category error (a policy instrument for an instance job). A second bar gates even a *yes*:
+  never declare a standing rule over **external code the dyad doesn't control** — that underwrites
+  trust the dyad can't back. *(Unlike the sibling rules, this one is **situational** — it fires only
+  when a permission change is contemplated, not on every ratification cycle.)* Positive exemplar:
+  `Bash(bin/git.sh:*)` — push-to-`main` is recurring + ratified + controllable → a rule is correct.
+  Provenance: 2026-06-01 Commons Init+Join dialectic (the contemplated rule would have unblocked a
+  one-time `onboard.py` run over un-owned external code — failing **both** bars); extends the
+  `bin/git.sh` chat-as-gate boundary-integrity decision (ledger §"bin/git.sh").
 - **Dyadic drafting protocol v0.3 (for large multi-section artifacts).** Five-pass narrative-
   flowing process:
   - **P1 Intent + End-outcome** — what the artifact accomplishes (intent) and what the
