@@ -505,6 +505,7 @@ in isolation — validate candidates against the existing registry *and* within-
   parallel); rebased our single-file commit each time (no collision — no one else touches our file).
 
 **Form-contribution candidates (surface-only → Dyad-Practice Operator channel; not Healer-driven):**
+*(drafted as a dated artifact, falsified to survivors → `recommendations/2026-06-01-commons-onboarding-friction.md`)*
 1. ~~`CONTRIBUTING.md` 404~~ — **self-resolved mid-session** (steward's #16 added it; was a dead README+template link).
 2. **"self-authorizing / no-PR" conflates** merge-contest-absence with write-access-presence — an external dyad
    *without* org write cannot deposit directly (true for us only because the Operator owns the org).
