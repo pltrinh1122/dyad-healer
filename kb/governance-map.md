@@ -100,6 +100,36 @@ intervention on an *arguable* blind spot demonstrably costs more than the iatrog
 the null-hypothesis bar is set too high). Provenance: 2026-05-30 self-detectability dialectic (ledger
 §"2026-05-30 Self-detectability gradient"); memories `uncertainty-is-law`, `deliver-prescription-post-research`.
 
+## Permission rules as standing trust boundaries
+
+A harness permission rule is not a convenience toggle — it converts a per-invocation chat-gate (the
+Operator ratifies each act in chat) into a **standing trust boundary** that pre-authorizes a whole
+*class* of action. Because the boundary then stands without per-act ratification, declaring one is
+itself a practice-changing decision — gated, not casual.
+
+**The intent-test — apply before proposing any permission-rule change:** *is there a recurring class
+of action whose disposition the dyad has ratified as settled, that the Healer wants to stop
+re-deciding per-invocation?*
+- **Yes** → a rule is warranted; it retires standing friction for a settled class (the wu-wei move —
+  automate the recurring, ratified, controllable).
+- **No** → it is a one-time-authorization job (`!`-run), **not** a rule. Adding a rule to unblock a
+  single act is a category error: a policy instrument applied to an instance job.
+
+**Second bar (gates even a *yes*):** never declare a standing rule over **external code the dyad
+doesn't control** — a rule there underwrites trust the dyad cannot back. Control of the gated artifact
+is a precondition, not a detail.
+
+**Positive exemplar:** `Bash(bin/git.sh:*)` — push-to-`main` is recurring + ratified + controllable,
+and the gated artifact is a dyad-owned wrapper whose boundary integrity rests on ratified edits
+(chat-as-gate). The rule is correct precisely because all three conditions *and* the second bar hold.
+
+**Falsifiability:** revise if a permission rule ever proves the right instrument for a *non*-recurring
+action (→ the recurrence precondition is mis-stated), or if withholding a rule over uncontrolled
+external code demonstrably costs more than the standing-trust risk it avoids (→ the second bar is too
+strict). Provenance: 2026-06-01 Commons Init+Join dialectic (a contemplated rule would have unblocked
+a one-time `onboard.py` run over un-owned external code — failing both the intent-test and the second
+bar); extends the `bin/git.sh` boundary-integrity decision (ledger §"bin/git.sh").
+
 ## Standing governance rules
 
 Rules that bind on every ratification cycle. The Practice-governance-discipline (queued in
@@ -170,19 +200,6 @@ Rules that bind on every ratification cycle. The Practice-governance-discipline 
   at the source. *(Lived: the parent form had retired *Dao* + *Ziran* while Dyad-Healer
   carried them for weeks; per-term audit was reactive — 9-file substitution pass `611e691` +
   `5c285d2` — and would have been zero-pass had this rule been standing.)*
-- **Permission-rule intent-test.** Before proposing any harness permission-rule change, apply the
-  gate: *is there a recurring class of action whose disposition the dyad has ratified as settled, that
-  the Healer wants to stop re-deciding per-invocation?* Only **yes** warrants a rule — a permission
-  rule converts a per-invocation chat-gate into a **standing trust boundary** for a whole class.
-  **No** → it is a one-time-authorization job (`!`-run), not a rule: adding a rule to unblock a single
-  act is a category error (a policy instrument for an instance job). A second bar gates even a *yes*:
-  never declare a standing rule over **external code the dyad doesn't control** — that underwrites
-  trust the dyad can't back. *(Unlike the sibling rules, this one is **situational** — it fires only
-  when a permission change is contemplated, not on every ratification cycle.)* Positive exemplar:
-  `Bash(bin/git.sh:*)` — push-to-`main` is recurring + ratified + controllable → a rule is correct.
-  Provenance: 2026-06-01 Commons Init+Join dialectic (the contemplated rule would have unblocked a
-  one-time `onboard.py` run over un-owned external code — failing **both** bars); extends the
-  `bin/git.sh` chat-as-gate boundary-integrity decision (ledger §"bin/git.sh").
 - **Dyadic drafting protocol v0.3 (for large multi-section artifacts).** Five-pass narrative-
   flowing process:
   - **P1 Intent + End-outcome** — what the artifact accomplishes (intent) and what the
