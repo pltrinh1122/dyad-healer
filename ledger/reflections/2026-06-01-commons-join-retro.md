@@ -1,7 +1,8 @@
 # Dyad-Healer — Retrospective — 2026-06-01 — Joining the Dyad Practice Commons (Init + Join)
 
-> **Status:** CLOSED — Step 1 (Healer) drafted; **Step 2 = Operator [STAND DOWN] / `/exit` — no CONTINUE POV
-> this turn** (Healer draft stands; START/STOP were handled realtime via the session's [ALIGN]s).
+> **Status:** CLOSED — Step 1 (Healer) drafted; **Step 2 = Operator [CONTINUE] POV received** (verify-before-
+> asserting is hard to ingrain — *cross-dyad*, not Healer-only) → **Step 3 = Healer integrated** (the
+> ingrain→gate synthesis); START/STOP were handled realtime via the session's [ALIGN]s.
 > **Trigger:** explicit-stop ([STAND DOWN], will `/exit`).
 > **Scope:** *all activity since the last Retrospective* — the last Retrospective FILE was
 > [`2026-05-31-self-detection-to-codification-retro.md`](2026-05-31-self-detection-to-codification-retro.md)
@@ -41,7 +42,19 @@ matters most: an outward act you cannot take back.
   together closed a coverage gap the same day the rule was written. (Also a closed loop: the prior retro's
   forward-candidate was ratified.)
 
-**Narrative (Operator):** _(Step 2 — [STAND DOWN]; no reflection-POV this turn.)_
+**Narrative (Operator) — [CONTINUE] POV:** *"verify-before-asserting appears quite difficult to ingrain —
+not just with the Healer, but across all my other dyads."* Elevates the discipline from a Healer-specific
+non-negotiable to a **structural, cross-dyad** difficulty (= the form's own "Hallucination Edge").
+
+**Healer integration (Step 3):** falsifying the *frame* against this session's natural experiment —
+**"ingrain" is the wrong target.** Grounding **failed wherever it was dispositional** (scope-from-recall →
+missed `8588bb5`; summits-from-knowledge → collinear; permission-rule-from-inference) and **held wherever it
+was a gated step** (committed re-read-before-execute; test-the-artifact caught the YAML corruption; the
+Operator's "falsify" trigger). Discriminant = **gated vs. dispositional**, not effort. Synthesis: *you don't
+ingrain grounding, you gate it* — convert each "remember to verify" into a mechanical trigger (`git log` not
+recall; test-the-artifact not trust-the-tool's-report; an external falsify). This is exactly why the form made
+**Proposal-Framing a playbook**, not an exhortation. **Held falsifiably:** "all dyads" is the Operator's data;
+the gate-vs-disposition claim is grounded in this one session, not asserted universal.
 
 ## 2. START — what to do better
 
@@ -103,6 +116,13 @@ world's.
   outputs, not just our pillars) — possible home `governance-map.md` or a contribution discipline.
 - **Form-contribution candidates → Dyad-Practice Operator channel:** `recommendations/2026-06-01-commons-
   onboarding-friction.md` (4 survivors, falsified). Conveyance upstream is the Operator's [Dyad-Practice-hat] call.
+- **Form-contribution candidate (NEW — from the Operator's [CONTINUE] POV; the strongest yet):** a **grounding-gate
+  playbook** for the Commons. The form names the "Hallucination Edge" and has Proposal-Framing for the *Validate
+  posture*, but no playbook that converts *grounding* from disposition into per-act mechanical gates — and the
+  Operator reports verify-before-asserting is the hardest discipline to ingrain *across all dyads*. Candidate
+  shape: triggers like *before any outward/irreversible act, test the artifact (not the tool's report)* · *before
+  asserting state, run the read* · *before scoping a span, enumerate it (`git log`)*. Cross-dyad scope → genuinely
+  form-level; surface only (Dyad-Practice channel). May warrant its own recommendation/playbook proposal.
 - **`CLAUDE.md` G0 anchor-URL** still cites `pltrinh1122/the-dyad-practice`; the form relocated to the Commons
   org. Update candidate — **defer until the v0.2 draft settles**.
 - **`commons` submodule** pinned @`31122b6`; **re-vet-on-bump** before any future `onboard.py` re-run.
