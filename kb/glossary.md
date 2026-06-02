@@ -73,6 +73,7 @@
 - **Act** `[patient]` — execute.
 - **Observe** `[patient]` — test against reality.
 - **Reflect** `[patient]` — falsify · keep what survives · codify (write the fix down so it can't return). The codification-into-durable-record gate (the patient's own SPAO→SPAOR correction restored this phase; *do not drop it*).
+- **dyadic cycle** `[form]` — the atom of the dyad manner: *Generate (Agent candidate) → Validate (dyad friction) → ratified grain feeds the next.* The form frames each as *"a small SPAOR within the macro SPAOR"* (`commons/AGENT.md` "A + O — walk dimensions as nested dyadic cycles"), so SPAOR is **self-similar**: each phase is enacted by a series of nested dyadic cycles. → [`execution-loop.md`](execution-loop.md) §Per-phase enrichment.
 
 ## Patient framework (referenced, not defined here)
 
