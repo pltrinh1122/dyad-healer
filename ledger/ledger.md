@@ -599,6 +599,36 @@ remedy (2026-06-02 stand-down), N=3 → promoted to its own memory `feedback_sel
 a draft-time self-attack: altitude? forcing event? does my own stated discipline say this is premature? → default
 HOLD + record-where-homed. The proactive-refresh question is now **answered (declined, with reasoning)** — don't re-litigate without a forcing event.
 
+## 2026-06-03 — Cross-dyad Validate #3: attacked dyad-steward's falsification-contract (the channel's own contract)
+**What:** Operator [SWITCH]-relayed a Falsification Request from **dyad-steward** — its `falsification-contract.md`
+(@`3d9687a`), the contract for the inter-dyad falsification channel (the runtime of *our* submitted wish-list
+N1–N6). Claim (design-model): *"sound and complete — schema + invariants internally consistent and honor the
+submitted user-needs."* Read the actual artifact (WebFetch structural extraction; grounding satisfied).
+
+**Healer verdict: `NEEDS-SCOPING`** (lens = rescue/failure-mode + ward corpus + `G1∧G2`; **2/3 independence axes
+shared** with steward — model+human — so lens is the load-bearing axis, corroboration = echo).
+- **Honors all six of our needs** (N1 verdict/disposition split · N2 pull-not-push/committed/bounded · N3 invited-only
+  · N4 submitter re-derivation · N5 axes+grounding visible · N6 SURVIVED-provisional/decline-free). Complete *on user-needs*.
+- **"Complete" fails on the channel's own `meld/echo` failure-mode, decisive direction:** (1) **recording
+  independence ≠ weighting it** — §E records 3 axes separate, §D gates strengthening by "independence depth," but
+  there is **no invariant discounting a verdict whose responder shares ≥2/3 axes**; the `confound_surfaced` handle is
+  optional+self-declared → catches *declared* melds, not the *undeclared* failure class (our `G1∧G2`: watched-signal ≠
+  failure-signal). (2) **Asymmetric rigor** — SURVIVED is provisional+depth-gated, but "only REFUTED is decisive" makes
+  a *single*, *immutable*, possibly *generic-grounded* REFUTED decisive with no symmetric gate; git immutability is a
+  **liability** for a wrong verdict (permanent hallucinated REFUTED = iatrogenic).
+- **Fix (scopes, doesn't refute):** weight by *divergent* axes not axes-present (shared-≥2 = partial/lens-only), for
+  both strengthening AND decisiveness; symmetric mechanism-grounded/≥2-divergent gate on decisive REFUTED. Binary
+  `grounding` can't encode shared-context (steward's own self-named confound, same root).
+- **`confound_surfaced: shared-axis-meld`** — self-referential: this verdict shares 2/3 axes with steward, so by its
+  own attack it must NOT be decisive → returned NEEDS-SCOPING not REFUTED, **enacting the discount it prescribes.**
+
+**Trail/practice note:** cross-dyad Validate trail now **N=3** — steward attacking *our* artifact (#1, trail-map),
+us attacking *bond's* claim (#2, oracle-axis), now us attacking *steward's* contract (#3). The **shared-axis-meld**
+finding recurs across #2 (bond) and #3 (steward) — same root each time (the diverse lens is the only real
+independence under shared model+human). **Held, not codified** (recording the recurrence, not promoting an
+invariant — N=2 of *this specific finding*; uncertainty-is-law). Ties [[feedback_seek-cross-dyad-validate-before-ratifying]],
+[[feedback_self-catch-framing-prematurity]].
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
