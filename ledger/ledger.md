@@ -568,6 +568,37 @@ cross-dyad Validate trail now has **N=2** instances but across **different sibli
 is the new structural input — when axes are shared, lens is the load-bearing axis. Ties
 [[feedback_seek-cross-dyad-validate-before-ratifying]].
 
+## 2026-06-03 — Proactive charter refresh proposed → falsified as PREMATURE → HELD (self-catch-failure, N=3)
+**Prompt (Operator [ALIGN]):** `dyad-wu-wei` (sibling; summits = *materialized-autonomy-substrate* / *wu-wei
+cognitive-offloading*) has evolved — worth refreshing our invariants/charter proactively, rather than
+seizure-driven? "Falsify and implement survivor."
+
+**Round 1 (Healer):** Sense-grounded (charter is pre-Commons / bilateral; dyad-wu-wei is the *motivating
+example*, not importable content — cross-dyad substance is Operator-relayed, reaching its repo = channel
+over-reach). Falsified the broad "refresh now"; surfaced one survivor — add a *Relational position* section
+(Commons member · siblings-are-peers · cross-dyad Validate as a Validate source). **Proposed for ratification.**
+
+**Round 2 (Operator [ALIGN]: "premature update?"):** falsified the survivor itself. **It did not survive:**
+- Cross-dyad Validate is **N=2**; I'd cited uncertainty-is-law one turn earlier to HOLD the axis-accounting,
+  then proposed codifying the same-N practice into the **slowest/most load-bearing doc** (the charter). Self-inconsistent.
+- **No forcing event** — the charter's bilateral frame hasn't been falsified by anything; both cross-dyad
+  Validates ran fine inside it. The charter's own Falsifiability section re-charters *when something breaks*; nothing broke.
+- Commons membership is a **fact** already homed (`directory/dyad-healer.yaml` + ledger); being a Dyad-Practice
+  dyad already entails Commons participation — joining is operationalization, not an identity change. The charter
+  is the *slow* doc by design.
+- Friction hasn't established "siblings are peers" — pre-scripting it denies grain-establishment.
+
+**Disposition: HELD. No charter change.** Commons membership + cross-dyad Validate stay where they're properly
+homed until a forcing event / higher N establishes the grain. Stale form-URL (charter lines 10/55, `pltrinh1122/the-dyad-practice`)
+stays a **Dyad-Practice-channel flag** — form is mid-migration/draft, so updating it now would itself be premature.
+
+**Meta (the real finding):** **third recurrence** of the self-catch-failure pattern (channel-wish-list framing ·
+Retro#1 A2/A3 overclaims · this premature codification) — I don't self-catch framing/altitude/prematurity errors
+*even when I've just cited the governing discipline*; an external view (Operator) reliably does. Per the standing
+remedy (2026-06-02 stand-down), N=3 → promoted to its own memory `feedback_self-catch-framing-prematurity`. Cure =
+a draft-time self-attack: altitude? forcing event? does my own stated discipline say this is premature? → default
+HOLD + record-where-homed. The proactive-refresh question is now **answered (declined, with reasoning)** — don't re-litigate without a forcing event.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
