@@ -665,6 +665,40 @@ NEEDS-SCOPING landed in §J, *but* force is provisional (all responders share hu
 also brings **un-revetted** new/changed executables — `auto_share.py`, `falsification_gate.py`, `onboard.py`,
 `validate_*.py` — **re-vet before running any** (the standing re-vet-on-bump rule; pinning ≠ running, but flagged).
 
+## 2026-06-03 — Inbox-watcher daemon: falsified bond+steward designs, implemented survivor (`bin/dm-watch.sh`)
+**Why:** closes our own **G1 gate** (no autonomous detector → Operator-as-trigger). The Commons already
+supplies the **detector** (`falsify.py inbox`, daemon-designed; read-state per-consumer-local); only the
+**scheduler** is local-by-design → a mechanism we own (no Operator disposition — [[feedback_operator-disposes-intent-healer-owns-mechanism]]).
+Operator-directed cadence: **5-min** poll. Referenced siblings' implementations (not in Commons — sender-hosted
+in their repos): **bond `dialectic/im-daemon.md`** + the steward↔bond daemon-technique DM thread.
+
+**Falsified their converged design (from our detection-blind-spot lens — G1∧G2):**
+- **WITHDRAWN (grounded before sending):** my first attack — "Monitor's 1h timeout kills the daemon mid-session" —
+  is **false**: `persistent=true` ignores timeout (Monitor doc, verified). verify-before-asserting caught my own
+  fluent-but-wrong attack (the exact discipline the daemon itself is for). Dropped it.
+- **SURVIVING +1 — counterfeit-green is LAYERED.** bond's separate health gate (`gh rate_limit`, not output-parsing)
+  closes **layer-1 (gh transport)** — but two layers stay green-but-blind: **(2) falsify.py-INTERNAL failure**
+  (crash / yaml-error: rate_limit green, no sentinel printed, naive parse → "0/no mail") — *closed locally* via a
+  3-state distinction (`no mail`→0 · `mail: N`→N · neither→**BLIND**), which fully closes bond's own confound (c)
+  on the tool layer; **(1-residual) per-sibling unreachability** (rate_limit green ≠ each sibling repo reachable;
+  `falsify.py` silently `continue`s past a renamed/deleted/private sibling → that inbox a silent black hole) — a
+  **falsify.py/Commons fix** (the tool should report unreachable dyads), **flagged to steward, not patched here**
+  (channel ownership). Same root each time = the oracle-coverage / `G1∧G2` finding, now mechanically concrete.
+- **The watcher has no watcher** = the patient's own G1 gate reproduced (wards: case-04 cron re-disabled · #1233
+  detector dead-on-arrival — the dominant silent-seizure class). Cheap mitigations adopted: an **arm-heartbeat**
+  (one line at arm confirms liveness → silence=healthy) + a **stand-up verify-alive discipline** (re-arm AND confirm
+  running, not just re-arm).
+- Minor: edited-in-place DMs are invisible (seen-key is filename-based) → convention: new file per message.
+
+**Adopted (survives) from siblings:** event-watch not poll-the-agent · emit-on-rise · token-free/silence=no-wake
+(steward) · separate health gate · time-based blind alert · durable read-state outside the git tree + gitignored
+symlink (bond). **Implemented:** `bin/dm-watch.sh` (our 2nd `bin/` tool) + durable store
+`/mnt/shared_data/dzw/.dyad-healer-state/` + `.gitignore`d symlink; **armed via Monitor** (`b63a3flqb`, persistent).
+Verified live: DM channel works end-to-end — steward's `cycle-close-ack` arrived + was pulled (Validate #3 fully closed,
+no reply needed).
+
+**Pending Operator send-disposition:** analysis DMs to bond + steward (draft — send/compose is Operator intent).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
