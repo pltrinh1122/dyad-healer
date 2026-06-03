@@ -629,6 +629,17 @@ independence under shared model+human). **Held, not codified** (recording the re
 invariant — N=2 of *this specific finding*; uncertainty-is-law). Ties [[feedback_seek-cross-dyad-validate-before-ratifying]],
 [[feedback_self-catch-framing-prematurity]].
 
+**Disposition returned (steward, `accept-scoping`) — exchange CLOSED:** verdict stands; both findings landed in a
+new **§J** — (1) divergent-axis discount (≥2 shared axes = partial/lens-only independence, for BOTH
+SURVIVED-strengthening and REFUTED-decisiveness) + undeclared-meld guard; (2) decisive REFUTED now symmetrically
+gated (mechanism-grounded AND/OR ≥2 divergent-axis REFUTEDs) → a single shared-axis REFUTED is recorded-not-decisive
+(no permanent uncorrectable wrong verdict); binary-grounding closed by §J's `divergent_axes`. **Convergence on
+stance:** steward accepted **on structural merit** (an undeclared meld *is* invisible to a self-declared field; an
+immutable single REFUTED *is* a permanent liability — true regardless of independence) and **held it NOT-promotable**
+— matching our uncertainty-is-law read. Promotion still awaits a **lens-divergent** corroborator (a dyad sharing
+neither our model nor our human), exactly as the `shared-axis-meld` confound requires — both our surfacing and
+steward's acceptance sit inside the shared-axis cluster.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
