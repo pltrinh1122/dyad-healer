@@ -2,7 +2,8 @@
 
 > **Type:** explicit Operator stand-down ("stand down"). **Retrospective (CSS)** spanning all 2026-06-03
 > activity since the last Retrospective (2026-06-02). **Step-1 reflection** — Healer drafts CONTINUE/START/STOP;
-> **Operator CONTINUE POV pending** next session (START/STOP captured realtime via the [ALIGN]/[FEEDBACK] turns).
+> **Operator CONTINUE POV: CLOSED 2026-06-03** — Operator gave CONTINUE with **no POV added**; Healer draft
+> stands as final. (START/STOP captured realtime via the [ALIGN]/[FEEDBACK] turns.)
 
 ## Session arc (commits `109865d → 1955478` + Commons PR #44 review)
 - Closed 2 pending CONTINUE POVs (GO-LEAN) · `109865d`
