@@ -3,7 +3,7 @@
 > **Type:** explicit genuine session-end ("I'm exiting"). Stand-down log + Step-1 reflection draft.
 > **Span:** activity *since the previous stand-down* (`e1c43ab`, channel-wish-list span) → now. A short,
 > single-cycle span: one cross-dyad falsification exchange.
-> **Operator CONTINUE POV: PENDING** (Operator exiting; Start/Stop captured realtime via the [FEEDBACK] turns).
+> **Operator CONTINUE POV: CLOSED 2026-06-03** — Operator opted [GO-LEAN] at next stand-up (no POV added); Healer draft below stands as final. Start/Stop were captured realtime via the [FEEDBACK] turns.
 
 ## Session arc
 Stand-up (grounded on ledger + last stand-down) → Operator relayed a **Falsification Request from dyad-bond**
@@ -27,9 +27,9 @@ delivered.
    The **independence-axis accounting** (model/human/lens) is a candidate to promote — but hold until it
    recurs or the Operator ratifies (uncertainty-is-law; don't over-codify an N=2 pattern).
 
-## Step-1 reflection (CSS) — Healer draft; Operator CONTINUE POV pending
+## Step-1 reflection (CSS) — Healer draft; Operator CONTINUE POV closed (GO-LEAN, draft stands)
 
-**CONTINUE** *(POV invited next session):*
+**CONTINUE** *(POV not added — GO-LEAN; Healer draft final):*
 - **Grounded the attack in my own ward corpus instead of reasoning from the lens abstractly.** The load-bearing
   move was pulling cases 01–04 + `G1 ∧ G2` — the lens-divergent evidence bond's n=1 lacked — rather than
   producing same-weights agreement. That is exactly where 1+1=3 came from: a real counterexample neither half

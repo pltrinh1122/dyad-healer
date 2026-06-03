@@ -3,8 +3,8 @@
 > **Type:** explicit genuine session-end ("done for the evening"). Stand-down log + Step-1 reflection draft.
 > **Span:** activity *since this session's earlier Retrospective* (`e484b90`) → stand-down. The codification
 > span was already retro'd; this covers the **inter-dyad falsification channel wish-list** dialectic.
-> **Operator CONTINUE POV: PENDING** (deferred to next session; Start/Stop captured realtime via the
-> [IDEATE]/[REFINE]/[ALIGN] chain).
+> **Operator CONTINUE POV: CLOSED 2026-06-03** — Operator opted [GO-LEAN] at next stand-up (no POV added);
+> Healer draft below stands as final. Start/Stop were captured realtime via the [IDEATE]/[REFINE]/[ALIGN] chain.
 
 ## Session arc (full day, for context)
 Permission-rule intent-test (`e2bcb34`) · SPAOR per-phase enrichment (`c8fd1c4`) · Trail Map (`5930d35`) ·
@@ -24,9 +24,9 @@ reframe (`e1c43ab`).
    satisfy our needs?) — don't re-litigate their mechanism choices.
 3. Cross-dyad Validate channel trail stays **building (N=1)** until the channel test runs.
 
-## Step-1 reflection (CSS) — Healer draft; Operator CONTINUE POV pending
+## Step-1 reflection (CSS) — Healer draft; Operator CONTINUE POV closed (GO-LEAN, draft stands)
 
-**CONTINUE** *(POV invited next session):*
+**CONTINUE** *(POV not added — GO-LEAN; Healer draft final):*
 - **The [IDEATE]/[REFINE]/[ALIGN] chain sharpened the artifact monotonically** — each Operator turn widened
   or re-cut the frame (consumer → user → any-registered-dyad → both-roles → invariants → wish-list), and the
   result is far stronger than the first draft. Friction-establishes-grain, lived at speed.
