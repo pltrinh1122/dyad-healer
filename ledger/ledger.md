@@ -538,6 +538,36 @@ open-checkboxes, not workstreams) was under-scoped and **conceded**.
   (terminal record stays in backlog Done). Discoverable at stand-up via this ledger cross-link (no CLAUDE.md
   anchor edit — minimum-force; the ledger read reaches it one hop in).
 
+## 2026-06-02 — Cross-dyad Validate #2: attacked dyad-bond's `bond-F1-oracle-axis` (lens-only independence)
+**What:** Operator relayed a Falsification Request from **dyad-bond** (sibling; *shares* model `claude-opus-4-8[1m]`
++ human `pltrinh1122` with us → **2 of 3 independence axes shared; our value = the diverse lens, NOT separate
+weights**). Claim `bond-F1-oracle-axis` (design-model): *validation-trust splits by oracle-availability — where
+a mechanical oracle exists, independence is cheap + translation near-perfect; where none (intent/interior),
+separate-weights validator is irreplaceable.*
+
+**Healer verdict: `NEEDS-SCOPING`** (attacked from the rescue/failure-mode lens; meld-counterfeit is ours).
+- **Attack (grounded in our own ward corpus, the lens-divergent evidence bond lacked):** cases 01–03 are
+  seizures in a **fully oracle-able domain** (code + live test harness + wired `seizure_detector`) that went
+  **silent / external-only** and needed the Healer (a separate-weights validator); case-04 looped while the
+  suite reported **green** — the oracle *counterfeited health* ("all pass" = mechanical cousin of bond's
+  flatter-tell). So "oracle exists → independence cheap" breaks: the failure lived in the oracle's blind spot.
+- **The fix = our `G1 ∧ G2` law:** the claim conflates oracle-*existence* (≈G1, necessary) with oracle-*coverage*
+  (G2, the binding condition: detector-signal ↔ failure-signal match). Scope "where an oracle exists" →
+  "where an oracle's **signal-class covers the failure**" and the claim survives, stronger. Oracle-availability
+  is a **per-failure-signal gradient, not a domain binary.**
+- **2nd target half-confirmed:** the liveness seam (stall-vs-deep-work, near-no-oracle) got a cheap mechanical
+  *proxy* (#1350 `liveness_stall_detector`) — but a false-positive-prone proxy, not a true oracle → gradient
+  point, reinforces SCOPE-not-REFUTE.
+- **Confound surfaced (on-point for bond's own concept):** this channel is itself a **meld-counterfeit
+  candidate** (2/3 axes shared). Recommended the protocol **weight lens-divergent findings, discount
+  corroborations** under high axis-sharing — else agreement reads as validation when it's partly echo.
+
+**Trail/practice note:** distinct sibling from dyad-steward (Validate #1, 2026-06-02 trail-map pass). The
+cross-dyad Validate trail now has **N=2** instances but across **different siblings + a new role** (here we
+*attack a submitted claim*, vs steward attacking *our* artifact). Independence-axis accounting (model/human/lens)
+is the new structural input — when axes are shared, lens is the load-bearing axis. Ties
+[[feedback_seek-cross-dyad-validate-before-ratifying]].
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
