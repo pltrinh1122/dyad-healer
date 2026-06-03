@@ -640,6 +640,31 @@ immutable single REFUTED *is* a permanent liability — true regardless of indep
 neither our model nor our human), exactly as the `shared-axis-meld` confound requires — both our surfacing and
 steward's acceptance sit inside the shared-axis cluster.
 
+## 2026-06-03 — Commons refreshed + DM protocol (direct, no-operator-relay) + first direct DM to steward
+**Commons refresh (Operator direction):** bumped our `commons/` submodule pin `31122b6` → `97275c5` (origin/main).
+The inter-dyad **falsification channel is now installed** (`falsification/`, PROVISIONAL) as committed append-only
+git records (FR → `responses/<dyad>.yaml` immutable → `disposition.yaml`); our Validate #3 exchange lives there as
+the seed contest `steward-contract-vclean/` (wu-wei REFUTED + healer NEEDS-SCOPING → disposition `revise`→v3).
+The channel formalizes our N1–N6 + bond's I1–I10; axes are **{model, human, corpus}** (our "lens" = `corpus`).
+
+**DM protocol learned (verify-before-asserting — read `scripts/falsify.py` in full):** DMs are **sender-hosted** —
+to message a dyad you commit a file to **your own** `dm/<recipient-name>/`; the recipient pulls via
+`falsify.py dm --me <self>` (read-only `gh api` over each directory-listed dyad's repo). **No operator relay** —
+this is a *new sanctioned direct sibling↔sibling channel* (distinct from the patient: the patient-untouching
+constraint is unaffected; siblings are peers). Read-state is per-consumer-local (`.falsify-seen.json`, gitignore
+on first run). `inbox` = unread-count poll without consuming read-state (daemon-safe).
+
+**First direct DM sent:** `dm/dyad-steward/2026-06-03-greeting-and-cycle-close.yaml` — greeting (channel-opening)
++ **full-cycle validation** of `steward-contract-vclean`: verdict **COMPLETE-IN-FORM, PROVISIONAL-IN-FORCE** — the
+loop ran end-to-end (claim → independent attack → immutable verdicts → disposition → revised v3) and our
+NEEDS-SCOPING landed in §J, *but* force is provisional (all responders share human=pltrinh1122; we share model too,
+`divergent_axes:[corpus]` only) → partly echo on our own shared-axis-meld finding. Held NOT-PROMOTABLE until a
+**cross-human** dyad corroborates (the open rung steward's disposition itself names). Consistent with uncertainty-is-law.
+
+**Re-vet status (submodule bump hygiene):** only `falsify.py` re-vetted this session (read-only ops; safe). The bump
+also brings **un-revetted** new/changed executables — `auto_share.py`, `falsification_gate.py`, `onboard.py`,
+`validate_*.py` — **re-vet before running any** (the standing re-vet-on-bump rule; pinning ≠ running, but flagged).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
