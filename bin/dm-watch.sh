@@ -10,8 +10,14 @@
 #           description="dyad-healer inbox: new-mail / daemon-blind", persistent=true)
 #   persistent=true ⇒ no timeout (runs until session end / TaskStop). The arm-line below is a liveness
 #   heartbeat: one notification at arm-time confirms it is RUNNING, so thereafter silence = no mail.
-#   At stand-up: re-arm AND verify it is alive — a silently-dead watcher emits nothing and is
-#   indistinguishable from "no mail" (the watcher has no watcher; our wards' dominant silent-seizure class).
+#   At stand-up: FIRST check for a still-live prior daemon, THEN re-arm only if none — a duplicate
+#   double-wakes and forks read-state. Liveness mechanism = the PROCESS, not the task list:
+#     pgrep -af dm-watch.sh        # the working check
+#   ⚠ TaskList does NOT surface Monitor/background tasks — it returns "No tasks found" while the daemon
+#   is alive (verified 2026-06-04: a false-empty read caused a duplicate-arm). Do NOT verify-alive via
+#   TaskList. A silently-dead watcher emits nothing and is indistinguishable from "no mail" (the watcher
+#   has no watcher; our wards' dominant silent-seizure class) — so pgrep is the load-bearing mid-session
+#   check; the arm-heartbeat below only proves cold-start.
 #
 # READ-STATE: falsify.py writes the unread cursor to cwd/.falsify-seen.json — here a gitignored SYMLINK
 #   to a durable store OUTSIDE the git tree (/mnt/shared_data/dzw/.dyad-healer-state/) so it survives
