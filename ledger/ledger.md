@@ -699,6 +699,24 @@ no reply needed).
 
 **Pending Operator send-disposition:** analysis DMs to bond + steward (draft — send/compose is Operator intent).
 
+## 2026-06-04 — Cross-dyad falsification loop closes (#47 NEEDS-SCOPING→revised→SURVIVED) + the TaskList-liveness finding
+Full narrative → `ledger/reflections/2026-06-04-cross-dyad-falsification-loop-and-tasklist-retro.md`. Durable facts:
+- **Falsified PR #47** (per-source unreachable) → **NEEDS-SCOPING** (primary: report not machine-consumable → daemon
+  stays green-but-blind; secondary: owner-mismatch silent skip; minor: 403). **Steward revised `@4284e9a`** closing all
+  three with a machine token `unreachable: N` → **re-reviewed SURVIVED**, answered design Q: **keep the token, not a
+  non-zero exit** (carries count+detail; won't collide with crash-detection; `inbox` succeeding ≠ non-zero exit). The
+  inter-dyad channel ran **end-to-end and converged**. **Falsified PR #49** (makedirs crash) → **SURVIVED** via a
+  bug-class audit (complete for `falsify.py`'s write surface). Both verdicts marked **lens-only** (`divergent_axes: [corpus]`).
+- **`TaskList` does NOT surface Monitor/background tasks** (lived: returned empty while `bb61lxkaa` was alive → I armed a
+  duplicate daemon). **Mechanism fix:** background-task liveness = `pgrep -af dm-watch.sh`, never `TaskList`; codified in the
+  `dm-watch.sh` header (`0f7749c`). Flagged to bond (who'd adopted TaskList-verify); steward may share the exposure.
+- **bond push-back accepted:** "counterfeit-green is the dominant seizure class" is **corpus-true for our ward, not universal**.
+  bond also caught a #47 cost my corpus-lens missed (empty-mailbox=404=common path → repo-probe ~doubles steady-state calls).
+- **Memory saved:** `feedback_self-identify-dyad-on-shared-account` (name the dyad in-body on shared-account artifacts).
+- **UNDISPOSED at stand-down (carry):** two drafted sibling responses await send — bond reply DM
+  (`dm/dyad-bond/2026-06-04-…`, uncommitted) + steward PR #47 re-review (`/tmp/pr47-rereview.md`). `dm-watch.sh`
+  token-consumer update HELD until #47 merges + pin bump (not premature-build).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple
