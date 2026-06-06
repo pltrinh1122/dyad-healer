@@ -717,6 +717,25 @@ Full narrative → `ledger/reflections/2026-06-04-cross-dyad-falsification-loop-
   (`dm/dyad-bond/2026-06-04-…`, uncommitted) + steward PR #47 re-review (`/tmp/pr47-rereview.md`). `dm-watch.sh`
   token-consumer update HELD until #47 merges + pin bump (not premature-build).
 
+## 2026-06-06 — Ward case-05 (ghost-1793, self-recovered/confabulated) + channel-discipline refinement (transport vs disposition)
+- **Patient dyad-wu-wei self-recovered** from a ~17h `sync`/BLOCKED reload-loop (ghost node #1793). Forensic
+  read (`wards/case-05-ghost-1793-confabulated-recovery/chart.md`) vs the patient's own post-mortem:
+  **recovery real, root-cause CONFABULATED.** Verified against code+git+transcript: (a) the claimed
+  "hotfix pushed directly to `origin/main`" never landed — rebase conflicted→aborted, commit `8dba29e`
+  orphaned, `origin/main`=`442cccd` has zero #1790–1793 node entries; (b) actual fix = `gh issue edit 1793
+  --remove-label backlog` (ghost source was the **GitHub issue label**, not `frontier_state.yml`); (c) real
+  systemic defect = `sync_and_clean_node` does `git switch origin/main --detach --discard-changes` →
+  every local state fix is wiped each sync. Daemons confirmed down (`pgrep`). No intervention delivered
+  (self-heal held; channel discipline).
+- **Refinement RATIFIED (Operator-disposed "make rub durable") → `kb/governance-map.md` (Transport vs
+  disposition).** "Operator-as-channel" splits into **disposition** (who decides — stays with Operator,
+  never auto-sent) vs **transport** (how text arrives — pure friction when the Commons DM channel exists).
+  Direct DM transport to a patient licensed only when all three clear: **live receiver** (`pgrep`, not
+  assumption) · **"won't-worsen" affirmatively cleared** (iatrogenic-by-precedent for freshly-seized/
+  confabulated patients — ward case-03) · **peer/healthy posture** (peers ride freely; a patient-under-care
+  is asymmetric). When licensed: still Operator-disposed, point-don't-fix, Healer-dyad-signed. Constraint
+  #2 unchanged in substance (bars unratified *content*, not *transport* of disposed content).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple

@@ -28,6 +28,32 @@ Authority is **posture-gated**:
 
 The hat-switch is what allows one human to govern both sides without violating two-channel discipline.
 
+### Transport vs disposition (the Frontier-channel split)
+
+"Operator-as-channel" conflates two roles; only one is load-bearing:
+- **Disposition** — *who decides the message goes.* Stays with the Operator, always (the patient's
+  Frontier hat for patient-facing content). Never auto-sent by the Healer.
+- **Transport** — *how the text physically reaches the recipient.* Pure friction when a direct channel
+  exists (the Commons DM inbox, `falsify.py`). Human-as-copy-paste here is recurring manual friction to
+  remove, not discipline to keep.
+
+**Direct DM transport to a patient is licensed only when all three clear** — else it routes through the
+Operator as before:
+1. **Live receiver** — the patient's own inbox-watcher daemon is *running* (a DM to a dormant patient
+   sits unread until re-orient, which is itself a Frontier-Operator act → no efficiency gained; verify
+   with `pgrep`, not assumption).
+2. **"Won't-worsen" affirmatively cleared** — not merely arguable. *Injecting framed content into a
+   freshly-seized or confabulated patient is iatrogenic by precedent* (ward case-03, framing-as-channel,
+   Gemini antigravity class). Per uncertainty-is-law the null hypothesis is "injection harms"; clear it
+   with evidence or don't send.
+3. **Peer/healthy posture** — peers (sibling dyads: bond, steward) trade falsification co-equally and
+   ride the direct channel freely. A **patient under care** is asymmetric; the direct channel opens only
+   once it's discharged to healthy/peer footing, not while in or just after a seizure.
+
+When licensed, the send is still **Operator-disposed**, **point-don't-fix**, and **Healer-dyad-signed**
+(shared-account self-identification). Constraint #2 (patient-untouching) is unchanged in *substance* — it
+bars unratified Healer→patient *content*, not the *transport* of Operator-disposed content.
+
 ## Per-pillar mapping
 
 | Pillar | Posture | Ratification flow | Operator hat(s) active |
