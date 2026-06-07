@@ -2,27 +2,30 @@
 """dag.py — dyad-healer's frontier/audit DAG engine (CSI; lineage-aligned SURVIVOR).
 
 LINEAGE, falsified before porting (rub 2026-06-07, "implement survivor"):
-  KEPT from touchstone: rack = a *dormant node-kind* (a flag), off the frontier until un-racked;
-    the frontier is COMPUTED, never narrated from a stale cache.
+  KEPT from touchstone: the frontier is COMPUTED, never narrated from a stale cache.
   KEPT from cairn: the TODO holding pen — a pre-DAG quarry for raw divergent intent (capture
     without structuring; the release-valve for the over-add / framing-prematurity grain). `todo`
-    captures; `convert-todo` masons it into a frontier node. (We drop cairn's dead rack_state.yml;
-    rack is a node flag here, distinct from todo: rack=structured-and-parked, todo=unstructured.)
+    captures; `convert-todo` masons it into a frontier node. (We drop cairn's dead rack_state.yml
+    entirely; parking = the todo holding pen, unstructured — distinct from a frontier node.)
   KEPT from cairn: ONE engine over a parameterized store (DAG_FRONTIER / DAG_AUDIT env);
     EXCISE DONE so "a frontier only has edges" (retros/frontier_excision.md); the AUDIT-LOCK —
     any open node in the AUDIT store freezes the FRONTIER ("Alignment Precedes Execution").
   DROPPED (falsified against our substrate):
     - cairn's done-by-ledger-substring + ACTIVE-by-git-branch — brittle (prefix collisions) AND
       assumes branch-per-node; we commit to main. Here status is STRUCTURAL: BLOCKED/READY derive
-      from deps (can't go stale), DONE is marked-then-EXCISED (never persists), RACKED is a flag.
-      The ONLY stored thing is the edge (deps + flags); status is computed from structure.
+      from deps (can't go stale), DONE is marked-then-EXCISED (never persists).
+      The ONLY stored thing is the edge (deps); status is computed purely from structure.
     - WIP-N=1 — we run PARALLEL trails by design (ledger/trail-map.md).
-    - cairn's rack_state.yml — a dead orphan stub (zero code refs); rack is a node flag here.
+    - cairn's rack_state.yml AND rack-the-flag itself — rack DEPRECATED 2026-06-07 (Operator-
+      clarified, cairn-corroborated). Dormancy is no longer a stored node-kind: a structured node
+      is either BLOCKED (waiting on a dep) or READY (climbable; `lean?` picks what to climb);
+      raw parked intent lives unstructured in the todo holding pen. No structured-but-dormant
+      limbo — that was the hoarding grain the rack flag enabled.
   KEPT from our own grain (bin/contraction-check.sh): SELF-TEST-GATED. Real ops refuse to run
     unless --self-test passes over known fixtures — trust the mechanism, not the memory.
 
 Stores: ledger/frontier.yml (the climb) · ledger/audit.yml (alignment debt that preempts it).
-Schema:  nodes: {<id>: {title, deps: [...], done?: bool, racked?: bool}}
+Schema:  nodes: {<id>: {title, deps: [...], done?: bool}}
 """
 import os
 import sys
@@ -33,8 +36,8 @@ FRONTIER = os.environ.get("DAG_FRONTIER", "ledger/frontier.yml")
 AUDIT = os.environ.get("DAG_AUDIT", "ledger/audit.yml")
 TODOS = os.environ.get("DAG_TODOS", "ledger/todos.yml")
 
-ICON = {"READY": "🟢", "BLOCKED": "🔴", "RACKED": "⚓", "DONE": "✓"}
-ORDER = {"READY": 0, "BLOCKED": 1, "RACKED": 2, "DONE": 3}
+ICON = {"READY": "🟢", "BLOCKED": "🔴", "DONE": "✓"}
+ORDER = {"READY": 0, "BLOCKED": 1, "DONE": 2}
 
 
 def _load(path):
@@ -54,8 +57,6 @@ def derive(nodes, nid):
     n = nodes[nid]
     if n.get("done"):
         return "DONE"
-    if n.get("racked"):
-        return "RACKED"  # dormant: carried freight, off the frontier until un-racked (touchstone)
     for d in n.get("deps", []):
         if d in nodes and derive(nodes, d) != "DONE":
             return "BLOCKED"
@@ -63,7 +64,7 @@ def derive(nodes, nid):
 
 
 def frontier(nodes):
-    """The active edge: READY nodes only (deps satisfied, not racked, not done)."""
+    """The active edge: READY nodes only (deps satisfied, not done)."""
     return [nid for nid in nodes if derive(nodes, nid) == "READY"]
 
 
@@ -124,11 +125,12 @@ def add_todo(todos, tid, intent):
 
 
 def convert_todo(todos, nodes, tid, deps=None):
-    """Mason: promote a quarried todo into a structured frontier node (dormant/racked until leaned),
-    and remove it from the holding pen. Pure transform — CLI wraps it with file IO."""
+    """Mason: promote a quarried todo into a structured frontier node (status computed from its
+    deps — READY if unblocked, BLOCKED if a dep is open), and remove it from the holding pen.
+    Pure transform — CLI wraps it with file IO."""
     intent = todos["backlog"][tid]["intent"]
     nid = "node_" + tid
-    nodes[nid] = {"title": intent, "deps": deps or [], "racked": True}
+    nodes[nid] = {"title": intent, "deps": deps or []}
     del todos["backlog"][tid]
     return nid
 
@@ -162,16 +164,12 @@ def selftest(verbose=True):
         "b": {"deps": ["a"]},               # blocked: a not done
         "c": {"deps": [], "done": True},    # done
         "d": {"deps": ["c"]},               # ready: only dep is done
-        "e": {"deps": [], "racked": True},  # dormant
-        "f": {"deps": ["e"]},               # blocked: racked dep is not done
     }
     ck(derive(nodes, "a") == "READY", "root, no deps -> READY")
     ck(derive(nodes, "b") == "BLOCKED", "dep-not-done -> BLOCKED")
     ck(derive(nodes, "c") == "DONE", "explicit done -> DONE")
     ck(derive(nodes, "d") == "READY", "all-deps-done -> READY")
-    ck(derive(nodes, "e") == "RACKED", "racked flag -> RACKED (off-frontier)")
-    ck(derive(nodes, "f") == "BLOCKED", "racked dep blocks dependent")
-    ck(sorted(frontier(nodes)) == ["a", "d"], "frontier = READY edge {a,d} (racked/blocked/done excluded)")
+    ck(sorted(frontier(nodes)) == ["a", "d"], "frontier = READY edge {a,d} (blocked/done excluded)")
 
     st = {k: dict(v) for k, v in nodes.items()}
     removed = excise(st)
@@ -195,7 +193,8 @@ def selftest(verbose=True):
     ck(todos["backlog"]["todo_1"]["intent"].startswith("a divergent"), "todo capture -> holding pen (no structure)")
     nn = {}
     nid = convert_todo(todos, nn, "todo_1", deps=["a"])
-    ck(nid == "node_todo_1" and nn[nid]["racked"] and nn[nid]["deps"] == ["a"], "convert-todo -> structured racked node")
+    ck(nid == "node_todo_1" and "racked" not in nn[nid] and nn[nid]["deps"] == ["a"],
+       "convert-todo -> structured node (no rack flag; status computed from deps)")
     ck("todo_1" not in todos["backlog"], "convert-todo removes it from the holding pen (no double-home)")
     if verbose:
         print("SELFTEST: PASS" if not fail else "SELFTEST: FAIL")
@@ -253,21 +252,10 @@ def main(argv):
         nid = convert_todo(todos, fr.setdefault("nodes", {}), args[0], deps=args[1:] or None)
         _save(FRONTIER, fr)
         _save(TODOS, todos)
-        print(f"masoned {args[0]} -> {nid} (racked/dormant; unrack to climb)")
-    elif cmd in ("rack", "unrack") and args:
-        st = _load(store)
-        n = st.get("nodes", {}).get(args[0])
-        if not n:
-            print(f"no such node: {args[0]}", file=sys.stderr)
-            return 1
-        n["racked"] = (cmd == "rack")
-        if not n["racked"]:
-            n.pop("racked", None)
-        _save(store, st)
-        print(f"{args[0]}: {'racked (dormant)' if cmd == 'rack' else 'un-racked (back on the climb)'}")
+        print(f"masoned {args[0]} -> {nid} (frontier node; status computed from deps)")
     else:
         print(__doc__.splitlines()[0])
-        print("usage: dag.py [show|excise|rack <id>|unrack <id>|--self-test] [--audit]")
+        print("usage: dag.py [show|excise|--self-test] [--audit]")
         print("       dag.py [todo \"<intent>\"|todos|convert-todo <todo_id> [dep ...]]")
         return 1
     return 0
