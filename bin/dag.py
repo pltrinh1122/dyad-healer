@@ -67,6 +67,39 @@ def frontier(nodes):
     return [nid for nid in nodes if derive(nodes, nid) == "READY"]
 
 
+def build_tree(nodes):
+    """Render the DAG as a directory-style ASCII tree: a dep nests its dependents beneath it
+    (dep enables → children sit under it). Roots = nodes with no (in-set) deps. Returns lines."""
+    children = {nid: [] for nid in nodes}
+    roots = []
+    for nid, n in nodes.items():
+        deps = [d for d in n.get("deps", []) if d in nodes]
+        if deps:
+            for d in deps:
+                children[d].append(nid)
+        else:
+            roots.append(nid)
+    lines = []
+
+    def walk(nid, prefix, is_last, seen):
+        s = derive(nodes, nid)
+        connector = "└─ " if is_last else "├─ "
+        dup = "  ↩(also above)" if nid in seen else ""
+        lines.append(f"{prefix}{connector}{ICON[s]} {s:8} {nid}  {nodes[nid].get('title', '')}{dup}")
+        if nid in seen:
+            return
+        seen = seen | {nid}
+        kids = sorted(children[nid], key=lambda k: (ORDER[derive(nodes, k)], k))
+        ext = "   " if is_last else "│  "
+        for i, k in enumerate(kids):
+            walk(k, prefix + ext, i == len(kids) - 1, seen)
+
+    ordered = sorted(roots, key=lambda r: (ORDER[derive(nodes, r)], r))
+    for i, r in enumerate(ordered):
+        walk(r, "", i == len(ordered) - 1, set())
+    return lines
+
+
 def excise(nodes):
     """Edge-only: physically drop DONE nodes + strip them from survivors' deps (cairn excision)."""
     done = [nid for nid in nodes if nodes[nid].get("done")]
@@ -147,6 +180,16 @@ def selftest(verbose=True):
 
     ck(open_nodes({"x": {"done": True}, "y": {}}) == ["y"], "audit debt = open (non-done) nodes only")
 
+    tree = build_tree({"a": {"deps": []}, "b": {"deps": ["a"]}, "c": {"deps": ["b"]}})
+
+    def _ind(line):
+        return len(line) - len(line.lstrip())
+
+    ck(len(tree) == 3, "tree: one line per node")
+    ck(tree[0].rstrip().endswith("a") and tree[1].rstrip().endswith("b") and tree[2].rstrip().endswith("c"),
+       "tree: dep-chain renders a -> b -> c")
+    ck(_ind(tree[0]) < _ind(tree[1]) < _ind(tree[2]), "tree: each dependent nests deeper (DAG as directory tree)")
+
     todos = {}
     add_todo(todos, "todo_1", "a divergent thought, captured raw")
     ck(todos["backlog"]["todo_1"]["intent"].startswith("a divergent"), "todo capture -> holding pen (no structure)")
@@ -163,10 +206,9 @@ def _show(store):
     audit_lock(store)
     nodes = _load(store).get("nodes", {})
     label = "AUDIT" if os.path.abspath(store) == os.path.abspath(AUDIT) else "FRONTIER"
-    print(f"{label}  ({store}) — computed edge; DONE is excised, never narrated from cache")
-    for nid in sorted(nodes, key=lambda n: (ORDER[derive(nodes, n)], n)):
-        s = derive(nodes, nid)
-        print(f"  {ICON[s]} {s:8} {nid}  {nodes[nid].get('title', '')}")
+    print(f"{label}  ({store}) — computed DAG tree (deps nest dependents); DONE excised, never cached")
+    for line in build_tree(nodes):
+        print("  " + line)
     fr = frontier(nodes)
     edge = "frontier (climb now)" if label == "FRONTIER" else "open debt"
     print(f"\n  -> {edge}: {', '.join(sorted(fr)) or '(none)'}")
