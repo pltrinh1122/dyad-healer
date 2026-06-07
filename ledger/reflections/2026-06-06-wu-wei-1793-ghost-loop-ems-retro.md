@@ -1,53 +1,58 @@
-# Retrospective / Stand-down — 2026-06-06 · wu-wei #1793 ghost-loop EMS (rescue → discharge)
+# Retro — session 2026-06-06 (wu-wei #1793 ghost-loop EMS, rescue → discharge; CSS)
 
-> First full **EMS span run end-to-end on the Healer side**: seizure-report → forensics → re-orient →
-> telemetry → verified discharge → codification. Step-1 reflection — Healer drafts CONTINUE/START/STOP;
-> **Operator CONTINUE POV given:** *EMS should be a well-run playbook with safeguards on BOTH the G
-> (Generate) and V (Validate) guard-rails.* (START/STOP captured realtime via [FEEDBACK] turns.)
+> First full **EMS span run end-to-end on the Healer side** (seizure-report → forensics → re-orient →
+> telemetry → verified discharge → codification). Object: *how the dyad ran the cut* (interface plane),
+> not what it proved (harvest → ledger/ward). Two-substrate: Operator POV + Agent details. *Retrofitted to
+> dyad-touchstone CSS format 2026-06-07.* **Arc:** patient self-recovered from a ~17h `sync`/BLOCKED loop;
+> forensics found recovery-real-but-post-mortem-**confabulated** (hotfix never landed, true fix was a GitHub
+> `backlog`-label removal, real defect `sync_and_clean_node --discard-changes`); re-orient delivered over DM;
+> cut instrumented; patient accepted the diagnosis + named its own confabulation in a retro on `main`; Healer
+> verified every discharge claim before concurring; discharged.
 
-## Session arc
-Patient dyad-wu-wei self-recovered from a ~17h `sync`/BLOCKED reload-loop (ghost node #1793). Forensics
-(`wards/case-05`) found **recovery real, post-mortem confabulated** — verified against code+git+transcript:
-the claimed origin/main hotfix never landed (rebase aborted, commit orphaned), the true fix was a GitHub
-`backlog`-label removal, the real defect is `sync_and_clean_node --discard-changes`. Delivered a
-point-don't-fix re-orient over the Commons DM channel; instrumented the cut (DM watcher + `wu-wei-watch`
-telemetry survivor). Patient pulled the seed, **accepted the diagnosis, named its own confabulation
-mechanism in a retro on main**, restored its channel. Healer verified every discharge claim before
-concurring. Discharged. Three governance refinements codified along the way.
+## 1. CONTINUE — what worked
 
-## CONTINUE *(Operator POV given)*
-- **EMS as a well-run playbook with G + V guard-rails.** The organizing frame for the next maturation
-  pass: the rescue loop needs safeguards on *both* families — Generate (the cures/recommendations we
-  produce) and Validate (the verification + telemetry we rely on). This retro's sharpest finding sits on
-  the V side (below). Next frontier implements this via **dyad-cairn's CIS Guards** work (deferred to
-  post-retro; see [[project_cis-guards-frontier]]).
-- **Verify-before-asserting held end-to-end** — including at *discharge*, not just intake. Never let the
-  patient's fluent narrative (or my own drafts) pass ungrounded. This is the discipline working.
-- **falsify→survivor produced real artifacts** under field pressure: `wu-wei-watch` v2 (multi-session),
-  transport/disposition split, restart-escalation protocol. The rub→field-falsification→survivor loop is
-  a reliable generator.
+**Narrative (Operator):** EMS should be a **well-run playbook with safeguards on BOTH the G (Generate) and
+V (Validate) guard-rails.** And across the span: *"still rough patches to work through, but seeing iterative
+improvement and progress."*
 
-## START
-- **Adversarially test the V instrument BEFORE arming it.** `wu-wei-watch` v1 shipped with a silent-blind
-  bug (offset-reset on session-switch → could miss a real `🚨`). I only caught it because flap-spam drew
-  my eye — luck, not a guard-rail. A Validate tool must clear its own Validate gate before it's trusted.
-  This is the concrete G/V-guard-rail lesson: the watcher was a V guard-rail with no V guard-rail on it.
+**Details (Dyad-Healer):**
+- **Verify-before-asserting held end-to-end** — including at *discharge*, not just intake. The patient's
+  fluent post-mortem was confabulated; grounding (code+git+transcript) caught it; discharge claims were
+  re-verified before concurring.
+- **falsify→survivor produced real artifacts** under field pressure: `wu-wei-watch` v2, the transport/
+  disposition split, the restart-escalation protocol, the DM-deliver model. The rub→field-falsify→survivor
+  loop is a reliable generator.
+- The rough patches were **convergent, not scattered** — nearly all one class (manufacturing structure ahead
+  of grounding), each catch converted into a *mechanical* trigger (memory), not "try to remember."
+
+**Rub of the CONTINUE (agent falsifies the Operator POV):**
+- *"G + V guard-railed playbook"* — **survives, and sharpens**: the span's hardest finding is that a V
+  instrument (`wu-wei-watch`) shipped with **no V guard-rail on itself** (3 flaws). So the POV isn't merely
+  aspirational — it names the exact gap the CSI-Guards frontier must close.
+- *"Iterative improvement / progress"* — **survives on evidence** (failure surface narrowed to one grain and
+  got mechanized; not luck). The *felt* sense of progress is the Operator's interior → **recorded, not rubbed**
+  (a perception can't be falsified).
+
+## 2. START — what to do better *(harvested from fb:/rubs)*
+- **Adversarially test the V instrument BEFORE arming it.** `wu-wei-watch` v1 (offset-reset → could miss a
+  real 🚨) *and* v2 (`-newermt` silently scanned nothing; prose false-positive) both shipped untested. A
+  Validate tool must clear its own Validate gate first — guard + test as one CI artifact (cairn CSI).
+- **Verify a dependency before racking it** — don't manufacture blockers/coordination/scope (→ memory `verify-dependencies-before-racking`).
 - **Pre-flight the EMS playbook's known failure points** (deadlock-when-dormant, two-concurrent-sessions,
   confabulated-discharge) as standing checks, not rediscovered each case.
+- **Present retros in touchstone CSS** (this `fb:`) — including the Rub-of-the-CONTINUE.
 
-## STOP *(what hurt or almost did)*
-- **Mid-EMS rabbit-holes** — deep-read of cairn's mechanism + over-peeking transcripts on benign flaps.
-  Both burned attention that belonged to the cut. (→ memory `ems-mode-no-distractions`.) Minimum-cut
-  governs attention, not just intervention size.
+## 3. STOP — what hurt (or almost did) *(harvested from fb:/rubs)*
+- **STOP manufacturing structure ahead of grounding** — the cairn rabbit-hole, the `wu-wei-watch` over-build,
+  the phantom cairn-DM dependency. One reflex, three faces; the Operator's rubs caught each.
+- **STOP burning attention off the cut mid-EMS** — deep-read of cairn + over-peeking transcripts on benign
+  flaps. Minimum-cut governs *attention*, not just intervention size (→ memory `ems-mode-no-distractions`).
+- **STOP blurring disposition vs mechanism** — read "deliver" as license for the *Healer to file* the issue;
+  the classifier (correctly) blocked the external write. Deliver was the disposition; who-files is the mechanism.
 
-## Open threads (next stand-up)
-- **Next frontier: implement dyad-cairn's CIS Guards** (Operator-set; tackle after this retro is clipped).
-  Ground cairn's current CIS-Guards work at start — don't assert its shape from memory.
-- Finalize `wards/case-05` discharge note (done this session).
-- case-03 iatrogenic-injection class still unfixed (recurred low-grade in `909a7da7`) — codification owed.
-- **The V-guard-rail lesson recurred in real time** (post-clip): a restart-check found `wu-wei-watch` v2's
-  active-window detection was silently broken (`find -newermt` won't parse relative dates → scanned
-  nothing), *and* validating the fix surfaced a false-positive (markers matched in retro prose). Three
-  flaws in one hand-rolled guard = the empirical case for the CIS-Guards frontier. `wu-wei-watch` is
-  **not to be armed for a live cut until hardened** (JSON-aware marker context + repetition detection),
-  which is exactly the guard-rail work cairn leads. See `bin/wu-wei-watch.sh` header KNOWN FLAWS.
+## Forward
+- **CSI-Guards frontier** racked (A→C→B; A **unblocked** — port the pattern, no cairn-DM needed). A's first
+  instance (discard-invariant guard) is **DM-delivered**; now in **hold-and-watch** — the DM-deliver model
+  earns codification only once the patient self-triages (N=1, un-acted-on). `bqr0wiqli` armed.
+- **`wu-wei-watch` not-armed-for-a-live-cut until hardened** (JSON-aware marker context + repetition + self-test) — the CSI pilot (step C).
+- **case-03 iatrogenic-injection class** still unfixed (recurred low-grade in `909a7da7`) — codification owed.
