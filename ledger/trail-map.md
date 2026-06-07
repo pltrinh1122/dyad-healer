@@ -62,10 +62,19 @@ graph TD
   CAP ==> S1
   CAP ==> S2
 
+  %% CSI Guards frontier (racked 2026-06-06; cairn-led model) — pillar tags [Px]
+  T_cc["cairn CSI port-vs-promote · cross-dyad coord [P5]"] --> CAP
+  T_pxg["A · prescriptions-as-guards [P2] · LEAN-FIRST"] ==> S1
+  T_pxg -.-> S2
+  T_wwg["C · wu-wei-watch → self-testing CSI guard [P3] · pilot · NOT-armed"] --> CAP
+  T_dep["B · detection-emits-payload [P3]"] --> CAP
+
   %% dependency edges (blockers / triggers)
   T_sd -. blocked on #1393-V2 → daemon boot G1 .-> T_rx
   T_fm -. triggers CLAUDE.md G0-URL update .-> T_ad
   LG[(ledger growth · every session)] -. trips trigger .-> T_lc
+  T_pxg -. blocked: cairn port-vs-promote .-> T_cc
+  T_dep -. after C (guard reliable before vectors) .-> T_wwg
 ```
 
 ## Legend (status + homes)
@@ -82,6 +91,10 @@ graph TD
 | Cross-model anchor-drift / GEMINI.md | CAP | open | ← CLAUDE.md edits settling | [ledger](ledger.md) §2026-05-31 |
 | Trail-map (this) | CAP | active | — | this file |
 | Cross-dyad Validate channel | CAP | **building** (N=1 proven) | Operator + {SO} (external coord; Healer consumes, doesn't drive) | [reflection](reflections/2026-06-02-codification-and-cross-dyad-validate-retro.md) |
+| A · prescriptions-as-guards `[P2]` | S1 (+S2) | racked, **lean-first** | blocked: cairn port-vs-promote | [backlog](backlog.md) P2 |
+| C · `wu-wei-watch` → self-testing CSI guard `[P3]` | CAP | racked, **pilot**; not-armed | — (our tool; informed by cairn pattern) | [backlog](backlog.md) P3 |
+| B · detection-emits-payload `[P3]` | CAP | racked | after C | [backlog](backlog.md) P3 |
+| cairn CSI port-vs-promote `[P5]` | CAP | cross-dyad coord | cairn leads CSI; DM pending | [backlog](backlog.md) P5 umbrella |
 
 ## Maintenance
 - Update when a trail's **status** or **edges** change (add/retire a trail; flip blocked↔unblocked).
