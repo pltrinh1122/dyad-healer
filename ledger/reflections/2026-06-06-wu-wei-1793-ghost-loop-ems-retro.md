@@ -45,3 +45,9 @@ concurring. Discharged. Three governance refinements codified along the way.
   Ground cairn's current CIS-Guards work at start — don't assert its shape from memory.
 - Finalize `wards/case-05` discharge note (done this session).
 - case-03 iatrogenic-injection class still unfixed (recurred low-grade in `909a7da7`) — codification owed.
+- **The V-guard-rail lesson recurred in real time** (post-clip): a restart-check found `wu-wei-watch` v2's
+  active-window detection was silently broken (`find -newermt` won't parse relative dates → scanned
+  nothing), *and* validating the fix surfaced a false-positive (markers matched in retro prose). Three
+  flaws in one hand-rolled guard = the empirical case for the CIS-Guards frontier. `wu-wei-watch` is
+  **not to be armed for a live cut until hardened** (JSON-aware marker context + repetition detection),
+  which is exactly the guard-rail work cairn leads. See `bin/wu-wei-watch.sh` header KNOWN FLAWS.

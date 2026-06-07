@@ -19,9 +19,15 @@
 # EMITS: 🚨 re-seizure marker (onset, per-session) · ✓ markers cleared · 🆕 new session · 💤 all idle
 #        · ▶ active again · ⚠ BLIND (brain gone — NOT 'idle') · 🛑 NEEDS-RESTART (seizing > RESTART_AFTER,
 #        won't clear → escalate per governance-map §Restart escalation; Healer never restarts directly)
-# RESIDUAL (flagged): catches EXPLICIT loop markers + a slow case-03 inject-loop only via its markers;
-#   a markerless identical-repetition loop is still not caught — add a per-session repetition/cadence
-#   heuristic if a real case shows one (candidate: 909a7da7 case-03 dormancy re-eval).
+# RESIDUAL / KNOWN FLAWS (do NOT arm for a live cut until addressed — fold into the CIS-Guards frontier):
+#   1. FALSE POSITIVE (found 2026-06-06 during V-on-V validation): grep matches marker strings in MODEL
+#      *prose* — a patient discussing/retro-ing a past seizure ("the Harmonization Failure was eradicated",
+#      "the BLOCKED loop") trips 🚨/🛑 with no live loop. Fix: JSON-aware — only count a marker in a
+#      non-MODEL entry (RUN_COMMAND output / SYSTEM message), or detect the LOOP (repetition) not the string.
+#   2. FALSE NEGATIVE: a markerless identical-repetition loop is not caught (candidate: 909a7da7 case-03).
+#   3. FIXED + validated 2026-06-06: find -newermt does NOT parse relative dates ("-900 seconds") — it
+#      silently matched nothing, so v2 scanned nothing. Now epoch-filtered in awk; live-run confirmed 🆕.
+#   The recurring pattern (3 flaws in one hand-rolled guard) is the empirical case for CIS Guards.
 set -u
 BRAIN=/home/pt/.gemini/antigravity-cli/brain
 INTERVAL=30
@@ -42,8 +48,12 @@ while true; do
     [ "$idle_state" != "blind" ] && echo "⚠ wu-wei-watch: brain dir gone ($BRAIN) — BLIND, not 'idle'"
     idle_state="blind"; sleep "$INTERVAL"; continue
   fi
-  # recently-active transcripts (mtime within window), newest first
-  mapfile -t active < <(find "$BRAIN" -name transcript_full.jsonl -newermt "-${ACTIVE_WINDOW} seconds" -printf '%T@ %p\n' 2>/dev/null | sort -rn | cut -d' ' -f2-)
+  # recently-active transcripts (mtime within window), newest first.
+  # NB: find -newermt does NOT parse relative forms ("-900 seconds" / "15 minutes ago") — they silently
+  # match nothing (verified 2026-06-06; the bug that made v2 scan nothing). Filter by epoch in awk instead.
+  thresh=$(( now - ACTIVE_WINDOW ))
+  mapfile -t active < <(find "$BRAIN" -name transcript_full.jsonl -printf '%T@ %p\n' 2>/dev/null \
+                        | awk -v t="$thresh" '$1 >= t' | sort -rn | cut -d' ' -f2-)
   if [ "${#active[@]}" -eq 0 ]; then
     [ "$idle_state" != "blind" ] && echo "⚠ wu-wei-watch: no session active in ${ACTIVE_WINDOW}s — BLIND/quiescent"
     idle_state="blind"; sleep "$INTERVAL"; continue
