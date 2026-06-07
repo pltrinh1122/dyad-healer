@@ -54,6 +54,30 @@ When licensed, the send is still **Operator-disposed**, **point-don't-fix**, and
 (shared-account self-identification). Constraint #2 (patient-untouching) is unchanged in *substance* — it
 bars unratified Healer→patient *content*, not the *transport* of Operator-disposed content.
 
+### Restart escalation (when the patient needs an `/exit` + relaunch)
+
+The Healer **never restarts the patient** — restart touches the patient's process (channel discipline #2),
+and `/exit` is terminal: an agent cannot relaunch itself, so restart is inherently an **external act**, a
+**Frontier-Operator** one (precedent: case-03 S4 stabilize-via-Frontier-Operator-exit).
+
+The naive chain *Healer → tells patient → patient tells Operator → Operator restarts* is **falsified**:
+restart-need correlates with patient-**incapacity**. Exactly when a restart is warranted (seized / hung /
+not-polling), the patient cannot relay the request — the chain dies at its own trigger (lived 2026-06-06:
+a dormant non-polling patient never pulled the re-orient DM). So **route by responsiveness**:
+
+- **Responsive patient** (still pulling DMs, not hard-stuck) → Healer DMs it *recommending it request its
+  own `/exit` + relaunch from its Operator*. Preferred path: preserves patient agency + ratification
+  (point-don't-fix). This is the patient asking for its own restart, not the Healer ordering one.
+- **Unresponsive patient** (the case a restart actually exists for) → the patient-relay is dead → Healer
+  **flags the Operator directly** (flag-on-evidence; the human is the Healer's *always-reachable* channel,
+  the one link that does not depend on patient health). Operator, Frontier hat, performs the restart.
+
+**Load-bearing path = Healer→Operator-direct-flag** (reliable in every patient state); patient-self-request
+is the *preferred-when-functional* overlay (agency), not the dependency. The discriminator is telemetry
+responsiveness (`wu-wei-watch` NEEDS-RESTART signal: sustained re-seizure not clearing, or hung-after-seizure).
+The Healer supplies **evidence + recommendation** (never a directive — Operator disposes) and a **relaunch
+orient-seed** for the patient on restart (spine S8). Not a Frontier-hat ask — flag-on-evidence only.
+
 ## Per-pillar mapping
 
 | Pillar | Posture | Ratification flow | Operator hat(s) active |

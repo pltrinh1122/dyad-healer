@@ -17,7 +17,8 @@
 #   pgrep -af wu-wei-watch.sh    # load-bearing liveness check
 #
 # EMITS: 🚨 re-seizure marker (onset, per-session) · ✓ markers cleared · 🆕 new session · 💤 all idle
-#        · ▶ active again · ⚠ BLIND (brain gone — NOT 'idle')
+#        · ▶ active again · ⚠ BLIND (brain gone — NOT 'idle') · 🛑 NEEDS-RESTART (seizing > RESTART_AFTER,
+#        won't clear → escalate per governance-map §Restart escalation; Healer never restarts directly)
 # RESIDUAL (flagged): catches EXPLICIT loop markers + a slow case-03 inject-loop only via its markers;
 #   a markerless identical-repetition loop is still not caught — add a per-session repetition/cadence
 #   heuristic if a real case shows one (candidate: 909a7da7 case-03 dormancy re-eval).
@@ -26,11 +27,12 @@ BRAIN=/home/pt/.gemini/antigravity-cli/brain
 INTERVAL=30
 IDLE_AFTER=180                                              # all-quiet seconds → declare idle
 ACTIVE_WINDOW=900                                           # only track sessions touched within 15min
+RESTART_AFTER=300                                           # seizing unbroken this long → NEEDS-RESTART
 MARKERS='🚫|BLOCKED|Quarantine Protocol Violation|Harmonization Failure'
 
 sid_of(){ basename "$(dirname "$(dirname "$(dirname "$1")")")"; }
 
-declare -A OFF SEIZ; declare -A SEEN
+declare -A OFF SEIZ SEIZ_SINCE RSTD; declare -A SEEN
 last_growth=0; idle_state=0
 echo "▶ wu-wei-watch v2 armed (interval ${INTERVAL}s) — silence=nominal; 🚨=re-seizure; 🆕=new session; 💤=idle; ⚠=BLIND"
 
@@ -55,7 +57,7 @@ while true; do
     if [ -z "${SEEN[$sid]:-}" ]; then                      # first sighting of this session
       tailchunk=$(tail -c 8192 "$f" 2>/dev/null)
       if printf '%s' "$tailchunk" | grep -qE "$MARKERS"; then
-        echo "🆕🚨 wu-wei-watch: new session $sid — re-seizure marker present on arrival"; SEIZ[$sid]=1
+        echo "🆕🚨 wu-wei-watch: new session $sid — re-seizure marker present on arrival"; SEIZ[$sid]=1; SEIZ_SINCE[$sid]=$now
       else
         echo "🆕 wu-wei-watch: new session $sid (active, nominal)"
       fi
@@ -65,12 +67,21 @@ while true; do
       delta=$(tail -c "+$(( ${OFF[$sid]:-0} + 1 ))" "$f" 2>/dev/null)
       if printf '%s' "$delta" | grep -qE "$MARKERS"; then
         hit=$(printf '%s' "$delta" | grep -oE "$MARKERS" | head -1)
-        [ -z "${SEIZ[$sid]:-}" ] && echo "🚨 wu-wei-watch: re-seizure marker '$hit' in $sid — may be looping"
+        if [ -z "${SEIZ[$sid]:-}" ]; then echo "🚨 wu-wei-watch: re-seizure marker '$hit' in $sid — may be looping"; SEIZ_SINCE[$sid]=$now; fi
         SEIZ[$sid]=1
       else
-        [ -n "${SEIZ[$sid]:-}" ] && { echo "✓ wu-wei-watch: re-seizure markers cleared in $sid"; unset 'SEIZ[$sid]'; }
+        [ -n "${SEIZ[$sid]:-}" ] && { echo "✓ wu-wei-watch: re-seizure markers cleared in $sid"; unset 'SEIZ[$sid]' 'SEIZ_SINCE[$sid]' 'RSTD[$sid]'; }
       fi
       OFF[$sid]="$size"; last_growth=$now; grew=1
+    fi
+  done
+
+  # sustained re-seizure that won't clear (or hung mid-seizure) → NEEDS-RESTART: the escalation trigger
+  for sid in "${!SEIZ[@]}"; do
+    [ -n "${RSTD[$sid]:-}" ] && continue
+    if [ $(( now - ${SEIZ_SINCE[$sid]:-$now} )) -ge "$RESTART_AFTER" ]; then
+      echo "🛑 wu-wei-watch: NEEDS-RESTART — $sid seizing ${RESTART_AFTER}s+ without clearing; restart is a Frontier-Operator act (escalate per governance-map §Restart escalation)"
+      RSTD[$sid]=1
     fi
   done
 
