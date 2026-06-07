@@ -40,7 +40,8 @@
 ### Open
 - [ ] **A · Prescriptions-as-guards (CSI frontier step A — LEANED FIRST).** Shift the prescription form from prose →
   a deterministic guard the patient adopts, so its own V steers its own G (vs a doc its context forgets). First target:
-  the `discard_changes` wound from case-05. Gated on cairn port-vs-promote coordination. → Pillar-5 CSI Guards umbrella.
+  the `discard_changes` wound from case-05. **UNBLOCKED** — port the cairn pattern locally (no coordination needed;
+  promotion-to-commons is a separate later/optional cairn-led call). → Pillar-5 CSI Guards umbrella.
 ### Done
 - [x] **CI lexical-guard false-positive cascade — FILED** 2026-05-29 → [dz-cil#1427](https://github.com/pltrinh1122/dz-cil/issues/1427) (`status:triage`). From case-04 S9 carry. **One violation, ailment-only** (falsify pass collapsed 2→1): **V1** CI-guard precision/scope — `tests/test_lexical_guard.py` `check_content()` raw-substring match + scans tracked `.venv` (670 files, not in `immune_zones`), **diverging from production drivers** (`drivers/audit_daemon.py:287`, `drivers/knowledge_accrual_skill.py:169`) which already use `\b` boundaries + scan `kb/` only. Harmonized SG-0003/SG-0002/NS-0001. **Dropped at falsify:** V2 deferred-debt locality — stale (`proposed:`/`known_debt` is the patient's *intentional* v3 deferral; guard ignoring it is correct). A (`#1393`-V2 path) dropped — already filed. Re-verified live at `dz-cil@8507664`. Filed directly via Requirement Intake template per Operator trigger. → `recommendations/2026-05-29-lexical-guard-false-positive-cascade.md`.
 - [x] **Agent-ROM integrity violations — FILED** 2026-05-29 → [dz-cil#1393](https://github.com/pltrinh1122/dz-cil/issues/1393) (OPEN, `status:triage`). Two violations as filed: **V1** `AGENT.md` Rule 7 (formerly §6.7) ↔ WIP-N=1 HTIL contradiction (exception promoted to `GEMINI.md` only, not the universal doc); **V2** `GEMINI.md:10` broken `./skills/audit_daemon.py` bring-up reference (actual `drivers/audit_daemon.py`). Harmonized SG-0002/SG-0003/NS-0001; x-ref #1233. Filed **ailment-only** (no prescribed cure) per Operator [FEEDBACK] + describe-the-wound discipline. **Third originally-flagged defect (`triage` vs `status:triage` label) dropped — patient already self-corrected** (verified at time-of-use). Source: backlog Pillar-2 open item → `recommendations/2026-05-29-agent-rom-integrity-violations.md`. **V2 priority-bump 2026-05-29** ([comment](https://github.com/pltrinh1122/dz-cil/issues/1393#issuecomment-4581428589)): re-verified V2 still live at `dz-cil@8507664` (line drifted `:10`→`:21`); surfaced silent-failure severity (broken bring-up → auditor never starts, fails closed-and-quiet — the case-04/#1233 self-detection gap); triage left to patient.
@@ -82,8 +83,11 @@
   reliable before its vector-emits are trusted.
   **B [→Pillar 3]:** detection emits the next-action payload, not just an alarm — `🛑 NEEDS-RESTART` emits the ready-to-fire
   escalation; the confabulation-check emits the claimed-vs-actual diff *as* the re-orient seed.
-  **Dependency:** cairn **LEADS** CSI; it lives in cairn's repo, not shared `commons/` → adoption needs **port-vs-promote**
-  coordination with cairn (DM) before/parallel to A. Provenance: 2026-06-06 wu-wei #1793 EMS retro (Operator POV: EMS = G+V
+  **No blocker (rub-corrected 2026-06-06):** CSI is a *published pattern* in cairn's repo, not a shared resource — we
+  **port** (adopt locally) with zero coordination. **Promotion** of CSI into shared `commons/` is a *separate, later,
+  cairn-led* DRY call (Operator-relayed if pursued), decidable only after porting shows what our half needs — NOT a
+  prerequisite for A. (cairn isn't even in our Commons directory; no DM channel wired — and none needed to adopt a pattern.)
+  Provenance: 2026-06-06 wu-wei #1793 EMS retro (Operator POV: EMS = G+V
   guard-railed playbook) → riff "G-steering-from-V" → Operator "rack … lean A first". Grounded in cairn
   `dyad-state/drafts/hard-guardrails.md`, `kb/WHY-0001`, `retros/csi_guard_architecture.md`, `kb/csi_guards.yml`.
   See [[project_cis-guards-frontier]].
