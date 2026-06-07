@@ -1,0 +1,5 @@
+# The AUDIT DAG — alignment/governance debt that PREEMPTS the frontier (Alignment Precedes
+# Execution). Any open (non-done) node here freezes `dag.py show` on the frontier store, binding
+# our NON-NEGOTIABLE (verify-before-asserting) + the framing-prematurity discipline into a mechanism.
+# File a node when alignment debt is incurred; mark done when cleared. Empty = frontier flows.
+nodes: {}

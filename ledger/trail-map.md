@@ -5,6 +5,12 @@
 > is the *what/status by pillar*; this map is the orthogonal *edges-and-roots* view. **Single-home-per-fact:**
 > status lives in the backlog/ledger (linked per trail); this file owns only the **edges** + **summit-rooting**.
 > Living; updated when a trail's status or dependencies change (≈ each stand-down).
+>
+> ⚠ **Computed-frontier migration (incremental, 2026-06-07):** the **CSI Guards** trail's live status is now
+> *computed* by `python3 bin/dag.py show` (store: `ledger/frontier.yml`) — status is structural, DONE is
+> excised, never narrated from a stale cache. The inline status tags below for those nodes are **frozen
+> snapshots**, being migrated; trust `dag.py`, not the tag. (Lineage-aligned survivor of cairn's frontier/
+> rack/todo/audit, falsified to our substrate — see ledger.)
 
 ## Vocabulary (mountaineering frame; "summit" is form-canonical)
 - **summit** `[form]` — a goal the dyad climbs toward (our two registered Commons summits). The DAG's **roots**.

@@ -1,0 +1,19 @@
+nodes:
+  bin_bind:
+    deps: []
+    racked: true
+    title: "bin/bind \xB7 port cairn's enforced binder (the meta-bind) \u2014 build-fresh"
+  detection_payload_B:
+    deps:
+    - wu_wei_watch_C
+    racked: true
+    title: "B \xB7 detection emits next-action payload"
+  rx_as_guards_A:
+    deps: []
+    title: "A \xB7 prescriptions-as-guards (CSI step A) \u2014 first instance drafted;\
+      \ awaiting Operator delivery-trigger"
+  wu_wei_watch_C:
+    deps: []
+    racked: true
+    title: "C \xB7 wu-wei-watch -> self-testing CSI guard (pilot) \u2014 re-conceived\
+      \ to the seizure invariant; NOT-armed"
