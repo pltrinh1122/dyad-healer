@@ -1,1 +1,7 @@
-backlog: {}
+backlog:
+  todo_1780873883:
+    intent: "Deprecate rack in dag.py \u2014 Operator clarified rack is already deprecated\
+      \ (cairn corroborates: rack_state.yml is the dead orphan; todo is the survivor).\
+      \ Remove the racked flag + rack/unrack cmds; express dormancy via todo or plain\
+      \ READY/BLOCKED, preserving the B->C dep. Migrate the 3 currently-racked CSI\
+      \ nodes. Do FRESH, not fatigued."
