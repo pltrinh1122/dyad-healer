@@ -55,11 +55,14 @@ Healer's memory (marker-detection is the refuted primitive). Deterministic spec 
 - **seizure-suspected ⟺ `activity(W) > 0 ∧ progress(W) == 0`, sustained over W.** `progress(W) > 0` **refutes**
   seizure regardless of marker volume.
 
-**Binding status:** the detector is **racked as Pillar-3 step C** (`bin/wu-wei-watch` re-conceived around
-contraction) and **must ship with its own self-test** (a guard-on-the-guard, per the V-on-V lesson). Until C
-ships that validated tool, the invariant is **not yet bound to a live mechanism** — so seizure-calls require
-**manual contraction-grounding** (check `progress(W)`), never marker-watching. *(Honest: a bind to an
-unbuilt tool is still memory-enforced; this records the target + forbids the marker primitive in the interim.)*
+**Binding status — BOUND (physical), 2026-06-07.** The invariant is anchored to a real, executable tool:
+**`bin/contraction-check.sh`** — it computes `progress(W)`/`activity(W)` (epoch-bounded) and emits the
+verdict; it **ships with `--selftest`** (the invariant's truth table; a guard-on-the-guard) and is **armable
+only when that self-test passes** (it caught a corner-case defect on first run — the gate working). Proven by
+execution: `--selftest` → PASS; live → `CONTRACTING` (reproduced the 2026-06-07 not-a-seizure diagnosis
+deterministically). The full live watcher (Pillar-3 **C**) *wraps* this core; the detection verdict is now a
+tool, not memory/markers. *(Provenance: Operator rub "prove the bind physically exists" — the prior
+markdown-only "bind" was a non-bind; this replaced it with the mechanism.)*
 
 ## The classes (as of 2026-05-28; three confirmed in evidence)
 
