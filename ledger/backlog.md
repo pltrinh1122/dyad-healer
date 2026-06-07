@@ -54,9 +54,14 @@
 
 ## Pillar 3 · Tooling R&D — a built code instrument (only when volume justifies)
 ### Open
-- [ ] **C · `wu-wei-watch` → self-testing CSI guard (CSI frontier step C, pilot).** Registry entry + deterministic
-  test over known-good/known-seizure fixtures; arming gated on test pass. Closes the 3 found flaws structurally.
-  **Currently NOT-armed-for-a-live-cut until hardened** (header KNOWN FLAWS). → Pillar-5 CSI Guards umbrella.
+- [ ] **C · `wu-wei-watch` → self-testing CSI guard, BOUND to the seizure invariant (CSI frontier step C, pilot).**
+  **Re-conceived 2026-06-07:** the marker primitive is *refuted* (it conflates guard-firings with seizure — a
+  category error that produced a live false-alarm). The detector must enforce the **seizure invariant**
+  (`kb/seizure-taxonomy.md`): measure **contraction** — `seizure ⟺ activity(W)>0 ∧ progress(W)==0` (durable
+  landed progress, epoch-bounded git window) — *not* markers. Registry entry + deterministic self-test over
+  known-good (contracting) / known-seizure (conserved) fixtures; **arming gated on the self-test passing.**
+  **NOT-armed-for-a-live-cut until built+validated** (until then, seizure-calls = manual contraction-grounding).
+  → Pillar-5 CSI Guards umbrella; bound to `kb/seizure-taxonomy.md` §seizure invariant.
 - [ ] **B · Detection emits next-action payload (CSI frontier step B).** `🛑 NEEDS-RESTART` → ready-to-fire escalation;
   confabulation-check → claimed-vs-actual diff as the re-orient seed. After C. → Pillar-5 CSI Guards umbrella.
 - [ ] ⏸ Async rec-generation mechanism (via `/goal` verifiable-completion or background Agent) — *if built* (deferred)

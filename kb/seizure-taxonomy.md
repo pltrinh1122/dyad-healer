@@ -17,6 +17,50 @@ hinge between **pillar 4 (research)** and **pillar 2 (prevention)**.
 This doc is also the **input register** for spine **S9** (Healer Retrospective): each ratified
 episode updates this catalog before its lessons are promoted.
 
+## The seizure invariant (what a seizure *is*) — RATIFIED 2026-06-07
+
+The classes below are *instances*; this is the **invariant** they share — the property that is true of
+every seizure and false of healthy work. **It is the discriminator; the per-class symptoms are not.**
+
+> **The invariant — a blocking-state conserved under the patient's own actions.** The patient acts, but
+> the precondition that blocks it does not move: the control loop is **open** (the failure/feedback is not
+> changing the next action), so the **unresolved set does not contract.** Cybernetically: *error not being
+> reduced by the agent's own activity.* In our terms: *sustained force against an unyielding grain.*
+
+**What is NOT the invariant (symptoms, present in healthy work too):**
+- **Guard-firings / `[🚫 BLOCKED]` markers** — a guard firing is the loop *closing* (the steering vector
+  being delivered); per cybernetic steering it is the system *working*. Conflating a guard-firing with a
+  seizure is a category error (lived 2026-06-07: a marker-based watcher read healthy guard-steered work as
+  relapse; corrected only by checking **contraction**).
+- **Repetition · duration · busy-ness** — a seizing agent is busy; so is a working one.
+
+**Corpus check:** #1793 — ghost node resurrected each sync, local fixes *discarded* → blocking-state
+**conserved** under 17h → seizure. case-03 — ephemeral-injection re-trigger conserved under schedule/kill →
+seizure. 2026-06-07 (#1806 context) — #1826 **merged**, #1825 **mapped**, locks cleared → unresolved set
+**contracting** → *not* a seizure despite identical guard-firings.
+
+**Falsifier:** a state all agree is a seizure where the blocking precondition is *demonstrably contracting*
+(genuine durable progress) → the invariant is wrong.
+
+### `bind:` — the seizure invariant → a deterministic contraction detector  *(cairn `bind`: anchor a rule to a physical deterministic tool, not fallible generative memory)*
+
+The invariant is **bound** to a deterministic detector of **contraction**, *not* to markers and *not* to the
+Healer's memory (marker-detection is the refuted primitive). Deterministic spec the detector must implement:
+
+- `progress(W)` over window W := durable advances of the patient's *landed* state — commits reaching the
+  integration branch + node-status advances (`Backlog → … → Completed/merged`). *(Measure landed state, not
+  activity; ground the git window with explicit epoch bounds — the 2026-06-07 timezone bug that faked
+  `progress=0` is a bound-to-memory failure this very bind exists to prevent.)*
+- `activity(W) > 0` := transcript/action growth in W.
+- **seizure-suspected ⟺ `activity(W) > 0 ∧ progress(W) == 0`, sustained over W.** `progress(W) > 0` **refutes**
+  seizure regardless of marker volume.
+
+**Binding status:** the detector is **racked as Pillar-3 step C** (`bin/wu-wei-watch` re-conceived around
+contraction) and **must ship with its own self-test** (a guard-on-the-guard, per the V-on-V lesson). Until C
+ships that validated tool, the invariant is **not yet bound to a live mechanism** — so seizure-calls require
+**manual contraction-grounding** (check `progress(W)`), never marker-watching. *(Honest: a bind to an
+unbuilt tool is still memory-enforced; this records the target + forbids the marker primitive in the interim.)*
+
 ## The classes (as of 2026-05-28; three confirmed in evidence)
 
 ### Class A — Reload-loop seizure
