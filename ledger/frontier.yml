@@ -8,10 +8,6 @@ nodes:
     - wu_wei_watch_C
     racked: true
     title: "B \xB7 detection emits next-action payload"
-  rx_as_guards_A:
-    deps: []
-    title: "A \xB7 prescriptions-as-guards (CSI step A) \u2014 first instance drafted;\
-      \ awaiting Operator delivery-trigger"
   wu_wei_watch_C:
     deps: []
     racked: true

@@ -1,5 +1,16 @@
 # Healer → Patient Recommendation (backlog_issue intake) — Discard Invariant Guard
 
+> **⛔ DISPOSED — NOT delivered (2026-06-07).** Dropped from the frontier on two converging rubs:
+> (1) *uncertainty-is-law* — the patient **self-recovered** case-05 (null hypothesis held); "invariant
+> held as prose, not yet mechanized" is an **arguable**, not certain, blind spot — no evidence the
+> capable self-modifying patient won't mechanize it itself → delivering = iatrogenic over-intervention.
+> (2) *Telos / craft-boundary* — this is a **bug-fix** for one mechanism defect, not a **self-healing
+> method/guard**. Our craft dispenses capability-builders (or, in a live seizure, points at the
+> minimum-cut); bug-fixing *for* the patient is never our move (anti-Telos; violates point-don't-fix).
+> Kept as record + provenance. The real case-05 self-healing gap was **confabulation** (false
+> self-diagnosis), a *method* target — and even that stays POST until it clears uncertainty-is-law.
+> See `ledger/frontier.yml` (node removed) + [[feedback_dispense-self-healing-methods-not-bugfixes]].
+
 > **Source:** Dyad-Healer (external observer). **Delivery:** the Frontier Operator files this on the
 > patient repo — the Healer never opens issues directly. **Tier:** file at *intake* (`backlog_issue`);
 > the patient authors its own `node_contract` on acceptance.
