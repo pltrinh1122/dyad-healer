@@ -36,7 +36,38 @@ to practice-capacity, which serves both summits. The structure gives traceabilit
 trace in a single step; infra trails trace through the capacity node. *(Downgraded from an earlier overclaim;
 cross-dyad Validate from {dyad-steward}, 2026-06-02.)*
 
-## The map
+## The map  *(primary view: ASCII — terminal-native; the mermaid source graph is below)*
+
+Read left→right: each trail → the summit it climbs; nested lines = its blocker/feeder.
+`⛔`=blocked · `┄`=watch (dashed) · `▸`=triggers/enables · `[Px]`=pillar.
+
+```text
+⛰ S1 · self-healing efficacy
+├─ A · prescriptions-as-guards                  [P2] racked · LEAN-FIRST
+│   └─⛔ blocked: cairn port-vs-promote         [P5] (T_cc) ◀ critical path
+├─ filed prescriptions #1233/#1307/#1393/#1427  [P2] in patient triage
+├─ self-detection experiment P1/P2              posted ·⛔ on #1393-V2 (daemon boot G1)
+└┄ patient/dz-cil lineage-alignment             watch
+
+⛰ S2 · healing by externality
+├─ A · prescriptions-as-guards                  [P2] (same trail — also climbs S2: install guard, don't fix)
+├─ form-contribution candidates ×3              posted · awaiting Dyad-Practice channel
+└┄ form/Commons v0.2 migration                  watch · triggers ▸ anchor-drift
+
+◆ practice-capacity   (feeds ⇒ S1 & S2)
+├─ C · wu-wei-watch → self-testing CSI guard    [P3] racked · pilot · NOT-armed
+│   └─ enables ▸ B
+├─ B · detection-emits-payload                  [P3] racked ·⛔ after C
+├─ cairn CSI port-vs-promote                    [P5] cross-dyad coord · cairn leads · DM pending
+│   └─ blocks ▸ A  (the lean-first trail)
+├─ cross-dyad Validate channel                  building (N=1)
+├─ cross-model anchor-drift / GEMINI.md         open · ◀ form/Commons migration
+├─ practice-lifecycle archival                  deferred (ledger 643/1000)
+├─ async rec-generation                         deferred (if-built)
+└─ trail-map (this artifact)                    active
+```
+
+### Source graph (mermaid — structural source-of-truth; does **not** render in the terminal)
 
 ```mermaid
 graph TD
@@ -101,3 +132,6 @@ graph TD
 - A trail completes → drop it from the active map (its terminal record stays in backlog Done / ledger).
 - New concurrent work → add it as a trail, attach to its summit (or to practice-capacity if infrastructure).
 - Keep it **acyclic**: summits are sinks; every edge points toward a summit or a blocker, never back.
+- **Dual-rendering sync (single-home guard):** edges have one source-of-truth — the **mermaid** block; the
+  **ASCII tree is a derived view.** On any edge/status change, edit the mermaid first, then re-derive the
+  ASCII so they agree. (ASCII is primary-to-*read* — terminal-native — but mermaid is primary-to-*edit*.)
