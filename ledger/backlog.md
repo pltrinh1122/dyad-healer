@@ -64,6 +64,12 @@
   → Pillar-5 CSI Guards umbrella; bound to `kb/seizure-taxonomy.md` §seizure invariant.
 - [ ] **B · Detection emits next-action payload (CSI frontier step B).** `🛑 NEEDS-RESTART` → ready-to-fire escalation;
   confabulation-check → claimed-vs-actual diff as the re-orient seed. After C. → Pillar-5 CSI Guards umbrella.
+- [ ] **`bin/bind` — port cairn's enforced binder (CSI; the meta-bind).** Port `ontological_binder.py`: refuse a bind
+  unless `{theory ∧ mechanism ∧ passing self-test}`, committed atomically → prose-binds become *structurally impossible*.
+  Closes the real gap the 2026-06-07 prose-bind exposed (Operator rub "prove the bind physically exists"): our binding
+  *process* is currently memory-enforced — the very thing `bind` exists to replace. Adapt planes to our repo (theory:
+  `kb/`; mechanics: `bin/`+`tests/`). **Build fresh + validated** (error-rate today says don't build the rigor-enforcer
+  fatigued). → Pillar-5 CSI Guards umbrella.
 - [ ] ⏸ Async rec-generation mechanism (via `/goal` verifiable-completion or background Agent) — *if built* (deferred)
 ### Done
 - [x] **`bin/git.sh` — permission GRANTED + validated end-to-end 2026-05-29.** Operator added `Bash(bin/git.sh:*)` to `.claude/settings.json`; `bin/git.sh push` ran with **no prompt** (rule hot-reloaded mid-session — no restart) and pushed `b1a276c`. Recurring push-friction now automated through the choke-point; raw `git` stays ungranted.
