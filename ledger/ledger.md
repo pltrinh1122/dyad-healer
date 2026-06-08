@@ -762,6 +762,38 @@ re-charter (#1 hasn't failed; operational sharpening only) → homed in `kb/gove
 §"Constraint #1's two axes," not `charter.md`. Extends the model/human/lens accounting from the
 2026-06-02 dyad-bond entry to the **patient** relationship (prior instance was sibling-peer).
 
+## 2026-06-08 — `rub:` memory partition (cache vs system-of-record) — falsified, survivor implemented
+**Stock (Operator `rub:`):** dyad-healer launches as `agy` or `claude` over the *same* substrate (minus
+the agentic-engine); ∴ claude-native system-memory should *only* serve claude-runtime operating
+efficiency, while *all* dyad-healer memory should be durable on the dyad-healer substrate. *"falsify
+and implement survivor."*
+
+**Falsification:**
+- **Principle sound** — direct corollary of single-home-per-fact + engine-divergence (2026-06-08 §above):
+  engine swappable over one substrate ⇒ off-substrate dyad-memory dies on the swap.
+- **"native = efficiency only" is the TARGET, not current state** — grounded: claude-native memory
+  (`~/.claude/.../memory/`) is the **sole home** of the entire 40-file feedback/project/reference layer
+  (176K); the repo had **no** durable home for it (`grep "How to apply"` → 0 substrate hits). Relaunch
+  as `agy` today = that layer **lost**. So implementing = *migrate*, then the claim becomes true.
+- **Sharpened wording** — native isn't *efficiency vs dyad-content*; it's a **cache of dyad-content for
+  runtime-recall efficiency**. May hold dyad-facts (projection); may never be **sole-home**. Invariant:
+  *no dyad-fact lives only in the cache.*
+- **Didn't blind-triage 40 files for redundancy** — that asserts unverified coverage. Lower-regret:
+  make substrate the record now (redundancy cheap; lost feedback not), prune true duplicates later.
+
+**Survivor (implemented):** mirrored native memory → repo **`memory/`** (40 files + `MEMORY.md`) as the
+engine-agnostic **system of record**; added `memory/README.md` (cache-vs-record + no-orphan invariant +
+write-back coherence); codified the rule in `kb/governance-map.md` §"Memory architecture." Native memory
+recast as a **runtime cache**. (Top-level `memory/` extends the bucket model — consistent with existing
+`commons/`/`contributions/`/`dm/`; falsifiable, could nest under `ledger/`.)
+
+**Owed (same-class, flagged not fixed):** (1) **anchor-layer debt** — operating discipline lives in
+engine-named `CLAUDE.md`; `GEMINI.md` is a stub → missing engine-agnostic `AGENT.md`; an `agy` relaunch
+is *not fully provisioned* until the anchor migrates too (continuity gap beyond memory). (2)
+**sync-automation** — native↔substrate write-back is manual interim; recurring-friction → automate
+([[feedback_automate-recurring-manual-friction]]). (3) **redundancy pruning** — which mirrored memories
+duplicate `kb/`/`CLAUDE.md` (single-home tidy-up; non-urgent).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple

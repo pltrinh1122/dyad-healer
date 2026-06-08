@@ -131,6 +131,20 @@ Healer to `agy`. Generalizes to "pick the most divergent available engine" if th
 - *Not a re-charter* — #1 hasn't failed; this sharpens its operational reading. *Not* `bind:`-able —
   engine selection is a human/infra instantiation act, not a deterministic gate.
 
+### Memory architecture — system-of-record vs runtime cache *(corollary of engine-divergence)*
+
+Because the engine is swappable over one substrate, **dyad-memory must live on the substrate, not the
+engine.** The dyad-healer substrate (`memory/` + `kb/` + `ledger/` …) is the engine-agnostic **system
+of record**; engine-native memory (claude's `~/.claude/.../memory/`) is a **runtime cache** — a
+recall-efficiency projection, disposable on engine-swap. **No-orphan invariant:** no dyad-fact may
+live *only* in a cache; every native memory has a canonical home on the substrate (else it dies on
+relaunch — continuity lives in the durable record). Native memory thus *pertains only to
+runtime-recall efficiency* (Operator, 2026-06-08), never to sole-home durability. See
+[`memory/README.md`](../memory/README.md). *Same-class debt flagged 2026-06-08:* the operating
+discipline itself is homed in the engine-named `CLAUDE.md` while `GEMINI.md` is a stub → a missing
+engine-agnostic `AGENT.md`; the anchor layer owes the same migration before an `agy` relaunch is
+fully provisioned (ledger).
+
 ## The shape that emerges
 
 1. **The Charter governs the *ratification edges*, not the work itself.** The Healer Operator is the gate at every practice-changing boundary; in between, the Healer authors freely. That's why the constraint set is small and discrete.
