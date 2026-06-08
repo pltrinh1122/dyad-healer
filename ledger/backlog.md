@@ -64,12 +64,13 @@
   → Pillar-5 CSI Guards umbrella; bound to `kb/seizure-taxonomy.md` §seizure invariant.
 - [ ] **B · Detection emits next-action payload (CSI frontier step B).** `🛑 NEEDS-RESTART` → ready-to-fire escalation;
   confabulation-check → claimed-vs-actual diff as the re-orient seed. After C. → Pillar-5 CSI Guards umbrella.
-- [ ] **`bin/bind` — port cairn's enforced binder (CSI; the meta-bind).** Port `ontological_binder.py`: refuse a bind
-  unless `{theory ∧ mechanism ∧ passing self-test}`, committed atomically → prose-binds become *structurally impossible*.
-  Closes the real gap the 2026-06-07 prose-bind exposed (Operator rub "prove the bind physically exists"): our binding
-  *process* is currently memory-enforced — the very thing `bind` exists to replace. Adapt planes to our repo (theory:
-  `kb/`; mechanics: `bin/`+`tests/`). **Build fresh + validated** (error-rate today says don't build the rigor-enforcer
-  fatigued). → Pillar-5 CSI Guards umbrella.
+- [x] **`bin/bind` — port cairn's enforced binder (CSI; the meta-bind). BUILT + self-bound 2026-06-07** (`27cc03a`).
+  Port of `ontological_binder.py`, survivor-filtered: KEEP two-plane staged check + atomic `bind: <msg>` commit;
+  ADAPT planes to our repo (theory `kb/`; mechanics `bin/`+`tests/`); DROP cairn's `ledger_manager` auto-append
+  (our ledger is hand-curated); ADD the **self-test plane** — the bind names a `--test` command and is refused unless
+  it exits 0 (cairn's binder omits this). Self-test-gated itself (refuses to run unless `bin/bind --self-test` passes;
+  11 checks). Theory plane → `kb/the-bind.md`. First Ontological Bond forged is the tool binding *itself* into existence.
+  → Pillar-5 CSI Guards umbrella.
 - [ ] ⏸ Async rec-generation mechanism (via `/goal` verifiable-completion or background Agent) — *if built* (deferred)
 ### Done
 - [x] **`bin/git.sh` — permission GRANTED + validated end-to-end 2026-05-29.** Operator added `Bash(bin/git.sh:*)` to `.claude/settings.json`; `bin/git.sh push` ran with **no prompt** (rule hot-reloaded mid-session — no restart) and pushed `b1a276c`. Recurring push-friction now automated through the choke-point; raw `git` stays ungranted.

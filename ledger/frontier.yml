@@ -1,7 +1,4 @@
 nodes:
-  bin_bind:
-    deps: []
-    title: "bin/bind \xB7 port cairn's enforced binder (the meta-bind) \u2014 build-fresh"
   detection_payload_B:
     deps:
     - wu_wei_watch_C
