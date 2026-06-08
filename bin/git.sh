@@ -13,7 +13,7 @@
 #
 # ── DECLARED ACCESS POLICY (Operator-governed) ───────────────────────────────────
 # Edit THIS block to widen/narrow access. The mechanism below changes rarely.
-ALLOWED_OPS=(push)                              # ops the Healer may invoke; all else refused
+ALLOWED_OPS=(push add commit)                   # ops the Healer may invoke; all else refused
 PROTECTED_BRANCHES=(main)                       # branches on which rewriting flags are refused
 FORCE_FLAGS=(--force -f --force-with-lease)     # flags treated as history-rewriting
 # ─────────────────────────────────────────────────────────────────────────────────
@@ -49,6 +49,9 @@ case "$op" in
       done
     fi
     run push origin "$branch" "$@"
+    ;;
+  add|commit)
+    run "$op" "$@"
     ;;
   *)
     die "no handler for op '$op' (unreachable; ALLOWED_OPS gate)"
