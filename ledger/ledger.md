@@ -820,7 +820,7 @@ reduced to **thin per-engine anchors**, each a one-line `@ANCHOR.md` import + en
 engine-named files = thin projections; engine-agnostic content on the substrate. **Anchor-layer
 owed-debt → CLOSED.** *(One-time: first claude session post-change shows an @-import approval prompt.)*
 
-**Still owed (memory-partition entry):** sync-automation (native↔substrate cache) · redundancy pruning.
+**Still owed (memory-partition entry):** redundancy pruning. (**sync-automation closed:** `bin/sync-memory.sh` built and committed)
 **Open (low):** which file is the identity birth-anchor (caveat references it); historical/immutable, not blocking.
 
 ## Open questions
