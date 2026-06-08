@@ -736,6 +736,32 @@ Full narrative → `ledger/reflections/2026-06-04-cross-dyad-falsification-loop-
   is asymmetric). When licensed: still Operator-disposed, point-don't-fix, Healer-dyad-signed. Constraint
   #2 unchanged in substance (bars unratified *content*, not *transport* of disposed content).
 
+## 2026-06-08 — `rub:` engine-divergence as the 2nd independence axis (Healer-engine ↔ patient-engine) — falsified, survivor implemented
+**Stock (Operator `rub:`):** switching the Healer between `claude` and `agy` calibrates our independence
+from the subject; the Healer was instantiated on `claude` for orthogonality from dyad-wu-wei's `agy`; a
+`claude` patient would mean we switch *ourselves* to `agy`. *"falsify and implement survivor."*
+
+**Falsification (attacked the two parts):**
+- **(A) "engine-divergence = independence."** *Partly refuted → scoped.* Grounded against our own
+  independence-axis accounting (2026-06-02, dyad-bond entry: model/human/lens). Cross-dyad Validate
+  delivered value at **N=2 with the model axis shared** — the **lens** carried it → engine-divergence is
+  **additive, not primary**; a same-engine Healer is still valid (loop-externality intact). *But* it
+  guards a **distinct** blind-spot class Charter #1's loop-externality does **not**: model-family-level
+  fluent-but-wrong tendencies (a same-engine Healer can replicate the patient's training-level error and
+  not see it — meld-counterfeit at the model axis). So: real second axis, **calibrated preference**.
+- **(B) "switch our engine."** *Scoped.* The engine is set at **instantiation by Operator/infra** — the
+  Healer can't self-switch mid-run (owns the *rule*, not the *act* — [[feedback_operator-disposes-intent-healer-owns-mechanism]]).
+  "claude|agy" is the current two-engine instance of the general rule "most-divergent available." Forward
+  case (patient=`claude`→Healer=`agy`) is **ratified-intent, N=0, not-yet-exercised**. Not `bind:`-able
+  (instantiation act, not a deterministic gate). Vocabulary: *engine-divergence*, not "orthogonality"
+  (divergence is partial — shared architecture/era/RLHF).
+
+**Survivor (implemented):** Charter #1 reads as **two independence axes** — loop-externality (always-on,
+structural) + engine-divergence (calibrated preference, default divergent-from-patient). **Not** a
+re-charter (#1 hasn't failed; operational sharpening only) → homed in `kb/governance-map.md`
+§"Constraint #1's two axes," not `charter.md`. Extends the model/human/lens accounting from the
+2026-06-02 dyad-bond entry to the **patient** relationship (prior instance was sibling-peer).
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple

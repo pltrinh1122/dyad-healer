@@ -102,6 +102,35 @@ The six Charter constraints apply unevenly:
 | **#5** Discharges-and-stands-down | | ✓ | |
 | **#6** Enables, doesn't fix *(point-don't-fix)* | ✓ | | |
 
+### Constraint #1's two axes — loop-externality + engine-divergence *(independence calibration)*
+
+Constraint #1 (immune-by-externality) rests on **two distinct independence axes**, each guarding a
+distinct blind-spot class:
+
+- **Loop-externality** *(always on; structural)* — the Healer runs a separate loop / context / role
+  from the patient. Guards *loop-level* blind spots: the patient's stuck inference can't see itself; an
+  outside loop can. Non-negotiable — a same-engine Healer is still a valid Healer.
+- **Engine-divergence** *(calibrated preference)* — the Healer runs a *different LLM engine* than the
+  patient. Guards *model-family-level* blind spots — a fluent-but-wrong tendency native to the engine,
+  which loop-externality does **not** cover (a same-engine Healer can replicate the patient's
+  training-level error and not see it; this is the meld-counterfeit failure-mode at the model axis).
+
+**Calibration rule** *(instantiation-time, an Operator/infra act — not a self-switch)*: default the
+Healer's engine **divergent from the patient's**. Today's two engines: patient `agy` (dyad-wu-wei) →
+Healer `claude` (current, why the Healer was instantiated on `claude`); patient `claude` → switch the
+Healer to `agy`. Generalizes to "pick the most divergent available engine" if the pool grows.
+
+**Falsified bounds — why preference, not law** (the survivor of `rub:` 2026-06-08, see ledger):
+- *Additive, not primary.* Cross-dyad Validate delivered value at N=2 with the model axis **shared** —
+  the **lens** (externality + craft-corpus + role) carried it (dyad-bond, 2026-06-02). So
+  engine-divergence *sharpens* independence; it does not *constitute* it.
+- *Partial, not orthogonal.* Shared architecture / training-era / RLHF means real but bounded
+  divergence. Frame as *engine-divergence*, not "orthogonality."
+- *Forward case is ratified-intent, not-yet-exercised* (N=0 `claude`-patients). Deliver the rule; the
+  switch is an instantiation-time act when the case arrives.
+- *Not a re-charter* — #1 hasn't failed; this sharpens its operational reading. *Not* `bind:`-able —
+  engine selection is a human/infra instantiation act, not a deterministic gate.
+
 ## The shape that emerges
 
 1. **The Charter governs the *ratification edges*, not the work itself.** The Healer Operator is the gate at every practice-changing boundary; in between, the Healer authors freely. That's why the constraint set is small and discrete.
