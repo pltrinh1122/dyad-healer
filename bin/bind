@@ -1,0 +1,166 @@
+#!/usr/bin/env python3
+"""bind — the meta-bind: forge an Ontological Bond, or refuse it (CSI; dyad-healer).
+
+WHY (theory, kb/): a "bind" ties a rule/invariant to a deterministic mechanism so it
+survives context-amnesia — NOT to fallible prose/memory. On 2026-06-07 we used `bind` as a
+*word over markdown*: the exact memory-enforcement `bind` exists to replace, caught only by an
+Operator rub. This tool makes prose-binds STRUCTURALLY IMPOSSIBLE: a bind is refused unless all
+three planes are present and proven, then committed atomically.
+
+THREE PLANES (a bind exists only when all three are real, at forge-time):
+  THEORY     — a staged file under kb/   (the generative intent, permanently codified).
+  MECHANICS  — a staged file under bin/ (or tests/)  (the enforcement; intent without a
+               mechanism is just prose).
+  SELF-TEST  — a named command (--test) that EXITS 0  (proof the mechanism actually works
+               now; not merely that a mechanism file exists — cairn's binder stops here, we
+               don't).
+
+LINEAGE, falsified before porting (port of cairn skills/ontological_binder.py):
+  KEPT:    operate on staged files; require both planes present; atomic `bind: <msg>` commit;
+           refuse loudly (non-zero exit) — the consistency guardrail.
+  ADAPTED: planes mapped to OUR substrate (theory kb/ ; mechanics bin/+tests/) — cairn's
+           AGENT.md/skills/commons/ don't exist here.
+  DROPPED: cairn's ledger_manager auto-append (DYAD_LEDGER.md / ledger.jsonl) — our ledger is
+           hand-curated prose (single-home-per-fact); the binder never auto-touches it.
+  ADDED:   the SELF-TEST plane — run the named command, refuse the bind unless it passes. The
+           self-test command is NAMED at bind-time (not a forced uniform flag) so it works
+           today across our heterogeneous tools (--selftest / --self-test / pytest / none).
+  KEPT from our own grain (contraction-check.sh, dag.py): SELF-TEST-GATED itself — the real
+           bind refuses to run unless `bind --self-test` passes first. Dogfood: the rigor-
+           enforcer is held to its own rigor.
+
+Usage:  bind "<message>" --test "<self-test command>"
+        bind --self-test
+"""
+import subprocess
+import sys
+
+THEORY_PREFIXES = ("kb/",)
+MECH_PREFIXES = ("bin/", "tests/")
+
+
+def classify(staged):
+    """Pure: split staged paths into (theory_files, mechanics_files) by plane prefix."""
+    theory = [f for f in staged if f.startswith(THEORY_PREFIXES)]
+    mech = [f for f in staged if f.startswith(MECH_PREFIXES)]
+    return theory, mech
+
+
+def verdict(theory_files, mech_files, test_passed):
+    """Pure: the single bind decision. Returns the failing plane name, or None if the bond holds.
+    Priority order = theory, mechanics, self-test (planes before the proof-of-work)."""
+    if not theory_files:
+        return "theory"
+    if not mech_files:
+        return "mechanics"
+    if not test_passed:
+        return "selftest"
+    return None
+
+
+GUARDRAIL = {
+    "theory": ("The THEORY plane (a staged file under kb/) is missing.",
+               "Codify the generative intent first — a bind without a 'why' is just a mechanism."),
+    "mechanics": ("The MECHANICS plane (a staged file under bin/ or tests/) is missing.",
+                  "Intent cannot exist without mechanical enforcement — stage the mechanism."),
+    "selftest": ("The SELF-TEST plane did not pass (--test command exited non-zero, or no --test given).",
+                 "A bind must PROVE its mechanism works now — not merely that a mechanism file exists."),
+}
+
+
+def _staged_files():
+    r = subprocess.run(["git", "diff", "--cached", "--name-only"], capture_output=True, text=True)
+    return [l for l in r.stdout.splitlines() if l.strip()]
+
+
+def _run_test(cmd):
+    """Run the named self-test command; True iff it exits 0. Empty cmd never passes."""
+    if not cmd:
+        return False
+    return subprocess.run(cmd, shell=True).returncode == 0
+
+
+def do_bind(message, test_cmd):
+    staged = _staged_files()
+    theory, mech = classify(staged)
+    # Only run the (possibly side-effecting) self-test once both planes are present.
+    test_passed = _run_test(test_cmd) if (theory and mech) else False
+    problem = verdict(theory, mech, test_passed)
+    if problem:
+        title, fix = GUARDRAIL[problem]
+        print("🚨 CONSISTENCY GUARDRAIL FIRED — Ontological Bond REFUSED 🚨", file=sys.stderr)
+        print(f"   {title}", file=sys.stderr)
+        print(f"   → {fix}", file=sys.stderr)
+        return 1
+    r = subprocess.run(["git", "commit", "-m", f"bind: {message}"], capture_output=True, text=True)
+    if r.returncode != 0:
+        print("🚨 CONSISTENCY GUARDRAIL FIRED — commit failed, bond NOT forged 🚨", file=sys.stderr)
+        print(r.stderr.strip(), file=sys.stderr)
+        return 1
+    print(f"[BIND] Ontological Bond forged: {message}")
+    print(f"[BIND] theory={', '.join(theory)} · mechanics={', '.join(mech)} · self-test=PASS")
+    return 0
+
+
+def selftest(verbose=True):
+    fail = 0
+
+    def ck(cond, msg):
+        nonlocal fail
+        if verbose:
+            print(f"  {'ok  ' if cond else 'FAIL'} {msg}")
+        if not cond:
+            fail = 1
+
+    # classify: plane membership by prefix
+    t, m = classify(["kb/WHY-bind.md", "bin/bind", "README.md"])
+    ck(t == ["kb/WHY-bind.md"], "classify: kb/ file -> theory plane")
+    ck(m == ["bin/bind"], "classify: bin/ file -> mechanics plane")
+    _, m2 = classify(["tests/test_bind.py"])
+    ck(m2 == ["tests/test_bind.py"], "classify: tests/ file -> mechanics plane")
+    t3, m3 = classify(["README.md", "ledger/ledger.md"])
+    ck(t3 == [] and m3 == [], "classify: non-plane files belong to neither plane")
+
+    # verdict: the bind decision, all four paths + priority order
+    ck(verdict(["kb/x.md"], ["bin/y"], True) is None, "verdict: all three planes -> bond holds")
+    ck(verdict([], ["bin/y"], True) == "theory", "verdict: no theory -> refuse (theory)")
+    ck(verdict(["kb/x.md"], [], True) == "mechanics", "verdict: no mechanics -> refuse (mechanics)")
+    ck(verdict(["kb/x.md"], ["bin/y"], False) == "selftest", "verdict: self-test failed -> refuse (selftest)")
+    ck(verdict([], ["bin/y"], False) == "theory", "verdict: theory checked before self-test (priority)")
+
+    # run_test: empty command can never pass (no --test == no proof)
+    ck(_run_test("") is False, "run_test: empty command never passes")
+    ck(_run_test("true") is True and _run_test("false") is False, "run_test: tracks exit code")
+
+    if verbose:
+        print("SELFTEST: PASS" if not fail else "SELFTEST: FAIL")
+    return 0 if not fail else 1
+
+
+def main(argv):
+    if argv and argv[0] in ("--self-test", "selftest"):
+        return selftest()
+    if selftest(verbose=False) != 0:
+        print("bind: refusing to run — self-test FAILED (arming gated on self-test).", file=sys.stderr)
+        return selftest()  # re-run verbose to show which fixture broke
+    message, test_cmd = None, None
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--test" and i + 1 < len(argv):
+            test_cmd = argv[i + 1]
+            i += 2
+            continue
+        if message is None:
+            message = a
+        i += 1
+    if not message:
+        print(__doc__.splitlines()[0])
+        print('usage: bind "<message>" --test "<self-test command>"')
+        print("       bind --self-test")
+        return 1
+    return do_bind(message, test_cmd)
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
