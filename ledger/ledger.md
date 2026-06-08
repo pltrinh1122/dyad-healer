@@ -794,6 +794,35 @@ is *not fully provisioned* until the anchor migrates too (continuity gap beyond 
 ([[feedback_automate-recurring-manual-friction]]). (3) **redundancy pruning** — which mirrored memories
 duplicate `kb/`/`CLAUDE.md` (single-home tidy-up; non-urgent).
 
+## 2026-06-08 — Anchor-layer migration: single-home the operating discipline in `ANCHOR.md` (engine-agnostic)
+**Stock:** owed-debt from the memory-partition entry (above) — the operating discipline lived in the
+engine-named `CLAUDE.md` (full, 108 lines) while `GEMINI.md` was an un-personalized stub. An `agy`
+relaunch would load a near-empty anchor → anchorless Healer. Operator Y'd the migration "now, on claude."
+
+**Grounding that reshaped the plan (verify-before-asserting paid off):**
+- **`agy` = the Gemini substrate** — form bootstrap template (`commons/AGENT.md`): anchor is *"`CLAUDE.md`
+  (if substrate is Claude) or `GEMINI.md` (if substrate is `agy`)."*
+- **`AGENT.md` is taken** — it's the form's bootstrap template ("stays at the form repo, not committed to
+  the dyad's repo"); a root `AGENT.md` would collide. → canonical file named **`ANCHOR.md`**.
+- **`@path` imports auto-inline on BOTH Claude Code and Gemini CLI** at session start (docs-cited via
+  claude-code-guide); a bare "Read AGENT.md" *directive* does **not** (relies on the agent reading it).
+  So the old `GEMINI.md` stub pattern was fragile — the migration upgrades it to `@ANCHOR.md` import.
+
+**Falsified the naive fix** ("personalize `GEMINI.md` = copy `CLAUDE.md`"): would duplicate the full
+engine-agnostic discipline across two engine-named files → edit-drift, two homes — the exact
+orphan/duplication problem the memory-partition just eliminated. Rejected.
+
+**Survivor (implemented):** discipline extracted to engine-agnostic **`ANCHOR.md`** (system of record;
+one engine-neutral edit — "Claude Code features" → "agent-runtime features"); `CLAUDE.md` + `GEMINI.md`
+reduced to **thin per-engine anchors**, each a one-line `@ANCHOR.md` import + engine-specific notes
+(`GEMINI.md` keeps the identity caveat, now populated for dyad-healer). Form convention honored
+(`CLAUDE.md`/`GEMINI.md` remain *the* per-engine anchors). Consistent with the memory-partition:
+engine-named files = thin projections; engine-agnostic content on the substrate. **Anchor-layer
+owed-debt → CLOSED.** *(One-time: first claude session post-change shows an @-import approval prompt.)*
+
+**Still owed (memory-partition entry):** sync-automation (native↔substrate cache) · redundancy pruning.
+**Open (low):** which file is the identity birth-anchor (caveat references it); historical/immutable, not blocking.
+
 ## Open questions
 - ✅ **TELOS — RATIFIED 2026-05-27 → `kb/telos.md`** (live ratification; alternative/wu-wei-front-loaded
   wording adopted). Three breaks fixed in the sharpening: domain-coupling ("DZ-CIL and its disciple

@@ -140,10 +140,11 @@ recall-efficiency projection, disposable on engine-swap. **No-orphan invariant:*
 live *only* in a cache; every native memory has a canonical home on the substrate (else it dies on
 relaunch — continuity lives in the durable record). Native memory thus *pertains only to
 runtime-recall efficiency* (Operator, 2026-06-08), never to sole-home durability. See
-[`memory/README.md`](../memory/README.md). *Same-class debt flagged 2026-06-08:* the operating
-discipline itself is homed in the engine-named `CLAUDE.md` while `GEMINI.md` is a stub → a missing
-engine-agnostic `AGENT.md`; the anchor layer owes the same migration before an `agy` relaunch is
-fully provisioned (ledger).
+[`memory/README.md`](../memory/README.md). *Same principle applied to the anchor layer (2026-06-08):*
+the operating discipline single-homes in engine-agnostic [`ANCHOR.md`](../ANCHOR.md) (system of record);
+`CLAUDE.md` (claude) and `GEMINI.md` (agy) are thin per-engine anchors that `@ANCHOR.md`-import it
+(auto-inlined at session start on both runtimes — verified). Engine-named files hold only
+engine-specific notes; no duplication of engine-agnostic discipline.
 
 ## The shape that emerges
 
