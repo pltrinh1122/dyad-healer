@@ -47,13 +47,20 @@ seizure. 2026-06-07 (#1806 context) — #1826 **merged**, #1825 **mapped**, lock
 The invariant is **bound** to a deterministic detector of **contraction**, *not* to markers and *not* to the
 Healer's memory (marker-detection is the refuted primitive). Deterministic spec the detector must implement:
 
-- `progress(W)` over window W := durable advances of the patient's *landed* state — commits reaching the
-  integration branch + node-status advances (`Backlog → … → Completed/merged`). *(Measure landed state, not
-  activity; ground the git window with explicit epoch bounds — the 2026-06-07 timezone bug that faked
-  `progress=0` is a bound-to-memory failure this very bind exists to prevent.)*
-- `activity(W) > 0` := transcript/action growth in W.
-- **seizure-suspected ⟺ `activity(W) > 0 ∧ progress(W) == 0`, sustained over W.** `progress(W) > 0` **refutes**
-  seizure regardless of marker volume.
+- `progress(W_p)` over the **progress window** `W_p` := durable advances of the patient's *landed* state —
+  commits reaching the integration branch, **merges included** (a merge is the strongest landing).
+  *(Measure landed state, not activity; ground the git window with explicit epoch bounds — the 2026-06-07
+  timezone bug that faked `progress=0` is a bound-to-memory failure this bind exists to prevent.)* Node-status
+  advance (`Backlog → … → Completed`) is the conceptual ideal but is **deliberately not coupled** in the
+  mechanism: it would hard-depend on the patient's internal frontier_state, and the patient is
+  live/self-modifying. Commits+merges are the substrate-generic durable signal.
+- `activity(W_a) > 0` over the **activity window** `W_a` := transcript/action growth in `W_a`.
+- **Cadence calibration (2026-06-07):** `W_a ≠ W_p` by design. *Is it acting now?* (short `W_a`) is asked over
+  a different horizon than *has it landed progress at its cadence?* (longer `W_p`, default ~3× `W_a`,
+  ultradian-tolerant). A single fixed window false-positived legitimate slow-cadence work (busy now, last
+  commit 40 min ago → `progress==0` → false SEIZURE); the split fixes it. Fixture-proven in `--selftest`.
+- **seizure-suspected ⟺ `activity(W_a) > 0 ∧ progress(W_p) == 0`.** `progress(W_p) > 0` **refutes** seizure
+  regardless of marker volume.
 
 **Binding status — BOUND (physical), 2026-06-07.** The invariant is anchored to a real, executable tool:
 **`bin/contraction-check.sh`** — it computes `progress(W)`/`activity(W)` (epoch-bounded) and emits the
