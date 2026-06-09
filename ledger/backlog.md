@@ -54,7 +54,7 @@
 
 ## Pillar 3 · Tooling R&D — a built code instrument (only when volume justifies)
 ### Open
-- [ ] **C · `wu-wei-watch` → self-testing CSI guard, BOUND to the seizure invariant (CSI frontier step C, pilot).**
+- [x] **C · `wu-wei-watch` → self-testing CSI guard, BOUND to the seizure invariant (CSI frontier step C, pilot).**
   **Re-conceived 2026-06-07:** the marker primitive is *refuted* (it conflates guard-firings with seizure — a
   category error that produced a live false-alarm). The detector must enforce the **seizure invariant**
   (`kb/seizure-taxonomy.md`): measure **contraction** — `seizure ⟺ activity(W)>0 ∧ progress(W)==0` (durable
