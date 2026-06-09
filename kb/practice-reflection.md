@@ -141,6 +141,7 @@ patterns worth keeping.>
 **Details (Healer):**
 - <bullet> — <which discipline, applied where, what made it land>
 - <bullet>
+**Rub of the CONTINUE (Healer falsifies the Operator POV):** <agent applies falsification to the retro itself; marks claims as survives or recorded-not-rubbed>
 
 ## 2. START — what to do better
 **Narrative (Operator):**
