@@ -1,0 +1,11 @@
+# The CSI Guard Registry
+# This file tracks all active mechanical traps and their specific closure keys.
+# It explicitly defines whether a guard is Symmetric (State-Bound) or Asymmetric (Process-Bound).
+
+guards:
+  - id: wu_wei_watch
+    type: Asymmetric
+    description: "Monitors patient (dyad-wu-wei) execution logs for seizure invariants (contraction = activity>0 ∧ progress=0) and known markers. Emits an active steering vector on detection, halting the illusion of progress."
+    armed_condition: "Execution of bin/wu-wei-watch.sh in the background (armed by Operator via Monitor)."
+    disarmed_condition: "Operator terminates the watcher, OR the seizure state clears after intervention."
+    trigger_location: "bin/wu-wei-watch.sh (running as an asynchronous EMS watcher)"
