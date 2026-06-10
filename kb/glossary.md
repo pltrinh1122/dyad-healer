@@ -91,6 +91,16 @@ Terms once in our voice, deliberately removed. Recorded here so the retirement i
 
 - **Dao** `[retired 2026-05-28]` — was used as shorthand for *"ratified body of practice"*. Retired after Operator [IDEATE] dialectical falsification: the parent form explicitly dropped *Dao* with the rationale *"we'd been forcing them to carry meanings the source doesn't hold, and forcing a fit is the one move wu-wei forbids"* — and our re-import as metaphor leaked Daoist connotations (Way-ness, normativity, naturalness) that weren't load-bearing. Replaced by **practice** (the Healer's body of ratified discipline). Provenance: commits `611e691`, `5c285d2`; ledger §"SPAOR phase-enrichment proposal" + the [IDEATE] dialectic that surfaced this. *Preserved verbatim*: `Dao-Ziran`, `DZ-CIL`, `harness↔Dao` (class-name), `patient-Dao`, `Frontier-Dao`, and form-policy quotes — these are patient-side, class-names, or audit-trail content.
 
+## Interaction Markers (Dyad Commons Lexicon)
+
+- **The Canonical Lexicon:** The authoritative definitions for interaction markers live at `dyad-touchstone` (`/mnt/shared_data/dzw/dyad-touchstone/AGENT.md`). The Healer practice extends this lexicon for our craft but never redefines it. Always consult the canonical source before inferring ambiguity.
+- **Punctuation gradient:** Load-bearing. `?` = diverge, `.` = checkpoint, `!` = send.
+- **`lean?`** (divergent): Surface a read and **hold**. One or several candidates. Holding-for-rub is the essence, not forced convergence. Do not execute (no gate fires).
+- **`lean.`** (checkpoint): Operator commits to a call but holds the move for approval.
+- **`lean!`** (convergent): Execute the move. Pre-supposes a shared mental model is already achieved.
+- **"go lean"**: A shorthand directive meaning "execute the Healer's stated recommendation" — it does *not* mean "pick the most minimal option" or "be terse".
+- **`bind: <rule>`**: Anchor an invariant to a physical, deterministic tool (a script or playbook), not to fallible memory. A prose-bind is invalid; a true bind requires theory (`kb/`), mechanics (`bin/`), and a self-test that exits 0.
+
 ## Falsifiability — when to revise the glossary
 
 - **Orthogonality (proactive, at proposal time).** Before adding a new entry, the Healer audits
