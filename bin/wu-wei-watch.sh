@@ -113,7 +113,12 @@ while true; do
   for sid in "${!SEIZ[@]}"; do
     [ -n "${RSTD[$sid]:-}" ] && continue
     if [ $(( now - ${SEIZ_SINCE[$sid]:-$now} )) -ge "$RESTART_AFTER" ]; then
-      echo "🛑 wu-wei-watch: NEEDS-RESTART — $sid seizing ${RESTART_AFTER}s+ without clearing. CSI STEERING: escalate per governance-map §Restart escalation"
+      echo "🛑 wu-wei-watch: NEEDS-RESTART — $sid seizing ${RESTART_AFTER}s+ without clearing."
+      echo "   CSI STEERING PAYLOAD (Restart Escalation - Unresponsive Patient):"
+      echo "   1. (Operator) Switch to Frontier hat."
+      echo "   2. Execute \`/exit\` in the patient's console."
+      echo "   3. Relaunch the patient."
+      echo "   4. Deliver the re-orient seed to the patient (S8)."
       RSTD[$sid]=1
     fi
   done

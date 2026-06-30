@@ -1,9 +1,1 @@
-nodes:
-  detection_payload_B:
-    deps:
-    - wu_wei_watch_C
-    title: "B \xB7 detection emits next-action payload"
-  wu_wei_watch_C:
-    deps: []
-    title: "C \xB7 wu-wei-watch -> self-testing CSI guard (pilot) \u2014 re-conceived\
-      \ to the seizure invariant; NOT-armed"
+nodes: {}
