@@ -4,7 +4,14 @@
 (`dyad-bond/kb/reflection-discipline.md`, kb-with-caveat) with the **SH** candidate grammar
 (`dyad-bond/dialectic/relationship-craft.md §D3`). Per the borrowed form: the retro **is** the durable
 artifact — landed by being written + committed, no CTA, no ratification ceremony. Span = since retro
-commit `133cc19`. Single-home; ledger holds the stand-down pointer.*
+commit `133cc19`. Single-home.*
+
+> **Stand-down half — completed 2026-07-04 (post-hoc; see the STOP below).** `d-reflect` in dyad-bond's
+> formalization (`GLOSSARY.md`, 2026-07-03) is `reflect`+`stand-down` **collapsed** — it prepares the
+> ledger for next-session resume, not only the CSS retro. The first pass of this file did the Reflect
+> half only *and asserted a "stand-down pointer" that did not exist*. Corrected: resume-state is
+> `frontier.yml {}` (empty edge, B+C done) + the two Forward threads now tracked in `backlog.md`
+> Pillar-5 Open. This retro is itself the durable stand-down record (per the commit `133cc19` convention).
 
 ## The arc
 
@@ -52,6 +59,14 @@ the graduated file. Grounded the whole form before executing a single line of it
 - **Should Have** *(debit direction):* — **none substantiable this span.** The one candidate (the
   force-stopped cause above) fails SH's mechanical-check requirement, so it is honestly logged as a CSS
   STOP, not dressed as a substantiated Should-Have. Zero-instance-of-debit is the accurate state.
+- **STOP** *(Operator-caught, added post-hoc):* **executed only half the borrowed form and asserted the
+  missing half was done.** I ran the CSS+OR retro but skipped the stand-down/ledger-prep half — while
+  `d-reflect` (dyad-bond `GLOSSARY.md`, 2026-07-03) is explicitly `reflect`+`stand-down` collapsed — and
+  the header claimed "ledger holds the stand-down pointer" with no pointer written. **Self-review did not
+  catch it; the Operator's question "does d-reflect include standdown instructions" did.** Borrow a
+  discipline → ground its *full* token scope (fetch the command definition, not just the kb form-file)
+  before claiming execution. *(This debit IS SH-substantiable: verbatim quote above + mechanical check —
+  `git grep` showed no stand-down pointer landed. It converts to a real Should-Have once SH is adopted.)*
 
 ## Cross-dyad finding — surface to Operator for relay to dyad-bond *(not Healer-driven)*
 
