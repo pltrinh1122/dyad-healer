@@ -71,6 +71,7 @@
 
 ## Pillar 4 · Research / learning — a finding / evidence artifact (cross-cutting engine; feeds 2 & 5)
 ### Open
+- [ ] **Ward-corpus hygiene (surfaced 2026-07-04 building the SessionStart hook).** The ward files are inconsistent: case-04 uses `ward.md`, the rest `chart.md`; discharge status is worded ad-hoc ("CASE DISCHARGED" / "Discharge (S8)" / "DISCHARGE" / "post-discharge" / "Discharge-readiness FALSIFIED"), so no reliable mechanical status-classifier exists (case-03 has no discharge heading at all — genuinely open, or a stale chart?). Decide: a machine-readable `status:` field per ward (frontmatter) so daemons/hooks can read Exception-state without prose-inference — or leave clinical status a deliberate READ-not-grep. Don't retro-edit charts I didn't author without Operator disposition. Provenance → `bin/standup.sh` Ward block.
 - [ ] **Evaluate & reply to `dyad-touchstone` on the substrate-reduction discipline.** We adopted their proposed session-close reduction pass (run first on 2026-06-08). We must live it for a few sessions, then formulate our falsification/findings and emit a response to their DM.
 ### Done
 - [x] **Collateral-regression finding** — first seizure's true blast radius (GLOSSARY + README clobber via `f42b58b`); new harm class identified → ledger "Major finding"
