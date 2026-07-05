@@ -9,23 +9,31 @@
 #   hand-runs every session: is memory grounded (committed+pushed)? is the anchor uncommitted?
 #   is a patient still seized (Exception)? is the frontier edge live or clear? is this the durable
 #   home where the daemons arm? Mechanizing them removes a per-session trigger AND hand-error.
-#   Wired as a Claude Code SessionStart hook, `--hook` emits the result as additionalContext so it
-#   loads at boot WITHOUT a manual `read: ledger`.
+#
+# TRIGGER — `d-start: {goal/scope}` (typed discipline-trigger), NOT a settings.json hook.
+#   Retired the SessionStart hook 2026-07-04 (never long-lived) after re-grounding on dyad-bond's own
+#   convergence: a `.claude/settings.json` hook is CLAUDE-ONLY, and this dyad runs on agy/Gemini too
+#   (ANCHOR.md "runs on either engine") — the hook is dark on half our substrates + on cloud/web. A
+#   typed `d-start` fires on every substrate the Operator can type into AND carries {goal/scope} the
+#   hook could not. Symmetry: d-start : standup.sh :: d-reflect : standdown.sh. The `--hook` mode
+#   (emits SessionStart additionalContext JSON) is kept DORMANT for re-wiring if a substrate later
+#   exposes a startup-hook analog — not deleted.
 #
 # WHAT IT IS NOT: it does not JUDGE. It SURFACES — the dirty tree, the open ward, the frozen
 #   frontier — and hands the disposition to the Healer (commit? re-open the ward? take the edge?).
 #   auto-trigger != auto-judgment. The Healer still reads the ledger + active ward; this primes the seams.
 #
-# COVALENT GATE (self-modification boundary): wiring this as a hook in .claude/settings.json is the
-#   Operator's act, never an Agent self-grant (cf. bin/git.sh's Operator-granted permission). This
-#   script itself is Agent-owned mechanism — read-only surfacing, runnable by hand any time.
+# COVALENT GATE (self-modification boundary): IF ever re-wired to a startup hook, that wiring in
+#   .claude/settings.json is the Operator's act, never an Agent self-grant (cf. bin/git.sh's
+#   Operator-granted permission). Currently NOT wired. This script is Agent-owned mechanism —
+#   read-only surfacing, runnable by hand / via d-start any time.
 #
 # DELIBERATE OMISSION vs dyad-bond: no ROM-baseline sha check. dyad-bond records a per-file anchor
 #   boot-set sha in its ledger; we have no such convention. Adopting one is a separate Pillar-5
 #   proposal, not smuggled in here. We check anchor *durability* (uncommitted = ungrounded) + freshness.
 #
-# Usage:  bin/standup.sh           # human-readable resume report (stdout)
-#         bin/standup.sh --hook    # emit SessionStart additionalContext JSON (hook body)
+# Usage:  bin/standup.sh           # human-readable resume report (stdout) — the d-start body
+#         bin/standup.sh --hook    # DORMANT: emit SessionStart additionalContext JSON (no hook wired)
 
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

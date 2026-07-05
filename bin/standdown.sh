@@ -8,18 +8,20 @@
 #   MECHANICAL half (deterministic — automate it) and a JUDGMENT half (what is queue-worthy;
 #   single-home; Reflection-before-Stand-down — NOT automatable: that is the Healer's act).
 #
-# HOOK BOUNDARY (verified against the Claude Code hook contract, 2026-07-04): a SessionEnd hook is
-#   TEARDOWN-ONLY — it fires after the agent is gone and CANNOT inject context back into the model
-#   (stdout is not consumed; only logged). And Stop fires every turn-end (cannot mean "stand-down").
-#   So the judgment write CANNOT be hook-fired into the Healer. Therefore: the HEALER runs this at
-#   stand-down and reads the template below; a SessionEnd hook may run it `--log` only for the
-#   mechanical durability line (debug log — a tripwire the Operator can grep, never model context).
+# TRIGGER — `d-reflect` (typed discipline-trigger), NOT a settings.json hook. Two reasons the hook
+#   was retired 2026-07-04 (symmetric with standup.sh's d-start):
+#   (1) PORTABILITY — a .claude/settings.json hook is CLAUDE-ONLY; this dyad runs on agy/Gemini too,
+#       where it is dark. A typed d-reflect fires on every substrate.
+#   (2) The Claude Code SessionEnd hook is TEARDOWN-ONLY anyway (verified against the hook contract):
+#       it fires after the agent is gone and CANNOT inject context back into the model, so it could
+#       never carry the JUDGMENT half — only the `--log` mechanical line to a debug tripwire. Little
+#       was lost by retiring it. `--log` mode is kept DORMANT for that tripwire if ever re-wired.
 #
-# COVALENT GATE (self-modification boundary): wiring the SessionEnd hook in .claude/settings.json is
-#   the Operator's act, never an Agent self-grant. This script is Agent-owned mechanism.
+# COVALENT GATE (self-modification boundary): IF ever re-wired, that wiring in .claude/settings.json
+#   is the Operator's act, never an Agent self-grant. Currently NOT wired; Agent-owned mechanism.
 #
-# Usage:  bin/standdown.sh          # mechanical checks + the stand-down template (Healer runs at close)
-#         bin/standdown.sh --log    # mechanical line only (SessionEnd hook body; output is debug-log)
+# Usage:  bin/standdown.sh          # mechanical checks + the stand-down template — the d-reflect body
+#         bin/standdown.sh --log    # DORMANT: mechanical line only (no SessionEnd hook wired)
 
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
