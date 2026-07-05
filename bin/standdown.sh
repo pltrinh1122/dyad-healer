@@ -32,7 +32,7 @@ ANCHOR_FILES=(ANCHOR.md CLAUDE.md GEMINI.md)
 # ── Mechanical: durability + anchor state (the deterministic half) ──────────────────────────────
 dirty="$(git status --porcelain 2>/dev/null || true)"
 branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '?')"
-unpushed="$(git log --oneline '@{u}..' 2>/dev/null | wc -l | tr -d ' ' || echo 0)"
+unpushed="$(git rev-list --count "origin/$branch..HEAD" 2>/dev/null || echo 0)"
 dur_line="clean + in sync on \`$branch\`."
 [[ -n "$dirty" ]] && dur_line="⚠ DIRTY on \`$branch\` — commit + push so the memory is grounded (unpushed history is ungrounded memory)."
 [[ -z "$dirty" && "$unpushed" != "0" ]] && dur_line="⚠ $unpushed unpushed commit(s) on \`$branch\` — push (bin/git.sh)."

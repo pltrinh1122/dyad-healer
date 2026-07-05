@@ -47,7 +47,7 @@ add() { lines+=("$1"); }
 # ── Durability (uncommitted/unpushed = ungrounded memory; the standing substrate threat) ────────
 dirty="$(git status --porcelain 2>/dev/null || true)"
 branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '?')"
-unpushed="$(git log --oneline '@{u}..' 2>/dev/null | wc -l | tr -d ' ' || echo 0)"
+unpushed="$(git rev-list --count "origin/$branch..HEAD" 2>/dev/null || echo 0)"
 if [[ -n "$dirty" ]]; then
   n="$(printf '%s\n' "$dirty" | wc -l | tr -d ' ')"
   add "Durability: ⚠ working tree DIRTY on \`$branch\` ($n path(s)) — commit before relying on the ledger as memory (the uncommitted-gap vulnerability)."
