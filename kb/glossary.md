@@ -101,6 +101,12 @@ Terms once in our voice, deliberately removed. Recorded here so the retirement i
 - **"go lean"**: A shorthand directive meaning "execute the Healer's stated recommendation" — it does *not* mean "pick the most minimal option" or "be terse".
 - **`bind: <rule>`**: Anchor an invariant to a physical, deterministic tool (a script or playbook), not to fallible memory. A prose-bind is invalid; a true bind requires theory (`kb/`), mechanics (`bin/`), and a self-test that exits 0.
 
+### `d-` discipline-triggers `[borrowed: dyad-bond]`
+Typed session-discipline triggers, form `d-<word>[: {scope}]`. Canon lives at `dyad-bond` (`GLOSSARY.md`); we adopt, don't redefine. Chosen over Claude-Code session hooks because a typed token fires on **every substrate the Operator types into** (claude *and* agy/Gemini; a `.claude/settings.json` hook is Claude-only). Our local bindings:
+- **`d-start: {goal/scope}`** — session-OPEN. Runs `bin/standup.sh` (mechanical resume checks: durability · anchor · alignment/frontier · ward · substrate) and carries the session's goal/scope. Counterpart to `d-reflect`.
+- **`d-reflect`** — session-CLOSE. `reflect` + `stand-down` collapsed: run the CSS+OR Retrospective (`kb/practice-reflection.md`) **and** prepare the ledger for next-session resume via `bin/standdown.sh`. Fires mid- or end-session alike.
+- **`d-land`** — commit **always**; then push (direct-to-`main`, no PR gate here). A **blanket disposition**: once given, the Healer owns all mechanics *and the recommended sub-decisions* — re-gating individual sub-items back to the Operator is burden-shift. → [[feedback_load-bearing-decision-detection]].
+
 ## Falsifiability — when to revise the glossary
 
 - **Orthogonality (proactive, at proposal time).** Before adding a new entry, the Healer audits
